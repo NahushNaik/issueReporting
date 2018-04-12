@@ -1,0 +1,36 @@
+8:00
+Stand:
+wire count:
+Wireless count:
+Green status 1:On,off,fast,slow
+Green status 2:On,off,fast,slow
+8:00
+Stand:
+wire count:
+Wireless count:
+Green status 1:On,off,fast,slow
+Green status 2:On,off,fast,slow
+8:00
+Stand:
+wire count:
+Wireless count:
+Green status 1:On,off,fast,slow
+Green status 2:On,off,fast,slow
+8:00
+Stand:
+wire count:
+Wireless count:
+Green status 1:On,off,fast,slow
+Green status 2:On,off,fast,slow
+8:00
+Stand:
+wire count:
+Wireless count:
+Green status 1:On,off,fast,slow
+Green status 2:On,off,fast,slow
+8:00
+Stand:
+wire count:
+Wireless count:
+Green status 1:On,off,fast,slow
+Green status 2:On,off,fast,slow

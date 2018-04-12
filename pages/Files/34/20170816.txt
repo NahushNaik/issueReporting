@@ -1,0 +1,350 @@
+12:27:41 PM : 	2017816122741	1	Blocked	Blocked	Green	Clear	Clear	Red	In Use	In Use
+12:27:42 PM : 	2017816122741	2							Unable to connect	Unable to connect
+12:27:42 PM : 	2017816122741	3							Unable to connect	Unable to connect
+12:27:42 PM : 	2017816122741	4	Blocked	Blocked	Green	Clear	Clear	Red	In Use	In Use
+12:27:42 PM : 	2017816122741	5	Blocked	Blocked	Green	Blocked	Blocked	Green	In Use	In Use
+12:27:42 PM : 	2017816122741	6	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+12:27:42 PM : 	2017816122741	7	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+12:27:42 PM : 	2017816122741	8	Clear	Clear	Red	Clear	Blocked	Yellow	In Use	In Use
+12:27:42 PM : 	2017816122741	9							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	10							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	11							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	12							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	13							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	14							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	15							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	16							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	17							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	18							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	19							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	20							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	21							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	22							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	23							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	24							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	25							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	26							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	27							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	28							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	29							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	30							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	31							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	32							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	33							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	34							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	35							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	36							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	37							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	38							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	39							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	40							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	41							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	42							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	43							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	44							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	45							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	46							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	47							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	48							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	49							Unit Not Connected	Unit Not Connected
+12:27:42 PM : 	2017816122741	50							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	1	Blocked	Blocked	Green	Clear	Clear	Red	In Use	In Use
+12:32:32 PM : 	2017816123232	2							Unable to connect	Unable to connect
+12:32:32 PM : 	2017816123232	3							Unable to connect	Unable to connect
+12:32:32 PM : 	2017816123232	4	Blocked	Blocked	Green	Clear	Clear	Red	In Use	In Use
+12:32:32 PM : 	2017816123232	5	Blocked	Blocked	Green	Blocked	Blocked	Green	In Use	In Use
+12:32:32 PM : 	2017816123232	6	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+12:32:32 PM : 	2017816123232	7	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+12:32:32 PM : 	2017816123232	8	Clear	Clear	Red	Clear	Blocked	Yellow	In Use	In Use
+12:32:32 PM : 	2017816123232	9							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	10							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	11							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	12							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	13							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	14							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	15							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	16							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	17							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	18							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	19							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	20							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	21							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	22							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	23							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	24							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	25							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	26							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	27							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	28							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	29							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	30							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	31							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	32							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	33							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	34							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	35							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	36							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	37							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	38							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	39							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	40							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	41							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	42							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	43							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	44							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	45							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	46							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	47							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	48							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	49							Unit Not Connected	Unit Not Connected
+12:32:32 PM : 	2017816123232	50							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	1	Clear	Blocked		Clear	Clear	Red	In Use	In Use
+12:46:07 PM : 	201781612467	2							Unable to connect	Unable to connect
+12:46:07 PM : 	201781612467	3							Unable to connect	Unable to connect
+12:46:07 PM : 	201781612467	4	Blocked	Blocked	Green	Clear	Clear	Red	In Use	In Use
+12:46:07 PM : 	201781612467	5	Blocked	Blocked	Green	Blocked	Blocked	Green	In Use	In Use
+12:46:07 PM : 	201781612467	6	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+12:46:07 PM : 	201781612467	7	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+12:46:07 PM : 	201781612467	8	Clear	Clear	Red	Clear	Blocked	Yellow	In Use	In Use
+12:46:07 PM : 	201781612467	9							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	10							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	11							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	12							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	13							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	14							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	15							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	16							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	17							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	18							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	19							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	20							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	21							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	22							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	23							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	24							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	25							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	26							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	27							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	28							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	29							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	30							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	31							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	32							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	33							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	34							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	35							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	36							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	37							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	38							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	39							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	40							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	41							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	42							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	43							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	44							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	45							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	46							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	47							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	48							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	49							Unit Not Connected	Unit Not Connected
+12:46:07 PM : 	201781612467	50							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	1	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+1:16:07 PM : 	201781613167	2							Unable to connect	Unable to connect
+1:16:07 PM : 	201781613167	3							Unable to connect	Unable to connect
+1:16:07 PM : 	201781613167	4	Blocked	Blocked	Green	Clear	Clear	Red	In Use	In Use
+1:16:07 PM : 	201781613167	5	Blocked	Blocked	Green	Blocked	Blocked	Green	In Use	In Use
+1:16:07 PM : 	201781613167	6	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+1:16:07 PM : 	201781613167	7	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+1:16:07 PM : 	201781613167	8	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+1:16:07 PM : 	201781613167	9							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	10							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	11							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	12							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	13							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	14							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	15							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	16							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	17							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	18							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	19							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	20							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	21							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	22							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	23							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	24							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	25							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	26							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	27							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	28							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	29							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	30							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	31							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	32							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	33							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	34							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	35							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	36							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	37							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	38							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	39							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	40							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	41							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	42							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	43							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	44							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	45							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	46							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	47							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	48							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	49							Unit Not Connected	Unit Not Connected
+1:16:07 PM : 	201781613167	50							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	1	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+1:46:07 PM : 	201781613467	2							Unable to connect	Unable to connect
+1:46:07 PM : 	201781613467	3							Unable to connect	Unable to connect
+1:46:07 PM : 	201781613467	4	Blocked	Blocked	Green	Clear	Clear	Red	In Use	In Use
+1:46:07 PM : 	201781613467	5	Blocked	Blocked	Green	Blocked	Blocked	Green	In Use	In Use
+1:46:07 PM : 	201781613467	6	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+1:46:07 PM : 	201781613467	7	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+1:46:07 PM : 	201781613467	8	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+1:46:07 PM : 	201781613467	9							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	10							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	11							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	12							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	13							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	14							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	15							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	16							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	17							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	18							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	19							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	20							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	21							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	22							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	23							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	24							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	25							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	26							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	27							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	28							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	29							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	30							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	31							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	32							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	33							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	34							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	35							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	36							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	37							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	38							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	39							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	40							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	41							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	42							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	43							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	44							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	45							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	46							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	47							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	48							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	49							Unit Not Connected	Unit Not Connected
+1:46:07 PM : 	201781613467	50							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	1	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+2:16:07 PM : 	201781614167	2							Unable to connect	Unable to connect
+2:16:07 PM : 	201781614167	3							Unable to connect	Unable to connect
+2:16:07 PM : 	201781614167	4	Blocked	Blocked	Green	Clear	Clear	Red	In Use	In Use
+2:16:07 PM : 	201781614167	5	Blocked	Blocked	Green	Blocked	Blocked	Green	In Use	In Use
+2:16:07 PM : 	201781614167	6	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+2:16:07 PM : 	201781614167	7	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+2:16:07 PM : 	201781614167	8	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+2:16:07 PM : 	201781614167	9							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	10							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	11							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	12							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	13							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	14							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	15							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	16							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	17							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	18							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	19							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	20							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	21							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	22							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	23							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	24							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	25							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	26							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	27							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	28							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	29							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	30							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	31							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	32							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	33							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	34							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	35							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	36							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	37							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	38							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	39							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	40							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	41							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	42							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	43							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	44							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	45							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	46							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	47							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	48							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	49							Unit Not Connected	Unit Not Connected
+2:16:07 PM : 	201781614167	50							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	1	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+2:46:07 PM : 	201781614467	2							Unable to connect	Unable to connect
+2:46:07 PM : 	201781614467	3							Unable to connect	Unable to connect
+2:46:07 PM : 	201781614467	4	Blocked	Blocked	Green	Clear	Clear	Red	In Use	In Use
+2:46:07 PM : 	201781614467	5	Blocked	Clear	Yellow	Blocked	Blocked	Green	In Use	In Use
+2:46:07 PM : 	201781614467	6	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+2:46:07 PM : 	201781614467	7	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+2:46:07 PM : 	201781614467	8	Clear	Clear	Red	Clear	Clear	Red	In Use	In Use
+2:46:07 PM : 	201781614467	9							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	10							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	11							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	12							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	13							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	14							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	15							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	16							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	17							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	18							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	19							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	20							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	21							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	22							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	23							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	24							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	25							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	26							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	27							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	28							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	29							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	30							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	31							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	32							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	33							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	34							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	35							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	36							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	37							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	38							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	39							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	40							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	41							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	42							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	43							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	44							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	45							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	46							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	47							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	48							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	49							Unit Not Connected	Unit Not Connected
+2:46:07 PM : 	201781614467	50							Unit Not Connected	Unit Not Connected
