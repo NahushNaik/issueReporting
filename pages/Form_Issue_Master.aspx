@@ -20,7 +20,9 @@
     </telerik:RadWindowManager>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body1" runat="Server">
-    <a class="navbar-brand" href="#">Issue  Master</a>
+    <a class="navbar-brand" href="#">
+    <asp:Label ID="Label12" runat="server" Text="Issue Master"></asp:Label>
+    </a>&nbsp;
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Body2" runat="Server">
     <div class="content">
@@ -29,7 +31,9 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="header">
-                                        <h4 class="title">Issue Master</h4>
+                                        <h4 class="title">
+                                            <asp:Label ID="Label11" runat="server" Text="Issue Master"></asp:Label>
+                                        </h4>
                                         <p class="category"></p>
                                     </div>
 

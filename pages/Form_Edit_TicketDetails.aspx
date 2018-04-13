@@ -7,8 +7,10 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Body1" runat="Server">
-    <a class="navbar-brand" href="#">Edit Ticket</a>
-   <%-- <script type="text/javascript">
+    <a class="navbar-brand" href="#">
+    <asp:Label ID="Label11" runat="server" meta:resourcekey="Label11Resource1" Text="Edit Ticket"></asp:Label>
+    </a>
+   &nbsp;<%-- <script type="text/javascript">
         function DisableButton() {
             document.getElementById("<%=btn_Edit_Details.ClientID %>").disabled = true;
            
@@ -18,14 +20,7 @@
           }
           window.onbeforeunload = DisableButton;
 
-    </script>--%>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-    <script type='text/javascript' src="../Scripts/jquery-1.4.1.min.js"></script>
-    <script src="../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
-    <script src="../Scripts/jquery.maskedinput.js" type="text/javascript"></script>
-
-     <script type="text/javascript">
+    </script>--%><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><script type='text/javascript' src="../Scripts/jquery-1.4.1.min.js"></script><script src="../Scripts/jquery-1.4.1.js" type="text/javascript"></script><script src="../Scripts/jquery.maskedinput.js" type="text/javascript"></script><script type="text/javascript">
          $(document).ready(function () {
              $("#<%= btn_Edit_Details.ClientID %>").click(function () {
                 debugger;
@@ -63,8 +58,9 @@
                 <div class="col-lg-11 col-md-10">
                     <div class="card">
                         <div class="header">
-                            <h4 class="title">View Ticket :
-                                <asp:Label ID="lblStatus" runat="server" Text="Label" meta:resourcekey="lblStatusResource1"></asp:Label></h4>
+                            <h4 class="title">
+                                <asp:Label ID="Label3" runat="server" meta:resourcekey="Label3Resource1" Text="View Ticket :"></asp:Label>
+&nbsp;<asp:Label ID="lblStatus" runat="server" Text="Label" meta:resourcekey="lblStatusResource1"></asp:Label></h4>
                         </div>
                         <div class="content">
                           
@@ -72,8 +68,10 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Ticket ID</label>
-                                            <asp:TextBox ID="TicketID" runat="server" CssClass="form-control border-input" ReadOnly="True" ForeColor="Green" meta:resourcekey="TicketIDResource1"></asp:TextBox>
+                                            <label for="exampleInputEmail1">
+                                            <asp:Label ID="Label12" runat="server" meta:resourcekey="Label12Resource1" Text="Ticket ID"></asp:Label>
+                                            </label>
+                                            &nbsp;<asp:TextBox ID="TicketID" runat="server" CssClass="form-control border-input" ReadOnly="True" ForeColor="Green" meta:resourcekey="TicketIDResource1"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -81,7 +79,9 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Type <asp:Label ID="lbl4" runat="server" Text="*" ForeColor="Red" meta:resourcekey="lbl4Resource1"></asp:Label></label>
+                                            <label>
+                                            <asp:Label ID="Label4" runat="server" meta:resourcekey="Label4Resource1" Text="Type"></asp:Label>
+&nbsp;<asp:Label ID="lbl4" runat="server" Text="*" ForeColor="Red" meta:resourcekey="lbl4Resource1"></asp:Label></label>
                                             <asp:DropDownList ID="drpDownType" runat="server" CssClass="form-control border-input" AutoPostBack="True" OnSelectedIndexChanged="drpDownType_SelectedIndexChanged" meta:resourcekey="drpDownTypeResource1"     ></asp:DropDownList>
 
                                               <asp:RequiredFieldValidator ID="rfvType" runat="server" ControlToValidate="drpDownType"
@@ -91,7 +91,9 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Application <asp:Label ID="lbl3" runat="server" Text="*" ForeColor="Red" meta:resourcekey="lbl3Resource1"></asp:Label></label>
+                                            <label><span class="auto-style1">
+                                            <asp:Label ID="Label5" runat="server" meta:resourcekey="Label5Resource1" Text="Application"></asp:Label>
+&nbsp;<asp:Label ID="lbl3" runat="server" Text="*" ForeColor="Red" meta:resourcekey="lbl3Resource1"></asp:Label></span></label>
                                             <asp:DropDownList ID="drpDownApplication" runat="server" CssClass="form-control border-input" AutoPostBack="True" OnSelectedIndexChanged="drpDownApplication_SelectedIndexChanged" meta:resourcekey="drpDownApplicationResource1"></asp:DropDownList>
 
                                             
@@ -108,7 +110,9 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Issue <asp:Label ID="Lbl1" runat="server" Text="*" ForeColor="Red" meta:resourcekey="Lbl1Resource1"></asp:Label></label>
+                                            <label>
+                                            <asp:Label ID="Label6" runat="server" meta:resourcekey="Label6Resource1" Text="Issue"></asp:Label>
+&nbsp;<asp:Label ID="Lbl1" runat="server" Text="*" ForeColor="Red" meta:resourcekey="Lbl1Resource1"></asp:Label></label>
                                             <asp:DropDownList ID="DrpIssueType" runat="server" CssClass="form-control border-input" OnSelectedIndexChanged="DrpIssueType_SelectedIndexChanged" meta:resourcekey="DrpIssueTypeResource1">
                                             </asp:DropDownList>
 
@@ -122,7 +126,9 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Issue Details <asp:Label ID="Label2" runat="server" Text="*" ForeColor="Red" meta:resourcekey="Label2Resource1"></asp:Label></label>
+                                            <label>
+                                            <asp:Label ID="Label7" runat="server" meta:resourcekey="Label7Resource1" Text="Issue Details"></asp:Label>
+&nbsp;<asp:Label ID="Label2" runat="server" Text="*" ForeColor="Red" meta:resourcekey="Label2Resource1"></asp:Label></label>
                                             <asp:TextBox ID="IssueDetail" runat="server" CssClass="form-control border-input" TextMode="MultiLine" meta:resourcekey="IssueDetailResource1" >Issue Details</asp:TextBox>
 
                                              <asp:RequiredFieldValidator ID="rfvDetails" runat="server" ControlToValidate="drpDownApplication"
@@ -138,8 +144,10 @@ ValidationExpression="^([a-zA-Z0-9_\s\-]*)$"></asp:RegularExpressionValidator>--
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Priority</label>
-                                            <asp:DropDownList ID="DrpPriority" runat="server" CssClass="form-control border-input" Enabled="False" meta:resourcekey="DrpPriorityResource1">
+                                            <label>
+                                            <asp:Label ID="Label8" runat="server" meta:resourcekey="Label8Resource1" Text="Priority"></asp:Label>
+                                            </label>
+                                            &nbsp;<asp:DropDownList ID="DrpPriority" runat="server" CssClass="form-control border-input" Enabled="False" meta:resourcekey="DrpPriorityResource1">
                                             </asp:DropDownList>
                                         </div>
                                     </div>
@@ -149,8 +157,10 @@ ValidationExpression="^([a-zA-Z0-9_\s\-]*)$"></asp:RegularExpressionValidator>--
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Status</label>
-                                            <asp:DropDownList ID="drpStatus" runat="server" CssClass="form-control border-input" Enabled="False" Visible="False" meta:resourcekey="drpStatusResource1">
+                                            <label>
+                                            <asp:Label ID="Label9" runat="server" meta:resourcekey="Label9Resource1" Text="Status"></asp:Label>
+                                            </label>
+                                            &nbsp;<asp:DropDownList ID="drpStatus" runat="server" CssClass="form-control border-input" Enabled="False" Visible="False" meta:resourcekey="drpStatusResource1">
                                             </asp:DropDownList>
                                         </div>
                                     </div>
@@ -159,8 +169,10 @@ ValidationExpression="^([a-zA-Z0-9_\s\-]*)$"></asp:RegularExpressionValidator>--
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Document</label>
-                                            <asp:TextBox ID="txtFileName" runat="server" CssClass="form-control border-input" ReadOnly="True" meta:resourcekey="txtFileNameResource1">No File</asp:TextBox>
+                                            <label>
+                                            <asp:Label ID="Label10" runat="server" meta:resourcekey="Label10Resource1" Text="Document"></asp:Label>
+                                            </label>
+                                            &nbsp;<asp:TextBox ID="txtFileName" runat="server" CssClass="form-control border-input" ReadOnly="True" meta:resourcekey="txtFileNameResource1">No File</asp:TextBox>
 
                                         
 
@@ -232,6 +244,9 @@ ValidationExpression="^([a-zA-Z0-9_\s\-]*)$"></asp:RegularExpressionValidator>--
             background-repeat: no-repeat;
             background-position: center;
         }
+          .auto-style1 {
+              width: 105px;
+          }
     </style>
     <div id="loading"></div>
 </asp:Content>

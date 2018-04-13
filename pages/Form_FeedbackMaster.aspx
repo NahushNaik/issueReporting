@@ -16,7 +16,10 @@
     </telerik:RadScriptManager>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body1" runat="Server">
-    <a class="navbar-brand" href="#">User Feedback</a>
+    <a class="navbar-brand" href="#">
+    <asp:Label ID="Label2" runat="server" meta:resourcekey="Label2Resource1" Text="User Feedbacks"></asp:Label>
+    </a>
+&nbsp;
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Body2" runat="Server">
     <div class="content">
@@ -25,31 +28,52 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="header">
-                                        <h4 class="title">User Feedbacks</h4>
+                                        <h4 class="title">
+                                            <asp:Label ID="Label1" runat="server" meta:resourcekey="Label1Resource1" Text="User Feedbacks"></asp:Label>
+                                        </h4>
                                       
                                     </div>
 
                                  
 
                                     <div class="content table-responsive table-full-width">
-                                          <telerik:radgrid id="rgUserFeedback" runat="server" allowfilteringbycolumn="true" AutoGenerateColumns="false"  OnNeedDataSource="rgUserFeedback_NeedDataSource" Skin="Simple"  ActiveItemStyle-Wrap="true"  cellspacing="-1" gridlines="Both" ItemStyle-BackColor="LightGray" AlternatingItemStyle-BackColor="LightGray" FilterItemStyle-CssClass="text-center"  GroupingEnabled="true"  ShowGroupPanel="True"  AllowDragToGroup="True"  ClientSettings-AllowDragToGroup="true" GroupingSettings-CaseSensitive="false"  >
+                                          <telerik:radgrid id="rgUserFeedback" runat="server" allowfilteringbycolumn="True" AutoGenerateColumns="False"  OnNeedDataSource="rgUserFeedback_NeedDataSource" Skin="Simple"  ActiveItemStyle-Wrap="true"  cellspacing="-1" gridlines="Both" ItemStyle-BackColor="LightGray" AlternatingItemStyle-BackColor="LightGray" FilterItemStyle-CssClass="text-center"  ShowGroupPanel="True"  AllowDragToGroup="True"  ClientSettings-AllowDragToGroup="true" GroupingSettings-CaseSensitive="false" meta:resourcekey="rgUserFeedbackResource1"  >
                                             <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="false"></GroupingSettings>
-                                                <ExportSettings Excel-Format="ExcelML" ExportOnlyData="true" IgnorePaging="true" FileName="User Feedback Report" > </ExportSettings>
+                                                <ExportSettings Excel-Format="ExcelML" ExportOnlyData="true" IgnorePaging="true" FileName="User Feedback Report" > 
+<Excel Format="ExcelML"></Excel>
+                                              </ExportSettings>
+
+<AlternatingItemStyle BackColor="LightGray"></AlternatingItemStyle>
+
                                             <MasterTableView CommandItemDisplay="Top">
                                                 <CommandItemSettings ShowExportToExcelButton="true" ShowAddNewRecordButton="false" ShowRefreshButton="false" />
                                                 <Columns>
                                              
 
-                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Type_Name" HeaderText="Type" ItemStyle-HorizontalAlign="Center" DataType="System.String"  ></telerik:GridBoundColumn>
-                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Ticket_Id" HeaderText="Ticket Id" ItemStyle-HorizontalAlign="Center" DataType="System.String"  ></telerik:GridBoundColumn>
-                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Feedback" HeaderText="Feedback" DataType="System.String"  ></telerik:GridBoundColumn>
-                                               <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="Created_Time" HeaderText="Feedback Time"  DataType="System.String" Visible="false" ></telerik:GridBoundColumn>
+                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Type_Name" HeaderText="Type" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource1"  >
+<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
+
+<ItemStyle HorizontalAlign="Center"></ItemStyle>
+                                                     </telerik:GridBoundColumn>
+                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Ticket_Id" HeaderText="Ticket Id" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource2"  >
+<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
+
+<ItemStyle HorizontalAlign="Center"></ItemStyle>
+                                                     </telerik:GridBoundColumn>
+                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Feedback" HeaderText="Feedback" DataType="System.String" meta:resourcekey="GridBoundColumnResource3"  >
+<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
+                                                     </telerik:GridBoundColumn>
+                                               <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="Created_Time" HeaderText="Feedback Time"  DataType="System.String" Visible="false" meta:resourcekey="GridBoundColumnResource4" >
+<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
+                                                     </telerik:GridBoundColumn>
 
                                                      <telerik:GridDateTimeColumn DataField="Created_Time" AllowFiltering="true" HeaderText="Feedback Time"
-                                                    SortExpression="Date_of_PITCH_Validation" EnableTimeIndependentFiltering="true"  PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss }">
+                                                    SortExpression="Date_of_PITCH_Validation" EnableTimeIndependentFiltering="true"  PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss }" meta:resourcekey="GridDateTimeColumnResource1">
                                                 </telerik:GridDateTimeColumn>
 
-                                                      <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="userName" HeaderText="Ticket Owner"  DataType="System.String" ></telerik:GridBoundColumn>
+                                                      <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="userName" HeaderText="Ticket Owner"  DataType="System.String" meta:resourcekey="GridBoundColumnResource5" >
+<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
+                                                     </telerik:GridBoundColumn>
                                 
                               
                                
@@ -59,6 +83,12 @@
                                             <ClientSettings>
                                                 <Resizing AllowColumnResize="false" ResizeGridOnColumnResize="false" AllowResizeToFit="false" />
                                             </ClientSettings>
+
+<FilterItemStyle CssClass="text-center"></FilterItemStyle>
+
+<ActiveItemStyle Wrap="True"></ActiveItemStyle>
+
+<ItemStyle BackColor="LightGray"></ItemStyle>
                                         </telerik:radgrid>
                                     </div>
                                 </div>
