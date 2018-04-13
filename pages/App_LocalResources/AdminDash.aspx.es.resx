@@ -120,25 +120,514 @@
   <data name="DropDownList1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="GridHyperLinkColumnResource1.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.DataNavigateUrlFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.DataTextFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridHyperLinkColumnResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.ImageUrl" xml:space="preserve">
+    <value>images/Viewfolder.png</value>
+  </data>
+  <data name="GridHyperLinkColumnResource1.NavigateUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.Target" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource1.Text" xml:space="preserve">
+    <value>Ver</value>
+  </data>
+  <data name="Label10Resource1.Text" xml:space="preserve">
+    <value>Descripción general de la creación de entradas</value>
+  </data>
+  <data name="Label10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label11Resource1.Text" xml:space="preserve">
+    <value>Los últimos 6 meses</value>
+  </data>
+  <data name="Label11Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label12Resource1.Text" xml:space="preserve">
+    <value>Recuento de entradas</value>
+  </data>
+  <data name="Label12Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label13Resource1.Text" xml:space="preserve">
+    <value>Total creado en cada mes ...</value>
+  </data>
+  <data name="Label13Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>Tablero</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>Recientes 5 entradas</value>
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3Resource1.Text" xml:space="preserve">
+    <value>Ver lista</value>
+  </data>
+  <data name="Label3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource1.Text" xml:space="preserve">
+    <value>Estadísticas de entradas</value>
+  </data>
+  <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label5Resource1.Text" xml:space="preserve">
+    <value>Los últimos 6 meses</value>
+  </data>
+  <data name="Label5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource1.Text" xml:space="preserve">
+    <value>Cerrado</value>
+  </data>
+  <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label7Resource1.Text" xml:space="preserve">
+    <value>Abierto</value>
+  </data>
+  <data name="Label7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8Resource1.Text" xml:space="preserve">
+    <value>Descartado</value>
+  </data>
+  <data name="Label8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label9Resource1.Text" xml:space="preserve">
+    <value>Último ticket creado hace 3 días</value>
+  </data>
+  <data name="Label9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="ListItemResource1.Text" xml:space="preserve">
     <value>Todas</value>
   </data>
   <data name="ListItemResource1.Value" xml:space="preserve">
-    <value>Todas</value>
+    <value>All</value>
   </data>
   <data name="ListItemResource2.Text" xml:space="preserve">
     <value>Abierto</value>
   </data>
   <data name="ListItemResource2.Value" xml:space="preserve">
-    <value>Abierto</value>
+    <value>Open</value>
   </data>
   <data name="ListItemResource3.Text" xml:space="preserve">
     <value>Cerrado</value>
   </data>
   <data name="ListItemResource3.Value" xml:space="preserve">
-    <value>Cerrado</value>
+    <value>Closed</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.BackImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.ClientSettings.ClientMessages.ColumnResizeTooltipFormatString" xml:space="preserve">
+    <value>Width: &lt;strong&gt;{0}&lt;/strong&gt; &lt;em&gt;pixels&lt;/em&gt;</value>
+  </data>
+  <data name="RadGrid1Resource1.ClientSettings.ClientMessages.DragToGroupOrReorder" xml:space="preserve">
+    <value>Arrastra para agrupar o reordenar</value>
+  </data>
+  <data name="RadGrid1Resource1.ClientSettings.ClientMessages.DragToResize" xml:space="preserve">
+    <value>Arrastra para cambiar el tamaño</value>
+  </data>
+  <data name="RadGrid1Resource1.ClientSettings.ClientMessages.DropHereToReorder" xml:space="preserve">
+    <value>Suelta aquí para reordenar</value>
+  </data>
+  <data name="RadGrid1Resource1.ClientSettings.ClientMessages.PagerTooltipFormatString" xml:space="preserve">
+    <value>Page &lt;strong&gt;{0}&lt;/strong&gt; of &lt;strong&gt;{1}&lt;/strong&gt;</value>
+  </data>
+  <data name="RadGrid1Resource1.FilterMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.GroupingSettings.CollapseAllTooltip" xml:space="preserve">
+    <value>Contraer todos los grupos</value>
+  </data>
+  <data name="RadGrid1Resource1.GroupingSettings.CollapseTooltip" xml:space="preserve">
+    <value>Contraer grupo</value>
+  </data>
+  <data name="RadGrid1Resource1.GroupingSettings.ExpandAllTooltip" xml:space="preserve">
+    <value>Expandir todos los grupos</value>
+  </data>
+  <data name="RadGrid1Resource1.GroupingSettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir grupo</value>
+  </data>
+  <data name="RadGrid1Resource1.GroupingSettings.GroupByFieldsSeparator" xml:space="preserve">
+    <value>; </value>
+  </data>
+  <data name="RadGrid1Resource1.GroupingSettings.GroupContinuedFormatString" xml:space="preserve">
+    <value>... grupo continuó de la página anterior.</value>
+  </data>
+  <data name="RadGrid1Resource1.GroupingSettings.GroupContinuesFormatString" xml:space="preserve">
+    <value>El grupo continúa en la página siguiente.</value>
+  </data>
+  <data name="RadGrid1Resource1.GroupingSettings.GroupSplitDisplayFormat" xml:space="preserve">
+    <value>Showing {0} of {1} items.</value>
+  </data>
+  <data name="RadGrid1Resource1.GroupingSettings.GroupSplitFormat" xml:space="preserve">
+    <value> ({0})</value>
+  </data>
+  <data name="RadGrid1Resource1.GroupingSettings.UnGroupButtonTooltip" xml:space="preserve">
+    <value>Haga clic aquí para desagrupar</value>
+  </data>
+  <data name="RadGrid1Resource1.GroupingSettings.UnGroupTooltip" xml:space="preserve">
+    <value>Arrastre fuera de la barra para desagrupar</value>
+  </data>
+  <data name="RadGrid1Resource1.GroupPanel.Text" xml:space="preserve">
+    <value>Arrastra un encabezado de columna y suéltalo aquí para agrupar por esa columna</value>
+  </data>
+  <data name="RadGrid1Resource1.GroupPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.HeaderContextMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.HierarchySettings.CollapseAllTooltip" xml:space="preserve">
+    <value>Desplegar todo</value>
+  </data>
+  <data name="RadGrid1Resource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Colapso</value>
+  </data>
+  <data name="RadGrid1Resource1.HierarchySettings.ExpandAllTooltip" xml:space="preserve">
+    <value>Expandir todo</value>
+  </data>
+  <data name="RadGrid1Resource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expandir</value>
+  </data>
+  <data name="RadGrid1Resource1.HierarchySettings.SelfCollapseTooltip" xml:space="preserve">
+    <value>Colapso de auto referencia</value>
+  </data>
+  <data name="RadGrid1Resource1.HierarchySettings.SelfExpandTooltip" xml:space="preserve">
+    <value>Auto-referencia expandir</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.AddNewRecordImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.AddNewRecordText" xml:space="preserve">
+    <value>Añadir nuevo registro</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.CancelChangesText" xml:space="preserve">
+    <value>Cancelar cambios</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToCsvImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToCsvText" xml:space="preserve">
+    <value>Exportar a CSV</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToExcelImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToExcelText" xml:space="preserve">
+    <value>Exportar a Excel</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToPdfImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToPdfText" xml:space="preserve">
+    <value>Exportar a PDF</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToWordImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToWordText" xml:space="preserve">
+    <value>Exportar a Word</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.NextFrozenColumnText" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.PrevFrozenColumnText" xml:space="preserve">
+    <value>Anterior</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.PrintGridText" xml:space="preserve">
+    <value>Imprimir RadGrid</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.RefreshImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
+    <value>Refrescar</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.SaveChangesText" xml:space="preserve">
+    <value>Guardar cambios</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.EditFormSettings.CaptionFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.EditFormSettings.InsertCaption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.CollapseImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.ExpandImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ExpandCollapseColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No hay registros secundarios para mostrar.</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No hay registros que mostrar.</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.ChangePageSizeButtonToolTip" xml:space="preserve">
+    <value>Cambiar el tamaño de página</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.ChangePageSizeComboBoxTableSummary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.ChangePageSizeComboBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.ChangePageSizeTextBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.FirstPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.FirstPageToolTip" xml:space="preserve">
+    <value>Primera página</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.GoToPageButtonToolTip" xml:space="preserve">
+    <value>Ir a la página</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.GoToPageTextBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.LastPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.LastPageToolTip" xml:space="preserve">
+    <value>Última página</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Páginas siguientes</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.NextPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Siguiente página</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Change page: {4} &amp;nbsp;Page &lt;strong&gt;{0}&lt;/strong&gt; of &lt;strong&gt;{1}&lt;/strong&gt;, items &lt;strong&gt;{2}&lt;/strong&gt; to &lt;strong&gt;{3}&lt;/strong&gt; of &lt;strong&gt;{5}&lt;/strong&gt;.</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.PageSizeLabelText" xml:space="preserve">
+    <value>Tamaño de página:</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Páginas anteriores</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.PrevPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Pagina anterior</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.Summary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.MasterTableView.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.ChangePageSizeButtonToolTip" xml:space="preserve">
+    <value>Cambiar el tamaño de página</value>
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.ChangePageSizeComboBoxTableSummary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.ChangePageSizeComboBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.ChangePageSizeTextBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.FirstPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.FirstPageToolTip" xml:space="preserve">
+    <value>Primera página</value>
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.GoToPageButtonToolTip" xml:space="preserve">
+    <value>Ir a la página</value>
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.GoToPageTextBoxToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.LastPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.LastPageToolTip" xml:space="preserve">
+    <value>Última página</value>
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Páginas siguientes</value>
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.NextPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Siguiente página</value>
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Change page: {4} &amp;nbsp;Page &lt;strong&gt;{0}&lt;/strong&gt; of &lt;strong&gt;{1}&lt;/strong&gt;, items &lt;strong&gt;{2}&lt;/strong&gt; to &lt;strong&gt;{3}&lt;/strong&gt; of &lt;strong&gt;{5}&lt;/strong&gt;.</value>
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.PageSizeLabelText" xml:space="preserve">
+    <value>Tamaño de página:</value>
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Páginas anteriores</value>
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.PrevPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadGrid1Resource1.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Pagina anterior</value>
+  </data>
+  <data name="RadGrid1Resource1.SortingSettings.SortedAscToolTip" xml:space="preserve">
+    <value>Asc ordenado</value>
+  </data>
+  <data name="RadGrid1Resource1.SortingSettings.SortedDescToolTip" xml:space="preserve">
+    <value>Desc ordenado</value>
+  </data>
+  <data name="RadGrid1Resource1.SortingSettings.SortToolTip" xml:space="preserve">
+    <value>Haga clic aquí para ordenar</value>
+  </data>
+  <data name="RadGrid1Resource1.StatusBarSettings.LoadingText" xml:space="preserve">
+    <value>Cargando...</value>
+  </data>
+  <data name="RadGrid1Resource1.StatusBarSettings.ReadyText" xml:space="preserve">
+    <value>Listo</value>
+  </data>
+  <data name="RadGrid1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
 </root>

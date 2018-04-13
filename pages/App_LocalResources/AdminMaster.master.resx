@@ -117,7 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PageResource1.Title" xml:space="preserve">
-    <value>Menú principal</value>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>by Applications Team.</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
   </data>
 </root>

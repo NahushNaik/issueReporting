@@ -108,7 +108,9 @@
     <div>
         <div class="col-md-12">
             <div class="col-md-4"> <a id="A1" runat="server" href="Form_DummyDashboardView.aspx">  <img src="images/sanjeevlogo.png"  style="margin-left:-6%;margin-top:8%;background-color:white"></a></div>
-           <div class="col-md-8">  <h2 style="color:black"><b>Department Wise Reports</b></h2></div>
+           <div class="col-md-8">  <h2 style="color:black"><b>
+               <asp:Label ID="Label1" runat="server" meta:resourcekey="Label1Resource1" Text="Department Wise Reports"></asp:Label>
+               </b></h2></div>
             
                  <hr />
             <br />
@@ -123,116 +125,154 @@
                                  
                                     <asp:Label ID="lblDapartment" Font-Bold="True" Font-Size="30px" runat="server" Text="0" meta:resourcekey="lblDapartmentResource1"></asp:Label>
                                     <br />
-                                    <telerik:RadTabStrip SelectedIndex="0" ID="tabStrip" MultiPageID="RadMultiPage1" runat="server"  Skin="Silk">
+                                    <telerik:RadTabStrip SelectedIndex="1" ID="tabStrip" MultiPageID="RadMultiPage1" runat="server"  Skin="Silk" meta:resourcekey="tabStripResource1">
                                         <Tabs>
-                <telerik:RadTab Text="Summary" Width="200px"></telerik:RadTab>
-                <telerik:RadTab Text="Open Tickets" Width="200px"></telerik:RadTab>
-                <telerik:RadTab Text="Close Tickets" Width="200px"></telerik:RadTab>
+                <telerik:RadTab Text="Summary" Width="200px" meta:resourcekey="RadTabResource1"></telerik:RadTab>
+                <telerik:RadTab Text="Open Tickets" Width="200px" meta:resourcekey="RadTabResource2" Selected="True"></telerik:RadTab>
+                <telerik:RadTab Text="Close Tickets" Width="200px" meta:resourcekey="RadTabResource3"></telerik:RadTab>
 
             </Tabs>
                                     </telerik:RadTabStrip>
-                                    <telerik:RadMultiPage ID="RadMultiPage1"  SelectedIndex="0" runat="server">
-                                        <telerik:RadPageView ID="RadPageView1" runat="server">
+                                    <telerik:RadMultiPage ID="RadMultiPage1"  SelectedIndex="1" runat="server" meta:resourcekey="RadMultiPage1Resource1">
+                                        <telerik:RadPageView ID="RadPageView1" runat="server" meta:resourcekey="RadPageView1Resource1">
                                             <br />
                                               <table id="operator"  style=" color:black; font-size:15px;height:100px;" >
                  
    <tr>
-       <td>Total Tickets</td>
+       <td>
+           <asp:Label ID="Label2" runat="server" meta:resourcekey="Label2Resource1" Text="Total Tickets"></asp:Label>
+       </td>
        <td style="font-size:30px;font-weight:bold">
-           <asp:Label ID="lblTotalTickets" runat="server" Text="0"></asp:Label></td>
+           <asp:Label ID="lblTotalTickets" runat="server" Text="0" meta:resourcekey="lblTotalTicketsResource1"></asp:Label></td>
 
    </tr>
                      <tr>
-                         <td>Open</td>
-                         <td style="font-size:30px;font-weight:bold"><asp:Label ID="lblOpenTickets" runat="server" Text="0"></asp:Label></td>
+                         <td>
+                             <asp:Label ID="Label3" runat="server" meta:resourcekey="Label3Resource1" Text="Open"></asp:Label>
+                         </td>
+                         <td style="font-size:30px;font-weight:bold"><asp:Label ID="lblOpenTickets" runat="server" Text="0" meta:resourcekey="lblOpenTicketsResource1"></asp:Label></td>
                      </tr>
                       <tr>
-                         <td>Closed</td>
-                         <td style="font-size:30px;font-weight:bold"><asp:Label ID="lblCloseTickets" runat="server" Text="0"></asp:Label></td>
+                         <td>
+                             <asp:Label ID="Label4" runat="server" meta:resourcekey="Label4Resource1" Text="Closed"></asp:Label>
+                          </td>
+                         <td style="font-size:30px;font-weight:bold"><asp:Label ID="lblCloseTickets" runat="server" Text="0" meta:resourcekey="lblCloseTicketsResource1"></asp:Label></td>
                      </tr>
                                                    <tr>
-       <td>Average Closed Time</td>
-       <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblAverageClosedTime" runat="server" Text="0"></asp:Label></td>
+       <td>
+           <asp:Label ID="Label5" runat="server" meta:resourcekey="Label5Resource1" Text="Average Closed Time"></asp:Label>
+                                                       </td>
+       <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblAverageClosedTime" runat="server" Text="0" meta:resourcekey="lblAverageClosedTimeResource1"></asp:Label></td>
 
    </tr>
                      <tr>
-                         <td>Fastest Closed Time</td>
-                         <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblFastestClosedTime" runat="server" Text="0"></asp:Label></td>
+                         <td>
+                             <asp:Label ID="Label6" runat="server" meta:resourcekey="Label6Resource1" Text="Fastest Closed Time"></asp:Label>
+                         </td>
+                         <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblFastestClosedTime" runat="server" Text="0" meta:resourcekey="lblFastestClosedTimeResource1"></asp:Label></td>
                      </tr>
                       <tr>
-                         <td>Slowest Closed Time</td>
-                         <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblSlowestClosedTime" runat="server" Text="0"></asp:Label></td>
+                         <td>
+                             <asp:Label ID="Label7" runat="server" meta:resourcekey="Label7Resource1" Text="Slowest Closed Time"></asp:Label>
+                          </td>
+                         <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblSlowestClosedTime" runat="server" Text="0" meta:resourcekey="lblSlowestClosedTimeResource1"></asp:Label></td>
                      </tr>
  <tr>
-                         <td>Total Open Duration </td>
-                         <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblTotalSpentTime" runat="server" Text="0"></asp:Label></td>
+                         <td>
+                             <asp:Label ID="Label8" runat="server" meta:resourcekey="Label8Resource1" Text="Total Open Duration "></asp:Label>
+                         </td>
+                         <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblTotalSpentTime" runat="server" Text="0" meta:resourcekey="lblTotalSpentTimeResource1"></asp:Label></td>
                      </tr>
 
 </table>
                                             
 
                                         </telerik:RadPageView>
-                                          <telerik:RadPageView ID="RadPageView2" runat="server">
+                                          <telerik:RadPageView ID="RadPageView2" runat="server" meta:resourcekey="RadPageView2Resource1" Selected="True">
               <br />
                                                <div >
-                                           <telerik:radgrid id="rgvDetails" runat="server" allowfilteringbycolumn="true"  AutoGenerateColumns="false"  OnNeedDataSource="rgvDetails_NeedDataSource" Skin="Simple"  ActiveItemStyle-Wrap="true" cellspacing="-1" gridlines="Both" OnItemDataBound="rgvDetails_ItemDataBound" ItemStyle-BackColor="LightGray" AlternatingItemStyle-BackColor="LightGray" >
-                                            <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="false"></GroupingSettings>
-                                            <MasterTableView>
-                                                <Columns>
-                                               
-
-                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Ticket_Id" HeaderText="Id" ItemStyle-HorizontalAlign="Center" DataType="System.String"  ></telerik:GridBoundColumn>
-                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Status" HeaderText="Status"  DataType="System.String"></telerik:GridBoundColumn>
-                                               <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="userName" HeaderText="User"  DataType="System.String" ></telerik:GridBoundColumn>
-                                                   
-                                                    <telerik:GridBoundColumn DataField="Type_Name" HeaderText="Type"   ></telerik:GridBoundColumn>
-                                
-                                 <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center"  DataField="Application_Name" HeaderText="Application" DataType="System.String" ></telerik:GridBoundColumn>
-                                
-                                 <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center"   DataField="Priority" HeaderText="Priority"  DataType="System.String" ></telerik:GridBoundColumn>
-                                 <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center"  DataField="Created_Time" HeaderText="Created Time" Visible="false" DataType="System.String"  ></telerik:GridBoundColumn>
-                                                    <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center"  DataField="Updated_Time" HeaderText="Closed"  visible="false" DataType="System.String"></telerik:GridBoundColumn>
-                                                    <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center"  DataField="createdDays" ItemStyle-HorizontalAlign="Center"    HeaderText="Created days(Days)"   DataType="System.String"></telerik:GridBoundColumn>
-                                
-                                                    
-                                                </Columns>
-                                            </MasterTableView>
-                                            <ClientSettings>
-                                                <Resizing AllowColumnResize="false" ResizeGridOnColumnResize="false" AllowResizeToFit="false" />
-                                            </ClientSettings>
+                                           <telerik:radgrid id="rgvDetails" runat="server" allowfilteringbycolumn="True"  AutoGenerateColumns="False"  OnNeedDataSource="rgvDetails_NeedDataSource" Skin="Simple" cellspacing="-1" gridlines="Both" OnItemDataBound="rgvDetails_ItemDataBound" meta:resourcekey="rgvDetailsResource1" >
+                                            <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="False"></GroupingSettings>
+                                               <AlternatingItemStyle BackColor="LightGray" />
+                                               <MasterTableView>
+                                                   <Columns>
+                                                       <telerik:GridBoundColumn DataField="Ticket_Id" FilterControlAltText="Filter Ticket_Id column" HeaderText="Id" meta:resourcekey="GridBoundColumnResource1" UniqueName="Ticket_Id">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                           <ItemStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Status" FilterControlAltText="Filter Status column" HeaderText="Status" meta:resourcekey="GridBoundColumnResource2" UniqueName="Status">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="userName" FilterControlAltText="Filter userName column" HeaderText="User" meta:resourcekey="GridBoundColumnResource3" UniqueName="userName">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Type_Name" FilterControlAltText="Filter Type_Name column" HeaderText="Type" meta:resourcekey="GridBoundColumnResource4" UniqueName="Type_Name">
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Application_Name" FilterControlAltText="Filter Application_Name column" HeaderText="Application" meta:resourcekey="GridBoundColumnResource5" UniqueName="Application_Name">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Priority" FilterControlAltText="Filter Priority column" HeaderText="Priority" meta:resourcekey="GridBoundColumnResource6" UniqueName="Priority">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Created_Time" FilterControlAltText="Filter Created_Time column" HeaderText="Created Time" meta:resourcekey="GridBoundColumnResource7" UniqueName="Created_Time" Visible="False">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Updated_Time" FilterControlAltText="Filter Updated_Time column" HeaderText="Closed" meta:resourcekey="GridBoundColumnResource8" UniqueName="Updated_Time" Visible="False">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="createdDays" FilterControlAltText="Filter createdDays column" HeaderText="Created days(Days)" meta:resourcekey="GridBoundColumnResource9" UniqueName="createdDays">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                           <ItemStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                   </Columns>
+                                               </MasterTableView>
+                                               <ActiveItemStyle Wrap="True" />
+                                               <ItemStyle BackColor="LightGray" />
                                         </telerik:radgrid>
                 
                     </div>
                                           </telerik:RadPageView>
 
-                                         <telerik:RadPageView ID="RadPageView3" runat="server">
+                                         <telerik:RadPageView ID="RadPageView3" runat="server" meta:resourcekey="RadPageView3Resource1">
               <br />
                                                <div >
-                                           <telerik:radgrid id="rgClosedTicket" runat="server" allowfilteringbycolumn="true"  AutoGenerateColumns="false"  OnNeedDataSource="rgClosedTicket_NeedDataSource" Skin="Simple"  ActiveItemStyle-Wrap="true" cellspacing="-1" gridlines="Both" OnItemDataBound="rgClosedTicket_ItemDataBound" ItemStyle-BackColor="LightGray" AlternatingItemStyle-BackColor="LightGray"  >
-                                            <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="false"></GroupingSettings>
-                                            <MasterTableView>
-                                                <Columns>
-                                               
-
-                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Ticket_Id" HeaderText="Id" ItemStyle-HorizontalAlign="Center" DataType="System.String"  ></telerik:GridBoundColumn>
-                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Status" HeaderText="Status" DataType="System.String" ></telerik:GridBoundColumn>
-                                               <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="userName" HeaderText="User" DataType="System.String"  ></telerik:GridBoundColumn>
-                                                   
-                                                    <telerik:GridBoundColumn DataField="Type_Name" HeaderText="Type"   DataType="System.String"></telerik:GridBoundColumn>
-                                
-                                 <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center"  DataField="Application_Name" HeaderText="Application" DataType="System.String" ></telerik:GridBoundColumn>
-                                
-                                 <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center"   DataField="Priority" HeaderText="Priority" DataType="System.String" ></telerik:GridBoundColumn>
-                                 <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center"  DataField="Created_Time" HeaderText="Created Time" DataType="System.String" ></telerik:GridBoundColumn>
-                                                     <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center"  DataField="Updated_Time" HeaderText="Closed At"  ></telerik:GridBoundColumn>
-                                                       <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center" DataField="closedDays" HeaderText="Closed in(Days)" DataType="System.String" ></telerik:GridBoundColumn>
-                                
-                                                    
-                                                </Columns>
-                                            </MasterTableView>
-                                            <ClientSettings>
-                                                <Resizing AllowColumnResize="false" ResizeGridOnColumnResize="false" AllowResizeToFit="false" />
-                                            </ClientSettings>
+                                           <telerik:radgrid id="rgClosedTicket" runat="server" allowfilteringbycolumn="True"  AutoGenerateColumns="False"  OnNeedDataSource="rgClosedTicket_NeedDataSource" Skin="Simple" cellspacing="-1" gridlines="Both" OnItemDataBound="rgClosedTicket_ItemDataBound" meta:resourcekey="rgClosedTicketResource1"  >
+                                            <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="False"></GroupingSettings>
+                                               <AlternatingItemStyle BackColor="LightGray" />
+                                               <MasterTableView>
+                                                   <Columns>
+                                                       <telerik:GridBoundColumn DataField="Ticket_Id" FilterControlAltText="Filter Ticket_Id column" HeaderText="Id" meta:resourcekey="GridBoundColumnResource10" UniqueName="Ticket_Id">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                           <ItemStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Status" FilterControlAltText="Filter Status column" HeaderText="Status" meta:resourcekey="GridBoundColumnResource11" UniqueName="Status">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="userName" FilterControlAltText="Filter userName column" HeaderText="User" meta:resourcekey="GridBoundColumnResource12" UniqueName="userName">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Type_Name" FilterControlAltText="Filter Type_Name column" HeaderText="Type" meta:resourcekey="GridBoundColumnResource13" UniqueName="Type_Name">
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Application_Name" FilterControlAltText="Filter Application_Name column" HeaderText="Application" meta:resourcekey="GridBoundColumnResource14" UniqueName="Application_Name">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Priority" FilterControlAltText="Filter Priority column" HeaderText="Priority" meta:resourcekey="GridBoundColumnResource15" UniqueName="Priority">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Created_Time" FilterControlAltText="Filter Created_Time column" HeaderText="Created Time" meta:resourcekey="GridBoundColumnResource16" UniqueName="Created_Time">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="Updated_Time" FilterControlAltText="Filter Updated_Time column" HeaderText="Closed At" meta:resourcekey="GridBoundColumnResource17" UniqueName="Updated_Time">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                       <telerik:GridBoundColumn DataField="closedDays" FilterControlAltText="Filter closedDays column" HeaderText="Closed in(Days)" meta:resourcekey="GridBoundColumnResource18" UniqueName="closedDays">
+                                                           <HeaderStyle HorizontalAlign="Center" />
+                                                           <ItemStyle HorizontalAlign="Center" />
+                                                       </telerik:GridBoundColumn>
+                                                   </Columns>
+                                               </MasterTableView>
+                                               <ActiveItemStyle Wrap="True" />
+                                               <ItemStyle BackColor="LightGray" />
                                         </telerik:radgrid>
                 
                     </div>

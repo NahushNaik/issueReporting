@@ -159,8 +159,9 @@
                             <div class="copyright pull-right">
                                 &copy;
 							<script>document.write(new Date().getFullYear())</script>
-                                , by Applications Team.
-                            </div>
+                                , 
+                                <asp:Label ID="Label1" runat="server" meta:resourcekey="Label1Resource1" Text="by Applications Team."></asp:Label>
+&nbsp;</div>
                         </div>
                     </footer>
 

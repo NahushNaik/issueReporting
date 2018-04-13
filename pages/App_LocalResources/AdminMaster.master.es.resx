@@ -117,73 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="checkBoxAdminResource1.Text" xml:space="preserve">
-    <value>Administración?</value>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>por el Equipo de Aplicaciones.</value>
   </data>
-  <data name="checkBoxAdminResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="LabelResource1.Text" xml:space="preserve">
-    <value>@sanjeevgroup.com</value>
-  </data>
-  <data name="LabelResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblBuildIdResource1.Text" xml:space="preserve">
-    <value>Label</value>
-  </data>
-  <data name="lblBuildIdResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblErrorResource1.Text" xml:space="preserve">
-    <value>Usuario o contraseña invalido...</value>
-  </data>
-  <data name="lblErrorResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="LoginButtonResource1.Text" xml:space="preserve">
-    <value>Iniciar sesión</value>
-  </data>
-  <data name="LoginButtonResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PageResource1.Title" xml:space="preserve">
-    <value>Iniciar sesión</value>
-  </data>
-  <data name="RequiredFieldValidator1Resource1.ErrorMessage" xml:space="preserve">
-    <value>Ingrese un email valido</value>
-  </data>
-  <data name="RequiredFieldValidator1Resource1.Text" xml:space="preserve">
-    <value>*</value>
-  </data>
-  <data name="RequiredFieldValidator1Resource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="RequiredFieldValidator2Resource1.ErrorMessage" xml:space="preserve">
-    <value>Ingrese una contraseña válida</value>
-  </data>
-  <data name="RequiredFieldValidator2Resource1.Text" xml:space="preserve">
-    <value>*</value>
-  </data>
-  <data name="RequiredFieldValidator2Resource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtPasswordResource1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtPasswordResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtUsernameResource1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="txtUsernameResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ValidationSummary1Resource1.HeaderText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ValidationSummary1Resource1.ToolTip" xml:space="preserve">
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
 </root>

@@ -112,7 +112,9 @@
       <div class="row">
          <div class="col-md-12">
             <div class="col-md-4"> <a runat="server" href="Form_DummyDashboardView.aspx"> </a> <img src="images/sanjeevlogo.png"  style="margin-left:0%;margin-top:8%;background-color:white"></div>
-           <div class="col-md-8">  <h2><b style="color:black">Summary Dashboard</b></h2></div>
+           <div class="col-md-8">  <h2><b style="color:black">
+               <asp:Label ID="Label1" runat="server" meta:resourcekey="Label1Resource1" Text="Summary Dashboard"></asp:Label>
+               </b></h2></div>
             
                  <hr />
             <br />
@@ -124,16 +126,23 @@
           <table id="operator"  style=" color:black; font-size:15px;height:100px;" >
     <tr >
         <th></th>
-        <th scope="col">Today</th>
+        <th scope="col">
+            <asp:Label ID="Label2" runat="server" meta:resourcekey="Label2Resource1" Text="Today"></asp:Label>
+        </th>
         
        
-        <th scope="col">Within 3 Days
+        <th scope="col">
+            <asp:Label ID="Label3" runat="server" meta:resourcekey="Label3Resource1" Text="Within 3 Days"></asp:Label>
+&nbsp;</th>
+        <th scope="col">
+            <asp:Label ID="Label4" runat="server" meta:resourcekey="Label4Resource1" Text="Older than 3 days"></asp:Label>
         </th>
-        <th scope="col">Older than 3 days</th>
         
     </tr>
     <tr >
-        <th scope="row">Created</th>
+        <th scope="row">
+            <asp:Label ID="Label5" runat="server" meta:resourcekey="Label5Resource1" Text="Created"></asp:Label>
+        </th>
         <td align="center"><asp:HyperLink ID="lbl_RecentOpen" ToolTip="Created Today"    runat="server"  Text="Home"  NavigateUrl="formDummyTicket_DurationView.aspx?type=recent&status=open" meta:resourcekey="lbl_RecentOpenResource1"></asp:HyperLink>
            </td>
         <td align="center"><asp:HyperLink ID="lbl_WeekOpen" ToolTip="Created in last 3 days"   runat="server"  Text="Home"  NavigateUrl="formDummyTicket_DurationView.aspx?type=withinWeek&status=open" meta:resourcekey="lbl_WeekOpenResource1"></asp:HyperLink>
@@ -142,7 +151,9 @@
            </td>
     </tr>
     <tr  >
-        <th scope="row">Close</th>
+        <th scope="row">
+            <asp:Label ID="Label6" runat="server" meta:resourcekey="Label6Resource1" Text="Close"></asp:Label>
+        </th>
          <td align="center">
              <asp:HyperLink ID="lbl_RecentClose" ToolTip="Closed Today"    runat="server"  Text="Home"  NavigateUrl="formDummyTicket_DurationView.aspx?type=recent&status=close" meta:resourcekey="lbl_RecentCloseResource1"></asp:HyperLink>
             </td>
@@ -238,34 +249,48 @@
         <table id="tableSummary"  style="background:white; color:black; font-size:15px;height:100px;" >
                  
    <tr>
-       <td>Total Tickets</td>
+       <td>
+           <asp:Label ID="Label13" runat="server" meta:resourcekey="Label13Resource1" Text="Total Tickets"></asp:Label>
+       </td>
        <td style="font-size:30px;font-weight:bold">
            <asp:Label ID="lblTotalTickets" runat="server" Text="0" meta:resourcekey="lblTotalTicketsResource1"></asp:Label></td>
 
    </tr>
                      <tr>
-                         <td>Open</td>
+                         <td>
+                             <asp:Label ID="Label12" runat="server" meta:resourcekey="Label12Resource1" Text="Open"></asp:Label>
+                         </td>
                          <td style="font-size:30px;font-weight:bold"><asp:Label ID="lblOpenTickets" runat="server" Text="0" meta:resourcekey="lblOpenTicketsResource1"></asp:Label></td>
                      </tr>
                       <tr>
-                         <td>Closed</td>
+                         <td>
+                             <asp:Label ID="Label11" runat="server" meta:resourcekey="Label11Resource1" Text="Closed"></asp:Label>
+                          </td>
                          <td style="font-size:30px;font-weight:bold"><asp:Label ID="lblCloseTickets" runat="server" Text="0" meta:resourcekey="lblCloseTicketsResource1"></asp:Label></td>
                      </tr>
                                                    <tr>
-       <td>Average Closed Time</td>
+       <td>
+           <asp:Label ID="Label10" runat="server" meta:resourcekey="Label10Resource1" Text="Average Closed Time"></asp:Label>
+                                                       </td>
        <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblAverageClosedTime" runat="server" Text="0" meta:resourcekey="lblAverageClosedTimeResource1"></asp:Label></td>
 
    </tr>
                      <tr>
-                         <td>Fastest Closed Time</td>
+                         <td>
+                             <asp:Label ID="Label9" runat="server" meta:resourcekey="Label9Resource1" Text="Fastest Closed Time"></asp:Label>
+                         </td>
                          <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblFastestClosedTime" runat="server" Text="0" meta:resourcekey="lblFastestClosedTimeResource1"></asp:Label></td>
                      </tr>
                       <tr>
-                         <td>Slowest Closed Time</td>
+                         <td>
+                             <asp:Label ID="Label8" runat="server" meta:resourcekey="Label8Resource1" Text="Slowest Closed Time"></asp:Label>
+                          </td>
                          <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblSlowestClosedTime" runat="server" Text="0" meta:resourcekey="lblSlowestClosedTimeResource1"></asp:Label></td>
                      </tr>
  <tr>
-                         <td>Total Open Duration </td>
+                         <td>
+                             <asp:Label ID="Label7" runat="server" meta:resourcekey="Label7Resource1" Text="Total Open Duration"></asp:Label>
+&nbsp;</td>
                          <td style="font-size:30px;font-weight:bold"> <asp:Label ID="lblTotalSpentTime" runat="server" Text="0" meta:resourcekey="lblTotalSpentTimeResource1"></asp:Label></td>
                      </tr>
 

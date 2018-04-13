@@ -5,7 +5,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body1" runat="Server">
 
-<a class="navbar-brand" href="#">Dashboard</a>
+<a class="navbar-brand" href="#">
+<asp:Label ID="Label1" runat="server" meta:resourcekey="Label1Resource1" Text="Dashboard"></asp:Label>
+</a>&nbsp;
            
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Body2" runat="Server">
@@ -18,7 +20,9 @@
                             <div class="card">
                                 <div class="header">
                                     <h4 class="title">Tickets</h4>
-                                    <p class="category">Recent 5 tickets</p>
+                                    <p class="category">
+                                        <asp:Label ID="Label2" runat="server" meta:resourcekey="Label2Resource1" Text="Recent 5 tickets"></asp:Label>
+                                    </p>
                                 </div>
 
                                 <div style="margin: 10px 0px 0px 20px;" class="title">
@@ -30,7 +34,7 @@
                                 </div>
 
                                 <div class="content table-responsive table-full-width">
-                                    <telerik:radgrid id="RadGrid1" runat="server" allowfilteringbycolumn="True" allowpaging="True" onitemdatabound="RadGrid1_ItemDataBound" skin="Bootstrap" cellspacing="-1" gridlines="Both" pagesize="5">
+                                    <telerik:radgrid id="RadGrid1" runat="server" allowfilteringbycolumn="True" allowpaging="True" onitemdatabound="RadGrid1_ItemDataBound" skin="Bootstrap" cellspacing="-1" gridlines="Both" pagesize="5" meta:resourcekey="RadGrid1Resource1">
                                             <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="false"></GroupingSettings>
                                             <MasterTableView>
                                                 <Columns>
@@ -44,7 +48,9 @@
                                         </telerik:radgrid>
                                 </div>
                                 <div class="stats">
-                                    <i class="ti-list-ol"></i><a href="AdminReport.aspx?type=closed" style="color: black;" onclick="skm_LockScreen('We are processing your request...')">View List</a>
+                                    <a href="AdminReport.aspx?type=closed" style="color: black;" onclick="skm_LockScreen('We are processing your request...')">
+                                    <asp:Label ID="Label3" runat="server" meta:resourcekey="Label3Resource1" Text="View List"></asp:Label>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -57,26 +63,28 @@
                         <div class="col-md-6">
                             <div class="card">
                                 <div class="header">
-                                    <h4 class="title">Ticket Statistics</h4>
-                                    <p class="category">Last 6 months overview</p>
+                                    <h4 class="title">
+                                        <asp:Label ID="Label4" runat="server" meta:resourcekey="Label4Resource1" Text="Ticket Statistics"></asp:Label>
+                                    </h4>
+                                    <p class="category">
+                                        <asp:Label ID="Label5" runat="server" meta:resourcekey="Label5Resource1" Text="Last 6 months overview"></asp:Label>
+                                    </p>
                                 </div>
                                 <div class="content">
                                     <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
 
                                     <div class="footer">
                                         <div class="chart-legend">
-                                            <i class="fa fa-circle text-info"></i>Closed
-									   
-												<i class="fa fa-circle text-danger"></i>Open
-									   
-												<i class="fa fa-circle text-warning"></i>Discarded
+                                            <i class="fa fa-circle text-info"></i>
+                                            <asp:Label ID="Label6" runat="server" meta:resourcekey="Label6Resource1" Text="Closed"></asp:Label>
+&nbsp;<i class="fa fa-circle text-danger"></i><asp:Label ID="Label7" runat="server" meta:resourcekey="Label7Resource1" Text="Open"></asp:Label>
+&nbsp;<i class="fa fa-circle text-warning"></i><asp:Label ID="Label8" runat="server" meta:resourcekey="Label8Resource1" Text="Discarded"></asp:Label>
 								   
                                         </div>
                                         <hr>
                                         <div class="stats">
-                                            <i class="ti-timer"></i>Last ticket created 3 days ago...
-								   
-                                        </div>
+                                            <asp:Label ID="Label9" runat="server" meta:resourcekey="Label9Resource1" Text="Last ticket created 3 days ago"></asp:Label>
+                                            ...</div>
                                     </div>
                                 </div>
                             </div>
@@ -84,19 +92,25 @@
                         <div class="col-md-6">
                             <div class="card ">
                                 <div class="header">
-                                    <h4 class="title">Tickets Creation Overview</h4>
-                                    <p class="category">Last 6 months overview</p>
+                                    <h4 class="title">
+                                        <asp:Label ID="Label10" runat="server" meta:resourcekey="Label10Resource1" Text="Tickets Creation Overview"></asp:Label>
+                                    </h4>
+                                    <p class="category">
+                                        <asp:Label ID="Label11" runat="server" meta:resourcekey="Label11Resource1" Text="Last 6 months overview"></asp:Label>
+                                    </p>
                                 </div>
                                 <div class="content">
                                     <div id="chartActivity" class="ct-chart"></div>
 
                                     <div class="footer">
                                         <div class="chart-legend">
-                                            <i class="fa fa-circle text-info"></i>Ticket Count								   
+                                            <i class="fa fa-circle text-info"></i>
+                                            <asp:Label ID="Label12" runat="server" meta:resourcekey="Label12Resource1" Text="Ticket Count"></asp:Label>
                                         </div>
                                         <hr>
                                         <div class="stats">
-                                            <i class="ti-check"></i>Total created in each month...							   
+                                            <i class="ti-check"></i>
+                                            <asp:Label ID="Label13" runat="server" meta:resourcekey="Label13Resource1" Text="Total created in each month... "></asp:Label>
                                         </div>
                                     </div>
                                 </div>
