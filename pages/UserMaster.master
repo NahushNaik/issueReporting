@@ -50,8 +50,6 @@
                         <div class="logo">
                             <center>
                                 <a  id="logoLink"  runat="server" href="UserDash.aspx"><img src="images/Aadhaar-3.jpg" width="120px" alt=""/></a>
-                               
-                                
                             </center>
 
                         </div>
@@ -60,43 +58,41 @@
                             <li>
                                 <a id="dashboardLink" runat="server" href="UserDash.aspx">
                                     <i class="ti-panel"></i>
-                                    <p>Dashboard</p>
+                                    <p>
+                                        <asp:Label ID="Label1" runat="server" Text="Dashboard" meta:resourcekey="Label1Resource1"></asp:Label></p>
                                 </a>
                             </li>
 
 
                              <li id="liMaster" runat="server" visible="false" class="dropdown">
 
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="   ti-view-list-alt"></i>
-                                    <p>Master's &nbsp <span class="caret"></span></p>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="ti-view-list-alt"></i>
+                                    <p>
+                                 <asp:Label ID="Label2" runat="server" Text="master's" meta:resourcekey="Label2Resource1"></asp:Label> &nbsp <span class="caret"></span></p>
                                 </a>
                                 <ul class="dropdown-menu" role="menu">
 
                                     <li><a href="Form_Type_Master.aspx"><i class="ti-map" style="color: black"></i>
-                                        Type
+                                        <asp:Label ID="Label3" runat="server" Text="Type" meta:resourcekey="Label3Resource1"></asp:Label>
                                     </a></li>
                                      <li><a href="Form_Application_Master.aspx"><i class="ti-credit-card" style="color: black"></i>
-                                        Application
+                                        <asp:Label ID="Label4" runat="server" Text="Application" meta:resourcekey="Label4Resource1"></asp:Label>
                                     </a></li>
                                      <li><a href="Form_Issue_Master.aspx"><i class="ti-face-sad" style="color: black"></i>
-                                        Issue
+                                        <asp:Label ID="Label5" runat="server" Text="Issue" meta:resourcekey="Label5Resource1"></asp:Label>
                                     </a></li>
                                      <li><a href="Form_User_Master.aspx"><i class="ti-user" style="color: black"></i>
-                                        User
+                                        <asp:Label ID="Label6" runat="server" Text="User" meta:resourcekey="Label6Resource1"></asp:Label>
                                     </a></li>
                                     <li><a href="Form_Department_Master.aspx"><i class="ti-layout-grid3" style="color: black"></i>
-                                        Department
+                                        <asp:Label ID="Label7" runat="server" Text="Department" meta:resourcekey="Label7Resource1"></asp:Label>
                                     </a></li>
                                     <li><a href="Form_Master_To.aspx"><i class="ti-email" style="color: black"></i>
-                                       To Mail 
+                                      <asp:Label ID="Label8" runat="server" Text="To mail" meta:resourcekey="Label8Resource1"></asp:Label>  
                                     </a></li>
                                     <li><a href="Form_Master_CC.aspx"><i class="ti-email" style="color: black"></i>
-                                        CC Mail
+                                        <asp:Label ID="Label9" runat="server" Text="CC Mail" meta:resourcekey="Label9Resource1"></asp:Label>
                                     </a></li>
-
-
-
-                                    
 
 
 
@@ -106,32 +102,37 @@
                             <li id="userProfile" runat="server">
                                 <a href="UserProfile.aspx">
                                     <i class="ti-user"></i>
-                                    <p>User Profile</p>
+                                    <p>
+                                        <asp:Label ID="Label10" runat="server" Text="User Profile" meta:resourcekey="Label10Resource1"></asp:Label></p>
                                 </a>
                             </li>
                             <li id="reports" runat="server">
                                 <a href="UserTicketReports.aspx">
                                     <i class="ti-view-list-alt"></i>
-                                    <p>Reports</p>
+                                    <p><asp:Label ID="Label11" runat="server" Text="Reports" meta:resourcekey="Label11Resource1"></asp:Label>
+                                    </p>
                                 </a>
                             </li>
                             <li id="ticketAdd" runat="server">
                                 <a href="UserTicketAdd.aspx">
                                     <i class="ti-ticket"></i>
-                                    <p>New Ticket</p>
+                                    <p>
+                                        <asp:Label ID="Label12" runat="server" Text="New Ticket" meta:resourcekey="Label12Resource1"></asp:Label></p>
                                 </a>
                             </li>
                             <li id="viewStatus" runat="server" visible="false">
                                 <a href="ViewTicket_Admin.aspx">
                                     <i class="ti-target"></i>
-                                    <p>Manage Ticket</p>
+                                    <p>
+                                        <asp:Label ID="Label13" runat="server" Text="Manage Ticket" meta:resourcekey="Label13Resource1"></asp:Label></p>
                                 </a>
                             </li>
 
                               <li id="li_Feedback" runat="server" >
                                 <a id="feedback_Link" runat="server" href="Form_FeedbackMaster.aspx">
                                     <i class="ti-comment-alt"></i>
-                                    <p>User Feedback</p>
+                                    <p>
+                                        <asp:Label ID="Label14" runat="server" Text="User Feedback" meta:resourcekey="Label14Resource1"></asp:Label></p>
                                 </a>
                             </li>
 
@@ -139,7 +140,8 @@
                              <li id="logMaster" runat="server" visible="false" >
                                 <a  runat="server" href="viewTicketLogs.aspx">
                                     <i class="ti-files"></i>
-                                    <p>Ticket Log</p>
+                                    <p>
+                                        <asp:Label ID="Label15" runat="server" Text="Ticket Log" meta:resourcekey="Label15Resource1"></asp:Label></p>
                                 </a>
                             </li>
 
@@ -179,8 +181,8 @@
                                         <a id="userName" runat="server" href="UserProfile.aspx">
                                             <i class="ti-user"></i>
                                             <p>
-                                                <asp:Label ID="lblUserName" runat="server" Text="User"></asp:Label>
-                                                <asp:Label ID="lbl_ISadmin" runat="server"></asp:Label>
+                                                <asp:Label ID="lblUserName" runat="server" Text="User" meta:resourcekey="lblUserNameResource1"></asp:Label>
+                                                <asp:Label ID="lbl_ISadmin" runat="server" meta:resourcekey="lbl_ISadminResource1"></asp:Label>
                                                  
                                             </p>
                                         </a>
@@ -188,7 +190,8 @@
                                     <li>
                                         <a href="LogOut.aspx">
                                             <i class="ti-close"></i>
-                                            <p>Logout</p>
+                                            <p>
+                                                <asp:Label ID="Label16" runat="server" Text="Logout" meta:resourcekey="Label16Resource1"></asp:Label></p>
                                         </a>
                                     </li>
 
@@ -207,7 +210,7 @@
                             <div class="copyright pull-right">
                                 &copy;
 							<script>document.write(new Date().getFullYear())</script>
-                                , by Applications Team.
+                                , <asp:Label ID="Label17" runat="server" Text="by Applications Team." meta:resourcekey="Label17Resource1"></asp:Label>
                             </div>
                         </div>
                     </footer>

@@ -51,15 +51,15 @@ public partial class Login : System.Web.UI.Page
 
 
         //Validate sanjeev group user
-/*        if (user.Contains("@sanjeevgroup.com"))
-        {
-            userDb = user;
-        }
-        else
-        {
-            user = user + "@sanjeevgroup.com";
-        }
-*/
+        //if (user.Contains("@sanjeevgroup.com"))
+        //{
+        //    userDb = user;
+        //}
+        //else
+        //{
+        //    user = user + "@sanjeevgroup.com";
+        //}
+
         try
         {
             string value = System.Configuration.ConfigurationManager.AppSettings["demoMode"];
@@ -140,6 +140,8 @@ public partial class Login : System.Web.UI.Page
             {
                 Response.Redirect("UserDash.aspx");
             }
+
+
         }
         else
         {

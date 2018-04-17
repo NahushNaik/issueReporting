@@ -21,7 +21,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body1" runat="Server">
     <a class="navbar-brand" href="#">
-    <asp:Label ID="Label12" runat="server" Text="Issue Master"></asp:Label>
+    <asp:Label ID="Label12" runat="server" meta:resourcekey="Label12Resource1" Text="Issue Master"></asp:Label>
     </a>&nbsp;
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Body2" runat="Server">
@@ -32,7 +32,7 @@
                                 <div class="card">
                                     <div class="header">
                                         <h4 class="title">
-                                            <asp:Label ID="Label11" runat="server" Text="Issue Master"></asp:Label>
+                                            <asp:Label ID="Label11" runat="server" meta:resourcekey="Label11Resource1" Text="Issue Master"></asp:Label>
                                         </h4>
                                         <p class="category"></p>
                                     </div>

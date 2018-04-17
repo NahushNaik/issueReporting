@@ -40,15 +40,10 @@ public partial class pages_LogOut : System.Web.UI.Page
             Session.Clear();
             Session.RemoveAll();
         }
-
-
-
-
     }
 
     protected void btnLogin_Click(object sender, EventArgs e)
     {
-        
-        Response.Redirect("Login.aspx");
+        Response.Redirect("MyLogin.aspx");
     }
 }

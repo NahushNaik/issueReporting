@@ -29,7 +29,7 @@ public partial class pages_UserDash : System.Web.UI.Page
         {
             //Check user profile status
             bool profileStatus = CheckProfileIsValid(DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]));
-            UserId = DBNulls.StringValue(Session[PublicMethods.ConstUserId].ToString());
+         //   UserId = DBNulls.StringValue(Session[PublicMethods.ConstUserId].ToString());
             if (!profileStatus)
             {
                 Response.Redirect("UserProfile.aspx");

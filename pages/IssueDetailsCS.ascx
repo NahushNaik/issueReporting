@@ -4,7 +4,8 @@
     style="border-collapse: collapse;">
     <tr class="EditFormHeader">
         <td colspan="2">
-            <b>Issue Details</b>
+            <b>
+            <asp:Label ID="Label1" runat="server" Text="Issue Details" meta:resourcekey="Label1Resource1"></asp:Label></b>
         </td>
     </tr>
     <tr>
@@ -12,27 +13,29 @@
             <table id="Table3" width="450px" border="0" class="module">
                
                  <tr>
-                    <td>Issue Details:
+                    <td>
+                        <asp:Label ID="Label2" runat="server" Text="Issue Details:" meta:resourcekey="Label2Resource1"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox2" Text='<%# Bind( "Issue_Name") %>' runat="server" TabIndex="8">
-                        </asp:TextBox>
+                        <asp:TextBox ID="TextBox2" Text='<%# Bind( "Issue_Name") %>' runat="server" TabIndex="8" meta:resourcekey="TextBox2Resource1"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
-                    <td>Type
+                    <td>
+                        <asp:Label ID="Label3" runat="server" Text="Type" meta:resourcekey="Label3Resource1"></asp:Label>
                     </td>
                     <td>
                         <asp:DropDownList ID="ddlType" runat="server" SelectedValue='<%# DataBinder.Eval(Container, "DataItem.Type_Name") %>'
                            
-                            AppendDataBoundItems="True">
-                            <asp:ListItem Selected="True" Text="Select" Value="">
+                            AppendDataBoundItems="True" meta:resourcekey="ddlTypeResource1">
+                            <asp:ListItem Selected="True" Text="Select" Value="" meta:resourcekey="ListItemResource1">
                             </asp:ListItem>
                         </asp:DropDownList>
                     </td>
                 </tr>
                <tr>
-                    <td>Application
+                    <td>
+                        <asp:Label ID="Label4" runat="server" Text="Application" meta:resourcekey="Label4Resource1"></asp:Label>
                     </td>
                   <%--  <td>
                         <asp:DropDownList ID="ddlApplication" runat="server" SelectedValue='<%# DataBinder.Eval(Container, "DataItem.Application_Id") %>'
@@ -52,9 +55,9 @@
     <tr>
         <td align="right" colspan="2">
             <asp:Button ID="btnUpdate" Text='<%# (Container is GridEditFormInsertItem) ? "Insert" : "Update" %>'
-                runat="server" CommandName='<%# (Container is GridEditFormInsertItem) ? "PerformInsert" : "Update" %>'></asp:Button>&nbsp;
+                runat="server" CommandName='<%# (Container is GridEditFormInsertItem) ? "PerformInsert" : "Update" %>' meta:resourcekey="btnUpdateResource1"></asp:Button>&nbsp;
                                     <asp:Button ID="btnCancel" Text="Cancel" runat="server" CausesValidation="False"
-                                        CommandName="Cancel"></asp:Button>
+                                        CommandName="Cancel" meta:resourcekey="btnCancelResource1"></asp:Button>
         </td>
     </tr>
 </table>

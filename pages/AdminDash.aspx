@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body1" runat="Server">
 
-<a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#">
 <asp:Label ID="Label1" runat="server" meta:resourcekey="Label1Resource1" Text="Dashboard"></asp:Label>
 </a>&nbsp;
            
@@ -19,7 +19,9 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="header">
-                                    <h4 class="title">Tickets</h4>
+                                    <h4 class="title">
+                                        <asp:Label ID="Label14" runat="server" Text="Tickets" meta:resourcekey="Label14Resource1"></asp:Label>
+                                    </h4>
                                     <p class="category">
                                         <asp:Label ID="Label2" runat="server" meta:resourcekey="Label2Resource1" Text="Recent 5 tickets"></asp:Label>
                                     </p>
@@ -38,7 +40,7 @@
                                             <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="false"></GroupingSettings>
                                             <MasterTableView>
                                                 <Columns>
-                                                    <telerik:GridHyperLinkColumn AllowSorting="False" FilterControlAltText="Filter view column" ImageUrl="images/Viewfolder.png" Text="View" UniqueName="view">
+                                                    <telerik:GridHyperLinkColumn AllowSorting="False" FilterControlAltText="Filter view column" ImageUrl="images/Viewfolder.png" Text="View" UniqueName="view" meta:resourcekey="GridHyperLinkColumnResource1">
                                                     </telerik:GridHyperLinkColumn>
                                                 </Columns>
                                             </MasterTableView>

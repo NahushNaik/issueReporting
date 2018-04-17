@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" culture="auto" meta:resourcekey="PageResource1" uiculture="auto" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
 
 <!DOCTYPE html>
 
@@ -37,19 +37,19 @@
                                     </div>
                                     <div class="error">
                                         
-                                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="login" meta:resourcekey="ValidationSummary1Resource1" />
-                                        <asp:Label ID="lblError" runat="server" Text="Invalid user name or password..." Visible="False" meta:resourcekey="lblErrorResource1"></asp:Label>
+                                        <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="login" />
+                                        <asp:Label ID="lblError" runat="server" Text="Invalid user name or password..." Visible="false"></asp:Label>
                                     </div>
                                     <div class="form loginBox">
-                                        <asp:TextBox ID="txtUsername" class="form-control" runat="server" placeholder="Email@sanjeevgroup.com" ValidationGroup="login" meta:resourcekey="txtUsernameResource1" ></asp:TextBox>  <label></label>
-                                        <asp:Label  Text="@sanjeevgroup.com" runat="server" ForeColor="Red" meta:resourcekey="LabelResource1" ></asp:Label>
-                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsername" Display="Dynamic" ErrorMessage="Enter Valid Email" ForeColor="#FF3300" ValidationGroup="login" meta:resourcekey="RequiredFieldValidator1Resource1">*</asp:RequiredFieldValidator>
+                                        <asp:TextBox ID="txtUsername" class="form-control" runat="server" placeholder="Email@sanjeevgroup.com" ValidationGroup="login" > </asp:TextBox>  <label></label>
+                                        <asp:Label  Text="@sanjeevgroup.com" runat="server" ForeColor="Red" ></asp:Label>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsername" Display="Dynamic" ErrorMessage="Enter Valid Email" ForeColor="#FF3300" ValidationGroup="login">*</asp:RequiredFieldValidator>
                                       
-                                        <asp:TextBox ID="txtPassword" runat="server" class="form-control" type="password" placeholder="Password" ValidationGroup="login" meta:resourcekey="txtPasswordResource1"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter Valid Password" Display="Dynamic" ControlToValidate="txtPassword" ForeColor="#FF3300" ValidationGroup="login" meta:resourcekey="RequiredFieldValidator2Resource1">*</asp:RequiredFieldValidator>
-                                        <asp:Button ID="LoginButton" runat="server" Text="Login" class="btn btn-default btn-login" ValidationGroup="login" OnClick="LoginButton_Click" meta:resourcekey="LoginButtonResource1" />
+                                        <asp:TextBox ID="txtPassword" runat="server" class="form-control" type="password" placeholder="Password" ValidationGroup="login"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Enter Valid Password" Display="Dynamic" ControlToValidate="txtPassword" ForeColor="#FF3300" ValidationGroup="login">*</asp:RequiredFieldValidator>
+                                        <asp:Button ID="LoginButton" runat="server" Text="Login" class="btn btn-default btn-login" ValidationGroup="login" OnClick="LoginButton_Click" />
                                          <br />
-                                         <asp:CheckBox style="margin-right:10px" ID="checkBoxAdmin" runat="server"  Text="  Admin?" OnCheckedChanged="checkBoxAdmin_CheckedChanged"   Font-Names="Serif"       Font-Size="Large" meta:resourcekey="checkBoxAdminResource1"   />
+                                         <asp:CheckBox style="margin-right:10px" ID="checkBoxAdmin" runat="server"  Text="  Admin?" OnCheckedChanged="checkBoxAdmin_CheckedChanged"  AutoPostBack="false"   Font-Names="Serif"       Font-Size="Large"   />
                                     </div>
                                 </div>
                             </div>
@@ -58,7 +58,7 @@
                             <div class="forgot login-footer">
                                 <span>
                                     <a href="javascript: showRegisterForm();"></a>
-                                    <asp:Label ID="lblBuildId" runat="server" Text="Label" meta:resourcekey="lblBuildIdResource1"></asp:Label></span>
+                                    <asp:Label ID="lblBuildId" runat="server" Text="Label"></asp:Label></span>
                             </div>
                         </div>
                     </div>

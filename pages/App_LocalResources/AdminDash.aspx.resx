@@ -630,4 +630,7 @@
   <data name="RadGrid1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label14Resource1.Text" xml:space="preserve">
+    <value>Tickets</value>
+  </data>
 </root>

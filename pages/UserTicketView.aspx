@@ -7,7 +7,8 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Body1" runat="Server">
-    <a class="navbar-brand" href="#">View Ticket</a>
+    <a class="navbar-brand" href="#">
+        <asp:Label ID="Label3" runat="server" Text="View Ticket"></asp:Label></a>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Body2" runat="Server">
 
@@ -45,7 +46,8 @@
                 <div class="col-lg-11 col-md-10">
                     <div class="card">
                         <div class="header">
-                            <h4 class="title">View Ticket :
+                            <h4 class="title">
+                                <asp:Label ID="Label6" runat="server" Text="View Ticket :"></asp:Label>
                                 <asp:Label ID="lblStatus" runat="server" Text="Label"></asp:Label></h4>
                         </div>
                         <div class="content">
@@ -54,7 +56,8 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Ticket ID</label>
+                                            <label for="exampleInputEmail1">
+                                                <asp:Label ID="Label7" runat="server" Text="Ticket ID"></asp:Label></label>
                                             <asp:TextBox ID="TicketID" runat="server" CssClass="form-control border-input" ReadOnly="true" ForeColor="Green"></asp:TextBox>
                                         </div>
                                     </div>
@@ -63,13 +66,15 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Type</label>
+                                            <label><asp:Label ID="Label8" runat="server" Text="Type"></asp:Label></label>
+                                            
                                             <asp:DropDownList ID="drpDownType" runat="server" CssClass="form-control border-input" AutoPostBack="true" Enabled="false"></asp:DropDownList>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Application</label>
+                                            <label>
+                                            <asp:Label ID="Label9" runat="server" Text="Application"></asp:Label></label>
                                             <asp:DropDownList ID="drpDownApplication" runat="server" CssClass="form-control border-input" AutoPostBack="true" Enabled="false"></asp:DropDownList>
                                         </div>
                                     </div>
@@ -94,7 +99,8 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Issue</label>
+                                            <label>
+                                                <asp:Label ID="Label10" runat="server" Text="Issue"></asp:Label></label>
                                             <asp:DropDownList ID="DrpIssueType" runat="server" CssClass="form-control border-input" Enabled="false">
                                             </asp:DropDownList>
                                         </div>
@@ -104,7 +110,8 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Issue Details</label>
+                                            <label>
+                                                <asp:Label ID="Label11" runat="server" Text="Issue Details"></asp:Label></label>
                                             <asp:TextBox ID="IssueDetail" runat="server" CssClass="form-control border-input" TextMode="MultiLine" ReadOnly="true">Issue Details</asp:TextBox>
                                         </div>
                                     </div>
@@ -113,7 +120,8 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Priority</label>
+                                            <label>
+                                                <asp:Label ID="Label12" runat="server" Text="Priority"></asp:Label></label>
                                             <asp:DropDownList ID="DrpPriority" runat="server" CssClass="form-control border-input" Enabled="false">
                                             </asp:DropDownList>
                                         </div>
@@ -124,7 +132,8 @@
                                 <div class="row">
                                     <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Status</label>
+                                            <label>
+                                                <asp:Label ID="Label13" runat="server" Text="Status"></asp:Label></label>
                                             <asp:DropDownList ID="drpStatus" runat="server" CssClass="form-control border-input" Enabled="false">
                                             </asp:DropDownList>
                                         </div>
@@ -134,7 +143,8 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Document</label>
+                                            <label>
+                                                <asp:Label ID="Label14" runat="server" Text="Document"></asp:Label></label>
                                             <asp:TextBox ID="txtFileName" runat="server" CssClass="form-control border-input" ReadOnly="true">No File</asp:TextBox>
 
                                             <%--  <asp:Button ID="FileDownload" runat="server" CssClass="btn" Text="Download" OnClick="FileDownload_Click">
@@ -185,7 +195,8 @@
                                 <div class="row">
                                     <div class="col-md-9">
                                         <div class="form-group">
-                                            <label>Comments</label>
+                                            <label>
+                                                <asp:Label ID="Label15" runat="server" Text="Comments"></asp:Label></label>
                                             <asp:Label ID="Label1" runat="server" ForeColor="Red" Text="*(Comment is mandatory for updating comment)"></asp:Label>
                                             <asp:TextBox ID="txt_Comments" runat="server" ValidationGroup="Check1" Height="100%" CssClass="form-control border-input" TextMode="MultiLine"></asp:TextBox>
 
@@ -210,7 +221,8 @@
 
 
 
-                                <h3 style="text-decoration: underline;">Comments:</h3>
+                                <h3 style="text-decoration: underline;">
+                                    <asp:Label ID="Label16" runat="server" Text="Comments:"></asp:Label></h3>
                                 <asp:Repeater ID="Repeater1" runat="server">
                                     <ItemTemplate>
 

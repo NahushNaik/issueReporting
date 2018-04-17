@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="LogOut.aspx.cs" Inherits="pages_LogOut" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="LogOut.aspx.cs" Inherits="pages_LogOut" culture="auto" meta:resourcekey="PageResource1" uiculture="auto" %>
 
 <!DOCTYPE html>
 
@@ -16,11 +16,12 @@
         <div >
             <p>
 
-                <asp:Label ID="Label1" runat="server" Text="You have successfully logged out."></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="You have successfully logged out." meta:resourcekey="Label1Resource1"></asp:Label>
             </p>
-            <h3>Thank You for using AADHAR system.</h3>
+            <h3>
+            <asp:Label ID="Label2" runat="server" Text="Thank You for using AADHAR system." meta:resourcekey="Label2Resource1"></asp:Label></h3>
         <br />
-           <asp:Button ID="btnLogin" runat="server" Text="Login Again..." OnClick="btnLogin_Click" />
+           <asp:Button ID="btnLogin" runat="server" Text="Login Again..." OnClick="btnLogin_Click" meta:resourcekey="btnLoginResource1" />
         </div>
     </form>
 </body>

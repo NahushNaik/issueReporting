@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#"  AutoEventWireup="true" CodeFile="userDetails_FeedbackForm.aspx.cs" Inherits="pages_userDetails_FeedbackForm"  EnableViewState="true" %>
+﻿<%@ Page Title="" Language="C#"  AutoEventWireup="true" CodeFile="userDetails_FeedbackForm.aspx.cs" Inherits="pages_userDetails_FeedbackForm"  EnableViewState="true" culture="auto" meta:resourcekey="PageResource2" uiculture="auto" %>
 
 
 <%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
@@ -10,11 +10,6 @@
 <html>
 <head>
 <title>Feedback</title>
-
-
-
-
-
 
 
 
@@ -252,7 +247,8 @@ background-color: #ECECEC;
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle">
-                                <span class="sr-only">Toggle navigation</span>
+                                <span class="sr-only">
+                                    <asp:Label ID="Label1" runat="server" Text="Toggle navigation" meta:resourcekey="Label1Resource1"></asp:Label></span>
                                 <span class="icon-bar bar1"></span>
                                 <span class="icon-bar bar2"></span>
                                 <span class="icon-bar bar3"></span>
@@ -301,8 +297,8 @@ background-color: #ECECEC;
                 <tr>
                     <td bgcolor="#ffffff" align="center" valign="top" style="padding: 40px 20px 20px 20px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: 'lato', helvetica, arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; line-height: 48px;">
                     	<%--<img src="http://sanjeevauto.com/wp-content/uploads/2017/05/logo.png" alt="sanjeev group" style="float: inline-start;width: 45%;margin-top:15px">--%>
-                       <center> <B style="margin-left: 60PX;">Feedback</B></center>
-                            <center> <asp:Image ID="statusImg" style="margin-left: 50px;" runat="server"></asp:Image>  </center>
+                       <center> <B style="margin-left: 60PX;"><asp:Label ID="Label3" runat="server" Text="Feedback" meta:resourcekey="Label3Resource1"></asp:Label></B></center>
+                            <center> <asp:Image ID="statusImg" style="margin-left: 50px;" runat="server" meta:resourcekey="statusImgResource1"></asp:Image>  </center>
                     	<br>
 
 
@@ -331,9 +327,11 @@ background-color: #ECECEC;
                 <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 40px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
 
                       <p style="margin: 0;color:red">
-                    <asp:Label ID="lblFeedback" runat="server" Visible="false" Text="Your Feedback is already submitted."></asp:Label></p>
-                  <p style="margin: 0;">Hello Sir/Ma'am.</p>
-                      <p style="margin: 0;">Please let us know your experience with Aadhar System </p>
+                    <asp:Label ID="lblFeedback" runat="server" Visible="False" Text="Your Feedback is already submitted." meta:resourcekey="lblFeedbackResource1"></asp:Label></p>
+                  <p style="margin: 0;">
+                        <asp:Label ID="Label5" runat="server" Text="Hello Sir/Ma'am." meta:resourcekey="Label5Resource1"></asp:Label></p>
+                      <p style="margin: 0;">
+                            <asp:Label ID="Label6" runat="server" Text="Please let us know your experience with Aadhar System " meta:resourcekey="Label6Resource1"></asp:Label></p>
                    
                     
 
@@ -346,8 +344,9 @@ background-color: #ECECEC;
                 <tr >
                      
                     <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 10px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-                          <p style="font-size:20px">Give us your valuable feedback </p>
-                    <asp:DropDownList ID="ddlReasons"  runat="server"  AutoPostBack="false" Enabled="true" style="width: 100%;height: 50px;">
+                          <p style="font-size:20px">
+                        <asp:Label ID="Label7" runat="server" Text="Give us your valuable feedback " meta:resourcekey="Label7Resource1"></asp:Label></p>
+                    <asp:DropDownList ID="ddlReasons"  runat="server" style="width: 100%;height: 50px;" meta:resourcekey="ddlReasonsResource1">
                                                 
                                               
                                             </asp:DropDownList>
@@ -355,7 +354,7 @@ background-color: #ECECEC;
                 </tr>
                <tr style="background: white;">
                    <td>
-                         <center style="padding-bottom:10px"  ><asp:Button ID="btnSendFeedBack" runat="server" Text="Send Feedback" height="50px" Font-Bold="true" OnClick="btnSendFeedBack_Click"  /></center>
+                         <center style="padding-bottom:10px"  ><asp:Button ID="btnSendFeedBack" runat="server" Text="Send Feedback" height="50px" Font-Bold="True" OnClick="btnSendFeedBack_Click" meta:resourcekey="btnSendFeedBackResource1"  /></center>
                    </td>
                </tr>
 
@@ -368,37 +367,39 @@ background-color: #ECECEC;
                 <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 40px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
                 
                 
-              <telerik:RadTabStrip SelectedIndex="0" ID="tabStrip" MultiPageID="RadMultiPage1" runat="server"  Skin="Silk">
+              <telerik:RadTabStrip SelectedIndex="0" ID="tabStrip" MultiPageID="RadMultiPage1" runat="server"  Skin="Silk" meta:resourcekey="tabStripResource1">
                                         <Tabs>
-                <telerik:RadTab Text="Ticket Details" ></telerik:RadTab>
-               <telerik:RadTab Text="Ticket Updates" ></telerik:RadTab>
-                 <telerik:RadTab Text="Ticket Comments"></telerik:RadTab>
+                <telerik:RadTab Text="Ticket Details" meta:resourcekey="RadTabResource1" ></telerik:RadTab>
+               <telerik:RadTab Text="Ticket Updates" meta:resourcekey="RadTabResource2" ></telerik:RadTab>
+                 <telerik:RadTab Text="Ticket Comments" meta:resourcekey="RadTabResource3"></telerik:RadTab>
 
             </Tabs>
                                     </telerik:RadTabStrip>
-                                    <telerik:RadMultiPage ID="RadMultiPage1"  SelectedIndex="0" runat="server">
-                                        <telerik:RadPageView ID="RadPageView1" runat="server">
+                                    <telerik:RadMultiPage ID="RadMultiPage1"  SelectedIndex="0" runat="server" meta:resourcekey="RadMultiPage1Resource1">
+                                        <telerik:RadPageView ID="RadPageView1" runat="server" meta:resourceKey="RadPageView1Resource1" Selected="True">
                                             <br />
                                                <table id="customers">
                     <tr>
-                        <td>Ticket Id</td>
-                          <td>  <asp:Label ID="lblTktId" runat="server" Text=""></asp:Label>    </td>
+                        <td>
+                                                   <asp:Label ID="Label8" runat="server" Text="Ticket Id" meta:resourceKey="Label8Resource1"></asp:Label>
+                        </td>
+                          <td>  <asp:Label ID="lblTktId" runat="server" meta:resourceKey="lblTktIdResource1"></asp:Label>    </td>
                     </tr>
                       <tr>
-                        <td>Type</td>
-                          <td>  <asp:Label ID="lblTicketType" runat="server" Text=""></asp:Label>    </td>
+                        <td><asp:Label ID="Label9" runat="server" Text="Type" meta:resourceKey="Label9Resource1"></asp:Label></td>
+                          <td>  <asp:Label ID="lblTicketType" runat="server" meta:resourceKey="lblTicketTypeResource1"></asp:Label>    </td>
                     </tr>
                        <tr>
-                        <td>Application</td>
-                          <td>  <asp:Label ID="lblTktApplication" runat="server" Text=""></asp:Label>    </td>
+                        <td><asp:Label ID="Label10" runat="server" Text="Application" meta:resourceKey="Label10Resource1"></asp:Label></td>
+                          <td>  <asp:Label ID="lblTktApplication" runat="server" meta:resourceKey="lblTktApplicationResource1"></asp:Label>    </td>
                     </tr>
                       <tr>
-                        <td>Created Date:</td>
-                          <td>  <asp:Label ID="lblCreatedDate" runat="server" Text=""></asp:Label>    </td>
+                        <td><asp:Label ID="Label11" runat="server" Text="Created Date:" meta:resourceKey="Label11Resource1"></asp:Label></td>
+                          <td>  <asp:Label ID="lblCreatedDate" runat="server" meta:resourceKey="lblCreatedDateResource1"></asp:Label>    </td>
                     </tr>
                     <tr>
-                        <td>Ticket Details</td>
-                          <td>  <asp:Label ID="lblTicketDetails" runat="server" Text=""></asp:Label>    </td>
+                        <td><asp:Label ID="Label12" runat="server" Text="Ticket Details" meta:resourceKey="Label12Resource1"></asp:Label></td>
+                          <td>  <asp:Label ID="lblTicketDetails" runat="server" meta:resourceKey="lblTicketDetailsResource1"></asp:Label>    </td>
                     </tr>
                 
 
@@ -408,45 +409,50 @@ background-color: #ECECEC;
                                             
 
                                         </telerik:RadPageView>
-                                          <telerik:RadPageView ID="RadPageView2" runat="server">
+                                          <telerik:RadPageView ID="RadPageView2" runat="server" meta:resourceKey="RadPageView2Resource1">
               <br />
                                                <div >
-                                                <telerik:radgrid id="rgTicketLogs" runat="server" allowfilteringbycolumn="true" AutoGenerateColumns="false"  OnNeedDataSource="rgTicketLogs_NeedDataSource" Skin="Simple"  ActiveItemStyle-Wrap="true"  cellspacing="-1" gridlines="Both" ItemStyle-BackColor="LightGray" AlternatingItemStyle-BackColor="LightGray" FilterItemStyle-CssClass="text-center"   GroupingSettings-CaseSensitive="false" AllowPaging="true" MasterTableView-PageSize="10" >
-                                            <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="false"></GroupingSettings>
-                                                <ExportSettings Excel-Format="ExcelML" ExportOnlyData="true" IgnorePaging="true" FileName="Update Ticket Log Report" > </ExportSettings>
-                                            <MasterTableView CommandItemDisplay="Top">
-                                                <CommandItemSettings ShowAddNewRecordButton="false" ShowExportToExcelButton="true" ShowRefreshButton="false"/>
-                                                <Columns>
-                                             
-                                                         <telerik:GridBoundColumn Visible="false" HeaderStyle-HorizontalAlign="Center"  DataField="Ticket_Id" HeaderText="Ticket Id" ItemStyle-HorizontalAlign="Center" DataType="System.String"  ></telerik:GridBoundColumn>
-                                                       <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="AuditAction" HeaderText="Action" ItemStyle-HorizontalAlign="Center" DataType="System.String" FilterControlWidth="100px"  ></telerik:GridBoundColumn>
-                                                      <telerik:GridDateTimeColumn DataField="AuditDate" AllowFiltering="true" HeaderText="Action Time"
-                                                    SortExpression="AuditDate" EnableTimeIndependentFiltering="true"  PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss}"  FilterControlWidth="100px">
-                                                </telerik:GridDateTimeColumn>
-                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Type_Name" HeaderText="Type" ItemStyle-HorizontalAlign="Center" DataType="System.String"  ></telerik:GridBoundColumn>
-                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Application_Name" HeaderText="Application" DataType="System.String"  ></telerik:GridBoundColumn>
-                                               <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="Issue_Name" HeaderText="Issue Name"  DataType="System.String"  ></telerik:GridBoundColumn>
-                                                      <telerik:GridDateTimeColumn DataField="Created_Time" AllowFiltering="true" HeaderText="Created Time"
-                                                    SortExpression="Date_of_PITCH_Validation" EnableTimeIndependentFiltering="true"  PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss}"  FilterControlWidth="100px">
-                                                </telerik:GridDateTimeColumn>
-                                                     <telerik:GridDateTimeColumn DataField="Updated_Time" AllowFiltering="true" HeaderText="closing Time"
-                                                    SortExpression="Updated_Time" EnableTimeIndependentFiltering="true"  PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss}"  FilterControlWidth="100px">
-                                                </telerik:GridDateTimeColumn>
-
-                                                      <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="User_Email" Visible="false" HeaderText="Ticket Owner"  DataType="System.String" ></telerik:GridBoundColumn>
-                                                     
-                                              
-                                
-                              
-                               
-                                                    
-                                                </Columns>
-                                         
-
-                                            </MasterTableView>
-                                            <ClientSettings>
-                                                <Resizing AllowColumnResize="false" ResizeGridOnColumnResize="false" AllowResizeToFit="false" />
-                                            </ClientSettings>
+                                                <telerik:radgrid id="rgTicketLogs" runat="server" allowfilteringbycolumn="True" AutoGenerateColumns="False"  OnNeedDataSource="rgTicketLogs_NeedDataSource" Skin="Simple"  cellspacing="-1" gridlines="Both" AllowPaging="True" meta:resourceKey="rgTicketLogsResource1" >
+                                            <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="False"></GroupingSettings>
+                                                <ExportSettings ExportOnlyData="True" IgnorePaging="True" FileName="Update Ticket Log Report" > 
+                                                    <Excel Format="ExcelML" />
+                                                    </ExportSettings>
+                                                    <AlternatingItemStyle BackColor="LightGray" />
+                                                    <MasterTableView CommandItemDisplay="Top">
+                                                        <CommandItemSettings ShowAddNewRecordButton="False" ShowExportToExcelButton="True" ShowRefreshButton="False" />
+                                                        <Columns>
+                                                            <telerik:GridBoundColumn DataField="Ticket_Id" FilterControlAltText="Filter Ticket_Id column" HeaderText="Ticket Id" meta:resourceKey="GridBoundColumnResource1" UniqueName="Ticket_Id" Visible="False">
+                                                                <HeaderStyle HorizontalAlign="Center" />
+                                                                <ItemStyle HorizontalAlign="Center" />
+                                                            </telerik:GridBoundColumn>
+                                                            <telerik:GridBoundColumn DataField="AuditAction" FilterControlAltText="Filter AuditAction column" FilterControlWidth="100px" HeaderText="Action" meta:resourceKey="GridBoundColumnResource2" UniqueName="AuditAction">
+                                                                <HeaderStyle HorizontalAlign="Center" />
+                                                                <ItemStyle HorizontalAlign="Center" />
+                                                            </telerik:GridBoundColumn>
+                                                            <telerik:GridDateTimeColumn DataField="AuditDate" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss}" EnableTimeIndependentFiltering="True" FilterControlAltText="Filter AuditDate column" FilterControlWidth="100px" HeaderText="Action Time" meta:resourceKey="GridDateTimeColumnResource1" SortExpression="AuditDate" UniqueName="AuditDate">
+                                                            </telerik:GridDateTimeColumn>
+                                                            <telerik:GridBoundColumn DataField="Type_Name" FilterControlAltText="Filter Type_Name column" HeaderText="Type" meta:resourceKey="GridBoundColumnResource3" UniqueName="Type_Name">
+                                                                <HeaderStyle HorizontalAlign="Center" />
+                                                                <ItemStyle HorizontalAlign="Center" />
+                                                            </telerik:GridBoundColumn>
+                                                            <telerik:GridBoundColumn DataField="Application_Name" FilterControlAltText="Filter Application_Name column" HeaderText="Application" meta:resourceKey="GridBoundColumnResource4" UniqueName="Application_Name">
+                                                                <HeaderStyle HorizontalAlign="Center" />
+                                                            </telerik:GridBoundColumn>
+                                                            <telerik:GridBoundColumn DataField="Issue_Name" FilterControlAltText="Filter Issue_Name column" HeaderText="Issue Name" meta:resourceKey="GridBoundColumnResource5" UniqueName="Issue_Name">
+                                                                <HeaderStyle HorizontalAlign="Center" />
+                                                            </telerik:GridBoundColumn>
+                                                            <telerik:GridDateTimeColumn DataField="Created_Time" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss}" EnableTimeIndependentFiltering="True" FilterControlAltText="Filter Created_Time column" FilterControlWidth="100px" HeaderText="Created Time" meta:resourceKey="GridDateTimeColumnResource2" SortExpression="Date_of_PITCH_Validation" UniqueName="Created_Time">
+                                                            </telerik:GridDateTimeColumn>
+                                                            <telerik:GridDateTimeColumn DataField="Updated_Time" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss}" EnableTimeIndependentFiltering="True" FilterControlAltText="Filter Updated_Time column" FilterControlWidth="100px" HeaderText="closing Time" meta:resourceKey="GridDateTimeColumnResource3" SortExpression="Updated_Time" UniqueName="Updated_Time">
+                                                            </telerik:GridDateTimeColumn>
+                                                            <telerik:GridBoundColumn DataField="User_Email" FilterControlAltText="Filter User_Email column" HeaderText="Ticket Owner" meta:resourceKey="GridBoundColumnResource6" UniqueName="User_Email" Visible="False">
+                                                                <HeaderStyle HorizontalAlign="Center" />
+                                                            </telerik:GridBoundColumn>
+                                                        </Columns>
+                                                    </MasterTableView>
+                                                    <FilterItemStyle CssClass="text-center" />
+                                                    <ActiveItemStyle Wrap="True" />
+                                                    <ItemStyle BackColor="LightGray" />
 
 
                                         </telerik:radgrid>
@@ -457,7 +463,7 @@ background-color: #ECECEC;
                 
                     </div>
                                           </telerik:RadPageView>
-                                        <telerik:RadPageView ID="RadPageView3" runat="server">
+                                        <telerik:RadPageView ID="RadPageView3" runat="server" meta:resourceKey="RadPageView3Resource1">
               <br />
                                                <div  >
                                       
@@ -470,11 +476,11 @@ background-color: #ECECEC;
                                      <table runat="server" id="tblRep"   style="width:100%; border: 1px solid black;
     border-collapse: inherit;">
   <tr runat="server" ID="Tr1" style="background-color: #ebe387;">
-    <td ><asp:Label ID="userName" runat="server" Font-Bold="true" ForeColor="Black" Text='<%#Eval("isAdmin") %>'>'></asp:Label></td>
-    <td > <asp:Label ID="Label2" runat="server"  ForeColor="Black" Text='<%#Eval("Created_Datetime") %>'>'></asp:Label></td>
+    <td runat="server" ><asp:Label ID="userName" runat="server" Font-Bold="True" ForeColor="Black" Text='<%# Eval("isAdmin") %>'></asp:Label></td>
+    <td runat="server" > <asp:Label ID="Label2" runat="server"  ForeColor="Black" Text='<%# Eval("Created_Datetime") %>'></asp:Label></td>
   </tr>
   <tr runat="server" ID="Tr2" style="background-color: #ebe387;">
-    <td  colspan="4">  <asp:Label ID="Label4" Font-Bold="true" ForeColor="Black" runat="server" Text='<%#Eval("Comment") %>'></asp:Label></td>
+    <td  colspan="4" runat="server">  <asp:Label ID="Label4" Font-Bold="True" ForeColor="Black" runat="server" Text='<%# Eval("Comment") %>'></asp:Label></td>
   
   </tr>
 </table>
@@ -495,8 +501,7 @@ background-color: #ECECEC;
                                                     <asp:LinkButton ID="btnPage"
                                                         Style="padding: 8px; margin: 2px; background: #007acc; border: solid 1px blue; font: 8px;"
                                                         CommandName="Page" CommandArgument="<%# Container.DataItem %>"
-                                                        runat="server" ForeColor="White" Font-Bold="True" CausesValidation="false"><%# Container.DataItem %>
-                                                    </asp:LinkButton>
+                                                        runat="server" ForeColor="White" Font-Bold="True" CausesValidation="False" meta:resourceKey="btnPageResource1"><%# Container.DataItem %></asp:LinkButton>
                                                 </ItemTemplate>
                                             </asp:Repeater>
                                         </div>

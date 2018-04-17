@@ -157,10 +157,9 @@
               <tr>
                 <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 40px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
                   <p style="margin: 0;">
-                      <asp:Label ID="Label1" runat="server" Text="Hello Sir/Ma'am." meta:resourcekey="Label1Resource1"></asp:Label>
-                    </p>
-                      <p style="margin: 0;">&nbsp;<asp:Label ID="Label2" runat="server" Text="Please let us know your experience with Aadhar System" meta:resourcekey="Label2Resource1"></asp:Label>
-                    </p>
+        <asp:Label ID="Label1" runat="server" Text="Hello Sir/Ma'am." meta:resourcekey="Label1Resource1"></asp:Label></p>
+                      <p style="margin: 0;">
+            <asp:Label ID="Label2" runat="server" Text="Please let us know your experience with Aadhar System" meta:resourcekey="Label2Resource1"></asp:Label> </p>
                    
                      
 
@@ -183,37 +182,33 @@
                 
                 <table id="customers">
                     <tr>
-                        <td><asp:Label ID="Label3" runat="server" Text="Ticket Id" meta:resourcekey="Label3Resource1"></asp:Label></td>
+                        <td>
+                <asp:Label ID="Label3" runat="server" Text="Ticket Id" meta:resourcekey="Label3Resource1"></asp:Label></td>
                           <td>  <asp:Label ID="lblTktId" runat="server" meta:resourcekey="lblTktIdResource1"></asp:Label>    </td>
                     </tr>
                       <tr>
                         <td>
-                            <asp:Label ID="Label4" runat="server" meta:resourcekey="Label4Resource1" Text="Type"></asp:Label>
-                          </td>
+                        <asp:Label ID="Label4" runat="server" Text="Type" meta:resourcekey="Label4Resource1"></asp:Label></td>
                           <td>  <asp:Label ID="lblTicketType" runat="server" meta:resourcekey="lblTicketTypeResource1"></asp:Label>    </td>
                     </tr>
                        <tr>
                         <td>
-                            <asp:Label ID="Label5" runat="server" meta:resourcekey="Label5Resource1" Text="Application"></asp:Label>
-                           </td>
+                        <asp:Label ID="Label5" runat="server" Text="Application" meta:resourcekey="Label5Resource1"></asp:Label></td>
                           <td>  <asp:Label ID="lblTktApplication" runat="server" meta:resourcekey="lblTktApplicationResource1"></asp:Label>    </td>
                     </tr>
                       <tr>
                         <td>
-                            <asp:Label ID="Label6" runat="server" meta:resourcekey="Label6Resource1" Text="Created Date:"></asp:Label>
-                          </td>
+                        <asp:Label ID="Label6" runat="server" Text="Created Date:" meta:resourcekey="Label6Resource1"></asp:Label></td>
                           <td>  <asp:Label ID="lblCreatedDate" runat="server" meta:resourcekey="lblCreatedDateResource1"></asp:Label>    </td>
                     </tr>
                     <tr>
                         <td>
-                            <asp:Label ID="Label7" runat="server" meta:resourcekey="Label7Resource1" Text="Ticket Details"></asp:Label>
-                        </td>
+                        <asp:Label ID="Label7" runat="server" Text="Ticket Details" meta:resourcekey="Label7Resource1"></asp:Label></td>
                           <td>  <asp:Label ID="lblTicketDetails" runat="server" meta:resourcekey="lblTicketDetailsResource1"></asp:Label>    </td>
                     </tr>
                   <tr>
                       <td>
-                          <asp:Label ID="Label8" runat="server" meta:resourcekey="Label8Resource1" Text="FeedBack "></asp:Label>
-                      </td>
+                        <asp:Label ID="Label8" runat="server" Text="FeedBack " meta:resourcekey="Label8Resource1"></asp:Label></td>
                       <td> <asp:DropDownList ID="ddlReasons" Height="100%" width="100%" runat="server" meta:resourcekey="ddlReasonsResource1">
                                                 
                                               

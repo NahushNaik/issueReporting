@@ -79,6 +79,12 @@
 
         <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
             <Scripts>
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+                <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
                 <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js"></asp:ScriptReference>
                 <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js"></asp:ScriptReference>
                 <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js"></asp:ScriptReference>
@@ -102,13 +108,15 @@
                             <li class="active">
                                 <a href="Main.aspx">
                                     <i class="ti-panel"></i>
-                                    <p>Dashboard</p>
+                                    <p>
+                                        <asp:Label ID="Label2" runat="server" Text="Dashboard" meta:resourcekey="Label2Resource1"></asp:Label></p>
                                 </a>
                             </li>
                             <li>
                                 <a href="Report.aspx">
                                     <i class="ti-view-list-alt"></i>
-                                    <p>Reports</p>
+                                    <p>
+                                        <asp:Label ID="Label3" runat="server" Text="Reports" meta:resourcekey="Label3Resource1"></asp:Label></p>
                                 </a>
                             </li>
                         </ul>
@@ -121,7 +129,8 @@
                         <div class="container-fluid">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle">
-                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="sr-only">
+                                        <asp:Label ID="Label5" runat="server" Text="Toggle navigation" meta:resourcekey="Label5Resource1"></asp:Label></span>
                                     <span class="icon-bar bar1"></span>
                                     <span class="icon-bar bar2"></span>
                                     <span class="icon-bar bar3"></span>
@@ -141,7 +150,8 @@
                                     <li>
                                         <a href="#">
                                             <i class="ti-close"></i>
-                                            <p>Logout</p>
+                                            <p>
+                                                <asp:Label ID="Label4" runat="server" Text="Logout" meta:resourcekey="Label4Resource1"></asp:Label></p>
                                         </a>
                                     </li>
                                 </ul>
