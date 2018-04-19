@@ -13,6 +13,7 @@ using System.Web.Configuration;
 using System.Net.Mail;
 using System.Text;
 using System.Drawing;
+using System.Globalization;
 
 
 
@@ -44,6 +45,8 @@ public partial class pages_View : System.Web.UI.Page
 
 
         drpStatus.DataSource = table;
+        string dt = table.Rows[0]["Created Time"].ToString();
+        lblCreatedAt.Text = " Created Time : " + Convert.ToDateTime(dt).ToString("dd/MMM/yyyy HH:mm:ss tt", CultureInfo.InvariantCulture);
         drpStatus.DataTextField = "Status";
         drpStatus.DataBind();
         lblStatus.Text = DBNulls.StringValue(table.Rows[0]["Status"].ToString());
@@ -107,22 +110,49 @@ public partial class pages_View : System.Web.UI.Page
     {
         string query;
         string Id = Request.QueryString["id"];
+
+     
         query = "select * from tbl_Attachment_Master where Ticket_Id='" + Id + "'";
         table = DBUtils.SQLSelect(new SqlCommand(query));
         if (table.Rows.Count > 0)
         {
+           
             string filePath = table.Rows[0]["File_Path"].ToString();
-            string fileName = txtFileName.Text;
-            string fName = filePath + fileName;
-            FileInfo fi = new FileInfo(fName);
-            long sz = fi.Length;
 
-            Response.ClearContent();
-            Response.ContentType = MimeType(Path.GetExtension(fName));
-            Response.AddHeader("Content-Disposition", string.Format("attachment; filename = {0}", System.IO.Path.GetFileName(fName)));
-            Response.AddHeader("Content-Length", sz.ToString("F0"));
-            Response.TransmitFile(fName);
-            Response.End();
+            if (Directory.Exists(filePath))
+            {
+
+                string[] fileArray = Directory.GetFiles(filePath);
+                if (fileArray == null || fileArray.Length == 0)
+                {
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "File Not Found", "alert('File Not Found'); ", true);
+                    return;
+
+                }
+                foreach (var item in fileArray)
+                {
+                    FileInfo fi = new FileInfo(item);
+                    long sz = fi.Length;
+
+                    Response.ClearContent();
+                    Response.ContentType = MimeType(Path.GetExtension(item));
+                    Response.AddHeader("Content-Disposition", string.Format("attachment; filename = {0}", System.IO.Path.GetFileName(item)));
+                    Response.AddHeader("Content-Length", sz.ToString("F0"));
+                    Response.TransmitFile(item);
+                    Response.End();
+                }
+            }
+            else
+            {
+
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "Directory Not Found", "alert('Directory Not Found'); ", true);
+                return;
+            }
+            //string fileName = txtFileName.Text;
+           
+
+            //string fName = filePath + fileName;
+           
         }
     }
     public static string MimeType(string Extension)
@@ -161,11 +191,12 @@ public partial class pages_View : System.Web.UI.Page
             fillData();
 
             fnSendMailXML(TicketID.Text);
-
+            Response.Redirect("UserDash.aspx");
 
         }
         catch (Exception ex)
         {
+            Response.Redirect("UserDash.aspx");
             throw ex;
         }
     }
@@ -271,7 +302,10 @@ public partial class pages_View : System.Web.UI.Page
         string allContents = "";//readTemplateFile.ReadToEnd();
 
 
-        string query = "Select  Comment,Ticket_ID,Created_Datetime,  User_First_Name + ' ' + User_Last_Name AS UserName,case when tbl_User_Master.isAdmin= 'Y' then 'Admin' else 'User' end as isAdmin from tbl_Ticket_Comments ,tbl_User_Master where tbl_User_Master.User_Email=tbl_Ticket_Comments.Commented_By and Ticket_ID ='" + Request.QueryString["id"] + "'  Order by Comment_ID Desc ";
+        //string query = "Select  Comment,Ticket_ID,Created_Datetime,  User_First_Name + ' ' + User_Last_Name AS UserName,case when tbl_User_Master.isAdmin= 'Y' then 'Admin' else 'User' end as isAdmin from tbl_Ticket_Comments ,tbl_User_Master where tbl_User_Master.User_Email=tbl_Ticket_Comments.Commented_By and Ticket_ID ='" + Request.QueryString["id"] + "'  Order by Comment_ID Desc ";
+
+
+        string query = "SELECT tbl_Ticket_Comments.Comment, tbl_Ticket_Comments.Ticket_ID, tbl_Ticket_Comments.Created_Datetime, tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name AS UserName,CASE WHEN tbl_User_Master.isAdmin = 'Y' and tbl_User_Master.User_Email !='"+DBNulls.StringValue(Session[PublicMethods.ConstUserEmail])+"'  THEN 'Admin' ELSE 'User' END AS isAdmin, tbl_User_Master.User_Email FROM  tbl_Ticket_Comments INNER JOIN tbl_User_Master ON tbl_Ticket_Comments.Commented_By = tbl_User_Master.User_Email WHERE     (tbl_Ticket_Comments.Ticket_ID = '" + Request.QueryString["id"] + "') ORDER BY tbl_Ticket_Comments.Comment_ID DESC";
        DataTable dt = DBUtils.SQLSelect(new SqlCommand(query));
 
 
@@ -293,7 +327,7 @@ public partial class pages_View : System.Web.UI.Page
             string abc = "<tr style='border: 1px solid black; background-color: #dddddd; ' >    <td style='border: 1px solid black;color:#5c2d91; ' >@User_Name@</td>    <td style='border: 1px solid black;word-break:break-all;' >@User_Comment@</td><td style='border: 1px solid black;word-break:break-all;' >@time@</td> </tr>";
             abc = abc.Replace("@User_Name@", dr["isAdmin"].ToString());
             abc = abc.Replace("@User_Comment@", dr["Comment"].ToString());
-            abc = abc.Replace("@time@", dr["Created_Datetime"].ToString());
+            abc = abc.Replace("@time@", Convert.ToDateTime(dr["Created_Datetime"].ToString()).ToString("dd/MMM/yyyy HH:mm:ss tt", CultureInfo.InvariantCulture));
             sb1.Append(abc);
         }
 
@@ -335,8 +369,11 @@ public partial class pages_View : System.Web.UI.Page
         //con.Close();
 
 
-        //string query = "Select Comment,Ticket_ID,Created_Datetime,  User_First_Name + ' ' + User_Last_Name AS UserName from tbl_Ticket_Comments ,tbl_User_Master where tbl_User_Master.User_Email=tbl_Ticket_Comments.Commented_By and Ticket_ID ='" + Request.QueryString["id"] + "'  Order by Comment_ID Desc ";
-        string query = " Select Comment,Ticket_ID,Created_Datetime,  User_First_Name + ' ' + User_Last_Name AS UserName,case when tbl_User_Master.isAdmin= 'Y' then 'Admin' else 'User' end as isAdmin from tbl_Ticket_Comments ,tbl_User_Master where tbl_User_Master.User_Email=tbl_Ticket_Comments.Commented_By and Ticket_ID  ='" + Request.QueryString["id"] + "'  Order by Comment_ID Desc ";
+      
+        //string query = " Select Comment,Ticket_ID,Created_Datetime,  User_First_Name + ' ' + User_Last_Name AS UserName,case when tbl_User_Master.isAdmin= 'Y' then 'Admin' else 'User' end as isAdmin from tbl_Ticket_Comments ,tbl_User_Master where tbl_User_Master.User_Email=tbl_Ticket_Comments.Commented_By and Ticket_ID  ='" + Request.QueryString["id"] + "'  Order by Comment_ID Desc ";
+
+        string query = "SELECT tbl_Ticket_Comments.Comment, tbl_Ticket_Comments.Ticket_ID, tbl_Ticket_Comments.Created_Datetime, tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name AS UserName,CASE WHEN tbl_User_Master.isAdmin = 'Y' and tbl_User_Master.User_Email !='" + DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]) + "'  THEN 'Admin' ELSE 'User' END AS isAdmin, tbl_User_Master.User_Email FROM  tbl_Ticket_Comments INNER JOIN tbl_User_Master ON tbl_Ticket_Comments.Commented_By = tbl_User_Master.User_Email WHERE     (tbl_Ticket_Comments.Ticket_ID = '" + Request.QueryString["id"] + "') ORDER BY tbl_Ticket_Comments.Comment_ID DESC";
+
         dt = DBUtils.SQLSelect(new SqlCommand(query));
 
         PagedDataSource pds = new PagedDataSource();
@@ -412,5 +449,9 @@ public partial class pages_View : System.Web.UI.Page
         {
             throw ex;
         }
+    }
+    protected void TicketID_TextChanged(object sender, EventArgs e)
+    {
+
     }
 }

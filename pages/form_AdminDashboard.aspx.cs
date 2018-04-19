@@ -13,6 +13,7 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
 {
     DataTable dtMain, dtFinal, dt;
     string result = "";
+    public static string userEmail="";
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -21,7 +22,7 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
         {
             Response.Redirect("Login.aspx");
         }
-
+        userEmail = Session[PublicMethods.ConstUserEmail].ToString();
         fnGetSummary();
         fnGetAverageTime();
         fnLoadTypewiseGrid();
@@ -78,11 +79,11 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
         {
 
 
-            qry = "select COUNT([Ticket_Id]) from tbl_Ticket_Master where  [Created_Time] BETWEEN '" + fromDate + "' and '" + toDate + "' and Status='0'";
+            qry = "select COUNT([Ticket_Id]) from tbl_Ticket_Master where  [Created_Time] BETWEEN '" + fromDate + "' and '" + toDate + "' and Status='0' and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')  ";
         }
         else if (status == "closed")
         {
-            qry = "select COUNT([Ticket_Id]) from tbl_Ticket_Master where Status=1 and  Updated_Time BETWEEN '" + fromDate + "' and '" + toDate + "' and Status='1'";
+            qry = "select COUNT([Ticket_Id]) from tbl_Ticket_Master where Status=1 and  Updated_Time BETWEEN '" + fromDate + "' and '" + toDate + "' and Status='1' and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')  ";
         }
 
         result = DBUtils.SqlSelectScalar(new SqlCommand(qry));
@@ -94,13 +95,13 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
         string result = "";
         try
         {
-            qry = "Select COUNT(*) from tbl_Ticket_Master";
+            qry = "Select COUNT(*) from tbl_Ticket_Master where Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')   ";
             result = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             lblTotalTickets.Text = result;
-            qry = "Select COUNT(*) from tbl_Ticket_Master Where Status=0";
+            qry = "Select COUNT(*) from tbl_Ticket_Master Where Status=0 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')  ";
             result = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             lblOpenTickets.Text = result;
-            qry = "Select COUNT(*) from tbl_Ticket_Master   Where Status=1";
+            qry = "Select COUNT(*) from tbl_Ticket_Master   Where Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')  ";
             result = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             lblCloseTickets.Text = result;
         }
@@ -116,26 +117,32 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
         double total = 0;
         try
         {
+            //Support time 
 
-
-
-
-            //Averaege
-            qry = "Select SUM(DATEDIFF(MINUTE, Created_Time, Updated_Time)) as diffrence from tbl_Ticket_Master  Where   Status=1";
-            //DataTable dt = DBUtils.SQLSelect(new SqlCommand(qry));
-            //foreach (DataRow dr in dt.Rows)
-            //{
-            //    total = total + (int)DBNulls.NumberValue(dr["diffrence"]);
-            //}
-
+            qry = "SELECT SUM(cast(hours as decimal(10,2)))   FROM [tbl_Ticket_Master] where Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
             total = DBNulls.NumberValue(DBUtils.SqlSelectScalar(new SqlCommand(qry)));
+            if (total == 0.0 || total==null)
+            {
 
-            string totalTime = spanDates(Convert.ToInt32(total));
-            lblTotalSpentTime.Text = totalTime;
+                total = 0.0;
+            }
+      
 
-          
+            string supportTime = String.Format("{0:0.00}", Convert.ToDouble(total));
+            string M = (supportTime.Split('.')[1]);   //Split Minute
+            string H = (supportTime.Split('.')[0]);    //Split Hour
+            int minTot = 60 * Convert.ToInt32(H);   //Hours to minute
 
-            qry = "SELECT AVG(cast(hours as decimal(10,2)))   FROM [tbl_Ticket_Master] where Status=1";
+            int totMinForSupport = minTot + Convert.ToInt32(M);  //Total Minute
+            string totalWorkTime = spanDates(Convert.ToInt32(totMinForSupport));
+         
+
+
+            lblTotalSpentTime.Text = totalWorkTime;
+
+
+
+            qry = "SELECT AVG(cast(hours as decimal(10,2)))   FROM [tbl_Ticket_Master] where Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')  ";
             string closeTimeAVG = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             if (closeTimeAVG == "")
             {
@@ -162,7 +169,7 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
 
 
             int ttlMin = 0;
-            string Q1 = "SELECT cast(hours as decimal(10,2)) as time   FROM [tbl_Ticket_Master] where Status=1";
+            string Q1 = "SELECT cast(hours as decimal(10,2)) as time   FROM [tbl_Ticket_Master] where Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')  ";
             DataTable dt1 = DBUtils.SQLSelect(new SqlCommand(Q1));
             if (dt1.Rows.Count > 0)
             {
@@ -195,7 +202,7 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
 
 
 
-            qry = "Select MIN(cast(hours as decimal(10,2))) as diffrence from tbl_Ticket_Master  where Status=1";
+            qry = "Select MIN(cast(hours as decimal(10,2))) as diffrence from tbl_Ticket_Master  where Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')  ";
             string fastCloseTime = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             if (fastCloseTime == "")
             {
@@ -213,7 +220,7 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
 
 
 
-            qry = "Select MAX(cast(hours as decimal(10,2))) as diffrence from tbl_Ticket_Master  where Status=1";
+            qry = "Select MAX(cast(hours as decimal(10,2))) as diffrence from tbl_Ticket_Master  where Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')  ";
             string sloweCloseTime = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             if (sloweCloseTime == "")
             {
@@ -235,7 +242,7 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
     }
     private void fnLoadTypewiseGrid()
     {
-        string query = "Select Type_Id  ,(Select Count(*) AS [Total] From tbl_Ticket_Master Where  Type_Id=T.Type_Id  ) as [Total],(Select Count(*) As [This_Month] From tbl_Ticket_Master Where DATEPART(MM,Created_Time)=MONTH(GETDATE()) And Type_Id=T.Type_Id  ) As [This_Month],(Select Count(*) AS [Open] From tbl_Ticket_Master Where  Type_Id=T.Type_Id And Status=0 ) as [Open] From tbl_Ticket_Master  T  group by Type_Id";
+        string query = "Select Type_Id  ,(Select Count(*) AS [Total] From tbl_Ticket_Master Where  Type_Id=T.Type_Id  ) as [Total],(Select Count(*) As [This_Month] From tbl_Ticket_Master Where DATEPART(MM,Created_Time)=MONTH(GETDATE()) And Type_Id=T.Type_Id  ) As [This_Month],(Select Count(*) AS [Open] From tbl_Ticket_Master Where  Type_Id=T.Type_Id And Status=0 ) as [Open] From tbl_Ticket_Master  T where Type_Id IN ( SELECT     Type_Id FROM fnAdminAccess() where user_Email='"+userEmail+"')  group by Type_Id";
         DataTable dt = DBUtils.SQLSelect(new SqlCommand(query));
 
          dtFinal = new DataTable();
@@ -265,7 +272,9 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
 
     private void fnLoadUserDeptwiseGrid()
     {
-        string query = "Select Department_Name As [Department] ,SUM(Total) as Total,SUM(This_Month) As [This_Month],SUM(Total_Open) as [Open] from( Select Distinct Department_Name, (Select COUNT(*) from tbl_Ticket_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id where tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id and tbl_User_Master.Department_Id = tbl_Department_Master.Department_Id  ) as Total,(Select COUNT(*) from tbl_Ticket_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id where tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id and tbl_User_Master.Department_Id = tbl_Department_Master.Department_Id And DATEPART(MM,Created_Time)=MONTH(GETDATE()) ) as This_Month,(Select COUNT(*) from tbl_Ticket_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id where tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id and tbl_User_Master.Department_Id = tbl_Department_Master.Department_Id   and Status=0) as Total_Open  from tbl_Department_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id inner join tbl_Ticket_Master on tbl_User_Master.User_Id = tbl_Ticket_Master.Created_By  )as a group by Department_Name";
+        //string query = "Select Department_Name As [Department] ,SUM(Total) as Total,SUM(This_Month) As [This_Month],SUM(Total_Open) as [Open] from( Select Distinct Department_Name, (Select COUNT(*) from tbl_Ticket_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id where tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id and tbl_User_Master.Department_Id = tbl_Department_Master.Department_Id  ) as Total,(Select COUNT(*) from tbl_Ticket_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id where tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id and tbl_User_Master.Department_Id = tbl_Department_Master.Department_Id And DATEPART(MM,Created_Time)=MONTH(GETDATE()) ) as This_Month,(Select COUNT(*) from tbl_Ticket_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id where tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id and tbl_User_Master.Department_Id = tbl_Department_Master.Department_Id   and Status=0) as Total_Open  from tbl_Department_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id inner join tbl_Ticket_Master on tbl_User_Master.User_Id = tbl_Ticket_Master.Created_By  )as a group by Department_Name";
+
+        string query = "Select Department_Name As [Department],SUM(Total) as Total,SUM(This_Month) As [This_Month],SUM(Total_Open) as [Open] from( Select Distinct Department_Name,(Select COUNT(*) from tbl_Ticket_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id where tbl_Ticket_Master.Created_By =tbl_User_Master.User_Id and tbl_User_Master.Department_Id = tbl_Department_Master.Department_Id and Type_Id IN (SELECT Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')) as Total,(Select COUNT(*) from tbl_Ticket_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id where tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id and tbl_User_Master.Department_Id = tbl_Department_Master.Department_Id And DATEPART(MM,Created_Time)=MONTH(GETDATE()) and  Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "') ) as This_Month,(Select COUNT(*) from tbl_Ticket_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id where tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id and tbl_User_Master.Department_Id =tbl_Department_Master.Department_Id   and Status=0 and  Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "') ) as Total_Open from tbl_Department_Master inner join tbl_User_Master on tbl_Department_Master.Department_Id = tbl_User_Master.Department_Id inner join tbl_Ticket_Master on tbl_User_Master.User_Id = tbl_Ticket_Master.Created_By  )as a group by Department_Name";
 
 
          dt = DBUtils.SQLSelect(new SqlCommand(query));

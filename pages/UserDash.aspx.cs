@@ -29,7 +29,7 @@ public partial class pages_UserDash : System.Web.UI.Page
         {
             //Check user profile status
             bool profileStatus = CheckProfileIsValid(DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]));
-         //   UserId = DBNulls.StringValue(Session[PublicMethods.ConstUserId].ToString());
+      //      UserId = DBNulls.StringValue(Session[PublicMethods.ConstUserId].ToString());
             if (!profileStatus)
             {
                 Response.Redirect("UserProfile.aspx");
@@ -47,6 +47,8 @@ public partial class pages_UserDash : System.Web.UI.Page
         populateTicketStaus();
         fnUpdateTicketCompletionStatus();
         fnnFeedbackCount();
+        fnReassignedTicketCount();
+        fnFeedbackAgainstTkt();
     }
 
     protected bool CheckProfileIsValid(string userEMail)
@@ -258,6 +260,22 @@ public partial class pages_UserDash : System.Web.UI.Page
 
         qry = "SELECT COUNT( distinct tbl_User_Feedback.Ticket_Id) FROM tbl_Type_Master INNER JOIN tbl_Ticket_Master ON tbl_Type_Master.Type_Id = tbl_Ticket_Master.Type_Id INNER JOIN tbl_User_Feedback ON tbl_Ticket_Master.Ticket_Id = tbl_User_Feedback.Ticket_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id INNER JOIN tbl_Feedback_Master ON tbl_User_Feedback.Feedback = tbl_Feedback_Master.feedback where tbl_Feedback_Master.status='Bad' and tbl_Ticket_Master.Created_By='" + UserId + "'";
         hplFeedbackCountNegativeText.Text = DBUtils.SqlSelectScalar(new SqlCommand(qry));
-        
+
+
+        qry = "SELECT COUNT( distinct tbl_User_Feedback.Ticket_Id) FROM tbl_Type_Master INNER JOIN tbl_Ticket_Master ON tbl_Type_Master.Type_Id = tbl_Ticket_Master.Type_Id INNER JOIN tbl_User_Feedback ON tbl_Ticket_Master.Ticket_Id = tbl_User_Feedback.Ticket_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id INNER JOIN tbl_Feedback_Master ON tbl_User_Feedback.Feedback = tbl_Feedback_Master.feedback where tbl_Feedback_Master.status='Moderate' and tbl_Ticket_Master.Created_By='" + UserId + "'";
+        hplFeedbackCountModerateText.Text= DBUtils.SqlSelectScalar(new SqlCommand(qry));
+    }
+
+
+    protected void fnReassignedTicketCount() {
+        string query = "select count(*) from tbl_Ticket_Master where ReassignRemark IS NOT NULL and Created_By='" + UserId + "'";
+        lblWrongTicketCount.Text = DBUtils.SqlSelectScalar(new SqlCommand(query));  
+    }
+    protected void fnFeedbackAgainstTkt() {
+        string query = "select count(Ticket_Id) from tbl_Ticket_Master where Created_By='" + UserId + "'   and Status=1 and   tbl_Ticket_Master.Ticket_Id NOT IN (SELECT tbl_User_Feedback.Ticket_Id FROM  tbl_User_Feedback INNER JOIN tbl_Ticket_Master ON tbl_User_Feedback.Ticket_Id = tbl_Ticket_Master.Ticket_Id )";
+        lblPendingFeedback.Text = DBUtils.SqlSelectScalar(new SqlCommand(query));
+
+
+
     }
 }

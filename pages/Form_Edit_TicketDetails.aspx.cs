@@ -290,7 +290,8 @@ public partial class pages_Form_Edit_TicketDetails : System.Web.UI.Page
            
         }
         catch (Exception ex) {
-            throw ex;
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", "Please try again", true);
+            //throw ex;
         }
     }
 
@@ -378,11 +379,25 @@ public partial class pages_Form_Edit_TicketDetails : System.Web.UI.Page
              string  queryForFileAttach = "select * from tbl_Attachment_Master where Ticket_Id='" + Ticket_Id + "'";
         table = DBUtils.SQLSelect(new SqlCommand(queryForFileAttach));
         string fName = "";
+
+             
+
+
         if (table.Rows.Count > 0)
         {
             string filePath = table.Rows[0]["File_Path"].ToString();
-            string fileName = txtFileName.Text;
-             fName = filePath + fileName;
+            if (Directory.Exists(filePath))
+            {
+                string[] fileArray = Directory.GetFiles(filePath);
+                foreach (var item in fileArray)
+                {
+                    fName = item;
+                }
+            }
+
+
+            //string fileName = txtFileName.Text;
+            // fName = filePath + fileName;
         }
 
 
@@ -481,7 +496,7 @@ public partial class pages_Form_Edit_TicketDetails : System.Web.UI.Page
             smtp.Credentials = new System.Net.NetworkCredential(emailId, password);
            
             mail.From = new MailAddress(emailId, "displayName");
-            mail.Subject = "Ticket Type has been changed for ticket No: " + Ticket_Id;
+            mail.Subject = "Ticket has been changed for ticket No: " + Ticket_Id;
 
             //Load TO Email ID's
             var userSqlTo = "SELECT [To_Email_Id] FROM [tbl_Email_TO_Master] WHERE [TYPE_ID]='" + Type_Id + "'";
@@ -520,7 +535,7 @@ public partial class pages_Form_Edit_TicketDetails : System.Web.UI.Page
 
             string bodyUser = PopulateBody_TypeChanged(Ticket_Id, typeName, applicationName, issueName, Issue_Details, Priority, createdBy, Created_Time, "user");
             mail1.From = new MailAddress(emailId, "displayName");
-            mail1.Subject = "Ticket Type has been changed for ticket No: " + Ticket_Id;
+            mail1.Subject = "Ticket has been changed for ticket No: " + Ticket_Id;
             mail1.To.Add(Session["LoginUserEmail"].ToString());
             mail1.IsBodyHtml = true;
             mail1.Body = bodyUser;
@@ -529,9 +544,11 @@ public partial class pages_Form_Edit_TicketDetails : System.Web.UI.Page
         }
         catch (Exception ex)
         {
+            Response.Redirect("UserDash.aspx");
             string alertmsg = "alert('Please check network connection');";
             ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", alertmsg, true);
             return;
+           
             throw ex;
         }
     }
@@ -719,15 +736,47 @@ public partial class pages_Form_Edit_TicketDetails : System.Web.UI.Page
             string filePath = table.Rows[0]["File_Path"].ToString();
             string fileName = txtFileName.Text;
             string fName = filePath + fileName;
-            FileInfo fi = new FileInfo(fName);
-            long sz = fi.Length;
+            if (Directory.Exists(filePath))
+            {
 
-            Response.ClearContent();
-            Response.ContentType = MimeType(Path.GetExtension(fName));
-            Response.AddHeader("Content-Disposition", string.Format("attachment; filename = {0}", System.IO.Path.GetFileName(fName)));
-            Response.AddHeader("Content-Length", sz.ToString("F0"));
-            Response.TransmitFile(fName);
-            Response.End();
+                string[] fileArray = Directory.GetFiles(filePath);
+                if (fileArray == null || fileArray.Length == 0)
+                {
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "File Not Found", "alert('File Not Found'); ", true);
+                    return;
+
+                }
+                foreach (var item in fileArray)
+                {
+                    FileInfo fi = new FileInfo(item);
+                    long sz = fi.Length;
+
+                    Response.ClearContent();
+                    Response.ContentType = MimeType(Path.GetExtension(item));
+                    Response.AddHeader("Content-Disposition", string.Format("attachment; filename = {0}", System.IO.Path.GetFileName(item)));
+                    Response.AddHeader("Content-Length", sz.ToString("F0"));
+                    Response.TransmitFile(item);
+                    Response.End();
+                }
+
+
+            }
+            else
+            {
+
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "Directory Not Found", "alert('Directory Not Found'); ", true);
+                return;
+            }
+
+            //FileInfo fi = new FileInfo(fName);
+            //long sz = fi.Length;
+
+            //Response.ClearContent();
+            //Response.ContentType = MimeType(Path.GetExtension(fName));
+            //Response.AddHeader("Content-Disposition", string.Format("attachment; filename = {0}", System.IO.Path.GetFileName(fName)));
+            //Response.AddHeader("Content-Length", sz.ToString("F0"));
+            //Response.TransmitFile(fName);
+            //Response.End();
         }
     }
 

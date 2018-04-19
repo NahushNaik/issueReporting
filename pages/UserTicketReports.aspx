@@ -37,64 +37,94 @@
                                             <asp:ListItem meta:resourcekey="ListItemResource2">Open</asp:ListItem>
                                             <asp:ListItem meta:resourcekey="ListItemResource3">Closed</asp:ListItem>
                                         </asp:DropDownList>
+
+
+                                          <asp:DropDownList ID="ddlMenu" runat="server" meta:resourcekey="ddlMenuResource1" >
+                                            <asp:ListItem meta:resourcekey="ListItemResource4">Created Time</asp:ListItem>
+                                            <asp:ListItem meta:resourcekey="ListItemResource5">Ticket No</asp:ListItem>
+                                            <asp:ListItem meta:resourcekey="ListItemResource6">Priority</asp:ListItem>
+                                        </asp:DropDownList>
+                                             <asp:DropDownList ID="ddlOrder" runat="server" meta:resourcekey="ddlOrderResource1" >
+                                            <asp:ListItem Value="desc" meta:resourcekey="ListItemResource7">Descending </asp:ListItem>
+                                            <asp:ListItem Value="asc" meta:resourcekey="ListItemResource8">Ascending</asp:ListItem>
+                                            
+                                        </asp:DropDownList>
                                         <asp:Button ID="btnFilterApply" runat="server" OnClick="btnFilterApply_Click" Text="Apply" meta:resourcekey="btnFilterApplyResource1" />
 
 
                                     </div>
+                                     <div>
+                                       
+                                       
+                                    </div>
+                                  
 
                                     <div class="content table-responsive table-full-width" style="overflow:scroll">
-                                        <telerik:radgrid id="RadGrid1" runat="server" allowfilteringbycolumn="True" allowpaging="True" onitemdatabound="RadGrid1_ItemDataBound" skin="Simple" cellspacing="-1" gridlines="Both" AutoGenerateColumns="False" pagesize="100" meta:resourcekey="RadGrid1Resource1">
+                                          <telerik:radgrid id="RadGrid1" runat="server" allowfilteringbycolumn="True" allowpaging="True" onitemdatabound="RadGrid1_ItemDataBound" skin="Simple" cellspacing="-1" gridlines="Both" AutoGenerateColumns="False" pagesize="100" meta:resourcekey="RadGrid1Resource1">
                                             <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="false"></GroupingSettings>
                                             <ExportSettings Excel-Format="ExcelML" ExportOnlyData="true" IgnorePaging="true" FileName="User Tickets Report" > 
 <Excel Format="ExcelML"></Excel>
-                                            </ExportSettings>
+                                              </ExportSettings>
                                             <MasterTableView  CommandItemDisplay="Top">
                                                 <CommandItemSettings ShowAddNewRecordButton="false" ShowExportToExcelButton="true" ShowRefreshButton="false" />
                                                 <Columns>
-                                                    <telerik:GridHyperLinkColumn AllowSorting="False"  FilterControlAltText="Filter view column" ImageUrl="images/Search3.png" Text="View"   UniqueName="view" AllowFiltering="false" meta:resourcekey="GridHyperLinkColumnResource1">
+                                                      <telerik:GridHyperLinkColumn AllowSorting="False" FilterControlAltText="Filter view column" Text="Update" UniqueName="updateLink"  DataType="System.String" AllowFiltering="false" HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle"  ItemStyle-ForeColor="CadetBlue" ItemStyle-Font-Size="Larger" ItemStyle-Font-Underline="true" meta:resourcekey="GridHyperLinkColumnResource1">
+<HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle"></HeaderStyle>
+
+<ItemStyle Font-Size="Larger" Font-Underline="True" ForeColor="CadetBlue"></ItemStyle>
                                                     </telerik:GridHyperLinkColumn>
-                                                       <telerik:GridHyperLinkColumn AllowSorting="False" FilterControlAltText="Filter view column" Text="Update" UniqueName="updateLink"  DataType="System.String" AllowFiltering="false" meta:resourcekey="GridHyperLinkColumnResource2">
+
+                                                     <telerik:GridHyperLinkColumn  HeaderStyle-Font-Bold="true" DataNavigateUrlFields="Ticket No" DataType="System.String" 
+                                   DataNavigateUrlFormatString="UserTicketView.aspx?id={0}" HeaderText="Id" AutoPostBackOnFilter="false"  ItemStyle-Font-Bold="true" ItemStyle-HorizontalAlign="Center"   HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle"  ItemStyle-ForeColor="CadetBlue" ItemStyle-Font-Size="Larger" FilterCheckListEnableLoadOnDemand="true" DataTextField="Ticket No" ItemStyle-Font-Underline="true" UniqueName="view" meta:resourcekey="GridHyperLinkColumnResource2" >
+<HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" Font-Bold="True"></HeaderStyle>
+
+<ItemStyle HorizontalAlign="Center" Font-Bold="True" Font-Size="Larger" Font-Underline="True" ForeColor="CadetBlue"></ItemStyle>
+                                                      </telerik:GridHyperLinkColumn>
+
+
+                                                    <telerik:GridHyperLinkColumn AllowSorting="False"  FilterControlAltText="Filter view column" ImageUrl="images/Search3.png" Text="View" Visible="false"   UniqueName="view" AllowFiltering="false" meta:resourcekey="GridHyperLinkColumnResource3"  >
                                                     </telerik:GridHyperLinkColumn>
+                                                     
 
                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Status" HeaderText="Status" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource1" >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
 
 <ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
-                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Ticket No" HeaderText="Ticket No" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource2" >
+                                                      </telerik:GridBoundColumn>
+                                                      <telerik:GridBoundColumn Visible="false" HeaderStyle-HorizontalAlign="Center"  DataField="Ticket No" HeaderText="Ticket No" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource2" >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
 
 <ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
+                                                      </telerik:GridBoundColumn>
 
                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Priority" HeaderText="Priority" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource3" >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
 
 <ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
+                                                      </telerik:GridBoundColumn>
                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Type Name" HeaderText="Type Name" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource4" >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
 
 <ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
+                                                      </telerik:GridBoundColumn>
                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Application Name" HeaderText="Application Name" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource5" >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
 
 <ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
+                                                      </telerik:GridBoundColumn>
                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Issue Name" HeaderText="Issue Name" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource6" >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
 
 <ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
+                                                      </telerik:GridBoundColumn>
                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Issue Details" HeaderText="Issue Details" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource7" >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
 
 <ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
+                                                      </telerik:GridBoundColumn>
                                                     
                                                      <telerik:GridDateTimeColumn DataField="Created Time" AllowFiltering="true" HeaderText="Created Time"
-                                                    SortExpression="Date_of_PITCH_Validation" EnableTimeIndependentFiltering="true"  UniqueName="Date_of_PITCH_Validation" PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss}" meta:resourcekey="GridDateTimeColumnResource1">
+                                                    SortExpression="Date_of_PITCH_Validation" EnableTimeIndependentFiltering="true"  UniqueName="Date_of_PITCH_Validation" PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss}" FilterControlWidth="100px" meta:resourcekey="GridDateTimeColumnResource1">
                                                 </telerik:GridDateTimeColumn>
 
                                                                               </Columns>

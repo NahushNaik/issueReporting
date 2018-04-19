@@ -10,6 +10,7 @@ using System.Web.UI.WebControls;
 public partial class pages_viewTicketLogs : System.Web.UI.Page
 {
     string id;
+    public static string userEmail = string.Empty;
     protected void Page_Load(object sender, EventArgs e)
     {
         //Check Login
@@ -19,6 +20,7 @@ public partial class pages_viewTicketLogs : System.Web.UI.Page
         }
         else
         {
+            userEmail = Session[PublicMethods.ConstUserEmail].ToString();
             //Check user profile status
             bool profileStatus = CheckProfileIsValid(DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]));
 
@@ -87,7 +89,7 @@ public partial class pages_viewTicketLogs : System.Web.UI.Page
 
 
             //string query = "SELECT     tbl_Ticket_Master_shadow.Ticket_Id, tbl_Ticket_Master_shadow.Type_Id, tbl_Ticket_Master_shadow.Application_Id, tbl_Ticket_Master_shadow.Issue_Id, tbl_Ticket_Master_shadow.Created_By,tbl_Ticket_Master_shadow.Created_Time, tbl_Ticket_Master_shadow.Updated_Time, tbl_Ticket_Master_shadow.Status, tbl_Ticket_Master_shadow.hours,tbl_Ticket_Master_shadow.isValid,tbl_Ticket_Master_shadow.AuditAction, tbl_Ticket_Master_shadow.Issue_Details, tbl_Ticket_Master_shadow.AuditDate, tbl_Type_Master.Type_Name, tbl_Application_Master.Application_Name,tbl_Issue_Master.Issue_Name, tbl_User_Master.User_Email FROM tbl_Ticket_Master_shadow INNER JOIN tbl_Type_Master ON tbl_Ticket_Master_shadow.Type_Id = tbl_Type_Master.Type_Id INNER JOIN tbl_Application_Master ON tbl_Ticket_Master_shadow.Application_Id = tbl_Application_Master.Application_Id INNER JOIN tbl_Issue_Master ON tbl_Ticket_Master_shadow.Issue_Id = tbl_Issue_Master.Issue_Id CROSS JOIN tbl_User_Master where  tbl_Ticket_Master_shadow.Ticket_Id='"+id+"'";
-            string query = "SELECT     tbl_Ticket_Master_shadow.Ticket_Id, tbl_Ticket_Master_shadow.Type_Id, tbl_Ticket_Master_shadow.Application_Id, tbl_Ticket_Master_shadow.Issue_Id, tbl_Ticket_Master_shadow.Created_Time,tbl_Ticket_Master_shadow.Updated_Time, tbl_Ticket_Master_shadow.Status, tbl_Ticket_Master_shadow.hours, tbl_Ticket_Master_shadow.isValid,CASE WHEN tbl_Ticket_Master_shadow.AuditAction = 'I' THEN 'Created' WHEN tbl_Ticket_Master_shadow.AuditAction = 'U' THEN 'Updated' END AS AuditAction, tbl_Ticket_Master_shadow.Issue_Details, tbl_Ticket_Master_shadow.AuditDate, tbl_Type_Master.Type_Name, tbl_Application_Master.Application_Name, tbl_Issue_Master.Issue_Name,tbl_User_Master_1.User_Email FROM tbl_User_Master AS tbl_User_Master_1 INNER JOIN tbl_Ticket_Master_shadow INNER JOIN tbl_Type_Master ON tbl_Ticket_Master_shadow.Type_Id = tbl_Type_Master.Type_Id INNER JOIN tbl_Application_Master ON tbl_Ticket_Master_shadow.Application_Id = tbl_Application_Master.Application_Id INNER JOIN tbl_Issue_Master ON tbl_Ticket_Master_shadow.Issue_Id = tbl_Issue_Master.Issue_Id ON tbl_User_Master_1.User_Id = tbl_Ticket_Master_shadow.Created_By order by tbl_Ticket_Master_shadow.Ticket_Id desc";
+            string query = "SELECT     tbl_Ticket_Master_shadow.Ticket_Id, tbl_Ticket_Master_shadow.Type_Id, tbl_Ticket_Master_shadow.Application_Id, tbl_Ticket_Master_shadow.Issue_Id, tbl_Ticket_Master_shadow.Created_Time,tbl_Ticket_Master_shadow.Updated_Time, tbl_Ticket_Master_shadow.Status, tbl_Ticket_Master_shadow.hours, tbl_Ticket_Master_shadow.isValid,CASE WHEN tbl_Ticket_Master_shadow.AuditAction = 'I' THEN 'Created' WHEN tbl_Ticket_Master_shadow.AuditAction = 'U' THEN 'Updated' END AS AuditAction, tbl_Ticket_Master_shadow.Issue_Details, tbl_Ticket_Master_shadow.AuditDate, tbl_Type_Master.Type_Name, tbl_Application_Master.Application_Name, tbl_Issue_Master.Issue_Name,tbl_User_Master_1.User_Email FROM tbl_User_Master AS tbl_User_Master_1 INNER JOIN tbl_Ticket_Master_shadow INNER JOIN tbl_Type_Master ON tbl_Ticket_Master_shadow.Type_Id = tbl_Type_Master.Type_Id INNER JOIN tbl_Application_Master ON tbl_Ticket_Master_shadow.Application_Id = tbl_Application_Master.Application_Id INNER JOIN tbl_Issue_Master ON tbl_Ticket_Master_shadow.Issue_Id = tbl_Issue_Master.Issue_Id ON tbl_User_Master_1.User_Id = tbl_Ticket_Master_shadow.Created_By and tbl_Ticket_Master_shadow.Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')  order by tbl_Ticket_Master_shadow.Ticket_Id desc";
 
             DataTable dt = DBUtils.SQLSelect(new SqlCommand(query));
             if (dt.Rows.Count > 0)

@@ -16,6 +16,8 @@ public partial class pages_Reports : System.Web.UI.Page
 {
     string UserId;
     static int tStatus;
+    static string  orderBy = string.Empty;
+    static string orderType = string.Empty;
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -43,19 +45,32 @@ public partial class pages_Reports : System.Web.UI.Page
             DropDownList1.Enabled = false;
             tStatus = 1;
             DropDownList1.SelectedValue= "Closed";
+
+            orderBy = ddlMenu.SelectedItem.Text;
+            orderType = ddlOrder.SelectedValue;
         }
         else if (pageStatus == "open")
         {
             DropDownList1.Enabled = false;
             tStatus = 2;
             DropDownList1.SelectedValue = "Open";
+            orderBy = ddlMenu.SelectedItem.Text;
+            orderType = ddlOrder.SelectedValue;
         }
         else if (pageStatus == "recent")
         {
             DropDownList1.Enabled = false;
             tStatus = 3;
             DropDownList1.SelectedValue = "All";
+            orderBy = ddlMenu.SelectedItem.Text;
+            orderType = ddlOrder.SelectedValue;
         }
+        else if (pageStatus == null) {
+            tStatus = 4;
+            orderBy = ddlMenu.SelectedItem.Text;
+            orderType = ddlOrder.SelectedValue;
+        }
+
 
       
         
@@ -126,19 +141,19 @@ public partial class pages_Reports : System.Web.UI.Page
         string query;
         if (tStatus == 1)
         {
-            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] from fnGetCloseTicketDetail('" + Username + "') order  by [Created Time] desc";
+            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] from fnGetCloseTicketDetail('" + Username + "') order  by '" + orderBy + "' " + orderType + "";
         }
         else if (tStatus == 2)
         {
-            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] from fnGetOpenTicketDetail('" + Username + "') order  by [Created Time] desc";
+            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] from fnGetOpenTicketDetail('" + Username + "') order  by '" + orderBy + "' " + orderType + "";
         }
         else if (tStatus == 3)
         {
-            query = "select  Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] from fnGetRecentTicketDetail('" + Username + "') order  by [Created Time] desc";
+            query = "select  Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] from fnGetRecentTicketDetail('" + Username + "') order  by '" + orderBy + "' " + orderType + "";
         }
         else
         {
-            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] from fnGetTicketAllDetail() where User_Id='" + Username + "'  order  by [Created Time] desc";
+            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] from fnGetTicketAllDetail() where User_Id='" + Username + "'  order  by '" + orderBy + "' " + orderType + "";
         }
 
         table = DBUtils.SQLSelect(new SqlCommand(query));
@@ -176,7 +191,7 @@ public partial class pages_Reports : System.Web.UI.Page
 
 
             HyperLink linkUpdate = (HyperLink)item["updateLink"].Controls[0];
-             linkUpdate.NavigateUrl = "Form_Edit_TicketDetails.aspx?id=" + dataBoundItem["Ticket No"].Text;
+            linkUpdate.NavigateUrl = "Form_Edit_TicketDetails.aspx?id=" + dataBoundItem["Ticket No"].Text;
           
             if (dataBoundItem["Status"].Text == "Close")
             {
@@ -225,14 +240,20 @@ public partial class pages_Reports : System.Web.UI.Page
             if (DropDownList1.SelectedValue == "Closed")
             {
                 tStatus =1 ;
+                orderBy = ddlMenu.SelectedItem.Text;
+                orderType = ddlOrder.SelectedValue;
             }
             else if (DropDownList1.SelectedValue == "Open")
             {
                 tStatus = 2;
+                orderBy = ddlMenu.SelectedItem.Text;
+                orderType = ddlOrder.SelectedValue;
             }
             else if (DropDownList1.SelectedValue == "All")
             {
                 tStatus = 4;
+                orderBy = ddlMenu.SelectedItem.Text;
+                orderType = ddlOrder.SelectedValue;
             }
 
 
@@ -243,4 +264,5 @@ public partial class pages_Reports : System.Web.UI.Page
             throw ex;
             }
     }
+   
 }

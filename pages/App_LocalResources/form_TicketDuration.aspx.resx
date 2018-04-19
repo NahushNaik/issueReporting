@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnFilterApplyResource1.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="btnFilterApplyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlMenuResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="ddlStatusResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -385,6 +397,102 @@
   <data name="GridBoundColumnResource1.SortExpression" xml:space="preserve">
     <value />
   </data>
+  <data name="GridBoundColumnResource10.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource10.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource10.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource10.DataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource10.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridBoundColumnResource10.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="GridBoundColumnResource10.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource10.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource10.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource10.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource10.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource10.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource10.HeaderText" xml:space="preserve">
+    <value>Time Spent(Hours.Min)</value>
+  </data>
+  <data name="GridBoundColumnResource10.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource10.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource10.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.DataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridBoundColumnResource11.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="GridBoundColumnResource11.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.HeaderText" xml:space="preserve">
+    <value>is Valid?</value>
+  </data>
+  <data name="GridBoundColumnResource11.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource11.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource11.SortExpression" xml:space="preserve">
+    <value />
+  </data>
   <data name="GridBoundColumnResource2.AndCurrentFilterValue" xml:space="preserve">
     <value />
   </data>
@@ -614,7 +722,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource6.HeaderText" xml:space="preserve">
-    <value>Created Date</value>
+    <value>Issue</value>
   </data>
   <data name="GridBoundColumnResource6.HeaderTooltip" xml:space="preserve">
     <value />
@@ -662,7 +770,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource7.HeaderText" xml:space="preserve">
-    <value>Updated Time</value>
+    <value>Issue Details</value>
   </data>
   <data name="GridBoundColumnResource7.HeaderTooltip" xml:space="preserve">
     <value />
@@ -671,6 +779,102 @@
     <value>False</value>
   </data>
   <data name="GridBoundColumnResource7.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.DataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridBoundColumnResource8.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="GridBoundColumnResource8.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.HeaderText" xml:space="preserve">
+    <value>Created Date</value>
+  </data>
+  <data name="GridBoundColumnResource8.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource8.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource8.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.DataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridBoundColumnResource9.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="GridBoundColumnResource9.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.HeaderText" xml:space="preserve">
+    <value>Updated Time</value>
+  </data>
+  <data name="GridBoundColumnResource9.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource9.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource9.SortExpression" xml:space="preserve">
     <value />
   </data>
   <data name="GridDateTimeColumnResource1.AndCurrentFilterValue" xml:space="preserve">
@@ -725,6 +929,60 @@
     <value>False</value>
   </data>
   <data name="GridDateTimeColumnResource1.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.DataFormatString" xml:space="preserve">
+    <value>{0:dd/MMM/yyyy}</value>
+  </data>
+  <data name="GridDateTimeColumnResource2.EditDataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridDateTimeColumnResource2.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="GridDateTimeColumnResource2.FilterDateFormat" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.HeaderText" xml:space="preserve">
+    <value>Updated Time</value>
+  </data>
+  <data name="GridDateTimeColumnResource2.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridDateTimeColumnResource2.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridDateTimeColumnResource2.SortExpression" xml:space="preserve">
     <value />
   </data>
   <data name="GridHyperLinkColumnResource1.AndCurrentFilterValue" xml:space="preserve">
@@ -794,9 +1052,21 @@
     <value />
   </data>
   <data name="Label3Resource1.Text" xml:space="preserve">
-    <value>View Tickets</value>
+    <value>Select Appropriate Filter</value>
   </data>
   <data name="Label3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource1.Text" xml:space="preserve">
+    <value>View Tickets</value>
+  </data>
+  <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label5Resource1.Text" xml:space="preserve">
+    <value>Tickets</value>
+  </data>
+  <data name="Label5Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="ListItemResource1.Text" xml:space="preserve">
@@ -816,6 +1086,36 @@
   </data>
   <data name="ListItemResource3.Value" xml:space="preserve">
     <value>Closed</value>
+  </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>Created Time</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>Created Time</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>Ticket No</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>Ticket No</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>Descending </value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>desc</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>Ascending</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>asc</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
     <value>Issue Reporting</value>

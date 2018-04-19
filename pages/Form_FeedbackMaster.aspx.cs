@@ -11,6 +11,7 @@ public partial class pages_Form_FeedbackMaster : System.Web.UI.Page
 {
     string UserId;
     static int tStatus;
+    string feedbackType = string.Empty;
     protected void Page_Load(object sender, EventArgs e)
     {
         //Check Login
@@ -22,13 +23,15 @@ public partial class pages_Form_FeedbackMaster : System.Web.UI.Page
         {
             //Check user profile status
             bool profileStatus = CheckProfileIsValid(DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]));
-
+            
             if (!profileStatus)
             {
                 Response.Redirect("UserProfile.aspx");
             }
 
             UserId = DBNulls.StringValue(Session[PublicMethods.ConstUserId].ToString());
+            feedbackType = Request.QueryString["status"];
+
         }
         if (!IsPostBack)
         {
@@ -83,10 +86,19 @@ public partial class pages_Form_FeedbackMaster : System.Web.UI.Page
     {
         try
         {
+            string query = string.Empty;
 
 
+            //string query = "SELECT     tbl_User_Feedback.Ticket_Id, tbl_User_Feedback.Feedback,  tbl_User_Feedback.Created_Time, tbl_Type_Master.Type_Name,(  tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name) as userName FROM  tbl_Type_Master INNER JOIN tbl_Ticket_Master ON tbl_Type_Master.Type_Id = tbl_Ticket_Master.Type_Id INNER JOIN  tbl_User_Feedback ON tbl_Ticket_Master.Ticket_Id = tbl_User_Feedback.Ticket_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id where  tbl_Ticket_Master.Created_By='" + UserId + "' order by  tbl_User_Feedback.Created_Time desc";
 
-            string query = "SELECT     tbl_User_Feedback.Ticket_Id, tbl_User_Feedback.Feedback,  tbl_User_Feedback.Created_Time, tbl_Type_Master.Type_Name,(  tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name) as userName FROM  tbl_Type_Master INNER JOIN tbl_Ticket_Master ON tbl_Type_Master.Type_Id = tbl_Ticket_Master.Type_Id INNER JOIN  tbl_User_Feedback ON tbl_Ticket_Master.Ticket_Id = tbl_User_Feedback.Ticket_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id where  tbl_Ticket_Master.Created_By='" + UserId + "' order by  tbl_User_Feedback.Created_Time desc";
+            if (feedbackType == null)
+            {
+                query = "SELECT     tbl_User_Feedback.Ticket_Id, tbl_User_Feedback.Feedback, tbl_User_Feedback.Created_Time, tbl_Type_Master.Type_Name,tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name AS userName, tbl_Feedback_Master.status FROM  tbl_Type_Master INNER JOIN tbl_Ticket_Master ON tbl_Type_Master.Type_Id = tbl_Ticket_Master.Type_Id INNER JOIN tbl_User_Feedback ON tbl_Ticket_Master.Ticket_Id = tbl_User_Feedback.Ticket_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id INNER JOIN tbl_Feedback_Master ON tbl_User_Feedback.Feedback = tbl_Feedback_Master.feedback where tbl_Ticket_Master.Created_By='" + UserId + "' ORDER BY tbl_User_Feedback.Created_Time DESC ";
+            }
+            else {
+
+                query = " SELECT     tbl_User_Feedback.Ticket_Id, tbl_User_Feedback.Feedback, tbl_User_Feedback.Created_Time, tbl_Type_Master.Type_Name,tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name AS userName, tbl_Feedback_Master.status FROM  tbl_Type_Master INNER JOIN tbl_Ticket_Master ON tbl_Type_Master.Type_Id = tbl_Ticket_Master.Type_Id INNER JOIN tbl_User_Feedback ON tbl_Ticket_Master.Ticket_Id = tbl_User_Feedback.Ticket_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id INNER JOIN tbl_Feedback_Master ON tbl_User_Feedback.Feedback = tbl_Feedback_Master.feedback where tbl_Ticket_Master.Created_By='" + UserId + "' and tbl_Feedback_Master.status='" + feedbackType + "'  ORDER BY tbl_User_Feedback.Created_Time DESC";
+            }
 
             DataTable dt = DBUtils.SQLSelect(new SqlCommand(query));
 

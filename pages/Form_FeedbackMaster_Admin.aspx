@@ -19,7 +19,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body1" runat="Server">
     <a class="navbar-brand" href="#">
-    <asp:Label ID="Label2" runat="server" meta:resourcekey="Label2Resource1" Text="User Feedbacks"></asp:Label>
+    <asp:Label ID="Label2" runat="server" meta:resourcekey="Label2Resource1" Text="User Feedback"></asp:Label>
     </a>
 &nbsp;
 </asp:Content>
@@ -94,8 +94,8 @@
 
 
                                             </MasterTableView>
-                                            <ClientSettings>
-                                                <Resizing AllowColumnResize="false" ResizeGridOnColumnResize="false" AllowResizeToFit="false" />
+                                               <ClientSettings>
+                                                 <Scrolling AllowScroll="True" UseStaticHeaders="True" SaveScrollPosition="true"></Scrolling>
                                             </ClientSettings>
 
 

@@ -1,0 +1,610 @@
+File not found
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta charset="utf-8" /><link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" /><link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" /><meta name="viewport" content="width=device-width" />
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+
+    <!--  Paper Dashboard core CSS    -->
+    <link href="assets/css/paper-dashboard.css" rel="stylesheet" />
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--  Fonts and icons     -->
+    <link href="style/font-awesome.min.css" rel="stylesheet" /><link href="style/css.css" rel="stylesheet" /><link href="assets/css/themify-icons.css" rel="stylesheet" />
+    <style type="text/css">
+  </style>
+
+    
+    <title>View Ticket</title>
+<title>
+
+</title></head>
+<body onload="noBack();" onpageshow="if (event.persisted) noBack();"
+    onunload="">
+    <form method="post" action="./ManageTicket.aspx?id=426" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="Body2_rsm_TSM" id="Body2_rsm_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEyNDc4NzMxNA9kFgJmD2QWAgIDD2QWEgIDDxYCHgRocmVmBRhmb3JtX0FkbWluRGFzaGJvYXJkLmFzcHhkAgUPFgIfAAUYZm9ybV9BZG1pbkRhc2hib2FyZC5hc3B4ZAIHDxYCHgdWaXNpYmxlaGQCCQ8WAh8BaGQCCw8WAh8BaGQCDQ8WAh8BZ2QCDw8WAh8ABRhmb3JtX0FkbWluRGFzaGJvYXJkLmFzcHhkAhMPFgIfAAUYZm9ybV9BZG1pbkRhc2hib2FyZC5hc3B4FgQCAQ8PFgIeBFRleHQFCVBMQU1CSFVSRWRkAgMPDxYGHglGb3JlQ29sb3IJKF7r/x8CBQgoQWRtaW4pIB4EXyFTQgIEZGQCFQ9kFiQCAQ8PFgYfAgUFQ2xvc2UfAwqNAR8EAgRkZAICDw8WAh8CBQsoUExBTUJIVVJFKWRkAgMPDxYCHwIFAzQyNmRkAgQPEA8WBB4NRGF0YVRleHRGaWVsZAUJVHlwZSBOYW1lHgtfIURhdGFCb3VuZGdkEBUBDklORlJBU1RSVUNUVVJFFQEOSU5GUkFTVFJVQ1RVUkUUKwMBZxYBZmQCBQ8QDxYEHwUFEEFwcGxpY2F0aW9uIE5hbWUfBmdkEBUBB05FVFdPUksVAQdORVRXT1JLFCsDAWcWAWZkAgYPEA8WBB8FBQpJc3N1ZSBOYW1lHwZnZBAVAQVPVEhFUhUBBU9USEVSFCsDAWcWAWZkAgcPDxYCHwIFC1Rlc3QgcGF2YW4gZGQCCA8QDxYEHwUFCFByaW9yaXR5HwZnZBAVAQNMb3cVAQNMb3cUKwMBZxYBZmQCCQ9kFgICAQ8QDxYEHwUFBlN0YXR1cx8GZ2QQFQEFQ2xvc2UVAQVDbG9zZRQrAwFnFgFmZAIKDw8WAh8CBRxEZWdyZWUtaW4tR3JhcGhpYy1EZXNpZ24uanBnZGQCDA8QDxYCHgdFbmFibGVkaGRkFgFmZAIODw8WBB8CBQR0ZXN0HwdoZGQCEQ8PFgQfAgUDMS4yHwdoZGQCFA8QDxYCHwdoZA8WAWYWAQUDWWVzFgFmZAIVDw8WAh8BaGRkAhYPDxYCHwFoZGQCGw8WAh4LXyFJdGVtQ291bnRmZAIcDxYCHwFoZGRQmdPjEh0onF9IS4QBx9+AevE3vJR0NDBJZcSYaP8Pkw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/IssueReportingSystem Mail/WebResource.axd?d=iwumggF_J6md_HFPfeCQBN8THI5duDXLaBRivrDVH6m5DsOT-swZ3bE10dHKK4TlBB2Y1WCN2O2XEXDh-C7kKl5XARBzoRP8Yy4ZoCSp1GI1&amp;t=636423091966474998" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+<script> alert('File not found');</script>//]]>
+</script>
+
+<script src="/IssueReportingSystem Mail/ScriptResource.axd?d=Vx0RGDI6IIBguxFltN8mJpQIyvaGxC_B5OlraWU58_5VMSR1bfobQbmGWqePFCsjp6iSkqFZQwu9aE2dNOn4WKugLBvhIzsHJWMCPoTzO1s6BJc6oGIXN12KfeyqOAy5LsbXdqCAvP690CpL6NR5m04PFKltnBzVFog2cVVfRgs1&amp;t=ffffffff8eefb0c2" type="text/javascript"></script>
+<script src="/IssueReportingSystem Mail/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=Body2_rsm_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c+Version%3d4.0.0.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a22a42911-2aa3-47ca-9a60-e26e0d643aa7%3aea597d4b%3ab25378d2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2D19E710" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABIpq2QJJNxJesCN1zzZf9yVCNxFOdP945Re8kHGlT1y3Ff4VBFMQHyJA7Cj+CmKUP1vN3gIIduV6Niq6ukd1A8edpwOqngFTzTylaq8t6FYk54tQJd7tRcwRaT+x6FiypJe/UNl2NBcuAVGK30PBRNYM13F3/RdXCG8Oa4aKRIl7JsNaRvukSSYF7Bb1Mdt8NI3O76aL78/3FyVrwEJWEg9Hv9gLA0MfG4pSEeCll88Ygvmeu92Wf6WvUB3SeNDHz/PGLywdpnOmxHKWbiLbuh90yeEnccLwr9xf9duAEq+2Rav+q+FByEg4LeEJ2KBqyKevSbKxeaE/TXh3ytf1/ktSr+Ns9xERovJ6t31Ugf8TJV3JUbyGzrXga8gFgWhFQil+6u4Api+haDwTDY7uMZZ9TgNPl6x20pJIWla0Q0eqw==" />
+</div>
+        
+
+
+        <div>
+            <div class="wrapper">
+                <div class="sidebar" data-background-color="white" data-active-color="danger">
+
+                    <div class="sidebar-wrapper">
+                        <div class="logo">
+                            <center>
+                                <a href="form_AdminDashboard.aspx" id="logoLink"><img src="images/Aadhaar-3.jpg" width="120px" alt=""/></a>
+                               
+                                
+                            </center>
+
+                        </div>
+
+                        <ul class="nav">
+                            <li>
+                                <a href="form_AdminDashboard.aspx" id="dashboardLink">
+                                    <i class="ti-panel"></i>
+                                    <p>Dashboard</p>
+                                </a>
+                            </li>
+                            
+                            
+                            
+                            <li id="viewStatus">
+                                <a href="ViewTicket_Admin.aspx">
+                                    <i class="ti-user"></i>
+                                    <p>Manage Tickets</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-panel">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div>
+                                <center>
+						<a href="form_AdminDashboard.aspx" id="sanjeevLogo"><img src="images/sanjeevlogo.png" alt="" width="120px"/></a>
+</center>
+                            </div>
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar bar1"></span>
+                                    <span class="icon-bar bar2"></span>
+                                    <span class="icon-bar bar3"></span>
+                                </button>
+
+
+                                
+    <a class="navbar-brand" href="#">View Ticket</a>
+
+
+                            </div>
+
+                            <div class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a href="form_AdminDashboard.aspx" id="userName">
+                                            <i class="ti-user"></i>
+                                            <p>
+                                                <span id="lblUserName">PLAMBHURE</span>
+                                                <span id="lbl_ISadmin" style="color:#EB5E28;">(Admin) </span>
+                                                 
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="LogOut.aspx">
+                                            <i class="ti-close"></i>
+                                            <p>Logout</p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  
+    <script type='text/javascript' src="../Scripts/jquery-1.4.1.min.js"></script>
+    <script src="../Scripts/jquery-1.4.1.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.maskedinput.js" type="text/javascript"></script>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Body2_btn_UpdateComment").click(function () {
+                 debugger;
+                 if (Page_IsValid == true) {
+
+                     $('#loading').show();
+
+                     return true;
+                 }
+                 else {
+                     return false;
+                 }
+             });
+         });
+
+
+
+       
+
+        
+        function onlyNumbersWithDot(e) {
+            var charCode;
+            if (e.keyCode > 0) {
+                charCode = e.which || e.keyCode;
+            }
+            else if (typeof (e.charCode) != "undefined") {
+                charCode = e.which || e.keyCode;
+            }
+            if (charCode == 46)
+                return true
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
+    </script>
+
+   
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#Body2_UpdateButton").click(function () {
+                debugger;
+                if (Page_IsValid == true) {
+
+                    $('#loading').show();
+
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            });
+        });
+
+    </script>
+
+
+    
+
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$Body2$rsm', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-11 col-md-10">
+                    <div class="card">
+                        <div class="header">
+                            <h4 class="title">View Ticket :
+                                <span id="Body2_lblStatus" style="color:Red;">Close</span><span id="Body2_lblUser">(PLAMBHURE)</span></h4>
+                        </div>
+                        <div class="content">
+                            <form>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Ticket ID</label>
+                                            <input name="ctl00$Body2$TicketID" type="text" value="426" readonly="readonly" id="Body2_TicketID" class="form-control border-input" style="color:Green;" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Type</label>
+                                            <select name="ctl00$Body2$drpDownType" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$Body2$drpDownType\&#39;,\&#39;\&#39;)&#39;, 0)" id="Body2_drpDownType" disabled="disabled" class="aspNetDisabled form-control border-input">
+	<option selected="selected" value="INFRASTRUCTURE">INFRASTRUCTURE</option>
+
+</select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Application</label>
+                                            <select name="ctl00$Body2$drpDownApplication" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$Body2$drpDownApplication\&#39;,\&#39;\&#39;)&#39;, 0)" id="Body2_drpDownApplication" disabled="disabled" class="aspNetDisabled form-control border-input">
+	<option selected="selected" value="NETWORK">NETWORK</option>
+
+</select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Issue</label>
+                                            <select name="ctl00$Body2$DrpIssueType" id="Body2_DrpIssueType" disabled="disabled" class="aspNetDisabled form-control border-input">
+	<option selected="selected" value="OTHER">OTHER</option>
+
+</select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Issue Details</label>
+                                            <textarea name="ctl00$Body2$IssueDetail" rows="2" cols="20" readonly="readonly" id="Body2_IssueDetail" class="form-control border-input">
+Test pavan </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Priority</label>
+                                            <select name="ctl00$Body2$DrpPriority" id="Body2_DrpPriority" disabled="disabled" class="aspNetDisabled form-control border-input">
+	<option selected="selected" value="Low">Low</option>
+
+</select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Document</label>
+                                            <input name="ctl00$Body2$txtFileName" type="text" value="Degree-in-Graphic-Design.jpg" readonly="readonly" id="Body2_txtFileName" class="form-control border-input" />
+                                            
+
+
+
+                                            <a id="Body2_lnkDownload" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Body2$lnkDownload&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))">
+                                                       <img  src="../Images/Download.png"  />
+                                            </a>
+                                            <br />
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Status</label>
+                                            <select name="ctl00$Body2$ddlStatus" id="Body2_ddlStatus" disabled="disabled" class="aspNetDisabled form-control border-input">
+	<option selected="selected" value="1">Closed</option>
+
+</select>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Remark</label>
+                                            <span id="Body2_Label3" style="color:Red;">*</span>
+                                            <input name="ctl00$Body2$txtRemark" type="text" value="test" id="Body2_txtRemark" disabled="disabled" class="aspNetDisabled form-control border-input" style="color:Green;" />
+                                            <span id="Body2_rfv" style="color:Red;visibility:hidden;">Please Enter Remark</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                   <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Time Spent(Hours.Min)</label>
+                                               <span id="Body2_lblStar" style="color:Red;">*</span>
+                                            <input name="ctl00$Body2$txtHours" type="text" value="1.2" id="Body2_txtHours" disabled="disabled" class="aspNetDisabled form-control border-input" onkeypress="return onlyNumbersWithDot(event);" placeholder="Hours.Minute" />
+                                   <span id="Body2_rfvHours" style="color:Red;display:none;">Please Enter (Hours.Minute)</span>
+                                 <span id="Body2_RegularExpressionValidatorHours" style="display:none;">Enter Valid Time</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Is Valid?</label>
+                                            <select name="ctl00$Body2$ddlIsValid" id="Body2_ddlIsValid" disabled="disabled" class="aspNetDisabled form-control border-input">
+	<option selected="selected" value="0">Yes</option>
+	<option value="1">No</option>
+
+</select>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                              
+                                <div class="text-center">
+
+                                    
+                                    <br />
+
+                                    
+
+
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="form-group">
+                                            <label>Comments</label>
+                                            <span id="Body2_Label1" style="color:Red;">*(Comment is mandatory for updating comment)</span>
+                                            <textarea name="ctl00$Body2$txt_Comments" rows="2" cols="20" id="Body2_txt_Comments" class="form-control border-input" style="height:100%;">
+</textarea>
+
+                                            <span id="Body2_RequiredFieldValidator2" style="color:Red;display:none;">Please Enter Comment</span>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <br />
+                                            <br />
+                                            <div class="text-center">
+
+                                                <input type="submit" name="ctl00$Body2$btn_UpdateComment" value="Update Comment" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Body2$btn_UpdateComment&quot;, &quot;&quot;, true, &quot;Check1&quot;, &quot;&quot;, false, false))" id="Body2_btn_UpdateComment" class="btn btn-info btn-fill btn-wd" style="border-color:Orange;background-color: #EB5E28;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <h3 style="text-decoration: underline;">Comments:</h3>
+                                
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+
+                                        <div style="overflow: hidden;">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <style type="text/css">
+        #page
+        {
+            display: block;
+        }
+
+        #loading
+        {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            width: 100%;
+            height: 200%;
+            background-color: rgba(255, 255, 255, 0.5);
+            background-image: url('../pages/images/ajax-loader.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+    <div id="loading"></div>
+
+
+                    
+
+
+                    <footer class="footer">
+                        <div class="container-fluid">
+                            <div class="copyright pull-right">
+                                &copy;
+							<script>document.write(new Date().getFullYear())</script>
+                                , by Applications Team.
+                            </div>
+                        </div>
+                    </footer>
+
+                </div>
+            </div>
+        </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("Body2_rfv"), document.getElementById("Body2_rfvHours"), document.getElementById("Body2_RegularExpressionValidatorHours"), document.getElementById("Body2_RequiredFieldValidator2"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var Body2_rfv = document.all ? document.all["Body2_rfv"] : document.getElementById("Body2_rfv");
+Body2_rfv.controltovalidate = "Body2_txtRemark";
+Body2_rfv.errormessage = "Please Enter Remark";
+Body2_rfv.validationGroup = "UpdateClick";
+Body2_rfv.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+Body2_rfv.initialvalue = "";
+var Body2_rfvHours = document.all ? document.all["Body2_rfvHours"] : document.getElementById("Body2_rfvHours");
+Body2_rfvHours.controltovalidate = "Body2_txtHours";
+Body2_rfvHours.errormessage = "Please Enter (Hours.Minute)";
+Body2_rfvHours.display = "Dynamic";
+Body2_rfvHours.validationGroup = "UpdateClick";
+Body2_rfvHours.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+Body2_rfvHours.initialvalue = "";
+var Body2_RegularExpressionValidatorHours = document.all ? document.all["Body2_RegularExpressionValidatorHours"] : document.getElementById("Body2_RegularExpressionValidatorHours");
+Body2_RegularExpressionValidatorHours.controltovalidate = "Body2_txtHours";
+Body2_RegularExpressionValidatorHours.errormessage = "Enter Valid Time";
+Body2_RegularExpressionValidatorHours.display = "Dynamic";
+Body2_RegularExpressionValidatorHours.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+Body2_RegularExpressionValidatorHours.validationexpression = "^-?\\d+(?:\\.\\d+)?$";
+var Body2_RequiredFieldValidator2 = document.all ? document.all["Body2_RequiredFieldValidator2"] : document.getElementById("Body2_RequiredFieldValidator2");
+Body2_RequiredFieldValidator2.controltovalidate = "Body2_txt_Comments";
+Body2_RequiredFieldValidator2.errormessage = "Please Enter Comment";
+Body2_RequiredFieldValidator2.display = "Dynamic";
+Body2_RequiredFieldValidator2.validationGroup = "Check1";
+Body2_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+Body2_RequiredFieldValidator2.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('Body2_rfv').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('Body2_rfv'));
+}
+
+document.getElementById('Body2_rfvHours').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('Body2_rfvHours'));
+}
+
+document.getElementById('Body2_RegularExpressionValidatorHours').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('Body2_RegularExpressionValidatorHours'));
+}
+
+document.getElementById('Body2_RequiredFieldValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('Body2_RequiredFieldValidator2'));
+}
+//]]>
+</script>
+</form>
+</body>
+
+
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--  Checkbox, Radio & Switch Plugins -->
+<script src="assets/js/bootstrap-checkbox-radio.js"></script>
+
+<!--  Charts Plugin -->
+<script src="assets/js/chartist.min.js"></script>
+
+<!--  Notifications Plugin    -->
+<script src="assets/js/bootstrap-notify.js"></script>
+
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+<script src="assets/js/paper-dashboard.js"></script>
+
+<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+<script src="assets/js/demo.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        demo.initChartist();
+    });
+</script>
+</html>

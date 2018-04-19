@@ -123,6 +123,12 @@
   <data name="btnFilterApplyResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="ddlMenuResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlOrderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="DropDownList1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -557,7 +563,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource1.ImageUrl" xml:space="preserve">
-    <value>images/Search3.png</value>
+    <value />
   </data>
   <data name="GridHyperLinkColumnResource1.NavigateUrl" xml:space="preserve">
     <value />
@@ -569,7 +575,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource1.Text" xml:space="preserve">
-    <value>Ver</value>
+    <value>Actualizar</value>
   </data>
   <data name="GridHyperLinkColumnResource2.AndCurrentFilterValue" xml:space="preserve">
     <value />
@@ -581,7 +587,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource2.DataNavigateUrlFormatString" xml:space="preserve">
-    <value />
+    <value>UserTicketView.aspx?id={0}</value>
   </data>
   <data name="GridHyperLinkColumnResource2.DataTextFormatString" xml:space="preserve">
     <value />
@@ -605,7 +611,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource2.HeaderText" xml:space="preserve">
-    <value />
+    <value>Carné de identidad</value>
   </data>
   <data name="GridHyperLinkColumnResource2.HeaderTooltip" xml:space="preserve">
     <value />
@@ -623,7 +629,61 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource2.Text" xml:space="preserve">
-    <value>Actualizar</value>
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.DataNavigateUrlFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.DataTextFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridHyperLinkColumnResource3.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.ImageUrl" xml:space="preserve">
+    <value>images/Search3.png</value>
+  </data>
+  <data name="GridHyperLinkColumnResource3.NavigateUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.Target" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource3.Text" xml:space="preserve">
+    <value>Ver</value>
   </data>
   <data name="Label1Resource1.Text" xml:space="preserve">
     <value>Informes</value>
@@ -644,25 +704,55 @@
     <value />
   </data>
   <data name="ListItemResource1.Text" xml:space="preserve">
-    <value>All</value>
+    <value>Todas</value>
   </data>
   <data name="ListItemResource1.Value" xml:space="preserve">
     <value>All</value>
   </data>
   <data name="ListItemResource2.Text" xml:space="preserve">
-    <value>Open</value>
+    <value>Abierto</value>
   </data>
   <data name="ListItemResource2.Value" xml:space="preserve">
     <value>Open</value>
   </data>
   <data name="ListItemResource3.Text" xml:space="preserve">
-    <value>Closed</value>
+    <value>Cerrado</value>
   </data>
   <data name="ListItemResource3.Value" xml:space="preserve">
     <value>Closed</value>
   </data>
+  <data name="ListItemResource4.Text" xml:space="preserve">
+    <value>Tiempo creado</value>
+  </data>
+  <data name="ListItemResource4.Value" xml:space="preserve">
+    <value>Created Time</value>
+  </data>
+  <data name="ListItemResource5.Text" xml:space="preserve">
+    <value>Ticket No</value>
+  </data>
+  <data name="ListItemResource5.Value" xml:space="preserve">
+    <value>Ticket No</value>
+  </data>
+  <data name="ListItemResource6.Text" xml:space="preserve">
+    <value>Prioridad</value>
+  </data>
+  <data name="ListItemResource6.Value" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="ListItemResource7.Text" xml:space="preserve">
+    <value>Descendente</value>
+  </data>
+  <data name="ListItemResource7.Value" xml:space="preserve">
+    <value>desc</value>
+  </data>
+  <data name="ListItemResource8.Text" xml:space="preserve">
+    <value>Ascendente</value>
+  </data>
+  <data name="ListItemResource8.Value" xml:space="preserve">
+    <value>asc</value>
+  </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Informes</value>
+    <value>Reports</value>
   </data>
   <data name="RadGrid1Resource1.BackImageUrl" xml:space="preserve">
     <value />
@@ -761,19 +851,19 @@
     <value />
   </data>
   <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToCsvText" xml:space="preserve">
-    <value>Exportar a CSV</value>
+    <value>Exportar to CSV</value>
   </data>
   <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToExcelImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToExcelText" xml:space="preserve">
-    <value>Exportar a Excel</value>
+    <value>Exportar to Excel</value>
   </data>
   <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToPdfImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToPdfText" xml:space="preserve">
-    <value>Exportar a PDF</value>
+    <value>Exportar to PDF</value>
   </data>
   <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.ExportToWordImageUrl" xml:space="preserve">
     <value />
@@ -794,7 +884,7 @@
     <value />
   </data>
   <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Refrescar</value>
   </data>
   <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.SaveChangesText" xml:space="preserve">
     <value>Guardar cambios</value>
@@ -905,7 +995,7 @@
     <value />
   </data>
   <data name="RadGrid1Resource1.MasterTableView.PagerStyle.PrevPageToolTip" xml:space="preserve">
-    <value>Páginas anterior</value>
+    <value>Pagina anterior</value>
   </data>
   <data name="RadGrid1Resource1.MasterTableView.RowIndicatorColumn.AndCurrentFilterValue" xml:space="preserve">
     <value />
@@ -995,7 +1085,7 @@
     <value>Tamaño de página:</value>
   </data>
   <data name="RadGrid1Resource1.PagerStyle.PrevPagesToolTip" xml:space="preserve">
-    <value>Pagina anteriores</value>
+    <value>Previous Pages</value>
   </data>
   <data name="RadGrid1Resource1.PagerStyle.PrevPageText" xml:space="preserve">
     <value />

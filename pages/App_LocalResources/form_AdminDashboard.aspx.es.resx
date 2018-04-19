@@ -126,6 +126,33 @@
   <data name="BoundFieldResource1.HeaderText" xml:space="preserve">
     <value>Total</value>
   </data>
+  <data name="BoundFieldResource10.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource10.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource10.HeaderText" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="BoundFieldResource11.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource11.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource11.HeaderText" xml:space="preserve">
+    <value>Este mes</value>
+  </data>
+  <data name="BoundFieldResource12.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource12.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource12.HeaderText" xml:space="preserve">
+    <value>Abierto</value>
+  </data>
   <data name="BoundFieldResource2.AccessibleHeaderText" xml:space="preserve">
     <value />
   </data>
@@ -171,6 +198,33 @@
   <data name="BoundFieldResource6.HeaderText" xml:space="preserve">
     <value>Abierto</value>
   </data>
+  <data name="BoundFieldResource7.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource7.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource7.HeaderText" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="BoundFieldResource8.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource8.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource8.HeaderText" xml:space="preserve">
+    <value>Este mes</value>
+  </data>
+  <data name="BoundFieldResource9.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource9.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource9.HeaderText" xml:space="preserve">
+    <value>Abierto</value>
+  </data>
   <data name="HyperLinkFieldResource1.AccessibleHeaderText" xml:space="preserve">
     <value />
   </data>
@@ -195,10 +249,40 @@
   <data name="HyperLinkFieldResource2.Text" xml:space="preserve">
     <value />
   </data>
+  <data name="HyperLinkFieldResource3.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkFieldResource3.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkFieldResource3.HeaderText" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="HyperLinkFieldResource3.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkFieldResource4.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkFieldResource4.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkFieldResource4.HeaderText" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="HyperLinkFieldResource4.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label10Resource1.Text" xml:space="preserve">
     <value>Cerrado</value>
   </data>
   <data name="Label10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label10Resource2.Text" xml:space="preserve">
+    <value>En los próximos 3 días</value>
+  </data>
+  <data name="Label10Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label11Resource1.Text" xml:space="preserve">
@@ -207,10 +291,22 @@
   <data name="Label11Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label11Resource2.Text" xml:space="preserve">
+    <value>Mayores de 3 días</value>
+  </data>
+  <data name="Label11Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label12Resource1.Text" xml:space="preserve">
     <value>Boletos totales</value>
   </data>
   <data name="Label12Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label12Resource2.Text" xml:space="preserve">
+    <value>Hoy</value>
+  </data>
+  <data name="Label12Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label13Resource1.Text" xml:space="preserve">
@@ -219,10 +315,22 @@
   <data name="Label13Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label13Resource2.Text" xml:space="preserve">
+    <value>Creado</value>
+  </data>
+  <data name="Label13Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label1Resource1.Text" xml:space="preserve">
     <value>Cerca</value>
   </data>
   <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource2.Text" xml:space="preserve">
+    <value>Duración total del soporte</value>
+  </data>
+  <data name="Label1Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label2Resource1.Text" xml:space="preserve">
@@ -231,10 +339,22 @@
   <data name="Label2Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label2Resource2.Text" xml:space="preserve">
+    <value>Tiempo cerrado más lento</value>
+  </data>
+  <data name="Label2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label3Resource1.Text" xml:space="preserve">
     <value>Mayores de 3 días</value>
   </data>
   <data name="Label3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3Resource2.Text" xml:space="preserve">
+    <value>Tiempo cerrado más rápido</value>
+  </data>
+  <data name="Label3Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label4Resource1.Text" xml:space="preserve">
@@ -243,16 +363,34 @@
   <data name="Label4Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label4Resource2.Text" xml:space="preserve">
+    <value>Tiempo promedio cerrado</value>
+  </data>
+  <data name="Label4Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label5Resource1.Text" xml:space="preserve">
     <value>Creado</value>
   </data>
   <data name="Label5Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label5Resource2.Text" xml:space="preserve">
+    <value>Cerrado</value>
+  </data>
+  <data name="Label5Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label6Resource1.Text" xml:space="preserve">
-    <value>Duración total abierta</value>
+    <value>Duración total del soporte</value>
   </data>
   <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource2.Text" xml:space="preserve">
+    <value>Abierto</value>
+  </data>
+  <data name="Label6Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label7Resource1.Text" xml:space="preserve">
@@ -261,10 +399,22 @@
   <data name="Label7Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label7Resource2.Text" xml:space="preserve">
+    <value>Boletos totales</value>
+  </data>
+  <data name="Label7Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label8Resource1.Text" xml:space="preserve">
     <value>Tiempo cerrado más rápido</value>
   </data>
   <data name="Label8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8Resource2.Text" xml:space="preserve">
+    <value>Cerca</value>
+  </data>
+  <data name="Label8Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label9Resource1.Text" xml:space="preserve">
@@ -273,10 +423,22 @@
   <data name="Label9Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label9Resource2.Text" xml:space="preserve">
+    <value>Tablero</value>
+  </data>
+  <data name="Label9Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lbl_MoreThanWeekCloseResource1.Text" xml:space="preserve">
     <value>Casa</value>
   </data>
   <data name="lbl_MoreThanWeekCloseResource1.ToolTip" xml:space="preserve">
+    <value>Cerrado antes de los últimos 3 días</value>
+  </data>
+  <data name="lbl_MoreThanWeekCloseResource2.Text" xml:space="preserve">
+    <value>Casa</value>
+  </data>
+  <data name="lbl_MoreThanWeekCloseResource2.ToolTip" xml:space="preserve">
     <value>Cerrado antes de los últimos 3 días</value>
   </data>
   <data name="lbl_MoreThanWeekOpenResource1.Text" xml:space="preserve">
@@ -285,10 +447,22 @@
   <data name="lbl_MoreThanWeekOpenResource1.ToolTip" xml:space="preserve">
     <value>Creado antes de los últimos 3 días</value>
   </data>
+  <data name="lbl_MoreThanWeekOpenResource2.Text" xml:space="preserve">
+    <value>Casa</value>
+  </data>
+  <data name="lbl_MoreThanWeekOpenResource2.ToolTip" xml:space="preserve">
+    <value>Creado antes de los últimos 3 días</value>
+  </data>
   <data name="lbl_RecentCloseResource1.Text" xml:space="preserve">
     <value>Casa</value>
   </data>
   <data name="lbl_RecentCloseResource1.ToolTip" xml:space="preserve">
+    <value>Cerrado hoy</value>
+  </data>
+  <data name="lbl_RecentCloseResource2.Text" xml:space="preserve">
+    <value>Casa</value>
+  </data>
+  <data name="lbl_RecentCloseResource2.ToolTip" xml:space="preserve">
     <value>Cerrado hoy</value>
   </data>
   <data name="lbl_RecentOpenResource1.Text" xml:space="preserve">
@@ -297,10 +471,22 @@
   <data name="lbl_RecentOpenResource1.ToolTip" xml:space="preserve">
     <value>Creado hoy</value>
   </data>
+  <data name="lbl_RecentOpenResource2.Text" xml:space="preserve">
+    <value>Casa</value>
+  </data>
+  <data name="lbl_RecentOpenResource2.ToolTip" xml:space="preserve">
+    <value>Creado hoy</value>
+  </data>
   <data name="lbl_WeekCloseResource1.Text" xml:space="preserve">
     <value>Casa</value>
   </data>
   <data name="lbl_WeekCloseResource1.ToolTip" xml:space="preserve">
+    <value>Cerrado en los últimos 3 días</value>
+  </data>
+  <data name="lbl_WeekCloseResource2.Text" xml:space="preserve">
+    <value>Casa</value>
+  </data>
+  <data name="lbl_WeekCloseResource2.ToolTip" xml:space="preserve">
     <value>Cerrado en los últimos 3 días</value>
   </data>
   <data name="lbl_WeekOpenResource1.Text" xml:space="preserve">
@@ -309,10 +495,22 @@
   <data name="lbl_WeekOpenResource1.ToolTip" xml:space="preserve">
     <value>Creado en los últimos 3 días</value>
   </data>
+  <data name="lbl_WeekOpenResource2.Text" xml:space="preserve">
+    <value>Casa</value>
+  </data>
+  <data name="lbl_WeekOpenResource2.ToolTip" xml:space="preserve">
+    <value>Creado en los últimos 3 días</value>
+  </data>
   <data name="lblAverageClosedTimeResource1.Text" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="lblAverageClosedTimeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAverageClosedTimeResource2.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblAverageClosedTimeResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblCloseTicketsResource1.Text" xml:space="preserve">
@@ -321,10 +519,22 @@
   <data name="lblCloseTicketsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="lblCloseTicketsResource2.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblCloseTicketsResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblFastestClosedTimeResource1.Text" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="lblFastestClosedTimeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFastestClosedTimeResource2.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblFastestClosedTimeResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblOpenTicketsResource1.Text" xml:space="preserve">
@@ -333,10 +543,22 @@
   <data name="lblOpenTicketsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="lblOpenTicketsResource2.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblOpenTicketsResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblSlowestClosedTimeResource1.Text" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="lblSlowestClosedTimeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSlowestClosedTimeResource2.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblSlowestClosedTimeResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblTotalSpentTimeResource1.Text" xml:space="preserve">
@@ -345,13 +567,28 @@
   <data name="lblTotalSpentTimeResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="lblTotalSpentTimeResource2.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTotalSpentTimeResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblTotalTicketsResource1.Text" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="lblTotalTicketsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="lblTotalTicketsResource2.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblTotalTicketsResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="PageResource1.Title" xml:space="preserve">
+    <value>Tablero</value>
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
     <value>Tablero</value>
   </data>
   <data name="rgvTypeWiseResource1.Caption" xml:space="preserve">
@@ -363,6 +600,15 @@
   <data name="rgvTypeWiseResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="rgvTypeWiseResource2.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvTypeWiseResource2.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvTypeWiseResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="rgvUserDeptwiseResource1.Caption" xml:space="preserve">
     <value />
   </data>
@@ -370,6 +616,15 @@
     <value />
   </data>
   <data name="rgvUserDeptwiseResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvUserDeptwiseResource2.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvUserDeptwiseResource2.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgvUserDeptwiseResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
 </root>

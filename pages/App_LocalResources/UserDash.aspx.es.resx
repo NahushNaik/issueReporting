@@ -117,172 +117,202 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnEscalateResource1.Text" xml:space="preserve">
+  <data name="btnEscalateResource2.Text" xml:space="preserve">
     <value>Enviar</value>
   </data>
-  <data name="btnEscalateResource1.ToolTip" xml:space="preserve">
+  <data name="btnEscalateResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="hplFeedbackCountNegative1Resource1.Text" xml:space="preserve">
-    <value>Negativo</value>
+  <data name="hplFeedbackCountModerateTextResource1.Text" xml:space="preserve">
+    <value>[hplFeedbackCountModerateText]</value>
   </data>
-  <data name="hplFeedbackCountNegative1Resource1.ToolTip" xml:space="preserve">
+  <data name="hplFeedbackCountModerateTextResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="hplFeedbackCountNegative2Resource1.Text" xml:space="preserve">
-    <value>Recuento negativo de votos</value>
-  </data>
-  <data name="hplFeedbackCountNegative2Resource1.ToolTip" xml:space="preserve">
+  <data name="hplFeedbackCountNegative1Resource2.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="hplFeedbackCountNegativeTextResource1.Text" xml:space="preserve">
+  <data name="hplFeedbackCountNegative1Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="hplFeedbackCountNegativeTextResource1.ToolTip" xml:space="preserve">
+  <data name="hplFeedbackCountNegative2Resource2.Text" xml:space="preserve">
+    <value>No Comentarios felices</value>
+  </data>
+  <data name="hplFeedbackCountNegative2Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="hplFeedbackCountPositive1Resource1.Text" xml:space="preserve">
-    <value>Positivo</value>
+  <data name="hplFeedbackCountNegativeTextResource2.Text" xml:space="preserve">
+    <value>[hplFeedbackCountNegativeText]</value>
   </data>
-  <data name="hplFeedbackCountPositive1Resource1.ToolTip" xml:space="preserve">
+  <data name="hplFeedbackCountNegativeTextResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="hplFeedbackCountPositive2Resource1.Text" xml:space="preserve">
-    <value>Conteo de retroalimentación positiva</value>
-  </data>
-  <data name="hplFeedbackCountPositive2Resource1.ToolTip" xml:space="preserve">
+  <data name="hplFeedbackCountPositive1Resource2.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="hplFeedbackCountPositiveTextResource1.Text" xml:space="preserve">
+  <data name="hplFeedbackCountPositive1Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="hplFeedbackCountPositiveTextResource1.ToolTip" xml:space="preserve">
+  <data name="hplFeedbackCountPositive2Resource2.Text" xml:space="preserve">
+    <value>Comentarios felices</value>
+  </data>
+  <data name="hplFeedbackCountPositive2Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="HyperLinkTicketClosedViewListResource1.Text" xml:space="preserve">
+  <data name="hplFeedbackCountPositiveTextResource2.Text" xml:space="preserve">
+    <value>[hplFeedbackCountPositiveText]</value>
+  </data>
+  <data name="hplFeedbackCountPositiveTextResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hplModerateResource1.Text" xml:space="preserve">
+    <value>Retroalimentación neutra</value>
+  </data>
+  <data name="hplModerateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink1Resource1.Text" xml:space="preserve">
+    <value>Boleto incorrecto recaudado</value>
+  </data>
+  <data name="HyperLink1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLink6Resource1.Text" xml:space="preserve">
+    <value>Comentarios pendientes</value>
+  </data>
+  <data name="HyperLink6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HyperLinkTicketClosedViewListResource2.Text" xml:space="preserve">
     <value>Ver lista</value>
   </data>
-  <data name="HyperLinkTicketClosedViewListResource1.ToolTip" xml:space="preserve">
+  <data name="HyperLinkTicketClosedViewListResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="HyperLinkTicketDaysResource1.Text" xml:space="preserve">
+  <data name="HyperLinkTicketDaysResource2.Text" xml:space="preserve">
+    <value>[HyperLinkTicketDays]</value>
+  </data>
+  <data name="HyperLinkTicketDaysResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="HyperLinkTicketDaysResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="HyperLinkTicketOpenViewListResource1.Text" xml:space="preserve">
+  <data name="HyperLinkTicketOpenViewListResource2.Text" xml:space="preserve">
     <value>Ver lista</value>
   </data>
-  <data name="HyperLinkTicketOpenViewListResource1.ToolTip" xml:space="preserve">
+  <data name="HyperLinkTicketOpenViewListResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="HyperLinkTicketRecentResource1.Text" xml:space="preserve">
+  <data name="HyperLinkTicketRecentResource2.Text" xml:space="preserve">
     <value>Ticket reciente</value>
   </data>
-  <data name="HyperLinkTicketRecentResource1.ToolTip" xml:space="preserve">
+  <data name="HyperLinkTicketRecentResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="HyperLinkTicketRecentViewResource1.Text" xml:space="preserve">
+  <data name="HyperLinkTicketRecentViewResource2.Text" xml:space="preserve">
     <value>Ver lista</value>
   </data>
-  <data name="HyperLinkTicketRecentViewResource1.ToolTip" xml:space="preserve">
+  <data name="HyperLinkTicketRecentViewResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="HyperLinkTicketsClosedCountResource1.Text" xml:space="preserve">
+  <data name="HyperLinkTicketsClosedCountResource2.Text" xml:space="preserve">
+    <value>[HyperLinkTicketsClosedCount]</value>
+  </data>
+  <data name="HyperLinkTicketsClosedCountResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="HyperLinkTicketsClosedCountResource1.ToolTip" xml:space="preserve">
+  <data name="HyperLinkTicketsClosedResource2.Text" xml:space="preserve">
+    <value>[HyperLinkTicketsClosed]</value>
+  </data>
+  <data name="HyperLinkTicketsClosedResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="HyperLinkTicketsClosedResource1.Text" xml:space="preserve">
+  <data name="HyperLinkTicketsOpenCountResource2.Text" xml:space="preserve">
+    <value>[HyperLinkTicketsOpenCount]</value>
+  </data>
+  <data name="HyperLinkTicketsOpenCountResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="HyperLinkTicketsClosedResource1.ToolTip" xml:space="preserve">
+  <data name="HyperLinkTicketsOpenResource2.Text" xml:space="preserve">
+    <value>[HyperLinkTicketsOpen]</value>
+  </data>
+  <data name="HyperLinkTicketsOpenResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="HyperLinkTicketsOpenCountResource1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="HyperLinkTicketsOpenCountResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="HyperLinkTicketsOpenResource1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="HyperLinkTicketsOpenResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Label1Resource1.Text" xml:space="preserve">
+  <data name="Label1Resource2.Text" xml:space="preserve">
     <value>*</value>
   </data>
-  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+  <data name="Label1Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="Label2Resource1.Text" xml:space="preserve">
+  <data name="Label2Resource2.Text" xml:space="preserve">
     <value>Tablero</value>
   </data>
-  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+  <data name="Label2Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="Label3Resource1.Text" xml:space="preserve">
-    <value>Nuevo boleto</value>
-  </data>
-  <data name="Label3Resource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Label4Resource1.Text" xml:space="preserve">
-    <value>Nuevo boleto</value>
-  </data>
-  <data name="Label4Resource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Label5Resource1.Text" xml:space="preserve">
+  <data name="Label3Resource2.Text" xml:space="preserve">
     <value>Estadísticas de entradas</value>
   </data>
-  <data name="Label5Resource1.ToolTip" xml:space="preserve">
+  <data name="Label3Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="Label6Resource1.Text" xml:space="preserve">
+  <data name="Label4Resource2.Text" xml:space="preserve">
     <value>Estado de finalización</value>
   </data>
-  <data name="Label6Resource1.ToolTip" xml:space="preserve">
+  <data name="Label4Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="Label7Resource1.Text" xml:space="preserve">
+  <data name="Label5Resource2.Text" xml:space="preserve">
     <value>Basado en el no del boleto completado ...</value>
   </data>
-  <data name="Label7Resource1.ToolTip" xml:space="preserve">
+  <data name="Label5Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="Label8Resource1.Text" xml:space="preserve">
+  <data name="Label6Resource2.Text" xml:space="preserve">
     <value>Equipo de apoyo</value>
   </data>
-  <data name="Label8Resource1.ToolTip" xml:space="preserve">
+  <data name="Label6Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="Label9Resource1.Text" xml:space="preserve">
+  <data name="Label7Resource2.Text" xml:space="preserve">
     <value>Conectarse con el equipo de soporte</value>
   </data>
-  <data name="Label9Resource1.ToolTip" xml:space="preserve">
+  <data name="Label7Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="PageResource1.Title" xml:space="preserve">
+  <data name="lblPendingFeedbackResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPendingFeedbackResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWrongTicketCountResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWrongTicketCountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource2.Title" xml:space="preserve">
     <value>Tablero</value>
   </data>
-  <data name="RequiredFieldValidator2Resource1.ErrorMessage" xml:space="preserve">
+  <data name="RequiredFieldValidator2Resource2.ErrorMessage" xml:space="preserve">
     <value>Equipo de soporte de campo requerido</value>
   </data>
-  <data name="RequiredFieldValidator2Resource1.Text" xml:space="preserve">
+  <data name="RequiredFieldValidator2Resource2.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="RequiredFieldValidator2Resource1.ToolTip" xml:space="preserve">
+  <data name="RequiredFieldValidator2Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="txtEscalationResource1.Text" xml:space="preserve">
+  <data name="txtEscalationResource2.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="txtEscalationResource1.ToolTip" xml:space="preserve">
+  <data name="txtEscalationResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
 </root>

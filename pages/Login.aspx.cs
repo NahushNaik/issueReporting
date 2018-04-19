@@ -14,7 +14,7 @@ public partial class Login : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         this.LoginButton.Attributes.Add("onclick", DisableTheButton(this.Page, this.LoginButton));
-        lblBuildId.Text = "20180330 10:50 AM";
+        lblBuildId.Text = "201804012 10:52 PM";
     }
 
     private void doOnce()
@@ -51,14 +51,14 @@ public partial class Login : System.Web.UI.Page
 
 
         //Validate sanjeev group user
-        //if (user.Contains("@sanjeevgroup.com"))
-        //{
-        //    userDb = user;
-        //}
-        //else
-        //{
-        //    user = user + "@sanjeevgroup.com";
-        //}
+        if (user.Contains("@sanjeevgroup.com"))
+        {
+            userDb = user;
+        }
+        else
+        {
+            user = user + "@sanjeevgroup.com";
+        }
 
         try
         {

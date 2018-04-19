@@ -124,7 +124,7 @@
     <value />
   </data>
   <data name="btnSendFeedBackResource1.Text" xml:space="preserve">
-    <value>Enviar comentarios</value>
+    <value>Send Feedback</value>
   </data>
   <data name="btnSendFeedBackResource1.ToolTip" xml:space="preserve">
     <value />
@@ -169,7 +169,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource1.HeaderText" xml:space="preserve">
-    <value>Identificación de entradas</value>
+    <value>Ticket Id</value>
   </data>
   <data name="GridBoundColumnResource1.HeaderTooltip" xml:space="preserve">
     <value />
@@ -218,7 +218,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource2.HeaderText" xml:space="preserve">
-    <value>Acción</value>
+    <value>Action</value>
   </data>
   <data name="GridBoundColumnResource2.HeaderTooltip" xml:space="preserve">
     <value />
@@ -266,7 +266,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource3.HeaderText" xml:space="preserve">
-    <value>Tipo</value>
+    <value>Type</value>
   </data>
   <data name="GridBoundColumnResource3.HeaderTooltip" xml:space="preserve">
     <value />
@@ -314,7 +314,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource4.HeaderText" xml:space="preserve">
-    <value>Solicitud</value>
+    <value>Application</value>
   </data>
   <data name="GridBoundColumnResource4.HeaderTooltip" xml:space="preserve">
     <value />
@@ -362,7 +362,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource5.HeaderText" xml:space="preserve">
-    <value>Nombre del problema</value>
+    <value>Issue Name</value>
   </data>
   <data name="GridBoundColumnResource5.HeaderTooltip" xml:space="preserve">
     <value />
@@ -410,7 +410,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource6.HeaderText" xml:space="preserve">
-    <value>Propietario de entradas</value>
+    <value>Ticket Owner</value>
   </data>
   <data name="GridBoundColumnResource6.HeaderTooltip" xml:space="preserve">
     <value />
@@ -464,7 +464,7 @@
     <value />
   </data>
   <data name="GridDateTimeColumnResource1.HeaderText" xml:space="preserve">
-    <value>Tiempo de acción</value>
+    <value>Action Time</value>
   </data>
   <data name="GridDateTimeColumnResource1.HeaderTooltip" xml:space="preserve">
     <value />
@@ -518,7 +518,7 @@
     <value />
   </data>
   <data name="GridDateTimeColumnResource2.HeaderText" xml:space="preserve">
-    <value>Tiempo creado</value>
+    <value>Created Time</value>
   </data>
   <data name="GridDateTimeColumnResource2.HeaderTooltip" xml:space="preserve">
     <value />
@@ -527,7 +527,7 @@
     <value>False</value>
   </data>
   <data name="GridDateTimeColumnResource2.SortExpression" xml:space="preserve">
-    <value>Validación de Date_of_PITCH</value>
+    <value>Date_of_PITCH_Validation</value>
   </data>
   <data name="GridDateTimeColumnResource3.AndCurrentFilterValue" xml:space="preserve">
     <value />
@@ -572,7 +572,7 @@
     <value />
   </data>
   <data name="GridDateTimeColumnResource3.HeaderText" xml:space="preserve">
-    <value>hora de cierre</value>
+    <value>closing Time</value>
   </data>
   <data name="GridDateTimeColumnResource3.HeaderTooltip" xml:space="preserve">
     <value />
@@ -584,61 +584,61 @@
     <value>Updated_Time</value>
   </data>
   <data name="Label10Resource1.Text" xml:space="preserve">
-    <value>Solicitud</value>
+    <value>Application</value>
   </data>
   <data name="Label10Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label11Resource1.Text" xml:space="preserve">
-    <value>Fecha de creación:</value>
+    <value>Created Date:</value>
   </data>
   <data name="Label11Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label12Resource1.Text" xml:space="preserve">
-    <value>Detalles del boleto</value>
+    <value>Ticket Details</value>
   </data>
   <data name="Label12Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label1Resource1.Text" xml:space="preserve">
-    <value>Navegación de palanca</value>
+    <value>Toggle navigation</value>
   </data>
   <data name="Label1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label3Resource1.Text" xml:space="preserve">
-    <value>Realimentación</value>
+    <value>Feedback</value>
   </data>
   <data name="Label3Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label5Resource1.Text" xml:space="preserve">
-    <value>Hola señor / señora</value>
+    <value>Hello Sir/Ma'am.</value>
   </data>
   <data name="Label5Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label6Resource1.Text" xml:space="preserve">
-    <value>Por favor, háganos saber su experiencia con Aadhar System</value>
+    <value>Please let us know your experience with Aadhar System </value>
   </data>
   <data name="Label6Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label7Resource1.Text" xml:space="preserve">
-    <value>Danos tus valiosos comentarios</value>
+    <value>Give us your valuable feedback </value>
   </data>
   <data name="Label7Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label8Resource1.Text" xml:space="preserve">
-    <value>Identificación de entradas</value>
+    <value>Ticket Id</value>
   </data>
   <data name="Label8Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label9Resource1.Text" xml:space="preserve">
-    <value>Tipo</value>
+    <value>Type</value>
   </data>
   <data name="Label9Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -650,7 +650,7 @@
     <value />
   </data>
   <data name="lblFeedbackResource1.Text" xml:space="preserve">
-    <value>Su opinión ya está enviada.</value>
+    <value>Your Feedback is already submitted.</value>
   </data>
   <data name="lblFeedbackResource1.ToolTip" xml:space="preserve">
     <value />
@@ -680,7 +680,7 @@
     <value />
   </data>
   <data name="PageResource2.Title" xml:space="preserve">
-    <value>Realimentación</value>
+    <value>Feedback</value>
   </data>
   <data name="RadMultiPage1Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -713,7 +713,7 @@
     <value />
   </data>
   <data name="RadTabResource1.Text" xml:space="preserve">
-    <value>Detalles del boleto</value>
+    <value>Ticket Details</value>
   </data>
   <data name="RadTabResource1.ToolTip" xml:space="preserve">
     <value />
@@ -740,7 +740,7 @@
     <value />
   </data>
   <data name="RadTabResource2.Text" xml:space="preserve">
-    <value>Actualizaciones de entradas</value>
+    <value>Ticket Updates</value>
   </data>
   <data name="RadTabResource2.ToolTip" xml:space="preserve">
     <value />
@@ -767,7 +767,7 @@
     <value />
   </data>
   <data name="RadTabResource3.Text" xml:space="preserve">
-    <value>Comentarios de entradas</value>
+    <value>Ticket Comments</value>
   </data>
   <data name="RadTabResource3.ToolTip" xml:space="preserve">
     <value />
@@ -778,44 +778,59 @@
   <data name="rgTicketLogsResource1.BackImageUrl" xml:space="preserve">
     <value />
   </data>
+  <data name="rgTicketLogsResource1.ClientSettings.ClientMessages.ColumnResizeTooltipFormatString" xml:space="preserve">
+    <value>Width: &lt;strong&gt;{0}&lt;/strong&gt; &lt;em&gt;pixels&lt;/em&gt;</value>
+  </data>
+  <data name="rgTicketLogsResource1.ClientSettings.ClientMessages.DragToGroupOrReorder" xml:space="preserve">
+    <value>Drag to group or reorder</value>
+  </data>
+  <data name="rgTicketLogsResource1.ClientSettings.ClientMessages.DragToResize" xml:space="preserve">
+    <value>Drag to resize</value>
+  </data>
+  <data name="rgTicketLogsResource1.ClientSettings.ClientMessages.DropHereToReorder" xml:space="preserve">
+    <value>Drop here to reorder</value>
+  </data>
+  <data name="rgTicketLogsResource1.ClientSettings.ClientMessages.PagerTooltipFormatString" xml:space="preserve">
+    <value>Page &lt;strong&gt;{0}&lt;/strong&gt; of &lt;strong&gt;{1}&lt;/strong&gt;</value>
+  </data>
   <data name="rgTicketLogsResource1.FilterMenu.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="rgTicketLogsResource1.GroupingSettings.CollapseAllTooltip" xml:space="preserve">
-    <value>Contraer todos los grupos</value>
+    <value>Collapse all groups</value>
   </data>
   <data name="rgTicketLogsResource1.GroupingSettings.CollapseTooltip" xml:space="preserve">
-    <value>Contraer grupo</value>
+    <value>Collapse group</value>
   </data>
   <data name="rgTicketLogsResource1.GroupingSettings.ExpandAllTooltip" xml:space="preserve">
-    <value>Expandir todos los grupos</value>
+    <value>Expand all groups</value>
   </data>
   <data name="rgTicketLogsResource1.GroupingSettings.ExpandTooltip" xml:space="preserve">
-    <value>Expandir grupo</value>
+    <value>Expand group</value>
   </data>
   <data name="rgTicketLogsResource1.GroupingSettings.GroupByFieldsSeparator" xml:space="preserve">
     <value>; </value>
   </data>
   <data name="rgTicketLogsResource1.GroupingSettings.GroupContinuedFormatString" xml:space="preserve">
-    <value>... grupo continuó de la página anterior.</value>
+    <value>... group continued from the previous page. </value>
   </data>
   <data name="rgTicketLogsResource1.GroupingSettings.GroupContinuesFormatString" xml:space="preserve">
-    <value>El grupo continúa en la página siguiente.</value>
+    <value> Group continues on the next page.</value>
   </data>
   <data name="rgTicketLogsResource1.GroupingSettings.GroupSplitDisplayFormat" xml:space="preserve">
-    <value>Mostrando {0} de {1} elementos.</value>
+    <value>Showing {0} of {1} items.</value>
   </data>
   <data name="rgTicketLogsResource1.GroupingSettings.GroupSplitFormat" xml:space="preserve">
     <value> ({0})</value>
   </data>
   <data name="rgTicketLogsResource1.GroupingSettings.UnGroupButtonTooltip" xml:space="preserve">
-    <value>Haga clic aquí para desagrupar</value>
+    <value>Click here to ungroup</value>
   </data>
   <data name="rgTicketLogsResource1.GroupingSettings.UnGroupTooltip" xml:space="preserve">
-    <value>Arrastre fuera de la barra para desagrupar</value>
+    <value>Drag out of the bar to ungroup</value>
   </data>
   <data name="rgTicketLogsResource1.GroupPanel.Text" xml:space="preserve">
-    <value>Arrastra un encabezado de columna y suéltalo aquí para agrupar por esa columna</value>
+    <value>Drag a column header and drop it here to group by that column</value>
   </data>
   <data name="rgTicketLogsResource1.GroupPanel.ToolTip" xml:space="preserve">
     <value />
@@ -824,22 +839,22 @@
     <value />
   </data>
   <data name="rgTicketLogsResource1.HierarchySettings.CollapseAllTooltip" xml:space="preserve">
-    <value>Desplegar todo</value>
+    <value>Collapse all</value>
   </data>
   <data name="rgTicketLogsResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
-    <value>Colapso</value>
+    <value>Collapse</value>
   </data>
   <data name="rgTicketLogsResource1.HierarchySettings.ExpandAllTooltip" xml:space="preserve">
-    <value>Expandir todo</value>
+    <value>Expand all</value>
   </data>
   <data name="rgTicketLogsResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
-    <value>Expandir</value>
+    <value>Expand</value>
   </data>
   <data name="rgTicketLogsResource1.HierarchySettings.SelfCollapseTooltip" xml:space="preserve">
-    <value>Colapso de auto referencia</value>
+    <value>Self reference collapse</value>
   </data>
   <data name="rgTicketLogsResource1.HierarchySettings.SelfExpandTooltip" xml:space="preserve">
-    <value>Auto-referencia expandir</value>
+    <value>Self reference expand</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.Caption" xml:space="preserve">
     <value />
@@ -848,52 +863,52 @@
     <value />
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.AddNewRecordText" xml:space="preserve">
-    <value>Añadir nuevo registro</value>
+    <value>Add new record</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.CancelChangesText" xml:space="preserve">
-    <value>Cancelar cambios</value>
+    <value>Cancel changes</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.ExportToCsvImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.ExportToCsvText" xml:space="preserve">
-    <value>Exportar to CSV</value>
+    <value>Export to CSV</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.ExportToExcelImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.ExportToExcelText" xml:space="preserve">
-    <value>Exportar to Excel</value>
+    <value>Export to Excel</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.ExportToPdfImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.ExportToPdfText" xml:space="preserve">
-    <value>Exporart to PDF</value>
+    <value>Export to PDF</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.ExportToWordImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.ExportToWordText" xml:space="preserve">
-    <value>Exportar to Word</value>
+    <value>Export to Word</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.NextFrozenColumnText" xml:space="preserve">
-    <value>Siguiente</value>
+    <value>Next</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.PrevFrozenColumnText" xml:space="preserve">
-    <value>Anterior</value>
+    <value>Prev</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.PrintGridText" xml:space="preserve">
-    <value>Imprimir RadGrid</value>
+    <value>Print RadGrid</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.RefreshImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
-    <value>Refrescar</value>
+    <value>Refresh</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.CommandItemSettings.SaveChangesText" xml:space="preserve">
-    <value>Guardar cambios</value>
+    <value>Save changes</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.EditFormSettings.CaptionFormatString" xml:space="preserve">
     <value />
@@ -944,13 +959,13 @@
     <value />
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
-    <value>No hay registros secundarios para mostrar.</value>
+    <value>No child records to display.</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
-    <value>No hay registros que mostrar.</value>
+    <value>No records to display.</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.ChangePageSizeButtonToolTip" xml:space="preserve">
-    <value>Cambiar el tamaño de página</value>
+    <value>Change Page Size</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.ChangePageSizeComboBoxTableSummary" xml:space="preserve">
     <value />
@@ -965,10 +980,10 @@
     <value />
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.FirstPageToolTip" xml:space="preserve">
-    <value>Primera página</value>
+    <value>First Page</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.GoToPageButtonToolTip" xml:space="preserve">
-    <value>Ir a la página</value>
+    <value>Go to Page</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.GoToPageTextBoxToolTip" xml:space="preserve">
     <value />
@@ -977,31 +992,31 @@
     <value />
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.LastPageToolTip" xml:space="preserve">
-    <value>Última página</value>
+    <value>Last Page</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.NextPagesToolTip" xml:space="preserve">
-    <value>Páginas siguientes</value>
+    <value>Next Pages</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.NextPageText" xml:space="preserve">
     <value />
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.NextPageToolTip" xml:space="preserve">
-    <value>Siguiente página</value>
+    <value>Next Page</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.PagerTextFormat" xml:space="preserve">
     <value>Change page: {4} &amp;nbsp;Page &lt;strong&gt;{0}&lt;/strong&gt; of &lt;strong&gt;{1}&lt;/strong&gt;, items &lt;strong&gt;{2}&lt;/strong&gt; to &lt;strong&gt;{3}&lt;/strong&gt; of &lt;strong&gt;{5}&lt;/strong&gt;.</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.PageSizeLabelText" xml:space="preserve">
-    <value>Tamaño de página:</value>
+    <value>Page size:</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.PrevPagesToolTip" xml:space="preserve">
-    <value>Páginas anteriores</value>
+    <value>Previous Pages</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.PrevPageText" xml:space="preserve">
     <value />
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.PagerStyle.PrevPageToolTip" xml:space="preserve">
-    <value>Pagina anterior</value>
+    <value>Previous Page</value>
   </data>
   <data name="rgTicketLogsResource1.MasterTableView.RowIndicatorColumn.AndCurrentFilterValue" xml:space="preserve">
     <value />
@@ -1046,7 +1061,7 @@
     <value />
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.ChangePageSizeButtonToolTip" xml:space="preserve">
-    <value>Cambiar el tamaño de página</value>
+    <value>Change Page Size</value>
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.ChangePageSizeComboBoxTableSummary" xml:space="preserve">
     <value />
@@ -1061,10 +1076,10 @@
     <value />
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.FirstPageToolTip" xml:space="preserve">
-    <value>Primera página</value>
+    <value>First Page</value>
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.GoToPageButtonToolTip" xml:space="preserve">
-    <value>Ir a la página</value>
+    <value>Go to Page</value>
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.GoToPageTextBoxToolTip" xml:space="preserve">
     <value />
@@ -1073,46 +1088,46 @@
     <value />
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.LastPageToolTip" xml:space="preserve">
-    <value>Última página</value>
+    <value>Last Page</value>
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.NextPagesToolTip" xml:space="preserve">
-    <value>Siguiente página</value>
+    <value>Next Pages</value>
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.NextPageText" xml:space="preserve">
     <value />
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.NextPageToolTip" xml:space="preserve">
-    <value>Siguiente página</value>
+    <value>Next Page</value>
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.PagerTextFormat" xml:space="preserve">
     <value>Change page: {4} &amp;nbsp;Page &lt;strong&gt;{0}&lt;/strong&gt; of &lt;strong&gt;{1}&lt;/strong&gt;, items &lt;strong&gt;{2}&lt;/strong&gt; to &lt;strong&gt;{3}&lt;/strong&gt; of &lt;strong&gt;{5}&lt;/strong&gt;.</value>
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.PageSizeLabelText" xml:space="preserve">
-    <value>Tamaño de página:</value>
+    <value>Page size:</value>
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.PrevPagesToolTip" xml:space="preserve">
-    <value>Páginas anteriores</value>
+    <value>Previous Pages</value>
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.PrevPageText" xml:space="preserve">
     <value />
   </data>
   <data name="rgTicketLogsResource1.PagerStyle.PrevPageToolTip" xml:space="preserve">
-    <value>Pagina anterior</value>
+    <value>Previous Page</value>
   </data>
   <data name="rgTicketLogsResource1.SortingSettings.SortedAscToolTip" xml:space="preserve">
-    <value>Asc ordenado</value>
+    <value>Sorted asc</value>
   </data>
   <data name="rgTicketLogsResource1.SortingSettings.SortedDescToolTip" xml:space="preserve">
-    <value>Desc ordenado</value>
+    <value>Sorted desc</value>
   </data>
   <data name="rgTicketLogsResource1.SortingSettings.SortToolTip" xml:space="preserve">
-    <value>Haga clic aquí para ordenar</value>
+    <value>Click here to sort</value>
   </data>
   <data name="rgTicketLogsResource1.StatusBarSettings.LoadingText" xml:space="preserve">
-    <value>Cargando...</value>
+    <value>Loading...</value>
   </data>
   <data name="rgTicketLogsResource1.StatusBarSettings.ReadyText" xml:space="preserve">
-    <value>Listo</value>
+    <value>Ready</value>
   </data>
   <data name="rgTicketLogsResource1.ToolTip" xml:space="preserve">
     <value />

@@ -49,6 +49,7 @@
                             <h4 class="title">
                                 <asp:Label ID="Label6" runat="server" Text="View Ticket :"></asp:Label>
                                 <asp:Label ID="lblStatus" runat="server" Text="Label"></asp:Label></h4>
+                            <asp:Label ID="lblCreatedAt" runat="server" Text="(User)"></asp:Label>
                         </div>
                         <div class="content">
                             <form>
@@ -58,7 +59,7 @@
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">
                                                 <asp:Label ID="Label7" runat="server" Text="Ticket ID"></asp:Label></label>
-                                            <asp:TextBox ID="TicketID" runat="server" CssClass="form-control border-input" ReadOnly="true" ForeColor="Green"></asp:TextBox>
+                                            <asp:TextBox ID="TicketID" runat="server" CssClass="form-control border-input" ReadOnly="true" ForeColor="Green" OnTextChanged="TicketID_TextChanged"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>

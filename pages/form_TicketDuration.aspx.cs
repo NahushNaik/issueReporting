@@ -14,6 +14,10 @@ public partial class pages_form_TicketDuration : System.Web.UI.Page
     string fromTime = "";
     string toTime = "";
     string tStatus;
+    public static string userEmail = string.Empty;
+
+    static string orderBy = string.Empty;
+    static string orderType = string.Empty;
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -23,7 +27,7 @@ public partial class pages_form_TicketDuration : System.Web.UI.Page
             Response.Redirect("Login.aspx");
         }
 
-
+        userEmail = Session[PublicMethods.ConstUserEmail].ToString();
         string type = Request.QueryString["type"];
         string status = Request.QueryString["status"];
         if (type != null)
@@ -35,11 +39,15 @@ public partial class pages_form_TicketDuration : System.Web.UI.Page
             {
 
                 tStatus = "Open";
+                orderBy = ddlMenu.SelectedItem.Text;
+                orderType = ddlOrder.SelectedValue;
                 fnCallDates(type);
             }
             else if (status == "close")
             {
                 tStatus = "Closed";
+                orderBy = ddlMenu.SelectedItem.Text;
+                orderType = ddlOrder.SelectedValue;
                 fnCallDates(type);
 
             }
@@ -47,6 +55,8 @@ public partial class pages_form_TicketDuration : System.Web.UI.Page
             else
             {
                 tStatus = "All";
+                orderBy = ddlMenu.SelectedItem.Text;
+                orderType = ddlOrder.SelectedValue;
                 dtpFromDate.SelectedDate = DateTime.Now.AddDays(-180);
                 dtpToDate.SelectedDate = DateTime.Now;
             }
@@ -54,6 +64,7 @@ public partial class pages_form_TicketDuration : System.Web.UI.Page
 
         fromTime = dtpFromDate.SelectedDate.ToString();
         toTime = dtpToDate.SelectedDate.ToString();
+       
         rgTickets.DataSource = GetTable(tStatus, fromTime, toTime);
         //rgTickets.DataBind();
 
@@ -123,18 +134,18 @@ public partial class pages_form_TicketDuration : System.Web.UI.Page
 
         if (status == "All")
         {
-            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time],User_Email,Updated_Time from fnGetTicketAllDetail()  ";
+            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time],User_Email,Updated_Time,Hours,isValid from fnGetTicketAllDetail() where  Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')      ";
         }
         else if (status == "Open")
         {
-            query = "select Status,[Ticket No]  ,Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time],User_Email,Updated_Time from fnGetTicketAllDetail() where [Created Time] BETWEEN '" + fromTime + "' and '" + toTime + "' and  Status='Open'   ";
+            query = "select Status,[Ticket No]  ,Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time],User_Email,Updated_Time,Hours,isValid from fnGetTicketAllDetail() where [Created Time] BETWEEN '" + fromTime + "' and '" + toTime + "' and  Status='Open'  and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')   ";
         }
         else if (status == "Closed")
         {
-            query = "select Status,[Ticket No] ,Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time],User_Email,Updated_Time from fnGetTicketAllDetail()  where [Updated_Time] BETWEEN '" + fromTime + "' and '" + toTime + "' and Status='Close' ";
+            query = "select Status,[Ticket No] ,Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time],User_Email,Updated_Time,Hours,isValid from fnGetTicketAllDetail()  where [Updated_Time] BETWEEN '" + fromTime + "' and '" + toTime + "' and Status='Close' and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')   ";
         }
 
-        table = DBUtils.SQLSelect(new SqlCommand(query + "  ORDER BY [Ticket No] DESC"));
+        table = DBUtils.SQLSelect(new SqlCommand(query + "  order by '" + orderBy + "' " + orderType + " "));
 
         return table;
     }
@@ -192,6 +203,19 @@ public partial class pages_form_TicketDuration : System.Web.UI.Page
 
     protected void btnApply_Click(object sender, EventArgs e)
     {
+        try
+        {
+            fromTime = dtpFromDate.SelectedDate.ToString();
+            toTime = dtpToDate.SelectedDate.ToString();
+            orderBy = ddlMenu.SelectedItem.Text;
+            orderType = ddlOrder.SelectedValue;
 
+
+            rgTickets.DataSource = GetTable(tStatus, fromTime, toTime);
+            rgTickets.DataBind();
+        }
+        catch (Exception ex) {
+            throw ex;
+        }
     }
 }

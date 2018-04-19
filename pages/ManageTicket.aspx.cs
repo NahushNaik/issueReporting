@@ -59,7 +59,7 @@ public partial class pages_ManageTicket : System.Web.UI.Page
     string Status = String.Empty;
     string hours = String.Empty;
     string isValid = String.Empty;
-
+    string user = string.Empty;
     protected void Page_Load(object sender, EventArgs e)
     {
         if (DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]).Equals(""))
@@ -74,13 +74,19 @@ public partial class pages_ManageTicket : System.Web.UI.Page
 
         }
 
+     
+
 
         if (!IsPostBack)
         {
-            fillData();
+         
             LoadTypeData();
             string queryToFetchAllData = "SELECT tbl_Issue_Master.Issue_Name, tbl_Ticket_Master.*,tbl_Type_Master.Type_Name, tbl_Application_Master.Application_Name FROM  tbl_Ticket_Master INNER JOIN tbl_Type_Master ON tbl_Ticket_Master.Type_Id = tbl_Type_Master.Type_Id INNER JOIN tbl_Application_Master ON tbl_Ticket_Master.Application_Id =tbl_Application_Master.Application_Id INNER JOIN tbl_Issue_Master ON tbl_Ticket_Master.Issue_Id = tbl_Issue_Master.Issue_Id where tbl_Ticket_Master.Ticket_Id='" + Id + "' ";
             DataTable dtAllData = DBUtils.SQLSelect(new SqlCommand(queryToFetchAllData));
+
+            string dt = dtAllData.Rows[0]["Created_Time"].ToString();
+
+            lblCreatedAt.Text = " Created At : " + Convert.ToDateTime(dt).ToString("dd/MMM/yyyy HH:mm:ss tt", CultureInfo.InvariantCulture);
             drpDownType.SelectedValue = dtAllData.Rows[0]["Type_Id"].ToString();
             resType = dtAllData.Rows[0]["Type_Id"].ToString();
             LoadApplicationData();
@@ -196,17 +202,28 @@ public partial class pages_ManageTicket : System.Web.UI.Page
         createdBy = table.Rows[0]["User_Id"].ToString();
         createdAt = table.Rows[0]["Created Time"].ToString();
 
-        query = "SELECT    SUBSTRING(tbl_User_Master.User_Email, 0, CHARINDEX('@', tbl_User_Master.User_Email)) AS User_Email FROM         tbl_User_Master where [User_Id]=" + createdBy + "";
-        string user = DBUtils.SqlSelectScalar(new SqlCommand(query));
+        string queryUserName = "SELECT    SUBSTRING(tbl_User_Master.User_Email, 0, CHARINDEX('@', tbl_User_Master.User_Email)) AS User_Email FROM         tbl_User_Master where [User_Id]=" + createdBy + "";
+        user = DBUtils.SqlSelectScalar(new SqlCommand(queryUserName));
         lblUser.Text = "(" + user + ")";
         string qry = "SELECT Type_Id FROM tbl_Type_Master where [Type_Name]='" + typeName + "'";
         typeId = DBUtils.SqlSelectScalar(new SqlCommand(qry));
 
         ddlStatus.SelectedValue = "1";
 
+        //Query For Closed Details
+        query = "select * from fnManageTicketDetails() where Ticket_Id='" + Id + "'";
+        DataTable dtCloseTicketDet = DBUtils.SQLSelect(new SqlCommand(query));
 
-        
+        if (dtCloseTicketDet.Rows.Count > 0)
+        {
+            lblClosedAt.Text = "Closed At  : " + Convert.ToDateTime(dtCloseTicketDet.Rows[0]["Updated_At"].ToString()).ToString("dd/MMM/yyyy HH:mm:ss tt", CultureInfo.InvariantCulture);
 
+            lblClosedBy.Text = "Closed By : " + dtCloseTicketDet.Rows[0]["User_Email"].ToString();
+        }
+
+        if (!IsPostBack) {
+            fillData();
+        }
     }
 
 
@@ -344,6 +361,7 @@ public partial class pages_ManageTicket : System.Web.UI.Page
         }
         catch (Exception ex)
         {
+            Response.Redirect("form_AdminDashboard.aspx");
             throw ex;
         }
     }
@@ -482,7 +500,18 @@ public partial class pages_ManageTicket : System.Web.UI.Page
         //To read html file
         StreamReader readTemplateFile = null;
         //Read email template file 
-        readTemplateFile = new StreamReader(Server.MapPath("Email_Body/email_temp_Closed.html"));
+        if (person == "user")
+        {
+
+            readTemplateFile = new StreamReader(Server.MapPath("Email_Body/email_temp_Closed.html"));
+        }
+        else if (person == "admin")
+        {
+            readTemplateFile = new StreamReader(Server.MapPath("Email_Body/Admin_email_Ticket_Closed.html"));
+        }
+
+
+
         string allContents = readTemplateFile.ReadToEnd();
 
         string Color = "";
@@ -517,7 +546,7 @@ public partial class pages_ManageTicket : System.Web.UI.Page
             allContents = allContents.Replace("@#visibleContact#@", "collapse");
         }
         else if(person=="admin") {
-            allContents = allContents.Replace("@#visible#@", "collapse");
+           
             allContents = allContents.Replace("@#visibleContact#@", "visible");
         }
 
@@ -606,10 +635,11 @@ public partial class pages_ManageTicket : System.Web.UI.Page
             fillData();
 
             fnSendMailXML(TicketID.Text);
-
+            Response.Redirect("form_AdminDashboard.aspx");
         }
         catch (Exception ex)
         {
+            Response.Redirect("form_AdminDashboard.aspx");
             throw ex;
         }
 
@@ -726,7 +756,16 @@ public partial class pages_ManageTicket : System.Web.UI.Page
         string allContents = "";//readTemplateFile.ReadToEnd();
 
 
-        string query = "Select  Comment,Ticket_ID,Created_Datetime,  User_First_Name + ' ' + User_Last_Name AS UserName,case when tbl_User_Master.isAdmin= 'Y' then 'Admin' else 'User' end as isAdmin from tbl_Ticket_Comments ,tbl_User_Master where tbl_User_Master.User_Email=tbl_Ticket_Comments.Commented_By and Ticket_ID ='" + Request.QueryString["id"] + "'  Order by Comment_ID Desc ";
+        //string query = "Select  Comment,Ticket_ID,Created_Datetime,  User_First_Name + ' ' + User_Last_Name AS UserName,case when tbl_User_Master.isAdmin= 'Y' then 'Admin' else 'User' end as isAdmin from tbl_Ticket_Comments ,tbl_User_Master where tbl_User_Master.User_Email=tbl_Ticket_Comments.Commented_By and Ticket_ID ='" + Request.QueryString["id"] + "'  Order by Comment_ID Desc ";
+
+
+        //string query = "SELECT tbl_Ticket_Comments.Comment, tbl_Ticket_Comments.Ticket_ID, tbl_Ticket_Comments.Created_Datetime, tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name AS UserName,CASE WHEN tbl_User_Master.isAdmin = 'Y' and tbl_User_Master.User_Email ='" + DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]) + "'  THEN 'Admin' ELSE 'User' END AS isAdmin, tbl_User_Master.User_Email FROM tbl_Ticket_Comments INNER JOIN   tbl_User_Master ON tbl_Ticket_Comments.Commented_By = tbl_User_Master.User_Email WHERE     (tbl_Ticket_Comments.Ticket_ID = '"+ Request.QueryString["id"] + "') ORDER BY tbl_Ticket_Comments.Comment_ID DESC";
+
+
+      
+
+        string query = "SELECT tbl_Ticket_Comments.Comment, tbl_Ticket_Comments.Ticket_ID, tbl_Ticket_Comments.Created_Datetime, tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name AS UserName,CASE WHEN SUBSTRING(tbl_User_Master.User_Email, 0, CHARINDEX('@', tbl_User_Master.User_Email)) = '" + user + "' THEN 'User' ELSE 'Admin' END AS isAdmin FROM tbl_Ticket_Comments INNER JOIN tbl_User_Master ON tbl_Ticket_Comments.Commented_By = tbl_User_Master.User_Email WHERE (tbl_Ticket_Comments.Ticket_ID = '" + Request.QueryString["id"] + "') ORDER BY tbl_Ticket_Comments.Comment_ID DESC";
+
         DataTable dt = DBUtils.SQLSelect(new SqlCommand(query));
 
 
@@ -754,7 +793,7 @@ public partial class pages_ManageTicket : System.Web.UI.Page
             string abc = "<tr style='border: 1px solid black; background-color: #dddddd; ' >    <td style='border: 1px solid black;color:#5c2d91; ' >@User_Name@</td>    <td style='border: 1px solid black; word-break:break-all;' >@User_Comment@</td> <td style='border: 1px solid black; word-break:break-all;' >@time@</td> </tr>";
             abc = abc.Replace("@User_Name@", dr["isAdmin"].ToString());
             abc = abc.Replace("@User_Comment@", dr["Comment"].ToString());
-            abc = abc.Replace("@time@", dr["Created_Datetime"].ToString());
+            abc = abc.Replace("@time@", Convert.ToDateTime(dr["Created_Datetime"].ToString()).ToString("dd/MMM/yyyy HH:mm:ss tt", CultureInfo.InvariantCulture));
             sb1.Append(abc);
         }
 
@@ -796,7 +835,13 @@ public partial class pages_ManageTicket : System.Web.UI.Page
         //con.Close();
 
 
-        string query = "Select Comment,Ticket_ID,Created_Datetime,  User_First_Name + ' ' + User_Last_Name AS UserName,case when tbl_User_Master.isAdmin= 'Y' then 'Admin' else 'User' end as isAdmin from tbl_Ticket_Comments ,tbl_User_Master where tbl_User_Master.User_Email=tbl_Ticket_Comments.Commented_By and Ticket_ID ='" + Request.QueryString["id"] + "'  Order by Comment_ID Desc ";
+        //string query = "Select Comment,Ticket_ID,Created_Datetime,  User_First_Name + ' ' + User_Last_Name AS UserName,case when tbl_User_Master.isAdmin= 'Y' then 'Admin' else 'User' end as isAdmin from tbl_Ticket_Comments ,tbl_User_Master where tbl_User_Master.User_Email=tbl_Ticket_Comments.Commented_By and Ticket_ID ='" + Request.QueryString["id"] + "'  Order by Comment_ID Desc ";
+
+
+        //string query = "SELECT tbl_Ticket_Comments.Comment, tbl_Ticket_Comments.Ticket_ID, tbl_Ticket_Comments.Created_Datetime, tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name AS UserName,CASE WHEN tbl_User_Master.isAdmin = 'Y' and tbl_User_Master.User_Email ='" + DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]) + "'  THEN 'Admin' ELSE 'User' END AS isAdmin, tbl_User_Master.User_Email FROM tbl_Ticket_Comments INNER JOIN   tbl_User_Master ON tbl_Ticket_Comments.Commented_By = tbl_User_Master.User_Email WHERE     (tbl_Ticket_Comments.Ticket_ID = '" + Request.QueryString["id"] + "') ORDER BY tbl_Ticket_Comments.Comment_ID DESC";
+
+        string query = "SELECT tbl_Ticket_Comments.Comment, tbl_Ticket_Comments.Ticket_ID, tbl_Ticket_Comments.Created_Datetime, tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name AS UserName,CASE WHEN SUBSTRING(tbl_User_Master.User_Email, 0, CHARINDEX('@', tbl_User_Master.User_Email)) = '" + user + "' THEN 'User' ELSE 'Admin' END AS isAdmin FROM tbl_Ticket_Comments INNER JOIN tbl_User_Master ON tbl_Ticket_Comments.Commented_By = tbl_User_Master.User_Email WHERE (tbl_Ticket_Comments.Ticket_ID = '" + Request.QueryString["id"] + "') ORDER BY tbl_Ticket_Comments.Comment_ID DESC";
+
         dt = DBUtils.SQLSelect(new SqlCommand(query));
 
         PagedDataSource pds = new PagedDataSource();
@@ -845,36 +890,66 @@ public partial class pages_ManageTicket : System.Web.UI.Page
     {
         string query = "select * from tbl_Attachment_Master where Ticket_Id= '" + Request.QueryString["id"].ToString() + "'";
         DataTable dtfile = DBUtils.SQLSelect(new SqlCommand(query));
-        string FilePath = "";
+       
+        if (dtfile.Rows.Count > 0) {
+            string filePath = dtfile.Rows[0]["File_Path"].ToString();
 
-        foreach (DataRow dr in dtfile.Rows)
-        {
-            txtFileName.Text = dr["File_Name"].ToString();
-            FilePath = dr["File_Path"].ToString() + dr["File_Name"].ToString();
+            if (Directory.Exists(filePath))
+            {
 
 
+                string[] fileArray = Directory.GetFiles(filePath);
+                if (fileArray == null || fileArray.Length == 0)
+                {
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "File Not Found", "alert('File Not Found'); ", true);
+                    return;
+
+                }
+                foreach (var item in fileArray)
+                {
+                    FileInfo fi = new FileInfo(item);
+                    long sz = fi.Length;
+
+                    Response.ClearContent();
+                    Response.ContentType = MimeType(Path.GetExtension(item));
+                    Response.AddHeader("Content-Disposition", string.Format("attachment; filename = {0}", System.IO.Path.GetFileName(item)));
+                    Response.AddHeader("Content-Length", sz.ToString("F0"));
+                    Response.TransmitFile(item);
+                    Response.End();
+                }
+
+            }
+            else {
+
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "Directory Not Found", "alert('Directory Not Found'); ", true);
+                return;
+            }
         }
+       
 
-        if (txtFileName.Text != "No File")
-        {
+        //foreach (DataRow dr in dtfile.Rows)
+        //{
+        //    txtFileName.Text = dr["File_Name"].ToString();
+        //    FilePath = dr["File_Path"].ToString() + dr["File_Name"].ToString();
 
+        //}
 
-          
+        //if (txtFileName.Text != "No File")
+        //{
 
-
-            if (File.Exists(FilePath))
-            {
-                Response.Clear();
-                Response.ContentType = ContentType;
-                Response.AppendHeader("Content-Disposition", "attachment; filename=" + Path.GetFileName(FilePath));
-                Response.WriteFile(FilePath);
-                Response.Flush();
-                Response.End();
-            }
-            else
-            {
-                Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "File Not Found", "alert('File Not Found'); ", true);
-            }
+        //    if (File.Exists(FilePath))
+        //    {
+        //        Response.Clear();
+        //        Response.ContentType = ContentType;
+        //        Response.AppendHeader("Content-Disposition", "attachment; filename=" + Path.GetFileName(FilePath));
+        //        Response.WriteFile(FilePath);
+        //        Response.Flush();
+        //        Response.End();
+        //    }
+        //    else
+        //    {
+        //        Page.ClientScript.RegisterClientScriptBlock(this.GetType(), "File Not Found", "alert('File Not Found'); ", true);
+        //    }
 
 
          
@@ -885,7 +960,7 @@ public partial class pages_ManageTicket : System.Web.UI.Page
             //Response.Redirect(Request.RawUrl, true);
             //Response.End();
 
-        }
+        
 
 
     }
@@ -896,8 +971,17 @@ public partial class pages_ManageTicket : System.Web.UI.Page
             string confirmValue = Request.Form["confirm_value"];
             if (confirmValue == "Yes")
             {
-                
-           
+
+                if (txtHours.Text != "")
+                {
+
+
+                    string alertmsg = "alert('No Need to add TIME while reassigning ticket');";
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", alertmsg, true);
+                    return;
+
+
+                }
 
 
             if (drpDownType.Text == "--Select--" || drpDownType.SelectedValue.ToString() == "--Select--" || drpDownType.Text == "")
@@ -956,6 +1040,7 @@ public partial class pages_ManageTicket : System.Web.UI.Page
             
         }
         catch (Exception ex) {
+            Response.Redirect("form_AdminDashboard.aspx", true);
             throw ex;
         }
     }
@@ -1241,6 +1326,7 @@ public partial class pages_ManageTicket : System.Web.UI.Page
         }
         catch (Exception ex)
         {
+            Response.Redirect("form_AdminDashboard.aspx", true);
             throw ex;
         }
     }
@@ -1287,8 +1373,17 @@ public partial class pages_ManageTicket : System.Web.UI.Page
             if (table.Rows.Count > 0)
             {
                 string filePath = table.Rows[0]["File_Path"].ToString();
-                string fileName = txtFileName.Text;
-                fName = filePath + fileName;
+                if (Directory.Exists(filePath))
+                {
+
+                    string[] fileArray = Directory.GetFiles(filePath);
+
+                    foreach (var item in fileArray)
+                    {
+                        fName = item;
+                    }
+
+                }
             }
 
 

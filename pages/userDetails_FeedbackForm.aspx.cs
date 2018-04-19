@@ -15,6 +15,7 @@ public partial class pages_userDetails_FeedbackForm : System.Web.UI.Page
     string status = "";
     DataTable dtUsers;
     Dictionary<string, string> dicUser = new Dictionary<string, string>();
+    string tktOwner;
     protected void Page_Load(object sender, EventArgs e)
     {
         
@@ -36,6 +37,8 @@ public partial class pages_userDetails_FeedbackForm : System.Web.UI.Page
          
          }
 
+         string qryTicketUser = "SELECT tbl_User_Master.User_Email FROM tbl_Ticket_Master INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id where tbl_Ticket_Master.Ticket_id='" + ticket_id + "'";
+         tktOwner = DBUtils.SqlSelectScalar(new SqlCommand(qryTicketUser));
       
          fnCommentedUser();
          if (!IsPostBack)
@@ -124,7 +127,10 @@ public partial class pages_userDetails_FeedbackForm : System.Web.UI.Page
 
 
 
-        string query = "Select Comment,Ticket_ID,Created_Datetime,  User_First_Name + ' ' + User_Last_Name AS UserName,case when tbl_User_Master.isAdmin= 'Y' then 'Admin' else 'User' end as isAdmin  from tbl_Ticket_Comments ,tbl_User_Master where tbl_User_Master.User_Email=tbl_Ticket_Comments.Commented_By and Ticket_ID ='" + ticket_id + "'  Order by Comment_ID Desc ";
+        //string query = "Select Comment,Ticket_ID,Created_Datetime,  User_First_Name + ' ' + User_Last_Name AS UserName,case when tbl_User_Master.isAdmin= 'Y' then 'Admin' else 'User' end as isAdmin  from tbl_Ticket_Comments ,tbl_User_Master where tbl_User_Master.User_Email=tbl_Ticket_Comments.Commented_By and Ticket_ID ='" + ticket_id + "'  Order by Comment_ID Desc ";
+
+        string query = "SELECT tbl_Ticket_Comments.Comment, tbl_Ticket_Comments.Ticket_ID, tbl_Ticket_Comments.Created_Datetime, tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name AS UserName,CASE WHEN tbl_User_Master.isAdmin = 'Y' and tbl_User_Master.User_Email !='" + tktOwner + "'  THEN 'Admin' ELSE 'User' END AS isAdmin, tbl_User_Master.User_Email FROM  tbl_Ticket_Comments INNER JOIN tbl_User_Master ON tbl_Ticket_Comments.Commented_By = tbl_User_Master.User_Email WHERE     (tbl_Ticket_Comments.Ticket_ID = '" + ticket_id + "') ORDER BY tbl_Ticket_Comments.Comment_ID DESC";
+
         dt = DBUtils.SQLSelect(new SqlCommand(query));
 
         PagedDataSource pds = new PagedDataSource();
@@ -272,6 +278,8 @@ public partial class pages_userDetails_FeedbackForm : System.Web.UI.Page
                  HtmlTableRow tr2 = (HtmlTableRow)e.Item.FindControl("Tr2");
                  tr.Attributes.Add("style", "background-color:" + dicUser[user] + ";");
                  tr2.Attributes.Add("style", "background-color:" + dicUser[user] + ";");
+
+                
              }
         // }
         

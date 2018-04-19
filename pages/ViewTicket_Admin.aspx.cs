@@ -17,7 +17,9 @@ public partial class pages_ViewTicket_Admin : System.Web.UI.Page
     string fromTime = "";
     string toTime = "";
     string tStatus;
-  
+    public static string userEmail = string.Empty;
+    static string orderBy = string.Empty;
+    static string orderType = string.Empty;
     protected void Page_Load(object sender, EventArgs e)
     {
     
@@ -25,6 +27,7 @@ public partial class pages_ViewTicket_Admin : System.Web.UI.Page
         {
             Response.Redirect("Login.aspx");
         }
+        userEmail = Session[PublicMethods.ConstUserEmail].ToString();
        
         if (!IsPostBack)
         {
@@ -33,7 +36,8 @@ public partial class pages_ViewTicket_Admin : System.Web.UI.Page
                   tStatus = "All";
                   dtpFromDate.SelectedDate = DateTime.Now.AddDays(-180);
                   dtpToDate.SelectedDate = DateTime.Now;
-              
+                  orderBy = ddlMenu.SelectedItem.Text;
+                  orderType = ddlOrder.SelectedValue;
         }
         else
         {
@@ -41,14 +45,20 @@ public partial class pages_ViewTicket_Admin : System.Web.UI.Page
             if (ddlStatus.SelectedValue == "Closed")
             {
                 tStatus = "Closed";
+                orderBy = ddlMenu.SelectedItem.Text;
+                orderType = ddlOrder.SelectedValue;
             }
             else if (ddlStatus.SelectedValue == "Open")
             {
                 tStatus = "Open";
+                orderBy = ddlMenu.SelectedItem.Text;
+                orderType = ddlOrder.SelectedValue;
             }
             else if (ddlStatus.SelectedValue == "All")
             {
                 tStatus = "All";
+                orderBy = ddlMenu.SelectedItem.Text;
+                orderType = ddlOrder.SelectedValue;
             }
         }
           fromTime = dtpFromDate.SelectedDate.ToString();
@@ -80,15 +90,15 @@ public partial class pages_ViewTicket_Admin : System.Web.UI.Page
 
         if (status == "All")
         {
-            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] ,pendingDays, Hours,isValid from fnGetTicketAllDetail() where [Created Time] BETWEEN '" + fromTime + "' and '" + toTime + "'   order by [Created Time] desc ";
+            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] ,pendingDays, Hours,isValid,User_Email from fnGetTicketAllDetail() where [Created Time] BETWEEN '" + fromTime + "' and '" + toTime + "' and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')     order by '" + orderBy + "' " + orderType + " ";
         }
         else if (status == "Open")
         {
-            query = "select Status,[Ticket No]  ,Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] ,pendingDays, Hours,isValid from fnGetTicketAllDetail() where [Created Time] BETWEEN '" + fromTime + "' and '" + toTime + "' and Status='Open'   order by [Created Time] desc";
+            query = "select Status,[Ticket No]  ,Priority,[Type Name],[Application Name],[Issue Name],[Issue Details], [Created Time] ,pendingDays, Hours,isValid,User_Email from fnGetTicketAllDetail() where [Created Time] BETWEEN '" + fromTime + "' and '" + toTime + "' and Status='Open' and   Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')   order by '" + orderBy + "' " + orderType + "";
         }
         else if (status == "Closed")
         {
-            query = "select Status,[Ticket No] ,Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time] ,pendingDays, Hours,isValid from fnGetTicketAllDetail()  where [Updated_Time] BETWEEN '" + fromTime + "' and '" + toTime + "' and Status='Close'   order by [Created Time] desc ";
+            query = "select Status,[Ticket No] ,Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time] ,pendingDays, Hours,isValid,User_Email from fnGetTicketAllDetail()  where [Updated_Time] BETWEEN '" + fromTime + "' and '" + toTime + "' and Status='Close' and  Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')   order by '" + orderBy + "' " + orderType + " ";
         }
 
         table = DBUtils.SQLSelect(new SqlCommand(query));
@@ -137,17 +147,17 @@ public partial class pages_ViewTicket_Admin : System.Web.UI.Page
         if (ddlStatus.SelectedValue == "Open")
         {
             res = "Open";
-            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time] from fnGetOpenTicketDetail('" + Username + "')";
+            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time],User_Email from fnGetOpenTicketDetail('" + Username + "')";
         }
         else if (ddlStatus.SelectedValue == "Closed")
         {
             res = "Close";
-            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time] from fnGetCloseTicketDetail('" + Username + "')";
+            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time],User_Email from fnGetCloseTicketDetail('" + Username + "')";
         }
         else
         {
             res = "All";
-            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time] from fnGetTicketAllDetail() where User_Id='" + Username + "'";
+            query = "select Status,[Ticket No],Priority,[Type Name],[Application Name],[Issue Name],[Issue Details],[Created Time],User_Email from fnGetTicketAllDetail() where User_Id='" + Username + "'";
         }
         DataTable table = new DataTable();
         table = DBUtils.SQLSelect(new SqlCommand(query));
@@ -168,18 +178,25 @@ public partial class pages_ViewTicket_Admin : System.Web.UI.Page
             if (ddlStatus.SelectedValue == "Closed")
             {
                 tStatus = "Closed";
+               
             }
             else if (ddlStatus.SelectedValue == "Open")
             {
                 tStatus = "Open";
+                
             }
             else if (ddlStatus.SelectedValue == "All")
             {
                 tStatus = "All";
+               
             }
 
             fromTime = dtpFromDate.SelectedDate.ToString();
             toTime = dtpToDate.SelectedDate.ToString();
+            orderBy = ddlMenu.SelectedItem.Text;
+            orderType = ddlOrder.SelectedValue;
+
+
             rgTickets.DataSource = GetTable(tStatus, fromTime, toTime);
             rgTickets.DataBind();
         }

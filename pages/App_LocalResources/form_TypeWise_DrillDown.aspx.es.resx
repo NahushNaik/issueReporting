@@ -154,7 +154,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource1.HeaderText" xml:space="preserve">
-    <value>Estado</value>
+    <value>Usuario</value>
   </data>
   <data name="GridBoundColumnResource1.HeaderTooltip" xml:space="preserve">
     <value />
@@ -203,7 +203,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource10.HeaderText" xml:space="preserve">
-    <value>Estado</value>
+    <value>Carné de identidad</value>
   </data>
   <data name="GridBoundColumnResource10.HeaderTooltip" xml:space="preserve">
     <value />
@@ -299,7 +299,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource12.HeaderText" xml:space="preserve">
-    <value>Tipo</value>
+    <value>Estado</value>
   </data>
   <data name="GridBoundColumnResource12.HeaderTooltip" xml:space="preserve">
     <value />
@@ -347,7 +347,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource13.HeaderText" xml:space="preserve">
-    <value>Solicitud</value>
+    <value>Prioridad</value>
   </data>
   <data name="GridBoundColumnResource13.HeaderTooltip" xml:space="preserve">
     <value />
@@ -395,7 +395,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource14.HeaderText" xml:space="preserve">
-    <value>Prioridad</value>
+    <value>Tipo</value>
   </data>
   <data name="GridBoundColumnResource14.HeaderTooltip" xml:space="preserve">
     <value />
@@ -443,7 +443,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource15.HeaderText" xml:space="preserve">
-    <value>Cerrado en (días)</value>
+    <value>Solicitud</value>
   </data>
   <data name="GridBoundColumnResource15.HeaderTooltip" xml:space="preserve">
     <value />
@@ -491,7 +491,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource16.HeaderText" xml:space="preserve">
-    <value>Tiempo empleado (Hours.Min)</value>
+    <value>Detalles del problema</value>
   </data>
   <data name="GridBoundColumnResource16.HeaderTooltip" xml:space="preserve">
     <value />
@@ -539,7 +539,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource17.HeaderText" xml:space="preserve">
-    <value>Es válida?</value>
+    <value>Cerrado en (días)</value>
   </data>
   <data name="GridBoundColumnResource17.HeaderTooltip" xml:space="preserve">
     <value />
@@ -548,6 +548,102 @@
     <value>False</value>
   </data>
   <data name="GridBoundColumnResource17.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.DataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridBoundColumnResource18.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="GridBoundColumnResource18.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.HeaderText" xml:space="preserve">
+    <value>Tiempo empleado (Horas.Min)</value>
+  </data>
+  <data name="GridBoundColumnResource18.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource18.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource18.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.DataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridBoundColumnResource19.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="GridBoundColumnResource19.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.HeaderText" xml:space="preserve">
+    <value>¿Es válida?</value>
+  </data>
+  <data name="GridBoundColumnResource19.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource19.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource19.SortExpression" xml:space="preserve">
     <value />
   </data>
   <data name="GridBoundColumnResource2.AndCurrentFilterValue" xml:space="preserve">
@@ -587,7 +683,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource2.HeaderText" xml:space="preserve">
-    <value>Usuario</value>
+    <value>Estado</value>
   </data>
   <data name="GridBoundColumnResource2.HeaderTooltip" xml:space="preserve">
     <value />
@@ -635,7 +731,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource3.HeaderText" xml:space="preserve">
-    <value>Tipo</value>
+    <value>Prioridad</value>
   </data>
   <data name="GridBoundColumnResource3.HeaderTooltip" xml:space="preserve">
     <value />
@@ -683,7 +779,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource4.HeaderText" xml:space="preserve">
-    <value>Solicitud</value>
+    <value>Tipo</value>
   </data>
   <data name="GridBoundColumnResource4.HeaderTooltip" xml:space="preserve">
     <value />
@@ -731,7 +827,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource5.HeaderText" xml:space="preserve">
-    <value>Prioridad</value>
+    <value>Solicitud</value>
   </data>
   <data name="GridBoundColumnResource5.HeaderTooltip" xml:space="preserve">
     <value />
@@ -779,7 +875,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource6.HeaderText" xml:space="preserve">
-    <value>Tiempo creado</value>
+    <value>Detalles del problema</value>
   </data>
   <data name="GridBoundColumnResource6.HeaderTooltip" xml:space="preserve">
     <value />
@@ -827,7 +923,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource7.HeaderText" xml:space="preserve">
-    <value>Cerrado</value>
+    <value>Tiempo creado</value>
   </data>
   <data name="GridBoundColumnResource7.HeaderTooltip" xml:space="preserve">
     <value />
@@ -875,7 +971,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource8.HeaderText" xml:space="preserve">
-    <value>Creado antes (días)</value>
+    <value>Cerrado</value>
   </data>
   <data name="GridBoundColumnResource8.HeaderTooltip" xml:space="preserve">
     <value />
@@ -923,7 +1019,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource9.HeaderText" xml:space="preserve">
-    <value>Carné de identidad</value>
+    <value>Creado antes (días)</value>
   </data>
   <data name="GridBoundColumnResource9.HeaderTooltip" xml:space="preserve">
     <value />
@@ -986,7 +1082,7 @@
     <value>False</value>
   </data>
   <data name="GridDateTimeColumnResource1.SortExpression" xml:space="preserve">
-    <value>Creado_hora</value>
+    <value>Created_Time</value>
   </data>
   <data name="GridDateTimeColumnResource2.AndCurrentFilterValue" xml:space="preserve">
     <value />
@@ -1096,51 +1192,104 @@
   <data name="GridHyperLinkColumnResource1.Text" xml:space="preserve">
     <value />
   </data>
+  <data name="GridHyperLinkColumnResource2.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.DataNavigateUrlFormatString" xml:space="preserve">
+    <value>ManageTicket.aspx?id={0}</value>
+  </data>
+  <data name="GridHyperLinkColumnResource2.DataTextFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridHyperLinkColumnResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.HeaderText" xml:space="preserve">
+    <value>Carné de identidad</value>
+  </data>
+  <data name="GridHyperLinkColumnResource2.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.ImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.NavigateUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.Target" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridHyperLinkColumnResource2.Text" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label1Resource1.Text" xml:space="preserve">
-    <value>Escriba los informes sabios</value>
+    <value>Boletos totales</value>
   </data>
   <data name="Label1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label2Resource1.Text" xml:space="preserve">
-    <value>Boletos totales</value>
+    <value>Abierto</value>
   </data>
   <data name="Label2Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label3Resource1.Text" xml:space="preserve">
-    <value>Abierto</value>
+    <value>Cerrado</value>
   </data>
   <data name="Label3Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label4Resource1.Text" xml:space="preserve">
-    <value>Cerrado</value>
+    <value>Tiempo promedio cerrado</value>
   </data>
   <data name="Label4Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label5Resource1.Text" xml:space="preserve">
-    <value>Tiempo promedio cerrado</value>
+    <value>Tiempo cerrado más rápido</value>
   </data>
   <data name="Label5Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label6Resource1.Text" xml:space="preserve">
-    <value>Tiempo cerrado más rápido</value>
+    <value>Tiempo cerrado más lento</value>
   </data>
   <data name="Label6Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label7Resource1.Text" xml:space="preserve">
-    <value>Tiempo cerrado más lento</value>
+    <value>Duración total del soporte</value>
   </data>
   <data name="Label7Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label8Resource1.Text" xml:space="preserve">
-    <value>Duración total abierta
- </value>
+    <value>Escriba los informes sabios</value>
   </data>
   <data name="Label8Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -1332,7 +1481,7 @@
     <value>El grupo continúa en la página siguiente.</value>
   </data>
   <data name="rgClosedTicketResource1.GroupingSettings.GroupSplitDisplayFormat" xml:space="preserve">
-    <value>Mostrando {0} de {1} elementos.</value>
+    <value>Showing {0} of {1} items.</value>
   </data>
   <data name="rgClosedTicketResource1.GroupingSettings.GroupSplitFormat" xml:space="preserve">
     <value> ({0})</value>
@@ -1386,25 +1535,25 @@
     <value />
   </data>
   <data name="rgClosedTicketResource1.MasterTableView.CommandItemSettings.ExportToCsvText" xml:space="preserve">
-    <value>Exportar to CSV</value>
+    <value>Exportar a CSV</value>
   </data>
   <data name="rgClosedTicketResource1.MasterTableView.CommandItemSettings.ExportToExcelImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="rgClosedTicketResource1.MasterTableView.CommandItemSettings.ExportToExcelText" xml:space="preserve">
-    <value>Exportar to Excel</value>
+    <value>Exportar a Excel</value>
   </data>
   <data name="rgClosedTicketResource1.MasterTableView.CommandItemSettings.ExportToPdfImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="rgClosedTicketResource1.MasterTableView.CommandItemSettings.ExportToPdfText" xml:space="preserve">
-    <value>Exportar to PDF</value>
+    <value>Exportar a PDF</value>
   </data>
   <data name="rgClosedTicketResource1.MasterTableView.CommandItemSettings.ExportToWordImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="rgClosedTicketResource1.MasterTableView.CommandItemSettings.ExportToWordText" xml:space="preserve">
-    <value>Exportar to Word</value>
+    <value>Exportar a Word</value>
   </data>
   <data name="rgClosedTicketResource1.MasterTableView.CommandItemSettings.NextFrozenColumnText" xml:space="preserve">
     <value>Siguiente</value>
@@ -1413,7 +1562,7 @@
     <value>Anterior</value>
   </data>
   <data name="rgClosedTicketResource1.MasterTableView.CommandItemSettings.PrintGridText" xml:space="preserve">
-    <value>Actualizar Imprimir RadGrid</value>
+    <value>Imprimir RadGrid</value>
   </data>
   <data name="rgClosedTicketResource1.MasterTableView.CommandItemSettings.RefreshImageUrl" xml:space="preserve">
     <value />
@@ -1689,7 +1838,7 @@
     <value>El grupo continúa en la página siguiente.</value>
   </data>
   <data name="rgvDetailsResource1.GroupingSettings.GroupSplitDisplayFormat" xml:space="preserve">
-    <value>Mostrando {0} de {1} elementos.</value>
+    <value>Showing {0} of {1} items.</value>
   </data>
   <data name="rgvDetailsResource1.GroupingSettings.GroupSplitFormat" xml:space="preserve">
     <value> ({0})</value>
@@ -1743,25 +1892,25 @@
     <value />
   </data>
   <data name="rgvDetailsResource1.MasterTableView.CommandItemSettings.ExportToCsvText" xml:space="preserve">
-    <value>Exportar to CSV</value>
+    <value>Exportar a CSV</value>
   </data>
   <data name="rgvDetailsResource1.MasterTableView.CommandItemSettings.ExportToExcelImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="rgvDetailsResource1.MasterTableView.CommandItemSettings.ExportToExcelText" xml:space="preserve">
-    <value>Exportar to Excel</value>
+    <value>Exportar a Excel</value>
   </data>
   <data name="rgvDetailsResource1.MasterTableView.CommandItemSettings.ExportToPdfImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="rgvDetailsResource1.MasterTableView.CommandItemSettings.ExportToPdfText" xml:space="preserve">
-    <value>Exportar to PDF</value>
+    <value>Exportar a PDF</value>
   </data>
   <data name="rgvDetailsResource1.MasterTableView.CommandItemSettings.ExportToWordImageUrl" xml:space="preserve">
     <value />
   </data>
   <data name="rgvDetailsResource1.MasterTableView.CommandItemSettings.ExportToWordText" xml:space="preserve">
-    <value>Exportar to Word</value>
+    <value>Exportar a Word</value>
   </data>
   <data name="rgvDetailsResource1.MasterTableView.CommandItemSettings.NextFrozenColumnText" xml:space="preserve">
     <value>Siguiente</value>

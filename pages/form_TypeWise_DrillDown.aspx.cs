@@ -13,10 +13,13 @@ public partial class pages_form_TypeWise_DrillDown : System.Web.UI.Page
 {
     string id = string.Empty;
     string AppType = string.Empty;
+    public static string userEmail = string.Empty;
+
     protected void Page_Load(object sender, EventArgs e)
     {
-        id = Request.QueryString["id"];
 
+        id = Request.QueryString["id"];
+        userEmail = Session[PublicMethods.ConstUserEmail].ToString();
         fnLoadCloseTickets(true);
         fnLoadOpenTickets(true);
         fnGetSummary();
@@ -28,7 +31,7 @@ public partial class pages_form_TypeWise_DrillDown : System.Web.UI.Page
         try
         {
 
-            string query = "Select Ticket_Id, Type_Name,Application_Name ,Issue_Details,Priority,Created_Time,Updated_Time,case when status=0 then 'Open' Else 'Closed' End As [Status], SUBSTRING(tbl_User_Master.User_Email ,0, CHARINDEX('@', tbl_User_Master.User_Email ) ) AS userName,DATEDIFF(DAY, Created_Time, GETDATE()) as createdDays from tbl_Ticket_Master inner join tbl_Application_Master on tbl_Ticket_Master.Application_Id=tbl_Application_Master.Application_Id inner join tbl_Type_Master on tbl_Ticket_Master.Type_Id=tbl_Type_Master.Type_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id  Where tbl_Ticket_Master.Type_Id='" + id + "' and status=0 ORDER BY Created_Time asc";
+            string query = "Select Ticket_Id, Type_Name,Application_Name ,Issue_Details,Priority,Created_Time,Updated_Time,case when status=0 then 'Open' Else 'Closed' End As [Status], SUBSTRING(tbl_User_Master.User_Email ,0, CHARINDEX('@', tbl_User_Master.User_Email ) ) AS userName,DATEDIFF(DAY, Created_Time, GETDATE()) as createdDays from tbl_Ticket_Master inner join tbl_Application_Master on tbl_Ticket_Master.Application_Id=tbl_Application_Master.Application_Id inner join tbl_Type_Master on tbl_Ticket_Master.Type_Id=tbl_Type_Master.Type_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id  Where tbl_Ticket_Master.Type_Id='" + id + "' and status=0 And  tbl_Ticket_Master.Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')    ORDER BY Created_Time asc";
                    
                
             
@@ -55,13 +58,13 @@ public partial class pages_form_TypeWise_DrillDown : System.Web.UI.Page
         string result = "";
         try
         {
-            qry = "Select COUNT(*) from tbl_Ticket_Master Where Type_Id='"+id+"'";
+            qry = "Select COUNT(*) from tbl_Ticket_Master Where Type_Id='" + id + "' and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
             result = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             lblTotalTickets.Text = result;
-            qry = "Select COUNT(*) from tbl_Ticket_Master Where Type_Id='" + id + "' and Status=0";
+            qry = "Select COUNT(*) from tbl_Ticket_Master Where Type_Id='" + id + "' and Status=0 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
             result = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             lblOpenTickets.Text = result;
-            qry = "Select COUNT(*) from tbl_Ticket_Master Where Type_Id='" + id + "' and Status=1";
+            qry = "Select COUNT(*) from tbl_Ticket_Master Where Type_Id='" + id + "' and Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
             result = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             lblCloseTickets.Text = result;
         }
@@ -74,26 +77,54 @@ public partial class pages_form_TypeWise_DrillDown : System.Web.UI.Page
     {
         string qry = "";
         string result = "";
-        int total = 0;
+        double total = 0;
         try
         {
-            //Averaege
-            qry = "Select DATEDIFF(MINUTE, Created_Time, Updated_Time) as diffrence from tbl_Ticket_Master Where Type_Id="+id+" And Status=1";
-            DataTable dt = DBUtils.SQLSelect(new SqlCommand(qry));
-            foreach (DataRow dr in dt.Rows)
+
+
+
+            qry = "SELECT SUM(cast(hours as decimal(10,2)))   FROM [tbl_Ticket_Master] where Type_Id=" + id + " and Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
+            total = DBNulls.NumberValue(DBUtils.SqlSelectScalar(new SqlCommand(qry)));
+            if (total == 0.0 || total == null)
             {
-                total = total + (int)dr["diffrence"];
+
+                total = 0.0;
             }
 
-            string totalTime = spanDates(total);
-            lblTotalSpentTime.Text = totalTime;
-            int average = total / (dt.Rows.Count);
-            string days = spanDates(average);
+
+            string supportTime = String.Format("{0:0.00}", Convert.ToDouble(total));
+            string M = (supportTime.Split('.')[1]);   //Split Minute
+            string H = (supportTime.Split('.')[0]);    //Split Hour
+            int minTot = 60 * Convert.ToInt32(H);   //Hours to minute
+
+            int totMinForSupport = minTot + Convert.ToInt32(M);  //Total Minute
+            string totalWorkTime = spanDates(Convert.ToInt32(totMinForSupport));
+
+
+
+            lblTotalSpentTime.Text = totalWorkTime;
+
+
+
+
+
+            ////Averaege
+            //qry = "Select DATEDIFF(MINUTE, Created_Time, Updated_Time) as diffrence from tbl_Ticket_Master Where Type_Id=" + id + " And Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
+            //DataTable dt = DBUtils.SQLSelect(new SqlCommand(qry));
+            //foreach (DataRow dr in dt.Rows)
+            //{
+            //    total = total + (int)dr["diffrence"];
+            //}
+
+            //string totalTime = spanDates(total);
+            //lblTotalSpentTime.Text = totalTime;
+            //int average = total / (dt.Rows.Count);
+            //string days = spanDates(average);
           //  lblAverageClosedTime.Text = days;
 
 
             //New Flow For Average
-            qry = "SELECT AVG(cast(hours as decimal(10,2)))   FROM [tbl_Ticket_Master] Where Type_Id=" + id + " And Status=1";
+            qry = "SELECT AVG(cast(hours as decimal(10,2)))   FROM [tbl_Ticket_Master] Where Type_Id=" + id + " And Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
             string closeTimeAVG = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             if (closeTimeAVG == "")
             {
@@ -115,7 +146,7 @@ public partial class pages_form_TypeWise_DrillDown : System.Web.UI.Page
 
 
             int ttlMin = 0;
-            string Q1 = "SELECT cast(hours as decimal(10,2)) as time   FROM [tbl_Ticket_Master]   Where Type_Id=" + id + " And Status=1";
+            string Q1 = "SELECT cast(hours as decimal(10,2)) as time   FROM [tbl_Ticket_Master]   Where Type_Id=" + id + " And Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
             DataTable dt1 = DBUtils.SQLSelect(new SqlCommand(Q1));
             if (dt1.Rows.Count > 0)
             {
@@ -145,14 +176,14 @@ public partial class pages_form_TypeWise_DrillDown : System.Web.UI.Page
 
             //Fast closed time
 
-            qry = "Select MIN(DATEDIFF(MINUTE, Created_Time, Updated_Time)) as diffrence from tbl_Ticket_Master where Type_Id="+id+" And Status=1";
+            qry = "Select MIN(DATEDIFF(MINUTE, Created_Time, Updated_Time)) as diffrence from tbl_Ticket_Master where Type_Id=" + id + " And Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
             result = DBUtils.SqlSelectScalar(new SqlCommand(qry));
 
             lblFastestClosedTime.Text = spanDates(Convert.ToInt32(result));
 
 
             //new Flow for fast closed time
-            qry = "Select MIN(cast(hours as decimal(10,2))) as diffrence from tbl_Ticket_Master   where TYPE_ID=" + id + " And Status=1";
+            qry = "Select MIN(cast(hours as decimal(10,2))) as diffrence from tbl_Ticket_Master   where TYPE_ID=" + id + " And Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
             string fastCloseTime = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             if (fastCloseTime == "")
             {
@@ -169,7 +200,7 @@ public partial class pages_form_TypeWise_DrillDown : System.Web.UI.Page
 
             //slow closed time
 
-            qry = "Select MAX(DATEDIFF(MINUTE, Created_Time, Updated_Time)) as diffrence from tbl_Ticket_Master where TYPE_ID="+id+" And Status=1";
+            qry = "Select MAX(DATEDIFF(MINUTE, Created_Time, Updated_Time)) as diffrence from tbl_Ticket_Master where TYPE_ID=" + id + " And Status=1 and Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
             result = DBUtils.SqlSelectScalar(new SqlCommand(qry));
 
             lblSlowestClosedTime.Text = spanDates(Convert.ToInt32(result));
@@ -177,7 +208,7 @@ public partial class pages_form_TypeWise_DrillDown : System.Web.UI.Page
 
             //new Flow For Slow Closed Time
 
-            qry = "Select MAX(cast(hours as decimal(10,2))) as diffrence from tbl_Ticket_Master  where TYPE_ID=" + id + " And Status=1";
+            qry = "Select MAX(cast(hours as decimal(10,2))) as diffrence from tbl_Ticket_Master  where TYPE_ID=" + id + " And Status=1 and  Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')";
             string sloweCloseTime = DBUtils.SqlSelectScalar(new SqlCommand(qry));
             if (sloweCloseTime == "")
             {
@@ -235,7 +266,7 @@ public partial class pages_form_TypeWise_DrillDown : System.Web.UI.Page
         try
         {
 
-            string query = "Select Ticket_Id, Type_Name,Application_Name ,Issue_Details,Priority,Created_Time,Updated_Time,case when status=0 then 'Open' Else 'Closed' End As [Status], SUBSTRING(tbl_User_Master.User_Email ,0, CHARINDEX('@', tbl_User_Master.User_Email ) ) AS userName,DATEDIFF(DAY, Created_Time, Updated_Time) as closedDays,cast(tbl_Ticket_Master.hours as decimal(10,2)) as hours,tbl_Ticket_Master.isValid from tbl_Ticket_Master inner join tbl_Application_Master on tbl_Ticket_Master.Application_Id=tbl_Application_Master.Application_Id inner join tbl_Type_Master on tbl_Ticket_Master.Type_Id=tbl_Type_Master.Type_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id  Where tbl_Ticket_Master.Type_Id='" + id + "' and status=1 order by Updated_Time desc";
+            string query = "Select Ticket_Id, Type_Name,Application_Name ,Issue_Details,Priority,Created_Time,Updated_Time,case when status=0 then 'Open' Else 'Closed' End As [Status], SUBSTRING(tbl_User_Master.User_Email ,0, CHARINDEX('@', tbl_User_Master.User_Email ) ) AS userName,DATEDIFF(DAY, Created_Time, Updated_Time) as closedDays,cast(tbl_Ticket_Master.hours as decimal(10,2)) as hours,tbl_Ticket_Master.isValid from tbl_Ticket_Master inner join tbl_Application_Master on tbl_Ticket_Master.Application_Id=tbl_Application_Master.Application_Id inner join tbl_Type_Master on tbl_Ticket_Master.Type_Id=tbl_Type_Master.Type_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id  Where tbl_Ticket_Master.Type_Id='" + id + "' and status=1 and tbl_Ticket_Master.Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "') order by Updated_Time desc";
 
 
 

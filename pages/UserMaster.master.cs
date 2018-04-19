@@ -18,7 +18,9 @@ public partial class pages_UserMaster : System.Web.UI.MasterPage
       
         //To check the master menus
         string pageName = Path.GetFileName(Request.Path);
-      
+
+     
+        imgUserProfile.ImageUrl = "https://outlook.office365.com/owa/service.svc/s/GetPersonaPhoto?email=" + DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]) + "&UA=0&size=HR64x64&sc=1468233338850";
         
         if (pageName == "ViewTicket_Admin.aspx" || 
             pageName == "ManageTicket.aspx" ||

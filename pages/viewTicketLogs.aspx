@@ -71,6 +71,9 @@
                                                <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="Issue_Name" HeaderText="Issue Name"  DataType="System.String" meta:resourcekey="GridBoundColumnResource5"  >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
                                                          </telerik:GridBoundColumn>
+                                                     <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="Issue_Details" HeaderText="Issue Details"  DataType="System.String" FilterControlWidth="100px" meta:resourcekey="GridBoundColumnResource6" >
+<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
+                                                         </telerik:GridBoundColumn>
                                                       <telerik:GridDateTimeColumn DataField="Created_Time" AllowFiltering="true" HeaderText="Created Time"
                                                     SortExpression="Date_of_PITCH_Validation" EnableTimeIndependentFiltering="true"  PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss}"  FilterControlWidth="100px" meta:resourcekey="GridDateTimeColumnResource2">
                                                 </telerik:GridDateTimeColumn>
@@ -78,7 +81,7 @@
                                                     SortExpression="Updated_Time" EnableTimeIndependentFiltering="true"  PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss}"  FilterControlWidth="100px" meta:resourcekey="GridDateTimeColumnResource3">
                                                 </telerik:GridDateTimeColumn>
 
-                                                      <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="User_Email" Visible="true" HeaderText="Ticket Owner"  DataType="System.String" meta:resourcekey="GridBoundColumnResource6" >
+                                                      <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="User_Email" Visible="true" HeaderText="Ticket Owner"  DataType="System.String" meta:resourcekey="GridBoundColumnResource7" >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
                                                          </telerik:GridBoundColumn>
                                                      
@@ -100,8 +103,8 @@
                 </GroupByExpressions>
 
                                             </MasterTableView>
-                                            <ClientSettings>
-                                                <Resizing AllowColumnResize="false" ResizeGridOnColumnResize="false" AllowResizeToFit="false" />
+                                                <ClientSettings>
+                                                 <Scrolling AllowScroll="True" UseStaticHeaders="True" SaveScrollPosition="true"></Scrolling>
                                             </ClientSettings>
 
 

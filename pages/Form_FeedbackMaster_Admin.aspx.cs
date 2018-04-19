@@ -11,6 +11,7 @@ public partial class pages_Form_FeedbackMaster_Admin : System.Web.UI.Page
 {
     string UserId;
     static int tStatus;
+    public static string userEmail = string.Empty;
     protected void Page_Load(object sender, EventArgs e)
     {
         //Check Login
@@ -20,6 +21,7 @@ public partial class pages_Form_FeedbackMaster_Admin : System.Web.UI.Page
         }
         else
         {
+            userEmail = Session[PublicMethods.ConstUserEmail].ToString();
             //Check user profile status
             bool profileStatus = CheckProfileIsValid(DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]));
 
@@ -87,7 +89,7 @@ public partial class pages_Form_FeedbackMaster_Admin : System.Web.UI.Page
 
 
 
-            string query = "SELECT     tbl_User_Feedback.Ticket_Id, tbl_User_Feedback.Feedback,  tbl_User_Feedback.Created_Time, tbl_Type_Master.Type_Name,(  tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name) as userName FROM  tbl_Type_Master INNER JOIN tbl_Ticket_Master ON tbl_Type_Master.Type_Id = tbl_Ticket_Master.Type_Id INNER JOIN  tbl_User_Feedback ON tbl_Ticket_Master.Ticket_Id = tbl_User_Feedback.Ticket_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id order by  tbl_User_Feedback.Created_Time desc";
+            string query = "SELECT     tbl_User_Feedback.Ticket_Id, tbl_User_Feedback.Feedback,  tbl_User_Feedback.Created_Time, tbl_Type_Master.Type_Name,(  tbl_User_Master.User_First_Name + ' ' + tbl_User_Master.User_Last_Name) as userName FROM  tbl_Type_Master INNER JOIN tbl_Ticket_Master ON tbl_Type_Master.Type_Id = tbl_Ticket_Master.Type_Id INNER JOIN  tbl_User_Feedback ON tbl_Ticket_Master.Ticket_Id = tbl_User_Feedback.Ticket_Id INNER JOIN tbl_User_Master ON tbl_Ticket_Master.Created_By = tbl_User_Master.User_Id and tbl_Ticket_Master.Type_Id IN (SELECT     Type_Id FROM fnAdminAccess() where user_Email='" + userEmail + "')  order by  tbl_User_Feedback.Created_Time desc";
 
             DataTable dt = DBUtils.SQLSelect(new SqlCommand(query));
 

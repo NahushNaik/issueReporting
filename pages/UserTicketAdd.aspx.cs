@@ -346,6 +346,7 @@ public partial class pages_add : System.Web.UI.Page
         }
         catch (Exception ex)
         {
+            Response.Redirect("UserDash.aspx", true);
             ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert(" + ex.Message + ")", true);
         }
     }
@@ -449,6 +450,7 @@ public partial class pages_add : System.Web.UI.Page
         }
         catch (Exception ex)
         {
+            Response.Redirect("UserDash.aspx", true);
             throw ex;
         }
     }

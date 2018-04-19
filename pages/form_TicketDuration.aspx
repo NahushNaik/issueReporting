@@ -18,8 +18,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body1" runat="Server">
     <a class="navbar-brand" href="#">
-    <asp:Label ID="Label3" runat="server" meta:resourcekey="Label3Resource1" Text="View Tickets"></asp:Label>
-    </a>&nbsp;
+    <asp:Label ID="Label4" runat="server" meta:resourcekey="Label4Resource1" Text="View Tickets"></asp:Label>
+    </a>
+&nbsp;
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Body2" runat="Server">
     <div class="content">
@@ -27,6 +28,14 @@
                         <div class="row" style="margin-top: 0px !important;">
                             <div class="col-md-12">
                                 <div class="card">
+                                     <div class="header">
+                                        <h4 class="title">
+                                            <asp:Label ID="Label5" runat="server" meta:resourcekey="Label5Resource1" Text="Tickets"></asp:Label>
+                                         </h4>
+                                        <p class="category">
+                                            <asp:Label ID="Label3" runat="server" meta:resourcekey="Label3Resource1" Text="Select Appropriate Filter"></asp:Label>
+                                         </p>
+                                    </div>
                                     
                                     <div  style="margin: 10px 0px 0px 20px;" class="title">
                                         <asp:DropDownList ID="ddlStatus" runat="server" Visible="False"  AutoPostBack="True" meta:resourcekey="ddlStatusResource1">
@@ -34,7 +43,21 @@
                                             <asp:ListItem meta:resourcekey="ListItemResource2">Open</asp:ListItem>
                                             <asp:ListItem meta:resourcekey="ListItemResource3" >Closed</asp:ListItem>
                                         </asp:DropDownList>
-                     &nbsp; &nbsp; &nbsp;   
+
+                                        
+                                          <asp:DropDownList ID="ddlMenu" runat="server" meta:resourcekey="ddlMenuResource1" >
+                                            <asp:ListItem meta:resourcekey="ListItemResource4">Created Time</asp:ListItem>
+                                            <asp:ListItem meta:resourcekey="ListItemResource5">Ticket No</asp:ListItem>
+                                            <asp:ListItem meta:resourcekey="ListItemResource6">Priority</asp:ListItem>
+                                        </asp:DropDownList>
+                                             <asp:DropDownList ID="ddlOrder" runat="server" meta:resourcekey="ddlOrderResource1" >
+                                            <asp:ListItem Value="desc" meta:resourcekey="ListItemResource7">Descending </asp:ListItem>
+                                            <asp:ListItem Value="asc" meta:resourcekey="ListItemResource8">Ascending</asp:ListItem>
+                                            
+                                        </asp:DropDownList>
+
+
+                      
                                         <asp:Label Visible="False" ID="Label1" runat="server" Text="From Date:" meta:resourcekey="Label1Resource1"></asp:Label>&nbsp;<telerik:RadDateTimePicker Visible="False" ID="dtpFromDate"  width="120px"  AutoPostBackControl="Calendar" runat="server" AutoPostBack="True" Culture="en-US" meta:resourcekey="dtpFromDateResource1">  
 <TimeView CellSpacing="-1" Culture="en-IN">
     <HeaderTemplate>
@@ -66,7 +89,7 @@
 </DateInput>
 
 <DatePopupButton ImageUrl="" HoverImageUrl="" CssClass=""></DatePopupButton>
-                                        </telerik:RadDateTimePicker>&nbsp;&nbsp;&nbsp;
+                                        </telerik:RadDateTimePicker>
                                          <asp:Label Visible="False" ID="Label2" runat="server" Text="To Date:" meta:resourcekey="Label2Resource1"></asp:Label>&nbsp;<telerik:RadDateTimePicker ID="dtpToDate" Visible="False" width="122px" AutoPostBackControl="Calendar"  runat="server" AutoPostBack="True" Culture="en-US" meta:resourcekey="dtpToDateResource1">  
 <TimeView CellSpacing="-1" Culture="en-IN">
     <HeaderTemplate>
@@ -99,10 +122,10 @@
 
 <DatePopupButton ImageUrl="" HoverImageUrl="" CssClass=""></DatePopupButton>
                                         </telerik:RadDateTimePicker>
-                                      
+                                            <asp:Button ID="btnFilterApply" runat="server" OnClick="btnApply_Click"  Text="Apply" meta:resourcekey="btnFilterApplyResource1" />
                                     </div>
 
-                                    <div class="content table-responsive table-full-width">
+                                    <div class="content table-responsive table-full-width" >
                                         <telerik:radgrid id="rgTickets" runat="server"  onitemdatabound="rgTickets_ItemDataBound" AutoGenerateColumns="False" MasterTableView-AllowFilteringByColumn="true" ActiveItemStyle-Wrap="true" skin="Simple" cellspacing="-1" gridlines="Both" meta:resourcekey="rgTicketsResource1"  >
                                             <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="false"></GroupingSettings>
                                       
@@ -128,20 +151,32 @@
                                                      <telerik:GridBoundColumn DataField="Priority" DataType="System.String"  HeaderText="Priority" AutoPostBackOnFilter="false" meta:resourcekey="GridBoundColumnResource3"  ></telerik:GridBoundColumn>
                                                     <telerik:GridBoundColumn DataField="Type Name" DataType="System.String" HeaderText="Type" AutoPostBackOnFilter="false" meta:resourcekey="GridBoundColumnResource4"  ></telerik:GridBoundColumn>
                                                       <telerik:GridBoundColumn DataField="Application Name" HeaderText="Application" AutoPostBackOnFilter="false" DataType="System.String" meta:resourcekey="GridBoundColumnResource5"   ></telerik:GridBoundColumn>
-  <telerik:GridBoundColumn DataField="Created Time" DataType="System.String"  HeaderText="Created Date" AutoPostBackOnFilter="false" meta:resourcekey="GridBoundColumnResource6"  ></telerik:GridBoundColumn>   
+                                                    <telerik:GridBoundColumn DataField="Issue Name" HeaderText="Issue" AutoPostBackOnFilter="false" DataType="System.String" meta:resourcekey="GridBoundColumnResource6"   ></telerik:GridBoundColumn>
+
+                                                     <telerik:GridBoundColumn DataField="Issue Details" HeaderText="Issue Details" AutoPostBackOnFilter="false" DataType="System.String" FilterControlWidth="100px" meta:resourcekey="GridBoundColumnResource7"   ></telerik:GridBoundColumn>
+                                                    
+  <telerik:GridBoundColumn DataField="Created Time" DataType="System.String"  HeaderText="Created Date" AutoPostBackOnFilter="false" Visible="false" meta:resourcekey="GridBoundColumnResource8"  ></telerik:GridBoundColumn>   
 
 
-                                                    <telerik:GridDateTimeColumn DataField="Created Time" AllowFiltering="true" HeaderText="Created Time"
+                                                    <telerik:GridDateTimeColumn DataField="Created Time" AllowFiltering="true" HeaderText="Created Time" FilterControlWidth="100px"
                                                    EnableTimeIndependentFiltering="true"  PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy}" meta:resourcekey="GridDateTimeColumnResource1">
                                                 </telerik:GridDateTimeColumn>
-                                                     <telerik:GridBoundColumn DataField="Updated_Time" DataType="System.String"  HeaderText="Updated Time" AutoPostBackOnFilter="false" meta:resourcekey="GridBoundColumnResource7"  ></telerik:GridBoundColumn>                                                    
+
+                                                     
+                                                      <telerik:GridDateTimeColumn DataField="Updated_Time" AllowFiltering="true" HeaderText="Updated Time" FilterControlWidth="100px"
+                                                   EnableTimeIndependentFiltering="true"  PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy}" meta:resourcekey="GridDateTimeColumnResource2">
+                                                </telerik:GridDateTimeColumn>
+
+                                                     <telerik:GridBoundColumn DataField="Updated_Time" DataType="System.String"  HeaderText="Updated Time" AutoPostBackOnFilter="false"  Visible="false" meta:resourcekey="GridBoundColumnResource9"></telerik:GridBoundColumn>                                                      <telerik:GridBoundColumn DataField="Hours" DataType="System.String"  HeaderText="Time Spent(Hours.Min)" AutoPostBackOnFilter="false" meta:resourcekey="GridBoundColumnResource10"  ></telerik:GridBoundColumn>  
+                                                      <telerik:GridBoundColumn HeaderText="is Valid?" DataType="System.String"  DataField="isValid" AutoPostBackOnFilter="false" meta:resourcekey="GridBoundColumnResource11"  ></telerik:GridBoundColumn> 
                                                     
                                                 </Columns>
                                             </MasterTableView>
-                                            <ClientSettings>
-                                                <Resizing AllowColumnResize="false" ResizeGridOnColumnResize="false" AllowResizeToFit="false" />
+                                                <ClientSettings>
+                                                 <Scrolling AllowScroll="True" UseStaticHeaders="True" SaveScrollPosition="true"></Scrolling>
                                             </ClientSettings>
 
+                                               
 <ActiveItemStyle Wrap="True"></ActiveItemStyle>
                                         </telerik:radgrid>
                                     </div>
