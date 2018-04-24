@@ -38,6 +38,8 @@ public partial class pages_Form_Wrong_Ticket : System.Web.UI.Page
             fnLoadData(true);
 
         }
+
+        PublicMethods.LocalizeRadGridFilters(rgTicketLogs);
     }
 
     protected bool CheckProfileIsValid(string userEMail)

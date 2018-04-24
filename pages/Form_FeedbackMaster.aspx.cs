@@ -38,6 +38,9 @@ public partial class pages_Form_FeedbackMaster : System.Web.UI.Page
             fnLoadData(true);
 
         }
+
+        PublicMethods.LocalizeRadGridFilters(rgUserFeedback);
+
     }
 
     protected bool CheckProfileIsValid(string userEMail)

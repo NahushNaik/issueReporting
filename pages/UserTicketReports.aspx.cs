@@ -72,11 +72,12 @@ public partial class pages_Reports : System.Web.UI.Page
         }
 
 
-      
-        
-        
+
+
+        PublicMethods.LocalizeRadGridFilters(RadGrid1);
 
         PopulateGrid();
+
     }
 
     protected bool CheckProfileIsValid(string userEMail)

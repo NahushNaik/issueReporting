@@ -4,8 +4,10 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Globalization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Telerik.Web.UI;
 
 public partial class pages_Form_FeedbackMaster_Admin : System.Web.UI.Page
 {
@@ -37,6 +39,7 @@ public partial class pages_Form_FeedbackMaster_Admin : System.Web.UI.Page
             fnLoadData(true);
 
         }
+        PublicMethods.LocalizeRadGridFilters(rgUserFeedback);
     }
 
     protected bool CheckProfileIsValid(string userEMail)

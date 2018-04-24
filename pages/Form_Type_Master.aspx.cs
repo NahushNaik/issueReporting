@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Globalization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Telerik.Web.UI;
@@ -17,6 +18,9 @@ public partial class pages_Form_Type_Master : System.Web.UI.Page
         {
             Response.Redirect("Login.aspx");
         }
+
+        PublicMethods.LocalizeRadGridFilters(rgTypeMaster);
+
     }
     protected void rgTypeMaster_NeedDataSource(object sender, Telerik.Web.UI.GridNeedDataSourceEventArgs e)
     {

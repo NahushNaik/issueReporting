@@ -66,6 +66,7 @@ public partial class pages_ViewTicket_Admin : System.Web.UI.Page
           toTime = dtpToDate.SelectedDate.ToString();
         rgTickets.DataSource = GetTable(tStatus, fromTime,toTime);
         //rgTickets.DataBind();
+        PublicMethods.LocalizeRadGridFilters(rgTickets);
 
       
     }

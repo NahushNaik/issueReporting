@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Globalization;
 using System.Web.UI.WebControls;
 using Telerik.Web.UI;
 
@@ -20,6 +21,8 @@ public partial class pages_Form_Issue_Master : System.Web.UI.Page
         if (!IsPostBack) {
             Session["Type_Id"] = null;
         }
+
+        PublicMethods.LocalizeRadGridFilters(rgIssueMaster);
 
     }
     protected void rgIssueMaster_NeedDataSource(object sender, Telerik.Web.UI.GridNeedDataSourceEventArgs e)

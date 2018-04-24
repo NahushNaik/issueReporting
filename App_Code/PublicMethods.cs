@@ -6,6 +6,7 @@ using System.Net;
 using System.Web;
 using System.Data;
 using System.Data.SqlClient;
+using Telerik.Web.UI;
 
 /// <summary>
 /// Summary description for PublicMethods
@@ -90,6 +91,84 @@ public static class PublicMethods
         }
     }    
 
+    public static void LocalizeRadGridFilters(RadGrid grid)
+    {
+        if (CultureInfo.CurrentCulture.Name == "es-ES")
+        {
+            GridFilterMenu menu = grid.FilterMenu;
+            foreach (RadMenuItem item in menu.Items)
+            {
+                if (item.Text == "NoFilter")
+                {
+                    item.Text = "Sin filtro";
+                }
+                else if (item.Text == "Contains")
+                {
+                    item.Text = "Contiene";
+                }
+                else if (item.Text == "DoesNotContain")
+                {
+                    item.Text = "No contiene";
+                }
+                else if (item.Text == "StartsWith")
+                {
+                    item.Text = "Comienza con";
+                }
+                else if (item.Text == "EndsWith")
+                {
+                    item.Text = "Termina con";
+                }
+                else if (item.Text == "EqualTo")
+                {
+                    item.Text = "Igual a";
+                }
+                else if (item.Text == "NotEqualTo")
+                {
+                    item.Text = "No igual a";
+                }
+                else if (item.Text == "GreaterThan")
+                {
+                    item.Text = "Mas grande que";
+                }
+                else if (item.Text == "LessThan")
+                {
+                    item.Text = "Menos que";
+                }
+                else if (item.Text == "GreaterThanOrEqualTo")
+                {
+                    item.Text = "Mayor qué o igual a";
+                }
+                else if (item.Text == "LessThanOrEqualTo")
+                {
+                    item.Text = "Menos que o igual a";
+                }
+                else if (item.Text == "Between")
+                {
+                    item.Text = "Entre";
+                }
+                else if (item.Text == "NotBetween")
+                {
+                    item.Text = "No entre";
+                }
+                else if (item.Text == "IsEmpty")
+                {
+                    item.Text = "Esta vacio";
+                }
+                else if (item.Text == "NotIsEmpty")
+                {
+                    item.Text = "No es vacio";
+                }
+                else if (item.Text == "IsNull")
+                {
+                    item.Text = "Es nulo";
+                }
+                else if (item.Text == "NotIsNull")
+                {
+                    item.Text = "No es nulo";
+                }
+            }
+        }
+    }
 
     //public static bool CheckProfileIsValid(string userEMail)
     //{

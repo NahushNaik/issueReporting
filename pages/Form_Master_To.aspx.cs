@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Globalization;
 using System.Web.UI.WebControls;
 using Telerik.Web.UI;
 
@@ -35,7 +36,7 @@ public partial class pages_Form_Master_To : System.Web.UI.Page
             fnLoadData(true);
            
         }
-
+        PublicMethods.LocalizeRadGridFilters(rgTo);
     }
     
     protected bool CheckProfileIsValid(string userEMail)
