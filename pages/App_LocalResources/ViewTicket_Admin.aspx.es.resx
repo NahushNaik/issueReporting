@@ -722,7 +722,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource4.HeaderText" xml:space="preserve">
-    <value>Prioridad</value>
+    <value>Priority</value>
   </data>
   <data name="GridBoundColumnResource4.HeaderTooltip" xml:space="preserve">
     <value />
@@ -1166,25 +1166,25 @@
     <value />
   </data>
   <data name="ListItemResource1.Text" xml:space="preserve">
-    <value>Todas</value>
+    <value>All</value>
   </data>
   <data name="ListItemResource1.Value" xml:space="preserve">
     <value>All</value>
   </data>
   <data name="ListItemResource2.Text" xml:space="preserve">
-    <value>Abierto</value>
+    <value>Open</value>
   </data>
   <data name="ListItemResource2.Value" xml:space="preserve">
     <value>Open</value>
   </data>
   <data name="ListItemResource3.Text" xml:space="preserve">
-    <value>Cerrado</value>
+    <value>Closed</value>
   </data>
   <data name="ListItemResource3.Value" xml:space="preserve">
     <value>Closed</value>
   </data>
   <data name="ListItemResource4.Text" xml:space="preserve">
-    <value>Tiempo creado</value>
+    <value>Created Time</value>
   </data>
   <data name="ListItemResource4.Value" xml:space="preserve">
     <value>Created Time</value>
@@ -1196,19 +1196,19 @@
     <value>Ticket No</value>
   </data>
   <data name="ListItemResource6.Text" xml:space="preserve">
-    <value>Prioridad</value>
+    <value>Priority</value>
   </data>
   <data name="ListItemResource6.Value" xml:space="preserve">
     <value>Priority</value>
   </data>
   <data name="ListItemResource7.Text" xml:space="preserve">
-    <value>Descendente</value>
+    <value>Descending</value>
   </data>
   <data name="ListItemResource7.Value" xml:space="preserve">
     <value>desc</value>
   </data>
   <data name="ListItemResource8.Text" xml:space="preserve">
-    <value>Ascendente</value>
+    <value>Ascending</value>
   </data>
   <data name="ListItemResource8.Value" xml:space="preserve">
     <value>asc</value>

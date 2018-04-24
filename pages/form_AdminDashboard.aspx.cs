@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Globalization;
 using Telerik.Web.UI;
 
 public partial class pages_form_AdminDashboard : System.Web.UI.Page
@@ -74,6 +75,18 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
 
     private void queryToFnTicketRecent(string fromDate, string toDate, string status)
     {
+        if (CultureInfo.CurrentCulture.Name == "es-ES")
+        {
+            string newFormat = DateTime.ParseExact(fromDate.Split(' ')[0], "dd/MM/yyyy", CultureInfo.InvariantCulture)
+.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture);
+            fromDate = newFormat + " " + fromDate.Split(' ')[1];
+
+            newFormat = DateTime.ParseExact(toDate.Split(' ')[0], "dd/MM/yyyy", CultureInfo.InvariantCulture)
+.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture);
+            toDate = newFormat + " " + toDate.Split(' ')[1];
+        }
+        		
+
         string qry = "";
         if (status == "open")
         {
@@ -128,11 +141,20 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
             }
       
 
+            //string supportTime = String.Format("{0:0.00}", Convert.ToDouble(total));
             string supportTime = String.Format("{0:0.00}", Convert.ToDouble(total));
-            string M = (supportTime.Split('.')[1]);   //Split Minute
-            string H = (supportTime.Split('.')[0]);    //Split Hour
+            string M, H;
+            try
+            {
+                M = (supportTime.Split('.')[1]);   //Split Minute
+                H = (supportTime.Split('.')[0]);    //Split Hour
+            }
+            catch (Exception e)
+            {
+                M = (supportTime.Split(',')[1]);   //Split Minute
+                H = (supportTime.Split(',')[0]);    //Split Hour
+            }
             int minTot = 60 * Convert.ToInt32(H);   //Hours to minute
-
             int totMinForSupport = minTot + Convert.ToInt32(M);  //Total Minute
             string totalWorkTime = spanDates(Convert.ToInt32(totMinForSupport));
          
@@ -154,9 +176,17 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
             string avgCloseTime = String.Format("{0:0.00}", Convert.ToDouble(closeTimeAVG));
 
 
-
-            string Minutes = (avgCloseTime.Split('.')[1]);
-            string Hours = (avgCloseTime.Split('.')[0]);
+            string Hours, Minutes;
+            try
+            {
+                Minutes = (avgCloseTime.Split('.')[1]);
+                Hours = (avgCloseTime.Split('.')[0]);
+            }
+            catch (Exception e)
+            {
+                Minutes = (avgCloseTime.Split(',')[1]);
+                Hours = (avgCloseTime.Split(',')[0]); 
+            }
           //  lblAverageClosedTime.Text = Hours + " Hours" + " :  " + Minutes + " Minutes";
 
 
@@ -176,8 +206,17 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
                 foreach (DataRow dr in dt1.Rows)
                 {
                     string avgTim = String.Format("{0:0.00}", Convert.ToDouble(dr["time"]));
-                    string Minutes1 = (avgTim.Split('.')[1]);
-                    string Hours1 = (avgTim.Split('.')[0]);
+                    string Hours1, Minutes1;
+                    try
+                    {
+                        Minutes1 = (avgTim.Split('.')[1]);
+                        Hours1 = (avgTim.Split('.')[0]);
+                    }
+                    catch (Exception e)
+                    {
+                        Minutes1 = (avgTim.Split(',')[1]);
+                        Hours1 = (avgTim.Split(',')[0]);
+                    }
 
                     int min = 60 * Convert.ToInt32(Hours1);
 
@@ -211,9 +250,16 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
             }
 
             // Minutes = fastCloseTime.Substring(avgCloseTime.LastIndexOf('.') + 1);
-            Minutes = (fastCloseTime.Split('.')[1]);
-            Hours = (fastCloseTime.Split('.')[0]);
-
+            try
+            {
+                Minutes = (fastCloseTime.Split('.')[1]);
+                Hours = (fastCloseTime.Split('.')[0]);
+            }
+            catch
+            {
+                Minutes = (fastCloseTime.Split(',')[1]);
+                Hours = (fastCloseTime.Split(',')[0]);
+            }
             lblFastestClosedTime.Text = Hours + " Hours" + " :  " + Minutes + " Minutes";
             //slow closed time
 
@@ -229,8 +275,16 @@ public partial class pages_form_AdminDashboard : System.Web.UI.Page
             }
             //  Minutes = sloweCloseTime.Substring(avgCloseTime.LastIndexOf('.') + 1);
 
-            Minutes = (sloweCloseTime.Split('.')[1]);
-            Hours = (sloweCloseTime.Split('.')[0]);
+            try
+            {
+                Minutes = (sloweCloseTime.Split('.')[1]);
+                Hours = (sloweCloseTime.Split('.')[0]);
+            }
+            catch (Exception e)
+            {
+                Minutes = (sloweCloseTime.Split(',')[1]);
+                Hours = (sloweCloseTime.Split(',')[0]); 
+            }
             lblSlowestClosedTime.Text = Hours + " Hours" + " :  " + Minutes + " Minutes"; ;
         }
         catch (Exception ex)

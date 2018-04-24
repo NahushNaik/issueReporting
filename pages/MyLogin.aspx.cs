@@ -9,7 +9,8 @@ public partial class MyLogin : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-       
+        TextBox1.Text = "bhushanchikhalikar@gmail.com";
+        TextBox2.Text = "bhushan1995";
     }
     protected void Button1_Click(object sender, EventArgs e)
     {

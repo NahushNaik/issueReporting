@@ -37,6 +37,8 @@ public partial class pages_add : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
+        IssueDetail.Attributes.Add("placeholder", Resources.Global.IssueDetails);
+
         //Check Login
         if (DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]).Equals(""))
         {

@@ -20,6 +20,8 @@ public partial class pages_UserDash : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        txtEscalation.Attributes.Add("placeholder", Resources.Global.SupportTeam);
+
         //Check Login
         if (DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]).Equals(""))
         {

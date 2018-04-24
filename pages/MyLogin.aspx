@@ -21,7 +21,7 @@
         <br />
         <asp:Label ID="Label2" runat="server" meta:resourcekey="Label2Resource1" Text="Password"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox2" runat="server" meta:resourcekey="TextBox2Resource1" TextMode="Password" Width="188px"></asp:TextBox>
+        <asp:TextBox ID="TextBox2" runat="server" meta:resourcekey="TextBox2Resource1"  Width="188px"></asp:TextBox>
 &nbsp;&nbsp;
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Please Enter Password" meta:resourcekey="RequiredFieldValidator2Resource1"></asp:RequiredFieldValidator>
         <br />

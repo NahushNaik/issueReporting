@@ -123,10 +123,22 @@
   <data name="btn_Edit_DetailsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="btn_Edit_DetailsResource2.Text" xml:space="preserve">
+    <value>Editar detalles</value>
+  </data>
+  <data name="btn_Edit_DetailsResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="btn_UpdateCommentResource1.Text" xml:space="preserve">
     <value>enviar comentario</value>
   </data>
   <data name="btn_UpdateCommentResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btn_UpdateCommentResource2.Text" xml:space="preserve">
+    <value>enviar comentario</value>
+  </data>
+  <data name="btn_UpdateCommentResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="btnPageResource1.Text" xml:space="preserve">
@@ -135,19 +147,40 @@
   <data name="btnPageResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="btnPageResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnPageResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="drpDownApplicationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="drpDownApplicationResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="drpDownTypeResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="drpDownTypeResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="DrpIssueTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DrpIssueTypeResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="DrpPriorityResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="DrpPriorityResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="drpStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="drpStatusResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="FileDownloadResource1.Text" xml:space="preserve">
@@ -158,10 +191,30 @@
   <data name="FileDownloadResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="FileDownloadResource2.Text" xml:space="preserve">
+    <value>
+                                                       &lt;img  src="../Images/Download.png"  /&gt;
+                                            </value>
+  </data>
+  <data name="FileDownloadResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="IssueDetailResource1.Text" xml:space="preserve">
     <value>Detalles del problema</value>
   </data>
   <data name="IssueDetailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IssueDetailResource2.Text" xml:space="preserve">
+    <value>Detalles del problema</value>
+  </data>
+  <data name="IssueDetailResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label10Resource1.Text" xml:space="preserve">
+    <value>Problema</value>
+  </data>
+  <data name="Label10Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label11Resource1.Text" xml:space="preserve">
@@ -170,10 +223,22 @@
   <data name="Label11Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label11Resource2.Text" xml:space="preserve">
+    <value>Detalles del problema</value>
+  </data>
+  <data name="Label11Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label12Resource1.Text" xml:space="preserve">
     <value>Prioridad</value>
   </data>
   <data name="Label12Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label12Resource2.Text" xml:space="preserve">
+    <value>Prioridad</value>
+  </data>
+  <data name="Label12Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label13Resource1.Text" xml:space="preserve">
@@ -182,10 +247,22 @@
   <data name="Label13Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label13Resource2.Text" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="Label13Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label14Resource1.Text" xml:space="preserve">
     <value>Documento</value>
   </data>
   <data name="Label14Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label14Resource2.Text" xml:space="preserve">
+    <value>Documento</value>
+  </data>
+  <data name="Label14Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label15Resource1.Text" xml:space="preserve">
@@ -194,10 +271,22 @@
   <data name="Label15Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label15Resource2.Text" xml:space="preserve">
+    <value>Comentarios</value>
+  </data>
+  <data name="Label15Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label16Resource1.Text" xml:space="preserve">
     <value>Comentarios:</value>
   </data>
   <data name="Label16Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label16Resource2.Text" xml:space="preserve">
+    <value>Comentarios:</value>
+  </data>
+  <data name="Label16Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label1Resource1.Text" xml:space="preserve">
@@ -206,7 +295,16 @@
   <data name="Label1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label1Resource2.Text" xml:space="preserve">
+    <value>* (El comentario es obligatorio para actualizar el comentario)</value>
+  </data>
+  <data name="Label1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label3Resource1.Text" xml:space="preserve">
@@ -215,16 +313,34 @@
   <data name="Label3Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label3Resource2.Text" xml:space="preserve">
+    <value>Ver boleto</value>
+  </data>
+  <data name="Label3Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label5Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label5Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label6Resource1.Text" xml:space="preserve">
-    <value>Ver boleto :</value>
+    <value>Ver boleto:</value>
   </data>
   <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource2.Text" xml:space="preserve">
+    <value>Ver boleto:</value>
+  </data>
+  <data name="Label6Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label7Resource1.Text" xml:space="preserve">
@@ -233,10 +349,22 @@
   <data name="Label7Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label7Resource2.Text" xml:space="preserve">
+    <value>Identificación de entradas</value>
+  </data>
+  <data name="Label7Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="Label8Resource1.Text" xml:space="preserve">
     <value>Tipo</value>
   </data>
   <data name="Label8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8Resource2.Text" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Label8Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label9Resource1.Text" xml:space="preserve">
@@ -245,13 +373,34 @@
   <data name="Label9Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label9Resource2.Text" xml:space="preserve">
+    <value>Solicitud</value>
+  </data>
+  <data name="Label9Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCreatedAtResource1.Text" xml:space="preserve">
+    <value>(Usuario)</value>
+  </data>
+  <data name="lblCreatedAtResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="lblStatusResource1.Text" xml:space="preserve">
     <value>Etiqueta</value>
   </data>
   <data name="lblStatusResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="lblStatusResource2.Text" xml:space="preserve">
+    <value>Etiqueta</value>
+  </data>
+  <data name="lblStatusResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="PageResource2.Title" xml:space="preserve">
+    <value>Ver boleto</value>
+  </data>
+  <data name="PageResource3.Title" xml:space="preserve">
     <value>Ver boleto</value>
   </data>
   <data name="RequiredFieldValidator2Resource1.ErrorMessage" xml:space="preserve">
@@ -263,10 +412,25 @@
   <data name="RequiredFieldValidator2Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="RequiredFieldValidator2Resource2.ErrorMessage" xml:space="preserve">
+    <value>Por favor ingrese el comentario</value>
+  </data>
+  <data name="RequiredFieldValidator2Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RequiredFieldValidator2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="TicketIDResource1.Text" xml:space="preserve">
     <value />
   </data>
   <data name="TicketIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TicketIDResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TicketIDResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="txt_CommentsResource1.Text" xml:space="preserve">
@@ -275,10 +439,22 @@
   <data name="txt_CommentsResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="txt_CommentsResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txt_CommentsResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="txtFileNameResource1.Text" xml:space="preserve">
     <value>Ningún archivo</value>
   </data>
   <data name="txtFileNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFileNameResource2.Text" xml:space="preserve">
+    <value>Ningún archivo</value>
+  </data>
+  <data name="txtFileNameResource2.ToolTip" xml:space="preserve">
     <value />
   </data>
 </root>

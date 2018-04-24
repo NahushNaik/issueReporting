@@ -9,6 +9,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Globalization;
 using Telerik.Web.UI;
 
 public partial class pages_ViewTicket_Admin : System.Web.UI.Page
@@ -85,6 +86,16 @@ public partial class pages_ViewTicket_Admin : System.Web.UI.Page
         table.Columns.Add("Issue", typeof(string));
         table.Columns.Add("Date", typeof(string));
 
+        if (CultureInfo.CurrentCulture.Name == "es-ES")
+        {
+            string newFormat = DateTime.ParseExact(fromTime.Split(' ')[0], "dd/MM/yyyy", CultureInfo.InvariantCulture)
+.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture);
+            fromTime = newFormat + " " + fromTime.Split(' ')[1];
+
+            newFormat = DateTime.ParseExact(toTime.Split(' ')[0], "dd/MM/yyyy", CultureInfo.InvariantCulture)
+.ToString("yyyy/MM/dd", CultureInfo.InvariantCulture);
+            toTime = newFormat + " " + toTime.Split(' ')[1];
+        }
 
         string query = "";
 

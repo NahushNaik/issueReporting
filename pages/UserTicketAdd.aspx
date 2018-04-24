@@ -152,7 +152,7 @@
                                                 <asp:Label ID="Label13" runat="server" Text="Issue Details" meta:resourcekey="Label13Resource1"></asp:Label></label>
                                             <asp:Label ID="Label4" runat="server" ForeColor="Red" Text="*" meta:resourcekey="Label4Resource1"></asp:Label>
                                             <%--<textarea rows="5" class="form-control border-input" placeholder="Here can be your description" value="Mike">test issue details</textarea>--%>
-                                            <asp:TextBox ID="IssueDetail" runat="server" CssClass="form-control border-input" placeholder="Issue Details" TextMode="MultiLine" meta:resourcekey="IssueDetailResource1"></asp:TextBox>
+                                            <asp:TextBox ID="IssueDetail" runat="server" CssClass="form-control border-input"  TextMode="MultiLine" meta:resourcekey="IssueDetailResource1"></asp:TextBox>
 
                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="IssueDetail"
                                                 ErrorMessage="Required Field Area Issue Details" ForeColor="Red" Display="Dynamic"

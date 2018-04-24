@@ -37,14 +37,14 @@
                                         <div class="form-group">
                                             <label><asp:Label ID="Label2" runat="server" Text="Type" meta:resourcekey="Label2Resource1"></asp:Label>
                                             </label>
-&nbsp;<input type="text" class="form-control border-input" placeholder="First Name">
+&nbsp;<asp:TextBox ID="TextBox1" runat="server" CssClass="form-control border-input"  ></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label><asp:Label ID="Label3" runat="server" Text="Application" meta:resourcekey="Label3Resource1"></asp:Label>
                                             </label>
-&nbsp;<input type="text" class="form-control border-input" placeholder="Last Name">
+&nbsp;<asp:TextBox ID="TextBox2" runat="server" CssClass="form-control border-input"  ></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -54,14 +54,14 @@
                                         <div class="form-group">
                                             <label><asp:Label ID="Label4" runat="server" Text="Module" meta:resourcekey="Label4Resource1"></asp:Label>
                                             </label>
-&nbsp;<input type="text" class="form-control border-input" placeholder="First Name">
+&nbsp;<asp:TextBox ID="TextBox3" runat="server" CssClass="form-control border-input"  ></asp:TextBox>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label><asp:Label ID="Label5" runat="server" Text="Related To" meta:resourcekey="Label5Resource1"></asp:Label>
                                             </label>
-&nbsp;<input type="text" class="form-control border-input" placeholder="Last Name">
+&nbsp;<asp:TextBox ID="TextBox4" runat="server" CssClass="form-control border-input"  ></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@
                                         <div class="form-group">
                                             <label><asp:Label ID="Label6" runat="server" Text="Issue" meta:resourcekey="Label6Resource1"></asp:Label>
                                             </label>
-                                            &nbsp;<input type="text" class="form-control border-input" placeholder="Select Issue" value="">
+                                            &nbsp;<asp:TextBox ID="TextBox5" runat="server" CssClass="form-control border-input"  ></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -82,7 +82,8 @@
                                         <div class="form-group">
                                             <label><asp:Label ID="Label7" runat="server" Text="Issue Details" meta:resourcekey="Label7Resource1"></asp:Label>
                                             </label>
-                                            &nbsp;<textarea rows="5" class="form-control border-input" placeholder="Here can be your description" value="Mike">test issue details</textarea>
+                                            &nbsp;<%--<textarea rows="5" class="form-control border-input" placeholder="Here can be your description" value="Mike">test issue details</textarea>--%>
+                                            <asp:TextBox ID="TextBox6" TextMode="MultiLine" Rows="5" runat="server" CssClass="form-control border-input"  ></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -92,7 +93,7 @@
                                         <div class="form-group">
                                             <label><asp:Label ID="Label8" runat="server" Text="Priority" meta:resourcekey="Label8Resource1"></asp:Label>
                                             </label>
-                                            &nbsp;<input type="text" class="form-control border-input" placeholder="Select Issue" value="">
+                                            &nbsp;<asp:TextBox ID="TextBox7" runat="server" CssClass="form-control border-input"  ></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -103,7 +104,7 @@
                                         <div class="form-group">
                                             <label><asp:Label ID="Label9" runat="server" Text="Status" meta:resourcekey="Label9Resource1"></asp:Label>
                                             </label>
-                                            &nbsp;<input type="text" class="form-control border-input" placeholder="Select Issue" value="" disabled>
+                                            &nbsp;<asp:TextBox ID="TextBox8" runat="server" CssClass="form-control border-input"  disabled></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -113,7 +114,7 @@
                                         <div class="form-group">
                                             <label><asp:Label ID="Label10" runat="server" Text="Document" meta:resourcekey="Label10Resource1"></asp:Label>
                                             </label>
-                                            &nbsp;<input type="text" class="form-control border-input" placeholder="Select Issue" value="">
+                                            &nbsp;<asp:TextBox ID="TextBox9" runat="server" CssClass="form-control border-input"></asp:TextBox>
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +140,7 @@
                                                 <label>
                                                 <asp:Label ID="Label13" runat="server" meta:resourcekey="Label13Resource1" Text="Notification Details"></asp:Label>
                                                 </label>
-                                                &nbsp;<input type="text" class="form-control border-input" placeholder="First Name">
+                                                &nbsp;<asp:TextBox ID="TextBox10" runat="server" CssClass="form-control border-input"></asp:TextBox>
                                             </div>
                                         </div>
                                         <div class="col-md-3">

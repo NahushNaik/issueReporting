@@ -36,13 +36,14 @@
                         <div class="content">
                             <div class="row">
                                 <center> 
-                                    <a href="UserTicketAdd.aspx" onclick="skm_LockScreen('We are processing your request...')"  class="btn btn-default btn-login" style="height:64px; background-color:#68B3C8; color:black; width:170px; font-size:25px;" >New Ticket</a>
+                                    <a href="UserTicketAdd.aspx" onclick="skm_LockScreen('We are processing your request...')"  class="btn btn-default btn-login" style="height:64px; background-color:#68B3C8; color:black; width:170px; font-size:25px;" ><asp:Label ID="Label8" runat="server" Text="New Ticket" meta:resourcekey="Label8Resource1"></asp:Label></a>
 								</center>
                             </div>
                             <div class="footer">
                                 <hr />
                                 <div class="stats">
-                                    <i class="ti-slice"></i><a href="UserTicketAdd.aspx" style="color: black;"  onclick="skm_LockScreen('We are processing your request...')"><B>New Ticket</B></a>
+                                    <i class="ti-slice"></i><a href="UserTicketAdd.aspx" style="color: black;"  onclick="skm_LockScreen('We are processing your request...')"><B>
+                                        <asp:Label ID="Label9" runat="server" Text="New Ticket" meta:resourcekey="Label8Resource1"></asp:Label></B></a>
 
                                 </div>
                             </div>
@@ -378,7 +379,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <asp:Label ID="Label1" runat="server" ForeColor="Red" Text="*" meta:resourcekey="Label1Resource2"></asp:Label>
-                                        <asp:TextBox ID="txtEscalation" runat="server" TextMode="MultiLine" class="form-control border-input" placeholder="Type your query or escalation to support team..." ValidationGroup="DocumentGroup" Rows="5" meta:resourcekey="txtEscalationResource2"></asp:TextBox>
+                                        <asp:TextBox ID="txtEscalation" runat="server" TextMode="MultiLine" class="form-control border-input" ValidationGroup="DocumentGroup" Rows="5" meta:resourcekey="txtEscalationResource2"></asp:TextBox>
 
                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtEscalation"
                                             ErrorMessage="Required Field Support Team " ForeColor="Red" Display="Dynamic"
