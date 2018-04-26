@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Form_UserFeedback.aspx.cs" Inherits="pages_Form_UserFeedback" EnableViewState="true" culture="auto" meta:resourcekey="PageResource1" uiculture="auto" %>
 
-<!DOCTYPE html>
 
 
 <!DOCTYPE html>
@@ -209,7 +208,7 @@
                   <tr>
                       <td>
                         <asp:Label ID="Label8" runat="server" Text="FeedBack " meta:resourcekey="Label8Resource1"></asp:Label></td>
-                      <td> <asp:DropDownList ID="ddlReasons" Height="100%" width="100%" runat="server" meta:resourcekey="ddlReasonsResource1">
+                      <td> <asp:DropDownList ID="ddlReasons" Height="100%" width="100%" runat="server" AutoPostBack="false" Enabled="true" meta:resourcekey="ddlReasonsResource1">
                                                 
                                               
                                             </asp:DropDownList></td>

@@ -50,7 +50,7 @@
                                             <asp:ListItem meta:resourcekey="ListItemResource5">Ticket No</asp:ListItem>
                                             <asp:ListItem meta:resourcekey="ListItemResource6">Priority</asp:ListItem>
                                         </asp:DropDownList>
-                                             <asp:DropDownList ID="ddlOrder" runat="server" meta:resourcekey="ddlOrderResource1" >
+                                             <asp:DropDownList ID="ddlOrder" AutoPostBack="false" runat="server" meta:resourcekey="ddlOrderResource1" >
                                             <asp:ListItem Value="desc" meta:resourcekey="ListItemResource7">Descending </asp:ListItem>
                                             <asp:ListItem Value="asc" meta:resourcekey="ListItemResource8">Ascending</asp:ListItem>
                                             
@@ -58,70 +58,8 @@
 
 
                       
-                                        <asp:Label Visible="False" ID="Label1" runat="server" Text="From Date:" meta:resourcekey="Label1Resource1"></asp:Label>&nbsp;<telerik:RadDateTimePicker Visible="False" ID="dtpFromDate"  width="120px"  AutoPostBackControl="Calendar" runat="server" AutoPostBack="True" Culture="en-US" meta:resourcekey="dtpFromDateResource1">  
-<TimeView CellSpacing="-1" Culture="en-IN">
-    <HeaderTemplate>
-        Time Picker
-    </HeaderTemplate>
-    <TimeTemplate>
-        <a runat="server" href="#"></a>
-    </TimeTemplate>
-                                            </TimeView>
-
-                                            <TimePopupButton Visible="false" />
-
-<Calendar UseRowHeadersAsSelectors="False" UseColumnHeadersAsSelectors="False" EnableWeekends="True" FastNavigationNextText="&amp;lt;&amp;lt;"></Calendar>
-
-<DateInput DisplayDateFormat="dd-MM-yyyy" DateFormat="dd-MM-yyyy" AutoPostBack="True" LabelWidth="64px" Width="">
-<EmptyMessageStyle Resize="None"></EmptyMessageStyle>
-
-<ReadOnlyStyle Resize="None"></ReadOnlyStyle>
-
-<FocusedStyle Resize="None"></FocusedStyle>
-
-<DisabledStyle Resize="None"></DisabledStyle>
-
-<InvalidStyle Resize="None"></InvalidStyle>
-
-<HoveredStyle Resize="None"></HoveredStyle>
-
-<EnabledStyle Resize="None"></EnabledStyle>
-</DateInput>
-
-<DatePopupButton ImageUrl="" HoverImageUrl="" CssClass=""></DatePopupButton>
-                                        </telerik:RadDateTimePicker>
-                                         <asp:Label Visible="False" ID="Label2" runat="server" Text="To Date:" meta:resourcekey="Label2Resource1"></asp:Label>&nbsp;<telerik:RadDateTimePicker ID="dtpToDate" Visible="False" width="122px" AutoPostBackControl="Calendar"  runat="server" AutoPostBack="True" Culture="en-US" meta:resourcekey="dtpToDateResource1">  
-<TimeView CellSpacing="-1" Culture="en-IN">
-    <HeaderTemplate>
-        Time Picker
-    </HeaderTemplate>
-    <TimeTemplate>
-        <a runat="server" href="#"></a>
-    </TimeTemplate>
-                                            </TimeView>
-
-                                            <TimePopupButton Visible="false" />
-
-<Calendar UseRowHeadersAsSelectors="False" UseColumnHeadersAsSelectors="False" EnableWeekends="True" FastNavigationNextText="&amp;lt;&amp;lt;"></Calendar>
-
-<DateInput DisplayDateFormat="dd-MM-yyyy" DateFormat="dd-MM-yyyy" AutoPostBack="True" LabelWidth="64px" Width="">
-<EmptyMessageStyle Resize="None"></EmptyMessageStyle>
-
-<ReadOnlyStyle Resize="None"></ReadOnlyStyle>
-
-<FocusedStyle Resize="None"></FocusedStyle>
-
-<DisabledStyle Resize="None"></DisabledStyle>
-
-<InvalidStyle Resize="None"></InvalidStyle>
-
-<HoveredStyle Resize="None"></HoveredStyle>
-
-<EnabledStyle Resize="None"></EnabledStyle>
-</DateInput>
-
-<DatePopupButton ImageUrl="" HoverImageUrl="" CssClass=""></DatePopupButton>
-                                        </telerik:RadDateTimePicker>
+                                        <asp:Label Visible="false" ID="Label1" runat="server" Text="From Date:" meta:resourcekey="Label1Resource1"></asp:Label>&nbsp;<telerik:RadDateTimePicker Visible="false" ID="dtpFromDate"  width="120px"  AutoPostBackControl="Calendar" runat="server">  <TimePopupButton Visible="false" /></telerik:RadDateTimePicker>
+                                         <asp:Label Visible="false" ID="Label2" runat="server" Text="To Date:" meta:resourcekey="Label2Resource1"></asp:Label>&nbsp;<telerik:RadDateTimePicker ID="dtpToDate" Visible="false" width="122px" AutoPostBackControl="Calendar"  runat="server">  <TimePopupButton Visible="false" /></telerik:RadDateTimePicker>
                                             <asp:Button ID="btnFilterApply" runat="server" OnClick="btnApply_Click"  Text="Apply" meta:resourcekey="btnFilterApplyResource1" />
                                     </div>
 
@@ -130,9 +68,7 @@
                                             <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="false"></GroupingSettings>
                                       
 
-                                                  <ExportSettings Excel-Format="ExcelML" ExportOnlyData="true" IgnorePaging="true" FileName=" View Tickets Report"> 
-<Excel Format="ExcelML"></Excel>
-                                            </ExportSettings>
+                                                  <ExportSettings Excel-Format="ExcelML" ExportOnlyData="true" IgnorePaging="true" FileName=" View Tickets Report"> </ExportSettings>
                                                <MasterTableView AllowFilteringByColumn="True" CommandItemDisplay="Top" >
                                                   <CommandItemSettings ShowExportToCsvButton="false" ShowRefreshButton="false" ShowAddNewRecordButton="false" ShowExportToExcelButton="true" />
 

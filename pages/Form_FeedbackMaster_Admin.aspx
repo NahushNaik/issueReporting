@@ -18,10 +18,7 @@
     </telerik:RadScriptManager>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body1" runat="Server">
-    <a class="navbar-brand" href="#">
-    <asp:Label ID="Label2" runat="server" meta:resourcekey="Label2Resource1" Text="User Feedback"></asp:Label>
-    </a>
-&nbsp;
+    <a class="navbar-brand" href="#">User Feedback</a>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Body2" runat="Server">
     <div class="content">
@@ -30,9 +27,7 @@
                             <div class="col-md-12">
                                 <div class="card">
                                     <div class="header">
-                                        <h4 class="title">
-                                            <asp:Label ID="Label1" runat="server" meta:resourcekey="Label1Resource1" Text="User Feedbacks"></asp:Label>
-                                        </h4>
+                                        <h4 class="title">User Feedbacks</h4>
                                       
                                     </div>
 
@@ -51,29 +46,40 @@
                                                 <CommandItemSettings ShowAddNewRecordButton="false" ShowExportToExcelButton="true" ShowRefreshButton="false"/>
                                                 <Columns>
                                              
-                                                         <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Type_Name" HeaderText="Type" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource1"  >
+                                                     
+                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Ticket_Id" HeaderText="Ticket Id" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource1"  >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
 
 <ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                         </telerik:GridBoundColumn>
-                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Ticket_Id" HeaderText="Ticket Id" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource2"  >
+                                                     </telerik:GridBoundColumn>
+                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Feedback" HeaderText="Feedback" DataType="System.String" meta:resourcekey="GridBoundColumnResource2"  >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
-
-<ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                         </telerik:GridBoundColumn>
-                                                     <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Feedback" HeaderText="Feedback" DataType="System.String" meta:resourcekey="GridBoundColumnResource3"  >
+                                                     </telerik:GridBoundColumn>
+                                               <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="Created_Time" HeaderText="Feedback Time"  DataType="System.String" Visible="false" meta:resourcekey="GridBoundColumnResource3" >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
-                                                         </telerik:GridBoundColumn>
-                                               <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="Created_Time" HeaderText="Feedback Time"  DataType="System.String" Visible="false" meta:resourcekey="GridBoundColumnResource4" >
-<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
-                                                         </telerik:GridBoundColumn>
+                                                     </telerik:GridBoundColumn>
                                                       <telerik:GridDateTimeColumn DataField="Created_Time" AllowFiltering="true" HeaderText="Feedback Time"
                                                     SortExpression="Date_of_PITCH_Validation" EnableTimeIndependentFiltering="true"  PickerType="DatePicker" DataFormatString="{0:dd/MMM/yyyy HH:mm:ss}" meta:resourcekey="GridDateTimeColumnResource1">
                                                 </telerik:GridDateTimeColumn>
-
-                                                      <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="userName" HeaderText="Ticket Owner"  DataType="System.String" meta:resourcekey="GridBoundColumnResource5" >
+                                                        <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Type_Name" HeaderText="Type" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource4"  >
 <HeaderStyle HorizontalAlign="Center"></HeaderStyle>
-                                                         </telerik:GridBoundColumn>
+
+<ItemStyle HorizontalAlign="Center"></ItemStyle>
+                                                     </telerik:GridBoundColumn>
+                                                        <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Application_Name" HeaderText="Application" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource5"  >
+<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
+
+<ItemStyle HorizontalAlign="Center"></ItemStyle>
+                                                     </telerik:GridBoundColumn>
+                                                        <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Issue_Name" HeaderText="Issue" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource6"  >
+<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
+
+<ItemStyle HorizontalAlign="Center"></ItemStyle>
+                                                     </telerik:GridBoundColumn>
+
+                                                      <telerik:GridBoundColumn HeaderStyle-HorizontalAlign="Center" DataField="userName" HeaderText="Ticket Owner"  DataType="System.String" meta:resourcekey="GridBoundColumnResource7" >
+<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
+                                                     </telerik:GridBoundColumn>
                                                      
                                               
                                 

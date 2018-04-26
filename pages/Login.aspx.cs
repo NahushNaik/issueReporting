@@ -35,119 +35,142 @@ public partial class Login : System.Web.UI.Page
         string user = txtUsername.Text;
         string pass = txtPassword.Text;
         string userDb = "";
-        bool flagGotoDashboard = false;
-
-        bool isConnected = PublicMethods.CheckForInternetConnection();
-        if (isConnected == false)
+        if (Request.QueryString["id"] != null && Request.QueryString["page"] != null)
         {
-            lblError.Visible = true;
-            lblError.Text = "No Internet Connection";
-
-        }
-        else
-        {
-            lblError.Visible = false;
-        }
-
-
-        //Validate sanjeev group user
-        if (user.Contains("@sanjeevgroup.com"))
-        {
-            userDb = user;
-        }
-        else
-        {
-            user = user + "@sanjeevgroup.com";
-        }
-
-        try
-        {
-            string value = System.Configuration.ConfigurationManager.AppSettings["demoMode"];
-         
-            var authentication = fnAuntheticateUserXML(user, pass);
-
-
-            //if (value == "yes") {
-            //    authentication = null;
-            
-            //}
-            if (authentication == "Invalid User")
+            if (user.Contains("@sanjeevgroup.com"))
             {
-                //if (userDb != user)
-                //{
-                lblError.Visible = true;
-                lblError.Text = "Please check User name and Password. Also internet connection is mandaotry for login to work...";
-                txtUsername.Text = "";
-                txtPassword.Text = "";
-                //}
+                userDb = user;
             }
             else
             {
-                //Update login user email
-                Session[PublicMethods.ConstUserEmail] = user;
+                user = user + "@sanjeevgroup.com";
+            }
+            Session[PublicMethods.ConstUserEmail] = user;
+            Session[PublicMethods.ConstUserId] = DBNulls.NumberValue(DBUtils.SqlSelectScalar(new SqlCommand("SELECT User_Id FROM tbl_User_Master WHERE User_Email ='" + Session[PublicMethods.ConstUserEmail] + "'")));
+            string link = Request.QueryString["page"] + ".aspx?id=" + Request.QueryString["id"] + "";
+            Response.Redirect(link);
+        }
+        else
+        {
 
 
-                //Check user profile status
-                bool profileStatus = CheckProfileIsValid(user);
 
-                if (!profileStatus)
+       
+          
+            bool flagGotoDashboard = false;
+
+            bool isConnected = PublicMethods.CheckForInternetConnection();
+            if (isConnected == false)
+            {
+                lblError.Visible = true;
+                lblError.Text = "No Internet Connection";
+
+            }
+            else
+            {
+                lblError.Visible = false;
+            }
+
+
+            //Validate sanjeev group user
+            if (user.Contains("@sanjeevgroup.com"))
+            {
+                userDb = user;
+            }
+            else
+            {
+                user = user + "@sanjeevgroup.com";
+            }
+
+            try
+            {
+                string value = System.Configuration.ConfigurationManager.AppSettings["demoMode"];
+
+                var authentication = fnAuntheticateUserXML(user, pass);
+
+
+                //if (value == "yes") {
+                //    authentication = null;
+
+                //}
+                if (authentication == "Invalid User")
                 {
-                    flagGotoDashboard = false;
-                    Response.Redirect("UserProfile.aspx");
+                    //if (userDb != user)
+                    //{
+                    lblError.Visible = true;
+                    lblError.Text = "Please check User name and Password. Also internet connection is mandatory for login to work...";
+                    txtUsername.Text = "";
+                    txtPassword.Text = "";
+                    //}
                 }
                 else
                 {
-                    //start working on session
-                    Session[PublicMethods.ConstUserId] = DBNulls.NumberValue(DBUtils.SqlSelectScalar(new SqlCommand("SELECT User_Id FROM tbl_User_Master WHERE User_Email ='" + Session[PublicMethods.ConstUserEmail] + "'")));
+                    //Update login user email
+                    Session[PublicMethods.ConstUserEmail] = user;
 
-                    string RTC = string.Empty;
-                    string Date = PublicMethods.fnGetDateTimeNow();
-                    RTC = PublicMethods.fnGetUsableRTC_sec(DateTime.Now);
-                    string qryToInsertLog = "INSERT INTO [tbl_UserLog] ([User_Id] ,[Entry_Type],[RTC],[Date]) VALUES('" + Session[PublicMethods.ConstUserId] + "','Login','" + RTC + "','" + Date + "')";
-                    DBUtils.ExecuteSQLCommand(new SqlCommand(qryToInsertLog));
 
-                    fnUpdateTicketCompletionStatus();
+                    //Check user profile status
+                    bool profileStatus = CheckProfileIsValid(user);
 
-                    flagGotoDashboard = true;
-                    //Response.Redirect("UserDash.aspx");
+                    if (!profileStatus)
+                    {
+                        flagGotoDashboard = false;
+                        Response.Redirect("UserProfile.aspx");
+                    }
+                    else
+                    {
+                        //start working on session
+                        Session[PublicMethods.ConstUserId] = DBNulls.NumberValue(DBUtils.SqlSelectScalar(new SqlCommand("SELECT User_Id FROM tbl_User_Master WHERE User_Email ='" + Session[PublicMethods.ConstUserEmail] + "'")));
+
+                        string RTC = string.Empty;
+                        string Date = PublicMethods.fnGetDateTimeNow();
+                        RTC = PublicMethods.fnGetUsableRTC_sec(DateTime.Now);
+                        string qryToInsertLog = "INSERT INTO [tbl_UserLog] ([User_Id] ,[Entry_Type],[RTC],[Date]) VALUES('" + Session[PublicMethods.ConstUserId] + "','Login','" + RTC + "','" + Date + "')";
+                        DBUtils.ExecuteSQLCommand(new SqlCommand(qryToInsertLog));
+
+                        fnUpdateTicketCompletionStatus();
+
+                        flagGotoDashboard = true;
+                        //Response.Redirect("UserDash.aspx");
+                    }
+
                 }
 
+
+            }
+            catch (Exception ex)
+            {
+                string script = "alert('Login Failed');";
+                ClientScript.RegisterClientScriptBlock(this.GetType(), "Alert", script, true);
+                throw ex;
             }
 
 
-        }
-        catch (Exception ex)
-        {
-            string script = "alert('Login Failed');";
-            ClientScript.RegisterClientScriptBlock(this.GetType(), "Alert", script, true);
-            throw ex;
-        }
 
-
-
-        if (flagGotoDashboard == true)
-        {
-
-            //By Pavan Ambhure 20171121
-            //Redirect Admin to view form
-            string qry = "SELECT isAdmin FROM  tbl_User_Master where User_Email='" + Session[PublicMethods.ConstUserEmail] + "'";
-            string admin = DBUtils.SqlSelectScalar(new SqlCommand(qry));
-            if (checkBoxAdmin.Checked == true && admin == "Y")
+            if (flagGotoDashboard == true)
             {
-                Response.Redirect("form_AdminDashboard.aspx");
+
+                //By Pavan Ambhure 20171121
+                //Redirect Admin to view form
+                string qry = "SELECT isAdmin FROM  tbl_User_Master where User_Email='" + Session[PublicMethods.ConstUserEmail] + "'";
+                string admin = DBUtils.SqlSelectScalar(new SqlCommand(qry));
+                if (checkBoxAdmin.Checked == true && admin == "Y")
+                {
+                    Response.Redirect("form_AdminDashboard.aspx");
+                }
+                else
+                {
+                    Response.Redirect("UserDash.aspx");
+                }
+
+
             }
             else
             {
-                Response.Redirect("UserDash.aspx");
+                //mahesh temp comment 20171109    
+                //Response.Redirect("UserProfile.aspx");                           
+
             }
-
-
-        }
-        else
-        {
-            //mahesh temp comment 20171109    
-            //Response.Redirect("UserProfile.aspx");                           
-
         }
     }
 

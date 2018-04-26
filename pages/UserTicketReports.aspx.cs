@@ -188,11 +188,11 @@ public partial class pages_Reports : System.Web.UI.Page
             GridDataItem item = (GridDataItem)e.Item;
             HyperLink link = (HyperLink)item["View"].Controls[0];
             link.CssClass = "hidelink";
-            link.NavigateUrl = "UserTicketView.aspx?id=" + dataBoundItem["Ticket No"].Text;
+            link.NavigateUrl = "UserTicketView.aspx?id="+ dataBoundItem["Ticket No"].Text;
 
 
             HyperLink linkUpdate = (HyperLink)item["updateLink"].Controls[0];
-            linkUpdate.NavigateUrl = "Form_Edit_TicketDetails.aspx?id=" + dataBoundItem["Ticket No"].Text;
+            linkUpdate.NavigateUrl = "Form_Edit_TicketDetails.aspx?id="+ dataBoundItem["Ticket No"].Text;
           
             if (dataBoundItem["Status"].Text == "Close")
             {

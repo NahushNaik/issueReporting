@@ -85,8 +85,8 @@
                                         </div>
                                         <hr>
                                         <div class="stats">
-                                            <asp:Label ID="Label9" runat="server" meta:resourcekey="Label9Resource1" Text="Last ticket created 3 days ago"></asp:Label>
-                                            ...</div>
+                                            <i class="ti-timer"></i><asp:Label ID="Label9" runat="server" meta:resourcekey="Label9Resource1" Text="Last ticket created 3 days ago..."></asp:Label>
+                                            </div>
                                     </div>
                                 </div>
                             </div>

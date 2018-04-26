@@ -37,11 +37,9 @@
                                  
 
                                     <div class="content table-responsive table-full-width">
-                                          <telerik:radgrid id="rgUserFeedback" runat="server" AutoGenerateColumns="False"  OnNeedDataSource="rgUserFeedback_NeedDataSource" Skin="Simple"  ActiveItemStyle-Wrap="true"  cellspacing="-1" gridlines="Both" ItemStyle-BackColor="White" AlternatingItemStyle-BackColor="White" FilterItemStyle-CssClass="text-center"  HeaderStyle-Font-Size="Medium"  HeaderStyle-CssClass="text-center" meta:resourcekey="rgUserFeedbackResource1" >
+                                          <telerik:radgrid id="rgUserFeedback" runat="server" allowfilteringbycolumn="false" AutoGenerateColumns="false"  OnNeedDataSource="rgUserFeedback_NeedDataSource" Skin="Simple"  ActiveItemStyle-Wrap="true"  cellspacing="-1" gridlines="Both" ItemStyle-BackColor="LightGray" AlternatingItemStyle-BackColor="LightGray" FilterItemStyle-CssClass="text-center"  HeaderStyle-Font-Size="Medium"  HeaderStyle-CssClass="text-center" meta:resourcekey="rgUserFeedbackResource1" >
                                             <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="false"></GroupingSettings>
                                                
-<AlternatingItemStyle BackColor="White"></AlternatingItemStyle>
-
                                             <MasterTableView CommandItemDisplay="Top">
                                                 <CommandItemSettings ShowExportToExcelButton="false" ShowAddNewRecordButton="false" ShowRefreshButton="false" />
                                                 <Columns>
@@ -64,62 +62,25 @@ DataNavigateUrlFormatString="userDetails_FeedbackForm.aspx?Ticket_Id={0}&Status=
                                                    
                                                        
 
-                                                 <telerik:GridHyperLinkColumn AllowSorting="False"  FilterControlAltText="Filter view column" ImageUrl="../Images/h.png"  Text="Good" DataNavigateUrlFields="Ticket_Id" DataNavigateUrlFormatString="userDetails_FeedbackForm.aspx?Ticket_Id={0}&Status=Good" HeaderStyle-BackColor="#3ec63e"  HeaderText="Good Feedback"  UniqueName="Good" AllowFiltering="false" ItemStyle-CssClass="text-center"  HeaderStyle-HorizontalAlign="Center" Target="_blank" meta:resourcekey="GridHyperLinkColumnResource1"  >
-<HeaderStyle HorizontalAlign="Center" BackColor="#3EC63E"></HeaderStyle>
-
-<ItemStyle CssClass="text-center"></ItemStyle>
+                                                 <telerik:GridHyperLinkColumn AllowSorting="False"  FilterControlAltText="Filter view column" ImageUrl="../Images/happp.png"  Text="Good" DataNavigateUrlFields="Ticket_Id" DataNavigateUrlFormatString="userDetails_FeedbackForm.aspx?Ticket_Id={0}&Status=Good" HeaderStyle-BackColor="#7AEC7A"  HeaderText="Good Feedback"  UniqueName="Good" AllowFiltering="false" ItemStyle-CssClass="text-center"  HeaderStyle-HorizontalAlign="Center" Target="_blank" ItemStyle-BackColor="#7AEC7A"  ItemStyle-Font-Underline="true" meta:resourcekey="GridHyperLinkColumnResource1">
                                                     </telerik:GridHyperLinkColumn>
-                                                     <telerik:GridHyperLinkColumn AllowSorting="False"  FilterControlAltText="Filter view column" ImageUrl="../Images/m.png"  Text="Moderate" DataNavigateUrlFields="Ticket_Id" DataNavigateUrlFormatString="userDetails_FeedbackForm.aspx?Ticket_Id={0}&Status=Moderate" HeaderStyle-BackColor="#f3f346"   HeaderText="Moderate Feedback"   UniqueName="Moderate" AllowFiltering="false" ItemStyle-CssClass="text-center"  HeaderStyle-HorizontalAlign="Center" Target="_blank" meta:resourcekey="GridHyperLinkColumnResource2" >
-<HeaderStyle HorizontalAlign="Center" BackColor="#F3F346"></HeaderStyle>
-
-<ItemStyle CssClass="text-center"></ItemStyle>
+                                                     <telerik:GridHyperLinkColumn AllowSorting="False"  FilterControlAltText="Filter view column" ImageUrl="../Images/modd.png"  Text="Moderate" DataNavigateUrlFields="Ticket_Id" DataNavigateUrlFormatString="userDetails_FeedbackForm.aspx?Ticket_Id={0}&Status=Moderate" HeaderStyle-BackColor="#FEFE77"   HeaderText="Moderate Feedback"   UniqueName="Moderate" AllowFiltering="false" ItemStyle-CssClass="text-center"  HeaderStyle-HorizontalAlign="Center" Target="_blank" ItemStyle-BackColor="#FEFE77"  ItemStyle-Font-Underline="true" meta:resourcekey="GridHyperLinkColumnResource2">
                                                     </telerik:GridHyperLinkColumn>
-                                                     <telerik:GridHyperLinkColumn AllowSorting="False"  FilterControlAltText="Filter view column" ImageUrl="../Images/s.png"  Text="Bad" DataNavigateUrlFields="Ticket_Id" DataNavigateUrlFormatString="userDetails_FeedbackForm.aspx?Ticket_Id={0}&Status=Bad"  HeaderText="Bad Feedback"   UniqueName="Bad" AllowFiltering="false" HeaderStyle-BackColor="#e74747" ItemStyle-CssClass="text-center"   HeaderStyle-HorizontalAlign="Center" Target="_blank" meta:resourcekey="GridHyperLinkColumnResource3"  >
-<HeaderStyle HorizontalAlign="Center" BackColor="#E74747"></HeaderStyle>
-
-<ItemStyle CssClass="text-center"></ItemStyle>
+                                                     <telerik:GridHyperLinkColumn AllowSorting="False"  FilterControlAltText="Filter view column" ImageUrl="../Images/sadd.png"  Text="Bad" DataNavigateUrlFields="Ticket_Id" DataNavigateUrlFormatString="userDetails_FeedbackForm.aspx?Ticket_Id={0}&Status=Bad"  HeaderText="Bad Feedback"   UniqueName="Bad" AllowFiltering="false" HeaderStyle-BackColor="#F08A8A" ItemStyle-CssClass="text-center"   HeaderStyle-HorizontalAlign="Center" Target="_blank" ItemStyle-Font-Underline="true"  ItemStyle-BackColor="#F08A8A" meta:resourcekey="GridHyperLinkColumnResource3">
                                                     </telerik:GridHyperLinkColumn>
                                                   
 
-                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Ticket_Id" HeaderText="Ticket Id" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource1"    >
-<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
+                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Ticket_Id" HeaderText="Ticket Id" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource1" ></telerik:GridBoundColumn>
 
-<ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
-
-                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Type Name" HeaderText="Type Name" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource2"   >
-<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
-
-<ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
-                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Application Name" HeaderText="Application Name" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource3"   >
-<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
-
-<ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
-                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Issue Details" HeaderText="Issue Details" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource4"   >
-<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
-
-<ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
-                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Issue Name" HeaderText="Issue Name" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource5"   >
-<HeaderStyle HorizontalAlign="Center"></HeaderStyle>
-
-<ItemStyle HorizontalAlign="Center"></ItemStyle>
-                                                    </telerik:GridBoundColumn>
+                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Type Name" HeaderText="Type Name" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource2"  ></telerik:GridBoundColumn>
+                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Application Name" HeaderText="Application Name" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource3"  ></telerik:GridBoundColumn>
+                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Issue Details" HeaderText="Issue Details" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource4"  ></telerik:GridBoundColumn>
+                                                      <telerik:GridBoundColumn Visible="true" HeaderStyle-HorizontalAlign="Center"  DataField="Issue Name" HeaderText="Issue Name" ItemStyle-HorizontalAlign="Center" DataType="System.String" meta:resourcekey="GridBoundColumnResource5"  ></telerik:GridBoundColumn>
                                                 </Columns>
                                             </MasterTableView>
                                             <ClientSettings>
                                                 <Resizing AllowColumnResize="false" ResizeGridOnColumnResize="false" AllowResizeToFit="false" />
                                             </ClientSettings>
-
-<HeaderStyle CssClass="text-center" Font-Size="Medium"></HeaderStyle>
-
-<FilterItemStyle CssClass="text-center"></FilterItemStyle>
-
-<ActiveItemStyle Wrap="True"></ActiveItemStyle>
-
-<ItemStyle BackColor="White"></ItemStyle>
                                         </telerik:radgrid>
                                     </div>
                                 </div>

@@ -154,7 +154,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource1.HeaderText" xml:space="preserve">
-    <value>Tipo</value>
+    <value>Identificación de entradas</value>
   </data>
   <data name="GridBoundColumnResource1.HeaderTooltip" xml:space="preserve">
     <value />
@@ -203,7 +203,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource2.HeaderText" xml:space="preserve">
-    <value>Identificación de entradas</value>
+    <value>Realimentación</value>
   </data>
   <data name="GridBoundColumnResource2.HeaderTooltip" xml:space="preserve">
     <value />
@@ -251,7 +251,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource3.HeaderText" xml:space="preserve">
-    <value>Realimentación</value>
+    <value>Tiempo de Feedback</value>
   </data>
   <data name="GridBoundColumnResource3.HeaderTooltip" xml:space="preserve">
     <value />
@@ -299,7 +299,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource4.HeaderText" xml:space="preserve">
-    <value>Tiempo de Feedback</value>
+    <value>Escribe un nombre</value>
   </data>
   <data name="GridBoundColumnResource4.HeaderTooltip" xml:space="preserve">
     <value />
@@ -347,7 +347,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource5.HeaderText" xml:space="preserve">
-    <value>Propietario de entradas</value>
+    <value>Nombre de la aplicación</value>
   </data>
   <data name="GridBoundColumnResource5.HeaderTooltip" xml:space="preserve">
     <value />
@@ -356,6 +356,102 @@
     <value>False</value>
   </data>
   <data name="GridBoundColumnResource5.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.DataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridBoundColumnResource6.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="GridBoundColumnResource6.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.HeaderText" xml:space="preserve">
+    <value>Nombre del problema</value>
+  </data>
+  <data name="GridBoundColumnResource6.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource6.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource6.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.AndCurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.ColumnGroupName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.DataFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridBoundColumnResource7.EmptyDataText" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="GridBoundColumnResource7.FooterAggregateFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.HeaderText" xml:space="preserve">
+    <value>Propietario de entradas</value>
+  </data>
+  <data name="GridBoundColumnResource7.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridBoundColumnResource7.HtmlEncode" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GridBoundColumnResource7.SortExpression" xml:space="preserve">
     <value />
   </data>
   <data name="GridDateTimeColumnResource1.AndCurrentFilterValue" xml:space="preserve">
@@ -412,16 +508,16 @@
   <data name="GridDateTimeColumnResource1.SortExpression" xml:space="preserve">
     <value>Date_of_PITCH_Validation</value>
   </data>
-  <data name="Label1Resource1.Text" xml:space="preserve">
+  <data name="Label19Resource1.Text" xml:space="preserve">
     <value>Comentarios del usuario</value>
   </data>
-  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+  <data name="Label19Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="Label2Resource1.Text" xml:space="preserve">
+  <data name="Label20Resource1.Text" xml:space="preserve">
     <value>Comentarios del usuario</value>
   </data>
-  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+  <data name="Label20Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
@@ -443,7 +539,7 @@
     <value>Suelta aquí para reordenar</value>
   </data>
   <data name="rgUserFeedbackResource1.ClientSettings.ClientMessages.PagerTooltipFormatString" xml:space="preserve">
-    <value>Page &lt;strong&gt;{0}&lt;/strong&gt; of &lt;strong&gt;{1}&lt;/strong&gt;</value>
+    <value>Página &lt;strong&gt; {0} &lt;/ strong&gt; de &lt;strong&gt; {1} &lt;/ strong&gt;</value>
   </data>
   <data name="rgUserFeedbackResource1.FilterMenu.ToolTip" xml:space="preserve">
     <value />
@@ -470,7 +566,7 @@
     <value>El grupo continúa en la página siguiente.</value>
   </data>
   <data name="rgUserFeedbackResource1.GroupingSettings.GroupSplitDisplayFormat" xml:space="preserve">
-    <value>Showing {0} of {1} items.</value>
+    <value>Mostrando {0} de {1} elementos.</value>
   </data>
   <data name="rgUserFeedbackResource1.GroupingSettings.GroupSplitFormat" xml:space="preserve">
     <value> ({0})</value>
@@ -524,7 +620,7 @@
     <value />
   </data>
   <data name="rgUserFeedbackResource1.MasterTableView.CommandItemSettings.ExportToCsvText" xml:space="preserve">
-    <value>Exportar a CSV</value>
+    <value>Exportar a SCV</value>
   </data>
   <data name="rgUserFeedbackResource1.MasterTableView.CommandItemSettings.ExportToExcelImageUrl" xml:space="preserve">
     <value />
@@ -656,7 +752,7 @@
     <value>Siguiente página</value>
   </data>
   <data name="rgUserFeedbackResource1.MasterTableView.PagerStyle.PagerTextFormat" xml:space="preserve">
-    <value>Change page: {4} &amp;nbsp;Page &lt;strong&gt;{0}&lt;/strong&gt; of &lt;strong&gt;{1}&lt;/strong&gt;, items &lt;strong&gt;{2}&lt;/strong&gt; to &lt;strong&gt;{3}&lt;/strong&gt; of &lt;strong&gt;{5}&lt;/strong&gt;.</value>
+    <value>Cambiar página: {4} &amp; nbsp; Página &lt;strong&gt; {0} &lt;/ strong&gt; de &lt;strong&gt; {1} &lt;/ strong&gt;, elementos &lt;strong&gt; {2} &lt;/ strong&gt; a &lt;strong&gt; {3} &lt; / strong&gt; de &lt;strong&gt; {5} &lt;/ strong&gt;.</value>
   </data>
   <data name="rgUserFeedbackResource1.MasterTableView.PagerStyle.PageSizeLabelText" xml:space="preserve">
     <value>Tamaño de página:</value>
@@ -752,7 +848,7 @@
     <value>Siguiente página</value>
   </data>
   <data name="rgUserFeedbackResource1.PagerStyle.PagerTextFormat" xml:space="preserve">
-    <value>Change page: {4} &amp;nbsp;Page &lt;strong&gt;{0}&lt;/strong&gt; of &lt;strong&gt;{1}&lt;/strong&gt;, items &lt;strong&gt;{2}&lt;/strong&gt; to &lt;strong&gt;{3}&lt;/strong&gt; of &lt;strong&gt;{5}&lt;/strong&gt;.</value>
+    <value>Cambiar página: {4} &amp; nbsp; Página &lt;strong&gt; {0} &lt;/ strong&gt; de &lt;strong&gt; {1} &lt;/ strong&gt;, elementos &lt;strong&gt; {2} &lt;/ strong&gt; a &lt;strong&gt; {3} &lt; / strong&gt; de &lt;strong&gt; {5} &lt;/ strong&gt;</value>
   </data>
   <data name="rgUserFeedbackResource1.PagerStyle.PageSizeLabelText" xml:space="preserve">
     <value>Tamaño de página:</value>

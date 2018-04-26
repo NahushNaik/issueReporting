@@ -221,7 +221,7 @@
                                         <div class="form-group">
                                             <label>
                                                 <asp:Label ID="Label11" runat="server" Text="Issue" meta:resourcekey="Label11Resource1"></asp:Label></label>
-                                            <asp:DropDownList ID="DrpIssueType" runat="server" CssClass="form-control border-input" meta:resourcekey="DrpIssueTypeResource1">
+                                            <asp:DropDownList ID="DrpIssueType" runat="server" CssClass="form-control border-input" meta:resourcekey="DrpIssueTypeResource1" Enabled="true">
                                             </asp:DropDownList>
                                         </div>
                                     </div>
@@ -272,9 +272,9 @@
 
 
 
-                                            <asp:LinkButton ID="lnkDownload" Text="
-                                                       &lt;img  src=&quot;../Images/Download.png&quot;  /&gt;
-                                            " runat="server" OnClick="lnkDownload_Click" meta:resourcekey="lnkDownloadResource1" ></asp:LinkButton>
+                                            <asp:LinkButton ID="lnkDownload" Text="Download" runat="server" OnClick="lnkDownload_Click" meta:resourcekey="lnkDownloadResource1">
+                                                       <img  src="../Images/Download.png"  />
+                                            </asp:LinkButton>
                                             <br />
 
                                         </div>
@@ -290,7 +290,7 @@
                                         <div class="form-group">
                                             <label>
                                                 <asp:Label ID="Label16" runat="server" Text="Status" meta:resourcekey="Label16Resource1"></asp:Label></label>
-                                            <asp:DropDownList ID="ddlStatus" runat="server" CssClass="form-control border-input" meta:resourcekey="ddlStatusResource1">
+                                            <asp:DropDownList ID="ddlStatus" runat="server" CssClass="form-control border-input" meta:resourcekey="ddlStatusResource1" AutoPostBack="false" Enabled="true">
                                                 <%--  <asp:ListItem Value="0">Open</asp:ListItem>--%>
                                                 <asp:ListItem Value="1" meta:resourcekey="ListItemResource1">Closed</asp:ListItem>
                                             </asp:DropDownList>
@@ -302,7 +302,7 @@
                                             <label>
                                                 <asp:Label ID="Label17" runat="server" Text="Remark" meta:resourcekey="Label17Resource1"></asp:Label></label>
                                             <asp:Label ID="Label3" runat="server" ForeColor="Red" Text="*" meta:resourcekey="Label3Resource1"></asp:Label>
-                                            <asp:TextBox ID="txtRemark" runat="server" CssClass="form-control border-input" ForeColor="Green" meta:resourcekey="txtRemarkResource1"></asp:TextBox>
+                                            <asp:TextBox ID="txtRemark" runat="server" CssClass="form-control border-input" ForeColor="Green" meta:resourcekey="txtRemarkResource1" ReadOnly="false"></asp:TextBox>
                                             <asp:RequiredFieldValidator ID="rfv" runat="server" ErrorMessage="Please Enter Remark" ControlToValidate="txtRemark" ValidationGroup="UpdateClick" ForeColor="Red" meta:resourcekey="rfvResource1"></asp:RequiredFieldValidator>
 
                                         </div>
@@ -331,7 +331,7 @@
                                         <div class="form-group">
                                             <label>
                                                 <asp:Label ID="Label19" runat="server" Text="Is Valid?" meta:resourcekey="Label19Resource1"></asp:Label></label>
-                                            <asp:DropDownList ID="ddlIsValid" runat="server" CssClass="form-control border-input" meta:resourcekey="ddlIsValidResource1">
+                                            <asp:DropDownList ID="ddlIsValid" runat="server" CssClass="form-control border-input" meta:resourcekey="ddlIsValidResource1" AutoPostBack="false" Enabled="true">
                                                   <asp:ListItem Value="0" meta:resourcekey="ListItemResource2">Yes</asp:ListItem>
                                                 <asp:ListItem Value="1" meta:resourcekey="ListItemResource3">No</asp:ListItem>
                                             </asp:DropDownList>
@@ -390,6 +390,19 @@
                                     <asp:Label ID="Label21" runat="server" Text="Comments:" meta:resourcekey="Label21Resource1"></asp:Label></h3>
                                 <asp:Repeater ID="Repeater1" runat="server">
                                     <ItemTemplate>
+
+                                        <%--       <div class="col-md-12">
+                                            <div class="form-group">
+
+                                                <div style="border: 1px solid #7AC29A; padding: 10px; margin-bottom: 4px;">
+
+                                                    <b>
+                                                        <asp:Label ID="Label1" runat="server" ForeColor="Blue" Text='<%#Eval("UserName") %>'>'></asp:Label></b>&nbsp;(<asp:Label ID="Label2" runat="server" ForeColor="SkyBlue" Text='<%#Eval("Created_Datetime") %>'>'></asp:Label>):<br />
+                                                    <asp:Label ID="Label3" runat="server" Text='<%#Eval("Comment") %>'></asp:Label><br />
+                                                </div>
+
+                                            </div>
+                                        </div>--%>
 
                                         <div id="comment-92" class="panel panel-default">
                                             <div class="comment-content panel-body">

@@ -615,7 +615,7 @@ public partial class pages_ManageTicket : System.Web.UI.Page
             string status = ddlStatus.SelectedValue;
             string hours = String.Format("{0:0.##}", Convert.ToDouble(txtHours.Text));
             string isValid = ddlIsValid.SelectedItem.Text;
-            string qry = "UPDATE[tbl_Ticket_Master] SET Updated_Time ='" + DateTime.Now.ToString() + "' ,Status='" + status + "',hours='" + txtHours.Text + "',isValid='" + isValid + "'  WHERE Ticket_Id='" + TicketID.Text + "' ";
+            string qry = "UPDATE [tbl_Ticket_Master] SET Updated_Time ='" + DateTime.Now.ToString() + "' ,Status='" + status + "',hours='" + txtHours.Text + "',isValid='" + isValid + "'  WHERE Ticket_Id='" + TicketID.Text + "' ";
             DBUtils.ExecuteSQLCommand(new SqlCommand(qry));
         }
         catch (Exception ex)
@@ -628,7 +628,7 @@ public partial class pages_ManageTicket : System.Web.UI.Page
     {
         try
         {
-            string qryToLogDetails = "INSERT INTO [tbl_Ticket_Comments] ([Comment],[Commented_By],[Ticket_ID],[Created_Datetime])  VALUES ('" + txt_Comments.Text + "','" + DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]) + "','" + TicketID.Text + "','" + DateTime.Now + "')";
+            string qryToLogDetails = "INSERT INTO [tbl_Ticket_Comments] ([Comment],[Commented_By],[Ticket_ID],[Created_Datetime])  VALUES ('" + txt_Comments.Text.Replace("'", "''").ToString() + "','" + DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]) + "','" + TicketID.Text + "','" + DateTime.Now + "')";
             DBUtils.ExecuteSQLCommand(new SqlCommand(qryToLogDetails));
             txt_Comments.Text = "";
 
@@ -684,44 +684,44 @@ public partial class pages_ManageTicket : System.Web.UI.Page
 
             //Load TO Email ID's
 
-            string query = " select Type_Id from tbl_Type_Master where Type_Name='" + DBNulls.StringValue(drpDownType.SelectedItem.Text) + "'";
-            double Type_ID = DBNulls.NumberValue(DBUtils.SqlSelectScalar(new SqlCommand(query)));
+            //string query = " select Type_Id from tbl_Type_Master where Type_Name='" + DBNulls.StringValue(drpDownType.SelectedItem.Text) + "'";
+            //double Type_ID = DBNulls.NumberValue(DBUtils.SqlSelectScalar(new SqlCommand(query)));
 
-            var userSqlTo = "SELECT [To_Email_Id] FROM [tbl_Email_TO_Master] WHERE [TYPE_ID]='" + Type_ID + "'";
+            //var userSqlTo = "SELECT [To_Email_Id] FROM [tbl_Email_TO_Master] WHERE [TYPE_ID]='" + Type_ID + "'";
 
-            SqlDataAdapter dbUserTo = new SqlDataAdapter(userSqlTo, ConfigurationManager.ConnectionStrings["ConnectionWeb"].ToString());
-            DataSet dsTo = new DataSet();
-            dbUserTo.Fill(dsTo);
-            foreach (DataTable tbl in dsTo.Tables)
-            {
-                foreach (DataRow row1 in tbl.Rows)
-                {
-                    userIdTo = row1["To_Email_Id"].ToString();
-                    mail.To.Add(userIdTo);
-                }
+            //SqlDataAdapter dbUserTo = new SqlDataAdapter(userSqlTo, ConfigurationManager.ConnectionStrings["ConnectionWeb"].ToString());
+            //DataSet dsTo = new DataSet();
+            //dbUserTo.Fill(dsTo);
+            //foreach (DataTable tbl in dsTo.Tables)
+            //{
+            //    foreach (DataRow row1 in tbl.Rows)
+            //    {
+            //        userIdTo = row1["To_Email_Id"].ToString();
+            //        mail.To.Add(userIdTo);
+            //    }
 
-            }
+            //}
 
             //Load CC Email ID's
-            var userSqlCC = "SELECT [CC_Email_Id] FROM [tbl_Email_CC_Master] WHERE [TYPE_ID]='" + Type_ID + "'";
-            SqlDataAdapter dbUserCC = new SqlDataAdapter(userSqlCC, ConfigurationManager.ConnectionStrings["ConnectionWeb"].ToString());
-            DataSet dsCC = new DataSet();
-            dbUserCC.Fill(dsCC);
-            foreach (DataTable tbl1 in dsCC.Tables)
-            {
-                foreach (DataRow row1 in tbl1.Rows)
-                {
-                    userIdCC = row1["CC_Email_Id"].ToString();
-                    mail.CC.Add(userIdCC);
-                }
+            //var userSqlCC = "SELECT [CC_Email_Id] FROM [tbl_Email_CC_Master] WHERE [TYPE_ID]='" + Type_ID + "'";
+            //SqlDataAdapter dbUserCC = new SqlDataAdapter(userSqlCC, ConfigurationManager.ConnectionStrings["ConnectionWeb"].ToString());
+            //DataSet dsCC = new DataSet();
+            //dbUserCC.Fill(dsCC);
+            //foreach (DataTable tbl1 in dsCC.Tables)
+            //{
+            //    foreach (DataRow row1 in tbl1.Rows)
+            //    {
+            //        userIdCC = row1["CC_Email_Id"].ToString();
+            //        mail.CC.Add(userIdCC);
+            //    }
 
-            }
+            //}
 
-            // mail.CC.Add(Session["LoginUserEmail"].ToString());
+         
 
             mail.IsBodyHtml = true;
             mail.Body = body;
-            smtp.Send(mail);
+         //   smtp.Send(mail);
 
          
             string queryEmail = "SELECT    tbl_User_Master.User_Email FROM         tbl_User_Master where [User_Id]=" + createdBy + "";
@@ -800,7 +800,9 @@ public partial class pages_ManageTicket : System.Web.UI.Page
         sb.Append(allContents);
         sb.Append(sb1.ToString());
 
-        string bodybottom = " </table> <br/> 	PLEASE DO NOT REPLY TO THIS MAIL. THIS IS AN AUTO GENERATED MAIL AND REPLIES TO THIS EMAIL ID ARE NOT ATTENDED TOO.    </body></html>";
+        string link = WebConfigurationManager.AppSettings["Website"] + "pages/login.aspx" + "?id=" + Ticket_Id + "&page=UserTicketView";
+
+        string bodybottom = " </table><br><center> <a href='" + link + "'><B style='font-size: 150%;'>REPLY</B></a> </center> <br/> 	PLEASE DO NOT REPLY TO THIS MAIL. THIS IS AN AUTO GENERATED MAIL AND REPLIES TO THIS EMAIL ID ARE NOT ATTENDED TOO.    </body></html>";
         sb.Append(bodybottom);
 
         string Color = "";
