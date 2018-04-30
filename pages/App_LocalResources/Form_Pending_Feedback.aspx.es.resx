@@ -154,7 +154,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource1.HeaderText" xml:space="preserve">
-    <value>Identificación de entradas</value>
+    <value>ID de Solicitude</value>
   </data>
   <data name="GridBoundColumnResource1.HeaderTooltip" xml:space="preserve">
     <value />
@@ -392,7 +392,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource1.HeaderText" xml:space="preserve">
-    <value>Buena retroalimentación</value>
+    <value>Comentario Positivo</value>
   </data>
   <data name="GridHyperLinkColumnResource1.HeaderTooltip" xml:space="preserve">
     <value />
@@ -446,7 +446,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource2.HeaderText" xml:space="preserve">
-    <value>Retroalimentación moderada</value>
+    <value>Comentario Moderado</value>
   </data>
   <data name="GridHyperLinkColumnResource2.HeaderTooltip" xml:space="preserve">
     <value />
@@ -500,7 +500,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource3.HeaderText" xml:space="preserve">
-    <value>Mala retroalimentación</value>
+    <value>Comentario Negativo</value>
   </data>
   <data name="GridHyperLinkColumnResource3.HeaderTooltip" xml:space="preserve">
     <value />
@@ -665,7 +665,7 @@
     <value />
   </data>
   <data name="rgUserFeedbackResource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
-    <value>Refrescar</value>
+    <value>Actualizar</value>
   </data>
   <data name="rgUserFeedbackResource1.MasterTableView.CommandItemSettings.SaveChangesText" xml:space="preserve">
     <value>Guardar cambios</value>

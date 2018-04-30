@@ -123,12 +123,6 @@
   <data name="btnFilterApplyResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="ddlMenuResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ddlOrderResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="DropDownList1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -563,7 +557,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource1.ImageUrl" xml:space="preserve">
-    <value />
+    <value>images/Search3.png</value>
   </data>
   <data name="GridHyperLinkColumnResource1.NavigateUrl" xml:space="preserve">
     <value />
@@ -575,7 +569,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource1.Text" xml:space="preserve">
-    <value>Update</value>
+    <value>View</value>
   </data>
   <data name="GridHyperLinkColumnResource2.AndCurrentFilterValue" xml:space="preserve">
     <value />
@@ -587,7 +581,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource2.DataNavigateUrlFormatString" xml:space="preserve">
-    <value>UserTicketView.aspx?id={0}</value>
+    <value />
   </data>
   <data name="GridHyperLinkColumnResource2.DataTextFormatString" xml:space="preserve">
     <value />
@@ -611,7 +605,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource2.HeaderText" xml:space="preserve">
-    <value>Id</value>
+    <value />
   </data>
   <data name="GridHyperLinkColumnResource2.HeaderTooltip" xml:space="preserve">
     <value />
@@ -629,61 +623,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource2.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.AndCurrentFilterValue" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.ColumnGroupName" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.CurrentFilterValue" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.DataNavigateUrlFormatString" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.DataTextFormatString" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.EditFormHeaderTextFormat" xml:space="preserve">
-    <value>{0}:</value>
-  </data>
-  <data name="GridHyperLinkColumnResource3.FooterText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.GroupByExpression" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.HeaderAbbr" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.HeaderAxis" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.HeaderImageUrl" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.HeaderText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.HeaderTooltip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.ImageUrl" xml:space="preserve">
-    <value>images/Search3.png</value>
-  </data>
-  <data name="GridHyperLinkColumnResource3.NavigateUrl" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.SortExpression" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.Target" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource3.Text" xml:space="preserve">
-    <value>View</value>
+    <value>Update</value>
   </data>
   <data name="Label1Resource1.Text" xml:space="preserve">
     <value>Reports</value>
@@ -720,36 +660,6 @@
   </data>
   <data name="ListItemResource3.Value" xml:space="preserve">
     <value>Closed</value>
-  </data>
-  <data name="ListItemResource4.Text" xml:space="preserve">
-    <value>Created Time</value>
-  </data>
-  <data name="ListItemResource4.Value" xml:space="preserve">
-    <value>Created Time</value>
-  </data>
-  <data name="ListItemResource5.Text" xml:space="preserve">
-    <value>Ticket No</value>
-  </data>
-  <data name="ListItemResource5.Value" xml:space="preserve">
-    <value>Ticket No</value>
-  </data>
-  <data name="ListItemResource6.Text" xml:space="preserve">
-    <value>Priority</value>
-  </data>
-  <data name="ListItemResource6.Value" xml:space="preserve">
-    <value>Priority</value>
-  </data>
-  <data name="ListItemResource7.Text" xml:space="preserve">
-    <value>Descending </value>
-  </data>
-  <data name="ListItemResource7.Value" xml:space="preserve">
-    <value>desc</value>
-  </data>
-  <data name="ListItemResource8.Text" xml:space="preserve">
-    <value>Ascending</value>
-  </data>
-  <data name="ListItemResource8.Value" xml:space="preserve">
-    <value>asc</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
     <value>Reports</value>

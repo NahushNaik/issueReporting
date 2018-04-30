@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Globalization;
 using System.Web.UI.WebControls;
 
 public partial class pages_LogOut : System.Web.UI.Page
@@ -12,7 +13,14 @@ public partial class pages_LogOut : System.Web.UI.Page
     {
         if (PublicMethods.TProf == "1")
         {
-            Label1.Text = "Your profile has been set now please Login again to create ticket...";
+            if (CultureInfo.CurrentCulture.Name == "es-ES")
+            {
+                Label1.Text = "Tu perfil se ha configurado ahora, vuelve a iniciar sesión para crear un boleto...";
+            }
+            else
+            {
+                Label1.Text = "Your profile has been set now please Login again to create ticket...";
+            }
         }
 
         if (!IsPostBack)
@@ -20,11 +28,26 @@ public partial class pages_LogOut : System.Web.UI.Page
             string req = Request.QueryString["page"];
             if (req == "feedback")
             {
-                Label1.Text = "Thank you." + Environment.NewLine + "for taking time out to provide feedback.We truly value the information you have provided ";
+                if (CultureInfo.CurrentCulture.Name == "es-ES")
+                {
+                    Label1.Text = "Gracias." + Environment.NewLine + "por tomarse el tiempo para proporcionar comentarios. Realmente valoramos la información que ha proporcionado ";
+                }
+                else
+                {
+                    Label1.Text = "Thank you." + Environment.NewLine + "for taking time out to provide feedback.We truly value the information you have provided ";
+                }
             
             }
-            else {
-                Label1.Text = "You have successfully logged out.";
+            else 
+            {
+                if (CultureInfo.CurrentCulture.Name == "es-ES")
+                {
+                    Label1.Text = "Has terminado tu sesion satisfactoriamente.";
+                }
+                else
+                {
+                    Label1.Text = "You have successfully logged out.";
+                }
                 string RTC = string.Empty;
                 string Date = PublicMethods.fnGetDateTimeNow();
                 RTC = PublicMethods.fnGetUsableRTC_sec(DateTime.Now);

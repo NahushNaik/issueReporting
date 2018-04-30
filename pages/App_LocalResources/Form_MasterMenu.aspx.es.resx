@@ -148,7 +148,7 @@
     <value />
   </data>
   <data name="Label4Resource1.Text" xml:space="preserve">
-    <value>Solicitud</value>
+    <value>Aplicación</value>
   </data>
   <data name="Label4Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -160,7 +160,7 @@
     <value />
   </data>
   <data name="Label6Resource1.Text" xml:space="preserve">
-    <value>Issue Master</value>
+    <value>Maestra de Problema</value>
   </data>
   <data name="Label6Resource1.ToolTip" xml:space="preserve">
     <value />

@@ -36,10 +36,10 @@ public partial class pages_Form_FeedbackMaster : System.Web.UI.Page
         if (!IsPostBack)
         {
             fnLoadData(true);
+            PublicMethods.LocalizeRadGridFilters(rgUserFeedback);
 
         }
 
-        PublicMethods.LocalizeRadGridFilters(rgUserFeedback);
 
     }
 

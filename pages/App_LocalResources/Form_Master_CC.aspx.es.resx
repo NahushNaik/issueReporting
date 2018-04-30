@@ -133,7 +133,7 @@
     <value />
   </data>
   <data name="GridButtonColumnResource1.ConfirmText" xml:space="preserve">
-    <value>¿Estás seguro de eliminar?</value>
+    <value>¿Estás seguro de borrar?</value>
   </data>
   <data name="GridButtonColumnResource1.ConfirmTextFormatString" xml:space="preserve">
     <value />
@@ -298,7 +298,7 @@
     <value />
   </data>
   <data name="GridTemplateColumnResource2.HeaderText" xml:space="preserve">
-    <value>CC Email Id</value>
+    <value>ID de correo electrónico en CC</value>
   </data>
   <data name="GridTemplateColumnResource2.HeaderTooltip" xml:space="preserve">
     <value />
@@ -514,7 +514,7 @@
     <value />
   </data>
   <data name="rgCCResource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
-    <value>Refrescar</value>
+    <value>Actualizar</value>
   </data>
   <data name="rgCCResource1.MasterTableView.CommandItemSettings.SaveChangesText" xml:space="preserve">
     <value>Guardar cambios</value>

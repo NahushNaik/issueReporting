@@ -159,7 +159,14 @@ public partial class pages_add : System.Web.UI.Page
             drpDownType.DataTextField = "Type_Name";
             drpDownType.DataValueField = "Type_Id";
             drpDownType.DataBind();
-            drpDownType.Items.Insert(0, new ListItem("--Select Type--", "--Select--"));
+            if (CultureInfo.CurrentCulture.Name == "es-ES")
+            {
+                drpDownType.Items.Insert(0, new ListItem("--Seleccione tipo--", "--Seleccionar--"));
+            }
+            else
+            {
+                drpDownType.Items.Insert(0, new ListItem("--Select Type--", "--Select--"));
+            }
         }
         catch (Exception ex)
         {
@@ -178,7 +185,14 @@ public partial class pages_add : System.Web.UI.Page
             drpDownApplication.DataTextField = "Application_Name";
             drpDownApplication.DataValueField = "Application_Id";
             drpDownApplication.DataBind();
-            drpDownApplication.Items.Insert(0, new ListItem("--Select Application--", "Select"));
+            if (CultureInfo.CurrentCulture.Name == "es-ES")
+            {
+                drpDownApplication.Items.Insert(0, new ListItem("--Seleccionar aplicación--", "Seleccionar"));
+            }
+            else
+            {
+                drpDownApplication.Items.Insert(0, new ListItem("--Select Application--", "Select"));
+            }
             resAppl = drpDownApplication.SelectedValue;
         }
         catch (Exception ex)
@@ -197,20 +211,44 @@ public partial class pages_add : System.Web.UI.Page
             DrpIssueType.DataSource = dt;
             DrpIssueType.DataTextField = "Issue_Name";
             DrpIssueType.DataValueField = "Issue_Id";
-            DrpIssueType.Items.Insert(0, new ListItem("--Select Issue--", "Select"));
+            if (CultureInfo.CurrentCulture.Name == "es-ES")
+            {
+                DrpIssueType.Items.Insert(0, new ListItem("--Seleccionar problema--", "Seleccionar"));
+            }
+            else
+            {
+                DrpIssueType.Items.Insert(0, new ListItem("--Select Issue--", "Select"));
+            }
             DrpIssueType.DataBind();
 
             DrpPriority.Items.Clear();
-
-            DrpPriority.Items.Insert(0, new ListItem("--Select Priority--", "Select"));
-            DrpPriority.Items.Insert(1, new ListItem("High", "High"));
-            DrpPriority.Items.Insert(2, new ListItem("Medium", "Medium"));
-            DrpPriority.Items.Insert(3, new ListItem("Low", "Low"));
-            DrpPriority.DataBind();
+            if (CultureInfo.CurrentCulture.Name == "es-ES")
+            {
+                DrpPriority.Items.Insert(0, new ListItem("--Seleccionar prioridad--", "Seleccionar"));
+                DrpPriority.Items.Insert(1, new ListItem("Alto", "Alto"));
+                DrpPriority.Items.Insert(2, new ListItem("Medio", "Medio"));
+                DrpPriority.Items.Insert(3, new ListItem("Bajo", "Bajo"));
+            }
+            else
+            {
+                DrpPriority.Items.Insert(0, new ListItem("--Select Priority--", "Select"));
+                DrpPriority.Items.Insert(1, new ListItem("High", "High"));
+                DrpPriority.Items.Insert(2, new ListItem("Medium", "Medium"));
+                DrpPriority.Items.Insert(3, new ListItem("Low", "Low"));
+            }
+                        DrpPriority.DataBind();
 
             drpStatus.Items.Clear();
-            drpStatus.Items.Insert(1, new ListItem("Open", "1"));
-            drpStatus.Items.Insert(0, new ListItem("Close", "0"));
+            if (CultureInfo.CurrentCulture.Name == "es-ES")
+            {
+                drpStatus.Items.Insert(1, new ListItem("Abierto", "1"));
+                drpStatus.Items.Insert(0, new ListItem("Cerrar", "0"));
+            }
+            else
+            {
+                drpStatus.Items.Insert(1, new ListItem("Open", "1"));
+                drpStatus.Items.Insert(0, new ListItem("Close", "0"));
+            }
             drpStatus.DataBind();
         }
         catch (Exception ex)
@@ -244,37 +282,68 @@ public partial class pages_add : System.Web.UI.Page
 
             //System.Threading.Thread.Sleep(15000);
 
-            if (drpDownType.Text == "--Select--" || drpDownType.SelectedValue.ToString() == "--Select--" || drpDownType.Text == "")
+            if (drpDownType.Text == "--Select--" || drpDownType.SelectedValue.ToString() == "--Select--" || drpDownType.Text == "" || drpDownType.Text == "--Seleccionar--" || drpDownType.SelectedValue.ToString() == "--Seleccionar--")
             {
                 btnSave.Enabled = true;
-
-                string alertmsg = "alert('Please Select Type');";
+                string alertmsg;
+                if (CultureInfo.CurrentCulture.Name == "es-ES")
+                {
+                    alertmsg = "alert('Por favor seleccione tipo');";
+                }
+                else
+                {
+                    alertmsg = "alert('Please Select Type');";
+                }
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", alertmsg, true);
                 return;
 
 
             }
 
-            if (drpDownApplication.Text == "Select" || drpDownApplication.SelectedValue.ToString() == "Select" || drpDownApplication.Text == "")
+            if (drpDownApplication.Text == "Select" || drpDownApplication.SelectedValue.ToString() == "Select" || drpDownApplication.Text == "" || drpDownApplication.Text == "--Seleccionar--" || drpDownApplication.SelectedValue.ToString() == "--Seleccionar--")
             {
                 btnSave.Enabled = true;
-                string alertmsg = "alert('Please Select Application');";
+                string alertmsg;
+                if (CultureInfo.CurrentCulture.Name == "es-ES")
+                {
+                    alertmsg = "alert('Por favor seleccione la aplicación');";
+                }
+                else
+                {
+                    alertmsg = "alert('Please Select Application');";
+                }
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", alertmsg, true);
                 return;
 
 
             }
 
-            if (DrpPriority.Text == "--Select Priority--" || DrpPriority.Text == "Select" || DrpPriority.Text == "")
+            if (DrpPriority.Text == "--Select Priority--" || DrpPriority.Text == "Select" || DrpPriority.Text == "" || DrpPriority.Text == "Seleccionar" || DrpPriority.Text == "--Seleccionar prioridad--")
             {
                 btnSave.Enabled = true;
-                string alertmsg = "alert('Please Select Priority');";
+                string alertmsg;
+                if (CultureInfo.CurrentCulture.Name == "es-ES")
+                {
+                    alertmsg = "alert('Seleccione Prioridad');";
+                }
+                else
+                {
+                    alertmsg = "alert('Please Select Priority');";
+                }
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", alertmsg, true);
                 return;
             }
             if (fnCheckEmail(drpDownType.SelectedValue) == false)
             {
-                string alertmsg = "alert('Please contact Administrator');";
+                string alertmsg;
+                if (CultureInfo.CurrentCulture.Name == "es-ES")
+                {
+                    alertmsg = "alert('Por favor contacte al administrador');";
+                }
+                else
+                {
+                    alertmsg = "alert('Please contact Administrator');";
+                }
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", alertmsg, true);
                 return;
             
@@ -317,8 +386,16 @@ public partial class pages_add : System.Web.UI.Page
                         fileName = "files/" + Ticket_Id + "/" + filename;
 
                         //ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Ticket creation is successfull')", true);
-
-                        string alertmsg = "alert(''Ticket creation is successfull');";
+                        string alertmsg;
+                        if (CultureInfo.CurrentCulture.Name == "es-ES")
+                        {
+                            alertmsg = "alert(''La creación de entradas es exitosa');";
+                        }
+                        else
+                        {
+                            alertmsg = "alert(''Ticket creation is successful');";
+                        }
+                        
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", alertmsg, true);
 
                     }
@@ -331,7 +408,15 @@ public partial class pages_add : System.Web.UI.Page
 
                 fnSendMailXML(Ticket_Id);
                 btnSave.Enabled = false;
-                string alertmsg1 = "alert('Ticket created sucessfully');";
+                string alertmsg1 ;
+                if (CultureInfo.CurrentCulture.Name == "es-ES")
+                {
+                    alertmsg1 = "alert('Ticket creado con éxito');";
+                }
+                else
+                {
+                    alertmsg1 = "alert('Ticket created successfully');";
+                }
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", alertmsg1, true);
 
 
@@ -339,7 +424,15 @@ public partial class pages_add : System.Web.UI.Page
             }
             else
             {
-                string alertmsg = "alert(''Insertion Error');";
+                string alertmsg ;
+                if (CultureInfo.CurrentCulture.Name == "es-ES")
+                {
+                    alertmsg = "alert(''Error de inserción');";
+                }
+                else
+                {
+                    alertmsg = "alert(''Insertion Error');";
+                }
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alertscript", alertmsg, true);
                 btnSave.Enabled = true;
 
@@ -392,7 +485,14 @@ public partial class pages_add : System.Web.UI.Page
                 mail.Attachments.Add(new Attachment(Server.MapPath(fileName)));
             }
             mail.From = new MailAddress(emailId, "displayName");
-            mail.Subject = "New Ticket Created: " + Ticket_Id;
+            if (CultureInfo.CurrentCulture.Name == "es-ES")
+            {
+                mail.Subject = "Nuevo boleto creado: " + Ticket_Id;
+            }
+            else
+            {
+                mail.Subject = "New Ticket Created: " + Ticket_Id;
+            }
 
             //Load TO Email ID's
             var userSqlTo = "SELECT [To_Email_Id] FROM [tbl_Email_TO_Master] WHERE [TYPE_ID]='" + typeId + "'";
@@ -443,7 +543,14 @@ public partial class pages_add : System.Web.UI.Page
             }
             string bodyUser = PopulateBodyApplication(Ticket_Id, typeName, applicationName, issueName, issueDetails, priority, createdBy, createdAt, "user");
             mail1.From = new MailAddress(emailId, "displayName");
-            mail1.Subject = "New Ticket Created: " + Ticket_Id;
+            if (CultureInfo.CurrentCulture.Name == "es-ES")
+            {
+                mail1.Subject = "Nuevo boleto creado: " + Ticket_Id;
+            }
+            else
+            {
+                mail1.Subject = "New Ticket Created: " + Ticket_Id;
+            }
             mail1.To.Add(Session["LoginUserEmail"].ToString());
             mail1.IsBodyHtml = true;
             mail1.Body = bodyUser;

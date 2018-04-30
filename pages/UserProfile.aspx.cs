@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Globalization;
 using System.Web.UI.WebControls;
 
 public partial class pages_User : System.Web.UI.Page
@@ -123,7 +124,14 @@ public partial class pages_User : System.Web.UI.Page
           
         //    Response.Redirect("LogOut.aspx");
             var page = HttpContext.Current.CurrentHandler as Page;
-            ScriptManager.RegisterStartupScript(page, page.GetType(), "Sucess", "alert('Details Saved,Please Login Again');window.location ='LogOut.aspx';", true);
+            if (CultureInfo.CurrentCulture.Name == "es-ES")
+            {
+                ScriptManager.RegisterStartupScript(page, page.GetType(), "Éxito", "alert('Detalles guardados, por favor inicie sesión nuevamente');window.location ='LogOut.aspx';", true);
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(page, page.GetType(), "Success", "alert('Details Saved, Please Login Again');window.location ='LogOut.aspx';", true);
+            }
            // rwm1.RadAlert("Details Saved,Please Login Again", 200, 100, "Sucess", null);
         }
         else
@@ -131,7 +139,14 @@ public partial class pages_User : System.Web.UI.Page
             string qryToInsertLog = "INSERT INTO [tbl_User_Master] ([User_Email],[User_First_Name],[User_Last_Name],[Contact_No],[Plant_Id],[Department_Id]) VALUES ('" + DBNulls.StringValue(Session[PublicMethods.ConstUserEmail]).ToUpper() + "','" + DBNulls.StringValue(txtFirstName.Text).ToUpper() + "','" + DBNulls.StringValue(txtLastName.Text).ToUpper() + "','" + DBNulls.StringValue(txtContactDetails.Text).ToUpper() + "','" + plantCode + "','" + departmentCode + "')";
             int executeStatus = DBUtils.ExecuteSQLCommand(new SqlCommand(qryToInsertLog));
             var page = HttpContext.Current.CurrentHandler as Page;
-            ScriptManager.RegisterStartupScript(page, page.GetType(), "Sucess", "alert('Details Saved,Please Login Again');window.location ='Login.aspx';", true);
+            if (CultureInfo.CurrentCulture.Name == "es-ES")
+            {
+                ScriptManager.RegisterStartupScript(page, page.GetType(), "Éxito", "alert('Detalles guardados, por favor inicie sesión nuevamente');window.location ='LogOut.aspx';", true);
+            }
+            else
+            {
+                ScriptManager.RegisterStartupScript(page, page.GetType(), "Success", "alert('Details Saved,Please Login Again');window.location ='Login.aspx';", true);
+            }
            // Response.Redirect("Login.aspx");
           //  rwm1.RadAlert("Details Saved,Please Login Again", 200, 100, "Sucess", null);
         }

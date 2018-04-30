@@ -154,7 +154,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource1.HeaderText" xml:space="preserve">
-    <value>Identificación de entradas</value>
+    <value>Identificación de solicitud</value>
   </data>
   <data name="GridBoundColumnResource1.HeaderTooltip" xml:space="preserve">
     <value />
@@ -203,7 +203,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource2.HeaderText" xml:space="preserve">
-    <value>Realimentación</value>
+    <value>Comentario</value>
   </data>
   <data name="GridBoundColumnResource2.HeaderTooltip" xml:space="preserve">
     <value />
@@ -251,7 +251,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource3.HeaderText" xml:space="preserve">
-    <value>Tiempo de Feedback</value>
+    <value>Tiempo de Comentario</value>
   </data>
   <data name="GridBoundColumnResource3.HeaderTooltip" xml:space="preserve">
     <value />
@@ -299,7 +299,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource4.HeaderText" xml:space="preserve">
-    <value>Escribe un nombre</value>
+    <value>Tipo de Problema</value>
   </data>
   <data name="GridBoundColumnResource4.HeaderTooltip" xml:space="preserve">
     <value />
@@ -497,7 +497,7 @@
     <value />
   </data>
   <data name="GridDateTimeColumnResource1.HeaderText" xml:space="preserve">
-    <value>Tiempo de Feedback</value>
+    <value>Tiempo de Comentario</value>
   </data>
   <data name="GridDateTimeColumnResource1.HeaderTooltip" xml:space="preserve">
     <value />
@@ -509,19 +509,19 @@
     <value>Date_of_PITCH_Validation</value>
   </data>
   <data name="Label19Resource1.Text" xml:space="preserve">
-    <value>Comentarios del usuario</value>
+    <value>Comentarios del Usuario</value>
   </data>
   <data name="Label19Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label20Resource1.Text" xml:space="preserve">
-    <value>Comentarios del usuario</value>
+    <value>Comentarios del Usuario</value>
   </data>
   <data name="Label20Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Comentarios del usuario</value>
+    <value>Comentarios del Usuario</value>
   </data>
   <data name="rgUserFeedbackResource1.BackImageUrl" xml:space="preserve">
     <value />
@@ -620,7 +620,7 @@
     <value />
   </data>
   <data name="rgUserFeedbackResource1.MasterTableView.CommandItemSettings.ExportToCsvText" xml:space="preserve">
-    <value>Exportar a SCV</value>
+    <value>Exportar a CSV</value>
   </data>
   <data name="rgUserFeedbackResource1.MasterTableView.CommandItemSettings.ExportToExcelImageUrl" xml:space="preserve">
     <value />
@@ -653,7 +653,7 @@
     <value />
   </data>
   <data name="rgUserFeedbackResource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
-    <value>Refrescar</value>
+    <value>Actualizar</value>
   </data>
   <data name="rgUserFeedbackResource1.MasterTableView.CommandItemSettings.SaveChangesText" xml:space="preserve">
     <value>Guardar cambios</value>

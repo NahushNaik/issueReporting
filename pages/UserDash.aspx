@@ -217,7 +217,7 @@
                                     <div class="numbers">
 
                                         <p>
-                                            <asp:HyperLink ID="hplFeedbackCountPositive1" runat="server" Style="color: black;" onclick="skm_LockScreen('We are processing your request...')" meta:resourcekey="hplFeedbackCountPositive1Resource2"></asp:HyperLink>
+                                            <asp:HyperLink ID="hplFeedbackCountPositive1" runat="server" Style="color: black;" onclick="skm_LockScreen('We are processing your request...')" meta:resourcekey="hplFeedbackCountPositive1Resource2">[hplFeedbackCountPositive1]</asp:HyperLink>
                                         </p>
                                         <asp:HyperLink ID="hplFeedbackCountPositiveText" runat="server" Style="color: black;" onclick="skm_LockScreen('We are processing your request...')" meta:resourcekey="hplFeedbackCountPositiveTextResource2">[hplFeedbackCountPositiveText]</asp:HyperLink>
                                     </div>
@@ -246,7 +246,7 @@
                                     <div class="numbers">
 
                                         <p>
-                                            <asp:HyperLink ID="hplFeedbackCountNegative1" runat="server" Style="color: black;" onclick="skm_LockScreen('We are processing your request...')" meta:resourcekey="hplFeedbackCountNegative1Resource2"></asp:HyperLink>
+                                            <asp:HyperLink ID="hplFeedbackCountNegative1" runat="server" Style="color: black;" onclick="skm_LockScreen('We are processing your request...')" meta:resourcekey="hplFeedbackCountNegative1Resource2">[hplFeedbackCountNegative1]</asp:HyperLink>
                                         </p>
                                         <asp:HyperLink ID="hplFeedbackCountNegativeText" runat="server" Style="color: black;" onclick="skm_LockScreen('We are processing your request...')" meta:resourcekey="hplFeedbackCountNegativeTextResource2"  >[hplFeedbackCountNegativeText]</asp:HyperLink>
                                     </div>
@@ -277,7 +277,7 @@
                                     <div class="numbers">
 
                                         <p>
-                                            <asp:HyperLink ID="HyperLink2" runat="server" Style="color: black;" onclick="skm_LockScreen('We are processing your request...')" meta:resourcekey="HyperLink2Resource1"></asp:HyperLink>
+                                            <asp:HyperLink ID="HyperLink2" runat="server" Style="color: black;" onclick="skm_LockScreen('We are processing your request...')" meta:resourcekey="HyperLink2Resource1">[HyperLink2]</asp:HyperLink>
                                         </p>
                                         <asp:HyperLink ID="hplFeedbackCountModerateText" runat="server" Style="color: black;" onclick="skm_LockScreen('We are processing your request...')" meta:resourcekey="hplFeedbackCountModerateTextResource1"  >[hplFeedbackCountModerateText]</asp:HyperLink>
                                     </div>

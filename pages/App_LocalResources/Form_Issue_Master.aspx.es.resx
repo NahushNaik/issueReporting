@@ -124,7 +124,7 @@
     <value />
   </data>
   <data name="ddlApplicationResource1.EmptyMessage" xml:space="preserve">
-    <value>Seleccionar aplicación</value>
+    <value>Seleccione Aplicación</value>
   </data>
   <data name="ddlApplicationResource1.LoadingMessage" xml:space="preserve">
     <value>Cargando...</value>
@@ -184,7 +184,7 @@
     <value />
   </data>
   <data name="GridButtonColumnResource1.ConfirmText" xml:space="preserve">
-    <value>¿Estás seguro de eliminar?</value>
+    <value>¿Estás seguro de borrar?</value>
   </data>
   <data name="GridButtonColumnResource1.ConfirmTextFormatString" xml:space="preserve">
     <value />
@@ -442,13 +442,13 @@
     <value />
   </data>
   <data name="Label11Resource1.Text" xml:space="preserve">
-    <value>Issue Master</value>
+    <value>Maestra de Problema</value>
   </data>
   <data name="Label11Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label12Resource1.Text" xml:space="preserve">
-    <value>Issue Master</value>
+    <value>Maestra de Problema</value>
   </data>
   <data name="Label12Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -466,7 +466,7 @@
     <value />
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Issue Master</value>
+    <value>Maestra de Problema</value>
   </data>
   <data name="RequiredFieldValidator12Resource1.ErrorMessage" xml:space="preserve">
     <value>Solicitud requerida</value>
@@ -622,7 +622,7 @@
     <value />
   </data>
   <data name="rgIssueMasterResource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
-    <value>Refrescar</value>
+    <value>Actualizar</value>
   </data>
   <data name="rgIssueMasterResource1.MasterTableView.CommandItemSettings.SaveChangesText" xml:space="preserve">
     <value>Guardar cambios</value>

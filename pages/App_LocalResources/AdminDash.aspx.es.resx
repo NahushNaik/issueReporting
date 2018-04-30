@@ -205,7 +205,7 @@
     <value />
   </data>
   <data name="Label2Resource1.Text" xml:space="preserve">
-    <value>Recientes 5 entradas</value>
+    <value>Recientes 5 solicitudes</value>
   </data>
   <data name="Label2Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -217,7 +217,7 @@
     <value />
   </data>
   <data name="Label4Resource1.Text" xml:space="preserve">
-    <value>Estadísticas de entradas</value>
+    <value>Estadísticas de Solicitud</value>
   </data>
   <data name="Label4Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -229,13 +229,13 @@
     <value />
   </data>
   <data name="Label6Resource1.Text" xml:space="preserve">
-    <value>Cerrado</value>
+    <value>Cerrados</value>
   </data>
   <data name="Label6Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label7Resource1.Text" xml:space="preserve">
-    <value>Abierto</value>
+    <value>Abiertos</value>
   </data>
   <data name="Label7Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -247,25 +247,25 @@
     <value />
   </data>
   <data name="Label9Resource1.Text" xml:space="preserve">
-    <value>Último ticket creado hace 3 días</value>
+    <value>Último solicitudes creado hace 3 días</value>
   </data>
   <data name="Label9Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="ListItemResource1.Text" xml:space="preserve">
-    <value>Todas</value>
+    <value>Todos</value>
   </data>
   <data name="ListItemResource1.Value" xml:space="preserve">
     <value>All</value>
   </data>
   <data name="ListItemResource2.Text" xml:space="preserve">
-    <value>Abierto</value>
+    <value>Abiertos</value>
   </data>
   <data name="ListItemResource2.Value" xml:space="preserve">
     <value>Open</value>
   </data>
   <data name="ListItemResource3.Text" xml:space="preserve">
-    <value>Cerrado</value>
+    <value>Cerrados</value>
   </data>
   <data name="ListItemResource3.Value" xml:space="preserve">
     <value>Closed</value>
@@ -403,7 +403,7 @@
     <value />
   </data>
   <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
-    <value>Refrescar</value>
+    <value>Actualizar</value>
   </data>
   <data name="RadGrid1Resource1.MasterTableView.CommandItemSettings.SaveChangesText" xml:space="preserve">
     <value>Guardar cambios</value>
@@ -631,6 +631,6 @@
     <value />
   </data>
   <data name="Label14Resource1.Text" xml:space="preserve">
-    <value>Entradas</value>
+    <value>Solicitudes</value>
   </data>
 </root>

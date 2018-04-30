@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSaveResource1.Text" xml:space="preserve">
-    <value>Guardar ticket</value>
+    <value>Guardar solicitude</value>
   </data>
   <data name="btnSaveResource1.ToolTip" xml:space="preserve">
     <value />
@@ -151,7 +151,7 @@
     <value />
   </data>
   <data name="Label11Resource1.Text" xml:space="preserve">
-    <value>Solicitud</value>
+    <value>Aplicación</value>
   </data>
   <data name="Label11Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -223,13 +223,13 @@
     <value />
   </data>
   <data name="Label7Resource1.Text" xml:space="preserve">
-    <value>Nuevo boleto</value>
+    <value>Nueva solicitud</value>
   </data>
   <data name="Label7Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label8Resource1.Text" xml:space="preserve">
-    <value>Nuevo boleto</value>
+    <value>Nueva solicitud</value>
   </data>
   <data name="Label8Resource1.ToolTip" xml:space="preserve">
     <value />

@@ -32,31 +32,31 @@
                                     </div>
 
                                     <div style="margin: 10px 0px 0px 20px;" class="title">
-                                        <asp:DropDownList ID="ddlStatus" runat="server" ValidationGroup="statusApply" meta:resourcekey="ddlStatusResource1">
+                                        <asp:DropDownList ID="ddlStatus" runat="server"  AutoPostBack="false" ValidationGroup="statusApply" meta:resourcekey="ddlStatusResource1">
                                                <asp:ListItem meta:resourcekey="ListItemResource1"  >All</asp:ListItem>
                                             <asp:ListItem meta:resourcekey="ListItemResource2">Open</asp:ListItem>
                                             <asp:ListItem meta:resourcekey="ListItemResource3" >Closed</asp:ListItem>
                                         </asp:DropDownList>
 
-                                          <asp:DropDownList ID="ddlMenu" runat="server" meta:resourcekey="ddlMenuResource1" >
+                                          <asp:DropDownList ID="ddlMenu" AutoPostBack="false" runat="server" meta:resourcekey="ddlMenuResource1" >
                                             <asp:ListItem meta:resourcekey="ListItemResource4">Created Time</asp:ListItem>
                                             <asp:ListItem meta:resourcekey="ListItemResource5">Ticket No</asp:ListItem>
                                             <asp:ListItem meta:resourcekey="ListItemResource6">Priority</asp:ListItem>
                                         </asp:DropDownList>
-                                             <asp:DropDownList ID="ddlOrder" runat="server" meta:resourcekey="ddlOrderResource1" >
+                                             <asp:DropDownList ID="ddlOrder" AutoPostBack="false"  runat="server" meta:resourcekey="ddlOrderResource1" >
                                             <asp:ListItem Value="desc" meta:resourcekey="ListItemResource7">Descending </asp:ListItem>
                                             <asp:ListItem Value="asc" meta:resourcekey="ListItemResource8">Ascending</asp:ListItem>
                                             
                                         </asp:DropDownList>
                 
-                                        <asp:Label ID="Label1" runat="server" Text="From Date:" meta:resourcekey="Label1Resource1"></asp:Label>&nbsp;<telerik:RadDateTimePicker ID="dtpFromDate"  width="126px"  AutoPostBackControl="None" runat="server" Culture="en-US" meta:resourcekey="dtpFromDateResource1">  <TimePopupButton Visible="false" /></telerik:RadDateTimePicker>
-                                         <asp:Label ID="Label2" runat="server" Text="To Date:" meta:resourcekey="Label2Resource1"></asp:Label>&nbsp;<telerik:RadDateTimePicker ID="dtpToDate" width="127px" AutoPostBackControl="None"  runat="server">  <TimePopupButton Visible="false" Culture="en-US" meta:resourcekey="dtpToDateResource1"/></telerik:RadDateTimePicker>
+                                        <asp:Label ID="Label1" runat="server" Text="From Date:" meta:resourcekey="Label1Resource1"></asp:Label>&nbsp;<telerik:RadDateTimePicker ID="dtpFromDate"  width="126px"  AutoPostBackControl="None" runat="server" meta:resourcekey="dtpFromDateResource1">  <TimePopupButton Visible="false" /></telerik:RadDateTimePicker>
+                                         <asp:Label ID="Label2" runat="server" Text="To Date:" meta:resourcekey="Label2Resource1"></asp:Label>&nbsp;<telerik:RadDateTimePicker ID="dtpToDate" width="127px" AutoPostBackControl="None"  runat="server">  <TimePopupButton Visible="false" meta:resourcekey="dtpToDateResource1"/></telerik:RadDateTimePicker>
                                         <asp:Button ID="btnTicketTypeApply" runat="server" Text="Apply" ValidationGroup="statusApply" OnClick="btnTicketTypeApply_Click" meta:resourcekey="btnTicketTypeApplyResource1"/>
                                       
                                     </div>
 
                                     <div class="content table-responsive table-full-width">
-                                        <telerik:radgrid id="rgTickets" runat="server" allowfilteringbycolumn="True"  onitemdatabound="rgTickets_ItemDataBound" AutoGenerateColumns="False" ActiveItemStyle-Wrap="true" skin="Simple" cellspacing="-1" gridlines="Both" CssClass="text-center" meta:resourcekey="rgTicketsResource1"      >
+                                        <telerik:radgrid id="rgTickets" runat="server" allowfilteringbycolumn="true"  onitemdatabound="rgTickets_ItemDataBound" AutoGenerateColumns="false" ActiveItemStyle-Wrap="true" skin="Simple" cellspacing="-1" gridlines="Both" CssClass="text-center" meta:resourcekey="rgTicketsResource1"      >
                                             <GroupingSettings CollapseAllTooltip="Collapse all groups" CaseSensitive="false"></GroupingSettings>
                                              <ExportSettings Excel-Format="ExcelML" ExportOnlyData="true" IgnorePaging="true" FileName=" View Tickets Report"> </ExportSettings>
                                               <MasterTableView CommandItemDisplay="Top" >

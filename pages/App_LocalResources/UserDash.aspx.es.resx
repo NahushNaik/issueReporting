@@ -136,7 +136,7 @@
     <value />
   </data>
   <data name="hplFeedbackCountNegative2Resource2.Text" xml:space="preserve">
-    <value>No Comentarios felices</value>
+    <value>Comentarios no muy contentos</value>
   </data>
   <data name="hplFeedbackCountNegative2Resource2.ToolTip" xml:space="preserve">
     <value />
@@ -166,13 +166,13 @@
     <value />
   </data>
   <data name="hplModerateResource1.Text" xml:space="preserve">
-    <value>Retroalimentación neutra</value>
+    <value>Comentarios neutros</value>
   </data>
   <data name="hplModerateResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="HyperLink1Resource1.Text" xml:space="preserve">
-    <value>Boleto incorrecto recaudado</value>
+    <value>Solicitud creada Incorrecta</value>
   </data>
   <data name="HyperLink1Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -208,7 +208,7 @@
     <value />
   </data>
   <data name="HyperLinkTicketRecentResource2.Text" xml:space="preserve">
-    <value>Ticket reciente</value>
+    <value>Solicitud reciente</value>
   </data>
   <data name="HyperLinkTicketRecentResource2.ToolTip" xml:space="preserve">
     <value />
@@ -250,25 +250,25 @@
     <value />
   </data>
   <data name="Label2Resource2.Text" xml:space="preserve">
-    <value>Tablero</value>
+    <value>Panel de control</value>
   </data>
   <data name="Label2Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label3Resource2.Text" xml:space="preserve">
-    <value>Estadísticas de entradas</value>
+    <value>Estadísticas de Solicitud</value>
   </data>
   <data name="Label3Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label4Resource2.Text" xml:space="preserve">
-    <value>Estado de finalización</value>
+    <value>estado de finalización</value>
   </data>
   <data name="Label4Resource2.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label5Resource2.Text" xml:space="preserve">
-    <value>Basado en el no del boleto completado ...</value>
+    <value> </value>
   </data>
   <data name="Label5Resource2.ToolTip" xml:space="preserve">
     <value />
@@ -280,9 +280,15 @@
     <value />
   </data>
   <data name="Label7Resource2.Text" xml:space="preserve">
-    <value>Conectarse con el equipo de soporte</value>
+    <value>Conectar con el equipo de apoyo</value>
   </data>
   <data name="Label7Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8Resource1.Text" xml:space="preserve">
+    <value>Nueva solicitud</value>
+  </data>
+  <data name="Label8Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblPendingFeedbackResource1.Text" xml:space="preserve">
@@ -298,7 +304,7 @@
     <value />
   </data>
   <data name="PageResource2.Title" xml:space="preserve">
-    <value>Tablero</value>
+    <value>Panel de control</value>
   </data>
   <data name="RequiredFieldValidator2Resource2.ErrorMessage" xml:space="preserve">
     <value>Equipo de soporte de campo requerido</value>
@@ -314,8 +320,5 @@
   </data>
   <data name="txtEscalationResource2.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="Label8Resource1.Text" xml:space="preserve">
-    <value>Nuevo boleto</value>
   </data>
 </root>

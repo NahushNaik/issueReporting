@@ -778,21 +778,6 @@
   <data name="rgTicketLogsResource1.BackImageUrl" xml:space="preserve">
     <value />
   </data>
-  <data name="rgTicketLogsResource1.ClientSettings.ClientMessages.ColumnResizeTooltipFormatString" xml:space="preserve">
-    <value>Width: &lt;strong&gt;{0}&lt;/strong&gt; &lt;em&gt;pixels&lt;/em&gt;</value>
-  </data>
-  <data name="rgTicketLogsResource1.ClientSettings.ClientMessages.DragToGroupOrReorder" xml:space="preserve">
-    <value>Drag to group or reorder</value>
-  </data>
-  <data name="rgTicketLogsResource1.ClientSettings.ClientMessages.DragToResize" xml:space="preserve">
-    <value>Drag to resize</value>
-  </data>
-  <data name="rgTicketLogsResource1.ClientSettings.ClientMessages.DropHereToReorder" xml:space="preserve">
-    <value>Drop here to reorder</value>
-  </data>
-  <data name="rgTicketLogsResource1.ClientSettings.ClientMessages.PagerTooltipFormatString" xml:space="preserve">
-    <value>Page &lt;strong&gt;{0}&lt;/strong&gt; of &lt;strong&gt;{1}&lt;/strong&gt;</value>
-  </data>
   <data name="rgTicketLogsResource1.FilterMenu.ToolTip" xml:space="preserve">
     <value />
   </data>

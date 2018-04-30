@@ -163,25 +163,25 @@
     <value />
   </data>
   <data name="Label10Resource1.Text" xml:space="preserve">
-    <value>Solicitud</value>
+    <value>Problema</value>
   </data>
   <data name="Label10Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label11Resource1.Text" xml:space="preserve">
-    <value>Problema</value>
+    <value>Detalles del problema</value>
   </data>
   <data name="Label11Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label12Resource1.Text" xml:space="preserve">
-    <value>Detalles del problema</value>
+    <value>Prioridad</value>
   </data>
   <data name="Label12Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label13Resource1.Text" xml:space="preserve">
-    <value>Prioridad</value>
+    <value>Documento</value>
   </data>
   <data name="Label13Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -193,31 +193,31 @@
     <value />
   </data>
   <data name="Label15Resource1.Text" xml:space="preserve">
-    <value>Documento</value>
+    <value>Observación</value>
   </data>
   <data name="Label15Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label16Resource1.Text" xml:space="preserve">
-    <value>Estado</value>
+    <value>Tiempo empleado (Hours.Min)</value>
   </data>
   <data name="Label16Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label17Resource1.Text" xml:space="preserve">
-    <value>Observación</value>
+    <value>Es válida?</value>
   </data>
   <data name="Label17Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label18Resource1.Text" xml:space="preserve">
-    <value>Tiempo empleado (Hours.Min)</value>
+    <value>Comentarios</value>
   </data>
   <data name="Label18Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label19Resource1.Text" xml:space="preserve">
-    <value>Es válida?</value>
+    <value>Comentarios</value>
   </data>
   <data name="Label19Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -226,18 +226,6 @@
     <value>* (El comentario es obligatorio para actualizar el comentario)</value>
   </data>
   <data name="Label1Resource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Label20Resource1.Text" xml:space="preserve">
-    <value>Comentarios</value>
-  </data>
-  <data name="Label20Resource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="Label21Resource1.Text" xml:space="preserve">
-    <value>Comentarios:</value>
-  </data>
-  <data name="Label21Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label2Resource1.ToolTip" xml:space="preserve">
@@ -268,13 +256,13 @@
     <value />
   </data>
   <data name="Label8Resource1.Text" xml:space="preserve">
-    <value>Identificación de entradas</value>
+    <value>Identificación de Solicitud</value>
   </data>
   <data name="Label8Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label9Resource1.Text" xml:space="preserve">
-    <value>Tipo</value>
+    <value>Aplicación</value>
   </data>
   <data name="Label9Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -283,24 +271,6 @@
     <value>Dependiendo del tamaño del archivo ... El tiempo de carga variará ...</value>
   </data>
   <data name="lbl_MassageResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblClosedAtResource1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblClosedAtResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblClosedByResource1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblClosedByResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lblCreatedAtResource1.Text" xml:space="preserve">
-    <value>(Usuario)</value>
-  </data>
-  <data name="lblCreatedAtResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="lblStarResource1.Text" xml:space="preserve">
@@ -417,7 +387,7 @@
     <value />
   </data>
   <data name="UpdateButtonResource1.Text" xml:space="preserve">
-    <value>Boleto de actualización</value>
+    <value>Actualización de solicitud</value>
   </data>
   <data name="UpdateButtonResource1.ToolTip" xml:space="preserve">
     <value />

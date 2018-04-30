@@ -124,7 +124,7 @@
     <value />
   </data>
   <data name="Label11Resource1.Text" xml:space="preserve">
-    <value>Boleto de actualización</value>
+    <value>Actualización de solicitud</value>
   </data>
   <data name="Label11Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -154,7 +154,7 @@
     <value />
   </data>
   <data name="Label16Resource1.Text" xml:space="preserve">
-    <value>Administración (27 Nov 2017, 14:23)-</value>
+    <value>Admin (27 Nov 2017, 14:23)-</value>
   </data>
   <data name="Label16Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -178,7 +178,7 @@
     <value />
   </data>
   <data name="Label1Resource1.Text" xml:space="preserve">
-    <value>Identificación de entradas</value>
+    <value>ID de Solicitude</value>
   </data>
   <data name="Label1Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -196,13 +196,13 @@
     <value />
   </data>
   <data name="Label22Resource1.Text" xml:space="preserve">
-    <value>Ver boleto</value>
+    <value>Ver solicitud</value>
   </data>
   <data name="Label22Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label23Resource1.Text" xml:space="preserve">
-    <value>Ver boleto</value>
+    <value>Ver solicitud</value>
   </data>
   <data name="Label23Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -214,7 +214,7 @@
     <value />
   </data>
   <data name="Label3Resource1.Text" xml:space="preserve">
-    <value>Solicitud</value>
+    <value>Aplicación</value>
   </data>
   <data name="Label3Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -256,9 +256,9 @@
     <value />
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Ver boleto</value>
+    <value>Ver solicitud</value>
   </data>
   <data name="Textbox1Resource1.Placeholder" xml:space="preserve">
-    <value>spanish</value>
+    <value />
   </data>
 </root>

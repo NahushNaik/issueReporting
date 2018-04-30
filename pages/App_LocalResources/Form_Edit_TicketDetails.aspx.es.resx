@@ -159,13 +159,13 @@
     <value />
   </data>
   <data name="Label11Resource1.Text" xml:space="preserve">
-    <value>Editar entrada</value>
+    <value>Editar solicitud</value>
   </data>
   <data name="Label11Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label12Resource1.Text" xml:space="preserve">
-    <value>Identificación de entradas</value>
+    <value>Identificación de solicitud</value>
   </data>
   <data name="Label12Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -177,7 +177,7 @@
     <value />
   </data>
   <data name="Label3Resource1.Text" xml:space="preserve">
-    <value>Ver boleto:</value>
+    <value>Ver solicitud:</value>
   </data>
   <data name="Label3Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -189,7 +189,7 @@
     <value />
   </data>
   <data name="Label5Resource1.Text" xml:space="preserve">
-    <value>Solicitud</value>
+    <value>Aplicación</value>
   </data>
   <data name="Label5Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -243,10 +243,10 @@
     <value />
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Editar entrada</value>
+    <value>Editar solicitud</value>
   </data>
   <data name="rfvApplicationResource1.ErrorMessage" xml:space="preserve">
-    <value>Por favor seleccione la aplicación</value>
+    <value>Por favor seleccione Aplicación</value>
   </data>
   <data name="rfvApplicationResource1.Text" xml:space="preserve">
     <value />

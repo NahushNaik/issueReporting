@@ -123,12 +123,6 @@
   <data name="btnTicketTypeApplyResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="ddlMenuResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ddlOrderResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="ddlStatusResource1.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -167,6 +161,18 @@
   </data>
   <data name="dtpFromDateResource1.Calendar.FastNavigationPrevText" xml:space="preserve">
     <value>&amp;lt;&amp;lt;</value>
+  </data>
+  <data name="dtpFromDateResource1.Calendar.FastNavigationSettings.CancelButtonCaption" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="dtpFromDateResource1.Calendar.FastNavigationSettings.DateIsOutOfRangeMessage" xml:space="preserve">
+    <value>La fecha está fuera del rango.</value>
+  </data>
+  <data name="dtpFromDateResource1.Calendar.FastNavigationSettings.OkButtonCaption" xml:space="preserve">
+    <value>DE ACUERDO</value>
+  </data>
+  <data name="dtpFromDateResource1.Calendar.FastNavigationSettings.TodayButtonCaption" xml:space="preserve">
+    <value>Hoy</value>
   </data>
   <data name="dtpFromDateResource1.Calendar.NavigationCaption" xml:space="preserve">
     <value>Título y navegación</value>
@@ -276,6 +282,18 @@
   <data name="dtpToDateResource1.Calendar.FastNavigationPrevText" xml:space="preserve">
     <value>&amp;lt;&amp;lt;</value>
   </data>
+  <data name="dtpToDateResource1.Calendar.FastNavigationSettings.CancelButtonCaption" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="dtpToDateResource1.Calendar.FastNavigationSettings.DateIsOutOfRangeMessage" xml:space="preserve">
+    <value>La fecha está fuera del rango.</value>
+  </data>
+  <data name="dtpToDateResource1.Calendar.FastNavigationSettings.OkButtonCaption" xml:space="preserve">
+    <value>DE ACUERDO</value>
+  </data>
+  <data name="dtpToDateResource1.Calendar.FastNavigationSettings.TodayButtonCaption" xml:space="preserve">
+    <value>Hoy</value>
+  </data>
   <data name="dtpToDateResource1.Calendar.NavigationCaption" xml:space="preserve">
     <value>Título y navegación</value>
   </data>
@@ -319,7 +337,7 @@
     <value>Abra el calendario emergente.</value>
   </data>
   <data name="dtpToDateResource1.HiddenInputTitleAttibute" xml:space="preserve">
-    <value>Entrada visualmente oculta creada para fines de funcionalidad.</value>
+    <value>Entrada visualmente oculta creada para fines funcionales.</value>
   </data>
   <data name="dtpToDateResource1.TimePopupButton.ToolTip" xml:space="preserve">
     <value>Abra la ventana emergente de la vista de tiempo.</value>
@@ -385,7 +403,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource1.HeaderText" xml:space="preserve">
-    <value>CARNÉ DE IDENTIDAD</value>
+    <value>Estado</value>
   </data>
   <data name="GridBoundColumnResource1.HeaderTooltip" xml:space="preserve">
     <value />
@@ -434,7 +452,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource10.HeaderText" xml:space="preserve">
-    <value>Creado antes (días)</value>
+    <value>Creado en</value>
   </data>
   <data name="GridBoundColumnResource10.HeaderTooltip" xml:space="preserve">
     <value />
@@ -482,7 +500,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource11.HeaderText" xml:space="preserve">
-    <value>Creado en</value>
+    <value>Es válida?</value>
   </data>
   <data name="GridBoundColumnResource11.HeaderTooltip" xml:space="preserve">
     <value />
@@ -491,102 +509,6 @@
     <value>False</value>
   </data>
   <data name="GridBoundColumnResource11.SortExpression" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.AndCurrentFilterValue" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.ColumnGroupName" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.CurrentFilterValue" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.DataFormatString" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.EditFormHeaderTextFormat" xml:space="preserve">
-    <value>{0}:</value>
-  </data>
-  <data name="GridBoundColumnResource12.EmptyDataText" xml:space="preserve">
-    <value>&amp;nbsp;</value>
-  </data>
-  <data name="GridBoundColumnResource12.FooterAggregateFormatString" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.FooterText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.GroupByExpression" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.HeaderAbbr" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.HeaderAxis" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.HeaderImageUrl" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.HeaderText" xml:space="preserve">
-    <value>Tiempo empleado (Hours.Min)</value>
-  </data>
-  <data name="GridBoundColumnResource12.HeaderTooltip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource12.HtmlEncode" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="GridBoundColumnResource12.SortExpression" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.AndCurrentFilterValue" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.ColumnGroupName" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.CurrentFilterValue" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.DataFormatString" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.EditFormHeaderTextFormat" xml:space="preserve">
-    <value>{0}:</value>
-  </data>
-  <data name="GridBoundColumnResource13.EmptyDataText" xml:space="preserve">
-    <value>&amp;nbsp;</value>
-  </data>
-  <data name="GridBoundColumnResource13.FooterAggregateFormatString" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.FooterText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.GroupByExpression" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.HeaderAbbr" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.HeaderAxis" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.HeaderImageUrl" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.HeaderText" xml:space="preserve">
-    <value>Es válida?</value>
-  </data>
-  <data name="GridBoundColumnResource13.HeaderTooltip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridBoundColumnResource13.HtmlEncode" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="GridBoundColumnResource13.SortExpression" xml:space="preserve">
     <value />
   </data>
   <data name="GridBoundColumnResource2.AndCurrentFilterValue" xml:space="preserve">
@@ -626,7 +548,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource2.HeaderText" xml:space="preserve">
-    <value>Usuario</value>
+    <value>CARNÉ DE IDENTIDAD</value>
   </data>
   <data name="GridBoundColumnResource2.HeaderTooltip" xml:space="preserve">
     <value />
@@ -674,7 +596,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource3.HeaderText" xml:space="preserve">
-    <value>Estado</value>
+    <value>Prioridad</value>
   </data>
   <data name="GridBoundColumnResource3.HeaderTooltip" xml:space="preserve">
     <value />
@@ -722,7 +644,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource4.HeaderText" xml:space="preserve">
-    <value>Priority</value>
+    <value>Escribe un nombre</value>
   </data>
   <data name="GridBoundColumnResource4.HeaderTooltip" xml:space="preserve">
     <value />
@@ -770,7 +692,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource5.HeaderText" xml:space="preserve">
-    <value>Escribe un nombre</value>
+    <value>Aplicación</value>
   </data>
   <data name="GridBoundColumnResource5.HeaderTooltip" xml:space="preserve">
     <value />
@@ -818,7 +740,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource6.HeaderText" xml:space="preserve">
-    <value>Solicitud</value>
+    <value>Problema</value>
   </data>
   <data name="GridBoundColumnResource6.HeaderTooltip" xml:space="preserve">
     <value />
@@ -914,7 +836,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource8.HeaderText" xml:space="preserve">
-    <value>Detalles del problema</value>
+    <value>Creado</value>
   </data>
   <data name="GridBoundColumnResource8.HeaderTooltip" xml:space="preserve">
     <value />
@@ -962,7 +884,7 @@
     <value />
   </data>
   <data name="GridBoundColumnResource9.HeaderText" xml:space="preserve">
-    <value>Creado</value>
+    <value>Creado antes (días)</value>
   </data>
   <data name="GridBoundColumnResource9.HeaderTooltip" xml:space="preserve">
     <value />
@@ -1037,7 +959,7 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource1.DataNavigateUrlFormatString" xml:space="preserve">
-    <value>ManageTicket.aspx?id={0}</value>
+    <value />
   </data>
   <data name="GridHyperLinkColumnResource1.DataTextFormatString" xml:space="preserve">
     <value />
@@ -1061,13 +983,13 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource1.HeaderText" xml:space="preserve">
-    <value>Carné de identidad</value>
+    <value />
   </data>
   <data name="GridHyperLinkColumnResource1.HeaderTooltip" xml:space="preserve">
     <value />
   </data>
   <data name="GridHyperLinkColumnResource1.ImageUrl" xml:space="preserve">
-    <value />
+    <value>images/Search3.png</value>
   </data>
   <data name="GridHyperLinkColumnResource1.NavigateUrl" xml:space="preserve">
     <value />
@@ -1079,142 +1001,70 @@
     <value />
   </data>
   <data name="GridHyperLinkColumnResource1.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.AndCurrentFilterValue" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.ColumnGroupName" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.CurrentFilterValue" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.DataNavigateUrlFormatString" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.DataTextFormatString" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.EditFormHeaderTextFormat" xml:space="preserve">
-    <value>{0}:</value>
-  </data>
-  <data name="GridHyperLinkColumnResource2.FooterText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.GroupByExpression" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.HeaderAbbr" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.HeaderAxis" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.HeaderImageUrl" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.HeaderText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.HeaderTooltip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.ImageUrl" xml:space="preserve">
-    <value>images/Search3.png</value>
-  </data>
-  <data name="GridHyperLinkColumnResource2.NavigateUrl" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.SortExpression" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.Target" xml:space="preserve">
-    <value />
-  </data>
-  <data name="GridHyperLinkColumnResource2.Text" xml:space="preserve">
     <value>Ver</value>
   </data>
   <data name="Label1Resource1.Text" xml:space="preserve">
-    <value>Partir de la fecha:</value>
+    <value>de  fecha:</value>
   </data>
   <data name="Label1Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label2Resource1.Text" xml:space="preserve">
-    <value>Hasta la fecha:</value>
+    <value>A Fecha:</value>
   </data>
   <data name="Label2Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label3Resource1.Text" xml:space="preserve">
-    <value>Ver todos los boletos</value>
+    <value>Ver todas solicitudes</value>
   </data>
   <data name="Label3Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label4Resource1.Text" xml:space="preserve">
-    <value>Entradas</value>
+    <value>Solicitudes</value>
   </data>
   <data name="Label4Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="Label5Resource1.Text" xml:space="preserve">
-    <value>Seleccione el filtro apropiado</value>
+    <value>Seleccione el tipo apropiado</value>
   </data>
   <data name="Label5Resource1.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="Label6Resource1.Text" xml:space="preserve">
+    <value>Selector de tiempo</value>
+  </data>
+  <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label7Resource1.Text" xml:space="preserve">
+    <value>Selector de tiempo</value>
+  </data>
+  <data name="Label7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="ListItemResource1.Text" xml:space="preserve">
-    <value>All</value>
+    <value>Todas</value>
   </data>
   <data name="ListItemResource1.Value" xml:space="preserve">
     <value>All</value>
   </data>
   <data name="ListItemResource2.Text" xml:space="preserve">
-    <value>Open</value>
+    <value>Abierto</value>
   </data>
   <data name="ListItemResource2.Value" xml:space="preserve">
     <value>Open</value>
   </data>
   <data name="ListItemResource3.Text" xml:space="preserve">
-    <value>Closed</value>
+    <value>Cerrado</value>
   </data>
   <data name="ListItemResource3.Value" xml:space="preserve">
     <value>Closed</value>
   </data>
-  <data name="ListItemResource4.Text" xml:space="preserve">
-    <value>Created Time</value>
-  </data>
-  <data name="ListItemResource4.Value" xml:space="preserve">
-    <value>Created Time</value>
-  </data>
-  <data name="ListItemResource5.Text" xml:space="preserve">
-    <value>Ticket No</value>
-  </data>
-  <data name="ListItemResource5.Value" xml:space="preserve">
-    <value>Ticket No</value>
-  </data>
-  <data name="ListItemResource6.Text" xml:space="preserve">
-    <value>Priority</value>
-  </data>
-  <data name="ListItemResource6.Value" xml:space="preserve">
-    <value>Priority</value>
-  </data>
-  <data name="ListItemResource7.Text" xml:space="preserve">
-    <value>Descending</value>
-  </data>
-  <data name="ListItemResource7.Value" xml:space="preserve">
-    <value>desc</value>
-  </data>
-  <data name="ListItemResource8.Text" xml:space="preserve">
-    <value>Ascending</value>
-  </data>
-  <data name="ListItemResource8.Value" xml:space="preserve">
-    <value>asc</value>
-  </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>Ver todos los boletos</value>
+    <value>Ver todas solicitudes</value>
   </data>
   <data name="rgTicketsResource1.BackImageUrl" xml:space="preserve">
     <value />
@@ -1256,7 +1106,7 @@
     <value>... grupo continuó de la página anterior.</value>
   </data>
   <data name="rgTicketsResource1.GroupingSettings.GroupContinuesFormatString" xml:space="preserve">
-    <value>Group continues on the next page.</value>
+    <value>El grupo continúa en la página siguiente.</value>
   </data>
   <data name="rgTicketsResource1.GroupingSettings.GroupSplitDisplayFormat" xml:space="preserve">
     <value>Mostrando {0} de {1} elementos.</value>
@@ -1289,7 +1139,7 @@
     <value>Expandir todo</value>
   </data>
   <data name="rgTicketsResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
-    <value>Expandir</value>
+    <value>Expandir </value>
   </data>
   <data name="rgTicketsResource1.HierarchySettings.SelfCollapseTooltip" xml:space="preserve">
     <value>Colapso de auto referencia</value>
@@ -1331,7 +1181,7 @@
     <value />
   </data>
   <data name="rgTicketsResource1.MasterTableView.CommandItemSettings.ExportToWordText" xml:space="preserve">
-    <value>Exportar a Word</value>
+    <value>Exportar to Word</value>
   </data>
   <data name="rgTicketsResource1.MasterTableView.CommandItemSettings.NextFrozenColumnText" xml:space="preserve">
     <value>Siguiente</value>
@@ -1442,7 +1292,7 @@
     <value />
   </data>
   <data name="rgTicketsResource1.MasterTableView.PagerStyle.NextPageToolTip" xml:space="preserve">
-    <value>Siguiente página</value>
+    <value>Páginas siguientes</value>
   </data>
   <data name="rgTicketsResource1.MasterTableView.PagerStyle.PagerTextFormat" xml:space="preserve">
     <value>Change page: {4} &amp;nbsp;Page &lt;strong&gt;{0}&lt;/strong&gt; of &lt;strong&gt;{1}&lt;/strong&gt;, items &lt;strong&gt;{2}&lt;/strong&gt; to &lt;strong&gt;{3}&lt;/strong&gt; of &lt;strong&gt;{5}&lt;/strong&gt;.</value>
@@ -1547,7 +1397,7 @@
     <value>Tamaño de página:</value>
   </data>
   <data name="rgTicketsResource1.PagerStyle.PrevPagesToolTip" xml:space="preserve">
-    <value>Páginas anteriores</value>
+    <value>Pagina anterior</value>
   </data>
   <data name="rgTicketsResource1.PagerStyle.PrevPageText" xml:space="preserve">
     <value />

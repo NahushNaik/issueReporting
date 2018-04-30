@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net;
+using System.Globalization;
 using System.Data.SqlClient;
 using unirest_net.http;
 using System.Data;
@@ -63,7 +64,14 @@ public partial class Login : System.Web.UI.Page
             if (isConnected == false)
             {
                 lblError.Visible = true;
-                lblError.Text = "No Internet Connection";
+                if (CultureInfo.CurrentCulture.Name == "es-ES")
+                {
+                    lblError.Text = "Sin conexión a Internet";
+                }
+                else
+                {
+                    lblError.Text = "No Internet Connection";
+                }
 
             }
             else
@@ -98,7 +106,14 @@ public partial class Login : System.Web.UI.Page
                     //if (userDb != user)
                     //{
                     lblError.Visible = true;
-                    lblError.Text = "Please check User name and Password. Also internet connection is mandatory for login to work...";
+                    if (CultureInfo.CurrentCulture.Name == "es-ES")
+                    {
+                        lblError.Text = "Por favor, compruebe el nombre de usuario y la contraseña. También es obligatoria la conexión a Internet para iniciar sesión en el trabajo...";
+                    }
+                    else
+                    {
+                        lblError.Text = "Please check User name and Password. Also internet connection is mandatory for login to work...";
+                    }
                     txtUsername.Text = "";
                     txtPassword.Text = "";
                     //}
@@ -140,7 +155,15 @@ public partial class Login : System.Web.UI.Page
             }
             catch (Exception ex)
             {
-                string script = "alert('Login Failed');";
+                string script;
+                if (CultureInfo.CurrentCulture.Name == "es-ES")
+                {
+                    script = "alert('Error de inicio de sesion');";
+                }
+                else
+                {
+                    script = "alert('Login Failed');";
+                }
                 ClientScript.RegisterClientScriptBlock(this.GetType(), "Alert", script, true);
                 throw ex;
             }
@@ -258,7 +281,14 @@ public partial class Login : System.Web.UI.Page
 
         sb.Append("if (Page_ClientValidate() == false) { return false; }} ");
 
-        sb.Append("this.value = 'Please wait...';");
+        if (CultureInfo.CurrentCulture.Name == "es-ES")
+        {
+            sb.Append("this.value = 'por favor espera...';");
+        }
+        else
+        {
+            sb.Append("this.value = 'Please wait...';");
+        }
 
         sb.Append("this.disabled = true;");
 

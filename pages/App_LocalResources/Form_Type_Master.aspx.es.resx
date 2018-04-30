@@ -124,7 +124,7 @@
     <value />
   </data>
   <data name="GridButtonColumnResource1.ConfirmText" xml:space="preserve">
-    <value>Estás seguro de eliminar?</value>
+    <value>¿Estás seguro de borrar?</value>
   </data>
   <data name="GridButtonColumnResource1.ConfirmTextFormatString" xml:space="preserve">
     <value />

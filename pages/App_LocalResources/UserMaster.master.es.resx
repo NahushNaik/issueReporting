@@ -136,7 +136,7 @@
     <value />
   </data>
   <data name="Label13Resource1.Text" xml:space="preserve">
-    <value>Administrar ticket</value>
+    <value>Administrar Solicitud</value>
   </data>
   <data name="Label13Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -148,7 +148,7 @@
     <value />
   </data>
   <data name="Label15Resource1.Text" xml:space="preserve">
-    <value>Ticket Log</value>
+    <value>Registro de solicitud</value>
   </data>
   <data name="Label15Resource1.ToolTip" xml:space="preserve">
     <value />
@@ -184,7 +184,7 @@
     <value />
   </data>
   <data name="Label4Resource1.Text" xml:space="preserve">
-    <value>Solicitud</value>
+    <value>aplicación</value>
   </data>
   <data name="Label4Resource1.ToolTip" xml:space="preserve">
     <value />
